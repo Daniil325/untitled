@@ -1693,7 +1693,7 @@ div.youtube-play-btn {
     overflow: hidden;
     position: relative;
     width: 100%;
-    height: 100%;
+    height: auto;
     cursor: pointer;
     display: block;
     -webkit-box-shadow: 5px 4px 10px 0px rgba(0, 0, 0, 0.14);
@@ -1749,6 +1749,13 @@ div.youtube-play-btn {
     min-height: 75vh;
 }
 
+.video-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .video-section .video-triangle1 {
     position: absolute;
     top: 33%;
@@ -1799,6 +1806,16 @@ div.youtube-play-btn {
     .video-section .video-container .video-player_wrapper {
         width: 85%;
     }
+}
+
+.video-section-header{
+    text-align: center;
+    font-weight: 600;
+    font-size: 34px;
+    color: var(--asu-dark-blue);
+    margin-top: 50px;
+    margin-bottom: 75px;
+    text-transform: uppercase;
 }
 
 .video-section .video-container .video-player_wrapper::after {
