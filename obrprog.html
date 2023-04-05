@@ -1,0 +1,941 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="owl/owl.theme.default.min.css">
+</head>
+<body>
+<header class="header">
+    <div class="header_container-bg">
+        <div class="header_wrapper">
+            <div class="header_navigation">
+                <nav class="header_navigation-nav">
+                    <ul class="header_navigation-ul">
+                        <li class="header_navigation-ul-item"><a
+                                href="https://www.asu.ru/">Университет</a></li>
+                        <li class="header_navigation-ul-item"><a href="https://school.asu.ru/">Школьник
+                            АлтГУ</a></li>
+                        <li>
+                            <div class="links-phone">
+                                <div class="phone-wrapper">
+                                    <img class="x-header-navigation-icon-call"
+                                         src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                                         alt="Номер для звонков">
+                                    <a href="tel:+73852291222">+7 (3852) 291-222</a>
+                                </div>
+                                <button class="call-link" id="showCallModalFromMenu">
+                                    Заказать звонок
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header_navigation_social_links">
+
+            </div>
+            <div class="header_navigation_search">
+                <form class="search" action="/search/">
+                    <img class="x-img x-search-icon"
+                         src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
+                    <input id="header-search" type="text" name="query" placeholder="Поиск по сайту">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="header_container-links">
+            <div class="header_container-logo">
+                <a class="header_container-logo-mainlink" href="">
+                    <img class="header_container-logo-img" src="img/main/main-section/Logo.svg" alt="">
+                    <span class="asu-text-small">Алтайский государственный
+                            университет <br> <span class="asu-text-large">Абитуриент</span></span>
+                </a>
+            </div>
+
+            <div class="header_container_social-links">
+                <a class="phone-link" href="tel:+73852291222">+7 (3852) 291-222</a>
+                <button class="call-link">заказать звонок</button>
+            </div>
+
+            <div class="links-socials">
+                <a
+                        href="https://wa.me/79339333799?text=Здравствуйте!%20Напишите%20нам,%20если%20есть%20вопросы.">
+                    <img class="mr-2 x-img x-header-social-icon-whatsapp"
+                         src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                         alt="WhatsApp">
+                </a>
+                <!--<a href="https://www.instagram.com/abiturient.asu/">
+                    <img class="mr-2 x-img x-header-social-icon-instagram" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Instagram" />
+                </a> -->
+                <!-- <a href="https://www.youtube.com/channel/UCWhne-7vu55DDZx-A1ToYAw/">
+                    <img class="mr-2 x-img x-header-social-icon-youtube" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="YouTube" />
+                </a> -->
+                <a href="https://vk.com/abiturientasu/">
+                    <img class="mr-2 x-img x-header-social-icon-vk"
+                         src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                         alt="Вконтакте">
+                </a>
+                <a href="https://t.me/abiturient22asu">
+                    <img class="mr-2 x-img x-header-social-icon-tg"
+                         style="height: 25px; width: 25px; background-image: url('https://telegram.org/img/website_icon.svg?4')"
+                         src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                         alt="Telegram">
+                </a>
+                <a href="https://zen.yandex.ru/id/622f05aae171d9758b9e2612">
+                    <img class="x-img x-header-social-icon-zen"
+                         style="height: 25px; width: 25px; background-image: url('https://yastatic.net/s3/zen-lib/favicons4/safari-pinned-tab.svg')"
+                         src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                         alt="Zen Yandex">
+                </a>
+            </div>
+
+            <div class="header_container-kabinet">
+                <a class="header_container-kabinet-link" href="">кабинет абитуриента</a>
+            </div>
+
+        </div>
+    </div>
+
+</header>
+
+<main>
+    <div class="main-buttons-container">
+        <div class="dropdown closed main-button">
+            <h2 class="icon d-flex justify-content-center align-items-center">
+                <a href="/bachelor/">Бакалавриат и специалитет</a>
+            </h2>
+            <ul class="menu list-unstyled">
+                <li><a href="/bachelor/roditelym/">#РОДИТЕЛЯМСЮДА</a></li>
+                <li><a href="/obrprog/">Образовательные программы бакалавриата</a></li>
+                <li><a href="/bachelor/documents2021/">Нормативные документы</a></li>
+                <li><a href="/bachelor/test/">Количество мест</a></li>
+                <li><a href="/bachelor/docs_go2021/">Как и когда подать документы</a></li>
+                <li><a href="/bachelor/calc/">Калькулятор абитуриента</a></li>
+                <li><a href="/bachelor/exam2021/">Вступительные испытания</a></li>
+                <li><a href="/bachelor/celev2021/">Целевое обучение</a></li>
+                <li><a href="/bachelor/paid_edu2021/">Платное образование</a></li>
+                <li><a href="http://abiturient.asu.ru/international/">Прием иностранных граждан</a></li>
+                <li><a href="/bachelor/grants2021/">Стипендии и материальная поддержка</a></li>
+                <li><a href="/bachelor/inf2021/">Обязательства по информированию</a></li>
+                <li><a href="https://abiturient.asu.ru/feedback2021/">Обратная связь</a></li>
+            </ul>
+        </div>
+        <div class="dropdown closed main-button">
+            <h2 class="icon d-flex justify-content-center align-items-center">
+                <a href="/postgraduate/">Магистратура и аспирантура</a>
+            </h2>
+            <ul class="menu list-unstyled">
+                <li><a href="/programmag/">Образовательные программы магистратуры</a></li>
+                <li><a href="/programaspir/">Научные специальности аспирантуры</a></li>
+                <li><a href="/postgraduate/documents2021/">Нормативные документы</a></li>
+                <li><a href="/postgraduate/magkvot/">Количество мест (магистратура)</a></li>
+                <li><a href="/postgraduate/aspkvot/">Количество мест (аспирантура)</a></li>
+                <li><a href="/postgraduate/docs_go2023/">Как и когда подать документы</a></li>
+                <li><a href="/postgraduate/programs2021/">Вступительные испытания</a></li>
+                <li><a href="/postgraduate/celev2021/">Целевое обучение</a></li>
+                <li><a href="/postgraduate/international2021/">Прием иностранных граждан</a></li>
+                <li><a href="/postgraduate/paid_edu2021/">Платное образование</a></li>
+                <li><a href="https://abiturient.asu.ru/feedback2021/">Обратная связь</a></li>
+            </ul>
+        </div>
+        <div class="dropdown main-button closed">
+            <h2 class="icon d-flex justify-content-center align-items-center">
+                <a href="/college/">Колледж АГУ</a>
+            </h2>
+            <ul class="menu">
+                <li><a href="/college/rodspo/">#РОДИТЕЛЯМСЮДА</a></li>
+                <li><a href="/college/documents2021/">Нормативные документы</a></li>
+                <li><a href="/college/docs_go2021/">Как и когда подать документы</a></li>
+                <li><a href="/college/programs2021/">Вступительные испытания</a></li>
+                <li><a href="/college/paid_edu2021/">Платное образование</a></li>
+                <li><a href="https://abiturient.asu.ru/feedback2021/">Обратная связь</a></li>
+            </ul>
+        </div>
+        <div class="dropdown main-button col-lg-3 col-md-6 p-0 closed">
+            <h2 class="icon d-flex justify-content-center align-items-center">
+                <a href="/ratings/">Рейтинги</a>
+            </h2>
+            <ul class="menu">
+                <li><a href="/ratings/comp2022/">Проходные баллы 2022</a></li>
+                <li><a href="/ratings/admissions/">Прием 2022</a></li>
+                <li><a href="/ratings/order/">Приказы о зачислении</a></li>
+                <li><a href="https://abiturient.asu.ru/feedback2021/">Обратная связь</a></li>
+            </ul>
+        </div>
+    </div>
+    <section class="section template__main-section">
+        <div class="container template__main-container">
+            <div class="template__breadcrumbs-wrapper">
+                <nav class="breadcrumbs" aria-label="breadcrumb">
+                    <ul class="list-unstyled d-flex flex-wrap">
+                        <li class="breadcrumbs-item active">
+                            <a href="/">Главная</a>
+                        </li>
+                        <li class="breadcrumbs-item active">
+                            <a href="/obrprog/">Образовательные программы бакалавриата</a>
+                        </li>
+                        <li class="breadcrumbs-item">Институт математики и информационных технологий</li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 d-none d-lg-block sidebar sidebar_r">
+                    <div class="sidebar-header">
+                        <h2>Образовательные программы бакалавриата</h2>
+                    </div>
+                    <div class="sidebar-menu">
+                        <ul class="list-unstyled d-flex justify-content-center flex-column">
+                            <li class="sidebar-menu_item"><a href="/obrprog/ign/">Институт гуманитарных наук</a></li>
+                            <li class="sidebar-menu_item"><a href="/obrprog/yi/">Юридический институт</a></li>
+                            <li class="sidebar-menu_item"><a href="/obrprog/ibb/">Институт биологии и биотехнологии</a></li>
+                            <li class="sidebar-menu_item"><a href="/obrprog/ingeo/">Институт географии</a></li>
+                            <li class="sidebar-menu_item"><a href="/obrprog/iimo/">Институт истории и международных отношений</a></li>
+                            <li class="sidebar-menu_item">Институт математики и информационных технологий</li>
+                            <li class="sidebar-menu_item"><a href="/obrprog/ictef/">Институт цифровых технологий, электроники и физики</a></li>
+                            <li class="sidebar-menu_item"><a href="/obrprog/miemis/">Международный институт экономики, менеджмента и информационных систем</a></li>
+                            <li class="sidebar-menu_item"><a href="/obrprog/chem/">Институт химии и химико-фармацевтических технологий</a></li>
+                            <li class="sidebar-menu_item"><a href="/obrprog/rub/">Рубцовский институт (филиал) АлтГУ</a></li>
+                            <li class="sidebar-menu_item"><a href="/obrprog/belocur/">Филиал АлтГУ в г.Белокурихе</a></li>
+                            <li class="sidebar-menu_item"><a href="/obrprog/biisk/">Филиал АлтГУ в г.Бийске</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col template__main-content"><h1 class="template__content-header content-header_r">Институт математики и информационных технологий</h1>
+
+                    <div class="template__content-paragraph content">
+                        <!-- Styles -->
+                        <link rel="stylesheet" href="/files/assets/abiturient/programs.css">
+                        <!-- Sripts --><script src="/files/assets/abiturient/programs.js" defer=""></script>
+                        <style type="text/css">
+                            .content {
+                                overflow: hidden !important;
+                            }
+                            .content ul,
+                            .content ol {
+                                text-align: unset !important;
+                            }
+
+                            .content img {
+                                margin-bottom: 0;
+                                max-width: 100% !important;
+                                max-height: 100% !important;
+                                height: auto !important;
+                            }
+                            .programs--banner__heading {
+                                margin-right: 1.5rem;
+                                margin-top: 0;
+                                margin-bottom: 0;
+                                margin-left: 0;
+                            }
+                            .programs--banner__emblem {
+                                margin: 0 0 0.8rem 0 !important;
+                            }
+
+                            .programs--banner__lottie {
+                                width: 100% !important;
+                            }
+                            .template__main-container {
+                                padding: 0 15px !important;
+                                margin: 0 !important;
+                                width: 100% !important;
+                                max-width: unset !important;
+                            }
+
+                            .main-buttons-container--d {
+                                display: none !important;
+                            }
+
+                            .sidebar {
+                                display: none !important;
+                            }
+
+                            .breadcrumbs {max-width:1140px;margin:0 auto;} .breadcrumbs--d {
+                                                                               display: none !important;
+                                                                           }
+
+                            .template__main-content .template__content-header {
+                                display: none !important;
+                            }
+                            .programs--numbers__item span.negative {
+                                margin: 0;
+                                margin-bottom: 0.45rem;
+                            }
+                            .col {
+                                padding: 0 !important;
+                            }
+                            .programs--numbers__banner {
+                                margin-top: 2rem;
+                            }
+                            .dropdown--header {
+                                justify-content: flex-start;
+                            }
+                            .dropdown--button {
+                                color: #000000;
+                                margin-right: 0.5rem;
+                            }
+                            .dropdown--button:last-child {
+                                margin-right: 0;
+                            }
+                            .programs--content {
+                                padding-bottom: 0;
+                            }
+
+                            .programs--content p {
+                                text-indent: 2rem;
+                            }
+                            @media screen and (max-width: 425.98px) {
+                                .programs--banner__heading {
+                                    margin-right: 0;
+                                    margin-top: 0;
+                                    margin-bottom: 1.5rem;
+                                    margin-left: 0;
+                                }
+                                .dropdown--button {
+                                    margin-right: 0;
+                                }
+                                .programs--students__logo img {
+                                    height: 200px !important;
+                                    margin-bottom: 2rem !important;
+                                }
+                                .programs--banner__emblem {
+                                    margin: 0 auto !important;
+                                    margin-bottom: 1rem !important;
+                                }
+                                .programs--numbers__item span.negative {
+                                    margin-bottom: 0 !important;
+                                    margin-right: 0.5rem !important;
+                                }
+                                .dropdown--header {
+                                    justify-content: space-evenly;
+                                }
+                            }
+                            .programs--banner__header {
+                                margin-bottom: 1rem;
+                                text-align: start;
+                            }
+                            .program--description {
+                                font-size: 0.6rem;
+                                margin: 0 !important;
+                                margin-bottom: 25px !important;
+                                line-height: 1.5;
+                                letter-spacing: 0.04rem;
+                                font-weight: 500;
+                            }
+                            .dropdown--content .dropdown--container .program--title {
+                                font-size: 1.6rem;
+                                text-align: center;
+                                width: 80%;
+                                margin: 0 auto;
+                                margin-bottom: 1.8rem;
+                            }
+                            .dropdown--content .dropdown--container h2,
+                            .dropdown--content .dropdown--container h3,
+                            .dropdown--content .dropdown--container h4,
+                            .dropdown--content .dropdown--container h5,
+                            .dropdown--content .dropdown--container h6 {
+                                font-weight: 700;
+                                color: var(--asu-dark);
+                            }
+                            .programs--uch-plan {
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-evenly;
+                                flex-wrap: wrap;
+                                margin-top: 1.5rem;
+                                margin-bottom: 3rem;
+                            }
+                            .programs--uch-plan a {
+                                padding: 0.45rem 1.5rem;
+                                margin-bottom: 1rem;
+                                text-align: center;
+                                background-color: var(--asu-accent);
+                                color: #fff;
+                                font-weight: 500;
+                                box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.25);
+                                border-radius: 15px;
+                            }
+                            ul li {
+                                margin-bottom: 0.55rem;
+                            }
+                            .programs--banner__header {
+                                color: var(--asu-accent);
+                            }
+                            :root {
+                                --asu-accent: #337267;
+                            }</style>
+                        <section class="section" style="padding: 0">
+                            <div class="programs--banner">
+                                <div class="programs--banner__heading">
+                                    <img class="programs--banner__emblem" alt="" src="https://www.asu.ru/files/images.215/programs/logos/imit.png?_t=1641650359">
+                                    <h1 class="programs--banner__header">Институт математики и информационных технологий</h1>
+                                    <p class="program--description">
+                                        ИМИТ – это более 650 студентов, 60 преподавателей, 6 кафедр, 8 научных центров и учебных лабораторий, 8 направлений подготовки и 14 суперактуальных образовательных программ. Миссия института – подготовка для региона и страны элитных кадров в области информационных технологий, программирования и математических методов, способных заниматься разработкой новых методов и алгоритмов, инновационных программных продуктов, обладающих способностью выполнять исследовательские проекты, самообучаться и адаптироваться в стремительно меняющемся мире больших данных и «умных» технологий.
+                                    </p>
+                                    <div class="programs--image__content">
+                                        <div class="programs--image__content_item">
+                                            <span class="numbers" id="jsNumber" style="font-size: 3rem; padding: 0.6rem 1.5rem" data-value="200">200</span> <span class="description">Бюджетные места</span>
+                                        </div>
+                                        <div class="programs--image__content_divider">
+                                        </div>
+                                        <div class="programs--image__content_item">
+                                            <span>в 2022 - 2023 году</span> <span class="numbers">105 000 - 118 380 ₽</span> <span class="description">Стоимость</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <lottie-player class="programs--banner__lottie" src="https://assets8.lottiefiles.com/packages/lf20_ge7bwe6v.json" background="transparent" speed="1" loop="" autoplay=""></lottie-player>
+                            </div>
+                            <section>
+                                <div class="container">
+                                    <h2 class="programs--profile-header mb-10 after">Программы обучения</h2>
+                                    <div id="dropdown">
+                                        <div class="dropdown--header">
+                                            <button class="dropdown--button active" index="0" id="dropdown-button-0" tabindex="1">Прикладная математика и информатика</button><button class="dropdown--button" index="1" id="dropdown-button-1" tabindex="2">Математика и компьютерные науки</button><button class="dropdown--button" index="2" id="dropdown-button-2" tabindex="3">Прикладная информатика</button><button class="dropdown--button" index="3" id="dropdown-button-3" tabindex="4">Программная инженерия</button><button class="dropdown--button" index="4" id="dropdown-button-4" tabindex="5">Фундаментальная информатика и информационные технологии</button>
+                                        </div>
+                                        <div class="dropdown--content container">
+                                            <!-- start -->
+                                            <div class="dropdown--container active" id="dropdown-container-0" index="0" tabindex="-1">
+                                                <h3 class="program--title">01.03.02 ПРИКЛАДНАЯ МАТЕМАТИКА И ИНФОРМАТИКА, ПРОФИЛИ «МАТЕМАТИЧЕСКОЕ И КОМПЬЮТЕРНОЕ МОДЕЛИРОВАНИЕ В ПРИРОДНЫХ И ИНДУСТРИАЛЬНЫХ СИСТЕМАХ», «ПРИКЛАДНОЙ АНАЛИЗ ДАННЫХ И КОМПЬЮТЕРНОЕ МОДЕЛИРОВАНИЕ»</h3>
+                                                <p>
+                                                    Программа ориентирована на подготовку специалистов, способных к проектной и научно-исследовательской деятельности в области цифровых технологий и приложений математического и компьютерного моделирования, владеющих навыками в сфере разработки и внедрения новых методов анализа и технологий исследования больших данных, с учетом требований рынка труда (как на уровне региона, так и РФ), перспектив и трендов в развитии информационных технологий, а также в соответствии с профессиональными стандартами «Специалист по большим данным».
+                                                </p>
+                                                <p>
+                                                    Важным моментом подготовки является практическая деятельность выпускника, поэтому в реализации образовательной программы вместе с сотрудниками АГУ принимают участие сотрудники ведущих IT компаний-разработчиков. Во время обучения студенты осваивают несколько языков программирования, знакомятся с основными принципами построения сложных программных и информационных систем, изучают методы проектирования, создания, тестирования сложных видов программного обеспечения, участвуют в реализации крупных федеральных проектов, что позволяет им быть востребованными на рынке труда IT-специалистов. реализации образовательной программы привлечены сотрудники региональных IT-компаний. Среди индустриальных партнеров – ведущие IT-компании, такие как ЯНДЕКС, PostgressProfessional, IntegraSourses.
+                                                </p>
+                                                <div class="programs--uch-plan">
+                                                    <a href="https://www.asu.ru/files/sveden/education/plan/Ucheb_plan_01_03_02_prikladnaya%20matematika%20i%20informatika_mmiit-1_2021_2021_27.04.2021.pdf">Очная форма обучения</a>
+                                                </div>
+                                                <p>
+                                                    <b>Срок обучения</b> — 4 года очно.
+                                                </p>
+                                                <div class="programs--numbers__banner">
+                                                    <div class="programs--numbers__item">
+                                                        <span>50</span> <small>Бюджетных мест</small>
+                                                    </div>
+                                                    <div class="programs--numbers__item">
+                                                        <span>-</span> <small>Целевых мест</small>
+                                                    </div>
+                                                    <div class="programs--numbers__item">
+                                                        <span>1</span> <small>Платных мест</small>
+                                                    </div>
+                                                    <div class="programs--numbers__divider">
+                                                    </div>
+                                                    <div class="programs--numbers__item">
+                                                        <span class="negative">50 620 ₽</span> <small>в семестр в 2022-2023 г.</small>
+                                                    </div>
+                                                    <div class="programs--numbers__divider">
+                                                    </div>
+                                                    <div class="programs--numbers__item">
+                                                        <ul>
+                                                            <li>Физика / Информатика и ИКТ</li>
+                                                            <li>Математика</li>
+                                                            <li>Русский язык</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="container">
+                                                    <p>
+                                                    </p>
+                                                    <h2 class="programs--profile-header">Чему научат</h2>
+                                                    <div class="programs--content">
+                                                        <p>
+                                                            Студенты получат навыки в области анализа данных и применения методов математического моделирования, прогнозирования, системного анализа, а также разработке и применению информационных технологий (в том числе технологий анализа и визуализации BigData) при решении прикладных проблем цифровой экономики и финансов, социологии, экологии и в других наукоемких областях. Среди профильных дисциплин: Объектно-ориентированный анализ и проектирование, Алгоритмизация и программирование на языке Python, Методы анализа и обработки данных на языке Python и R, Прикладная статистика, Имитационное моделирование.
+                                                        </p>
+                                                        <p>
+                                                            Институт сотрудничает с крупными компаниями, что даёт возможность студентам проходить стажировки и практики в реальном секторе цифровых технологий.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="container">
+                                                    <h2 class="programs--profile-header">Карьерная траектория</h2>
+                                                    <div class="programs--content">
+                                                        <p>
+                                                            Выпускники программы строят свою карьеру в разных областях и сферах деятельности в должности разработчика информационных систем, системного программиста, разработчика баз данных, специалиста в сфере криптографии, администратора баз данных, аналитика данных, архитектора информационных систем, администратора компьютерных сетей, математика, Web-программиста, специалиста по анализу финансовых решений, разработчика приложений для мобильных устройств в любой сфере деятельности (академическая, карьера в области бизнеса, экономики и финансов, карьера в сфере IT).
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="container">
+                                                    <h2 class="programs--profile-header mb-4">Контакты</h2>
+                                                    <p>
+                                                        Руководитель программы – кандидат технических наук, доцент кафедры теоретической кибернетики и прикладной математики <a href="https://www.asu.ru/search/persons/334/">Хворова Любовь Анатольевна</a>.
+                                                    </p>
+                                                    <h3>Дополнительная информация:</h3>
+                                                    <ul>
+                                                        <li class="phone-number mb-2">Телефон: <a href="tel:+73852298151">+7 (3852) 298-151</a></li>
+                                                        <li class="mail-adress">E-mail: <a href="mailto:mailto:khvorovala@gmail.com">mailto:khvorovala@gmail.com</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <!-- End  --><!-- start -->
+                                            <div class="dropdown--container" id="dropdown-container-1" index="1" tabindex="-1">
+                                                <h3 class="program--title">02.03.01 МАТЕМАТИКА И КОМПЬЮТЕРНЫЕ НАУКИ, ПРОФИЛЬ «КОМПЬЮТЕРНЫЕ НАУКИ»</h3>
+                                                <p>
+                                                    Программа нацелена на подготовку разработчиков программного обеспечения и специалистов по компьютерным наукам и анализу данных. Она ориентирована на подготовку специалистов, способных к научно-исследовательской и педагогической деятельности в области математики и IT-технологий, владеющих навыками в сфере применения инновационных математических методов и информационных технологий, с учетом требований рынка труда (как на уровне региона, так и РФ), перспектив и трендов в развитии информационных технологий.
+                                                </p>
+                                                <span><b>Программа включает: </b> </span>
+                                                <ul>
+                                                    <li>базовые дисциплины, направленные на развитие цифровой культуры, формирование умения работать в команде, проектной компетентности, коммуникативных навыков, в том числе навыков делового общения на иностранном языке, навыков саморазвития и самоорганизации;</li>
+                                                    <li>дисциплины, формирующие компетентность в области фундаментальных основ математики и информатики, основ программирования и баз данных, а также формирующие способность разработки алгоритмов, компьютерных программ, пригодных для практического применения;</li>
+                                                    <li>профессиональные дисциплины, направленные на формирование навыков научно-исследовательской деятельности по решению фундаментальных и прикладных задач в области моделирования различных процессов и использования современных IT-технологий.</li>
+                                                </ul>
+                                                <p>
+                                                    К реализации образовательной программы привлечены сотрудники региональных IT-компаний. Среди индустриальных партнеров – ведущие IT-компании, такие как ЯНДЕКС, PostgressProfessional, IntegraSourses.
+                                                </p>
+                                                <div class="programs--uch-plan">
+                                                    <a href="https://www.asu.ru/files/sveden/education/plan/Ucheb_plan_02_03_01_matematika%20i%20kompyuternye%20nauki_mokn-1-2021_2021_27.04.2021.pdf">Очная форма обучения</a>
+                                                </div>
+                                                <p>
+                                                    <b>Срок обучения</b> — 4 года очно.
+                                                </p>
+                                                <div class="programs--numbers__banner">
+                                                    <div class="programs--numbers__item">
+                                                        <span>30</span> <small>Бюджетных мест</small>
+                                                    </div>
+                                                    <div class="programs--numbers__item">
+                                                        <span>-</span> <small>Целевых мест</small>
+                                                    </div>
+                                                    <div class="programs--numbers__item">
+                                                        <span>1</span> <small>Платных мест</small>
+                                                    </div>
+                                                    <div class="programs--numbers__divider">
+                                                    </div>
+                                                    <div class="programs--numbers__item">
+                                                        <span class="negative">50 620 ₽</span> <small>в семестр в 2022-2023 г.</small>
+                                                    </div>
+                                                    <div class="programs--numbers__divider">
+                                                    </div>
+                                                    <div class="programs--numbers__item">
+                                                        <ul>
+                                                            <li>Физика / Информатика и ИКТ</li>
+                                                            <li>Математика</li>
+                                                            <li>Русский язык</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="container">
+                                                    <p>
+                                                    </p>
+                                                    <h2 class="programs--profile-header">Чему научат</h2>
+                                                    <div class="programs--content">
+                                                        <p>
+                                                            Студенты изучают фундаментальные вопросы компьютерных наук, учатся решать проблемы чистой и компьютерной математики, а также использовать фундаментальные математические знания и современные информационные технологии при решении прикладных задач в области науки и техники.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="container">
+                                                    <h2 class="programs--profile-header">Карьерная траектория</h2>
+                                                    <div class="programs--content">
+                                                        <p>
+                                                            Наша программа готовит разработчиков и исследователей, которые могут работать в разных областях и создавать продукты, меняющие к лучшему жизнь миллионов людей. После окончания программы можно работать программистом, инженером, специалистом по анализу данных и работе с BigData, исследователем и учёным, разработчиком алгоритмов и аналитиком.
+                                                        </p>
+                                                        <span><b>Наши выпускники работают: </b> </span>
+                                                        <ul>
+                                                            <li>в компаниях-производителях программного обеспечения (Яндекс, Microsoft, Google, Facebook, ABBYY, SAP, SAS, Лаборатория Касперского и т.д.);</li>
+                                                            <li>в IT-отделах и отделах по работе с большими данными крупных компаний (Билайн, МТС, Мегафон);</li>
+                                                            <li>в банковском, инвестиционном и страховом бизнесе (Сбербанк, Тинькофф Банк, Альфа-Банк, Московская биржа);</li>
+                                                            <li>в бизнес-консалтинге (PWC, McKinsey &amp; Co, Accenture, BCG);</li>
+                                                            <li>в исследовательских центрах и университетах;</li>
+                                                            <li>в IT стартапах.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="container">
+                                                    <h2 class="programs--profile-header mb-4">Контакты</h2>
+                                                    <p>
+                                                        Руководитель программы – кандидат физико-математических наук, директор ИМИТ <a href="https://www.asu.ru/search/persons/1238/">Журавлев Евгений Владимирович</a>.
+                                                    </p>
+                                                    <h3>Дополнительная информация:</h3>
+                                                    <ul>
+                                                        <li class="phone-number mb-2">Телефон: <a href="tel:+73852298137">+7 (3852) 29-81-37</a></li>
+                                                        <li class="mail-adress">E-mail: <a href="mailto:evzhuravlev@mail.ru">evzhuravlev@mail.ru</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <!-- End  --><!-- start -->
+                                            <div class="dropdown--container" id="dropdown-container-2" index="2" tabindex="-1">
+                                                <h3 class="program--title">09.03.03 ПРИКЛАДНАЯ ИНФОРМАТИКА, ПРОФИЛЬ «ИНТЕЛЛЕКТУАЛЬНЫЙ АНАЛИЗ ДАННЫХ»</h3>
+                                                <p>
+                                                    Образовательная программа представляет собой высокотехнологичную, наукоемкую инновационную сферу деятельности, использующую самые последние достижения в области информационно-коммуникационных технологий и смежных областях. Данное направление объединяет собственно информатику и те области, в которых можно применить компьютерные технологии: экономика, бухгалтерский учет, автоматизация технологических процессов, менеджмент, дизайн, юриспруденция и др. Иными словами, специалист по прикладной информатике – это всегда профессионал «два в одном».
+                                                </p>
+                                                <p>
+                                                    Основная цель программы — это подготовка бакалавров, способных решать широкий круг задач, связанных с созданием, внедрением, сопровождением и эксплуатацией информационных систем в различных предметных областях: в экономике, образовании, производстве. Данная программа имеет международную профессионально-общественную аккредитацию.
+                                                </p>
+                                                <p>
+                                                    К реализации образовательной программы привлечены сотрудники региональных IT-компаний. Среди индустриальных партнеров – ведущие IT-компании, такие как ЯНДЕКС, PostgressProfessional, IntegraSourses.
+                                                </p>
+                                                <div class="programs--uch-plan">
+                                                    <a href="https://www.asu.ru/files/sveden/education/plan/Ucheb_plan_09_03_03_prikladnaya%20informatika_iad-1-2021_2021_27.04.2021.pdf">Очная форма обучения</a>
+                                                </div>
+                                                <p>
+                                                    <b>Срок обучения</b> — 4 года очно.
+                                                </p>
+                                                <div class="programs--numbers__banner">
+                                                    <div class="programs--numbers__item">
+                                                        <span>20</span> <small>Бюджетных мест</small>
+                                                    </div>
+                                                    <div class="programs--numbers__item">
+                                                        <span>-</span> <small>Целевых мест</small>
+                                                    </div>
+                                                    <div class="programs--numbers__item">
+                                                        <span>1</span> <small>Платных мест</small>
+                                                    </div>
+                                                    <div class="programs--numbers__divider">
+                                                    </div>
+                                                    <div class="programs--numbers__item">
+                                                        <span class="negative">59 190 ₽</span> <small>в семестр в 2022-2023 г.</small>
+                                                    </div>
+                                                    <div class="programs--numbers__divider">
+                                                    </div>
+                                                    <div class="programs--numbers__item">
+                                                        <ul>
+                                                            <li>Физика / Информатика и ИКТ</li>
+                                                            <li>Математика</li>
+                                                            <li>Русский язык</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="container">
+                                                    <p>
+                                                    </p>
+                                                    <h2 class="programs--profile-header">Чему научат</h2>
+                                                    <div class="programs--content">
+                                                        <p>
+                                                            Полный набор навыков по разработке и сопровождению информационных систем; умение работать в команде. сочетание высокого качества образования, возможностей личностного роста и создания широкого набора профессиональных связей в рамках всего АГУ. Студенты получат навыки и знания в сфере разработки и применения методов анализа и обработки данных (в том числе распознавание изображений и методы искусственного интеллекта), программной инженерии, защиты информации, в прикладном моделировании и управлении инновационной деятельностью.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="container">
+                                                    <h2 class="programs--profile-header">Карьерная траектория</h2>
+                                                    <div class="programs--content">
+                                                        <p>
+                                                            Сочетание глубоких теоретических знаний, получаемых студентами из классических курсов математики и практического опыта в разработке и реализации алгоритмов для решения реальных кейсов помогают выпускникам программы успешно строить свою карьеру в ведущих ИТ-компаниях и научно-исследовательских центрах и лабораториях.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="container">
+                                                    <h2 class="programs--profile-header mb-4">Контакты</h2>
+                                                    <p>
+                                                        Руководитель программы – кандидат физико-математических наук, доцент кафедры математического анализа <a href="https://www.asu.ru/search/persons/1474/">Пономарев Игорь Викторович</a>.
+                                                    </p>
+                                                    <h3>Дополнительная информация:</h3>
+                                                    <ul>
+                                                        <li class="phone-number mb-2">Телефон: <a href="tel:+73852298137">+7 (3852) 29-81-37</a></li>
+                                                        <li class="mail-adress">E-mail: <a href="mailto:igorpon@mail.ru">igorpon@mail.ru</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <!-- End  --><!-- start -->
+                                            <div class="dropdown--container" id="dropdown-container-3" index="3" tabindex="-1">
+                                                <h3 class="program--title">09.03.04 ПРОГРАММНАЯ ИНЖЕНЕРИЯ, ПРОФИЛЬ «РАЗРАБОТКА ПРОГРАММНО-ИНФОРМАЦИОННЫХ СИСТЕМ»</h3>
+                                                <p>
+                                                    Программная инженерия – это область компьютерной науки и технологии, которая занимается построением программных систем, настолько больших и сложных, что для этого требуется участие слаженных команд разработчиков различных специальностей и квалификаций.
+                                                </p>
+                                                <p>
+                                                    Высокий уровень диверсификации программы, продвинутый уровень подготовки в области информационных технологий, математических методов, компьютерных наук, искусственного интеллекта дает нашим студентам дополнительные конкурентные преимущества в дальнейшей учебе и работе.
+                                                </p>
+                                                <p>
+                                                    К реализации образовательной программы привлечены лучшие сотрудники региональных IT-компаний. Среди индустриальных партнеров – ведущие IT-компании, такие как ЯНДЕКС, PostgressProfessional, IntegraSourses.
+                                                </p>
+                                                <div class="programs--uch-plan">
+                                                    <a href="#">Очная форма обучения</a>
+                                                </div>
+                                                <p>
+                                                    <b>Срок обучения</b> — 4 года очно.
+                                                </p>
+                                                <div class="programs--numbers__banner">
+                                                    <div class="programs--numbers__item">
+                                                        <span>40</span> <small>Бюджетных мест</small>
+                                                    </div>
+                                                    <div class="programs--numbers__item">
+                                                        <span>-</span> <small>Целевых мест</small>
+                                                    </div>
+                                                    <div class="programs--numbers__item">
+                                                        <span>1</span> <small>Платных мест</small>
+                                                    </div>
+                                                    <div class="programs--numbers__divider">
+                                                    </div>
+                                                    <div class="programs--numbers__item">
+                                                        <span class="negative">59 190</span> <small>в семестр в 2022-2023 г.</small>
+                                                    </div>
+                                                    <div class="programs--numbers__divider">
+                                                    </div>
+                                                    <div class="programs--numbers__item">
+                                                        <ul>
+                                                            <li>Физика / Информатика и ИКТ</li>
+                                                            <li>Математика</li>
+                                                            <li>Русский язык</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="container">
+                                                    <p>
+                                                    </p>
+                                                    <h2 class="programs--profile-header">Чему научат</h2>
+                                                    <div class="programs--content">
+                                                        <p>
+                                                            По завершению образовательной программы выпускник будет уметь проектировать, разрабатывать программные продукты (программное обеспечение) и проекты (проекты разработки программного продукта), программы и программную документацию; управлять процессами жизненного цикла программного продукта, использовать современные методы, средства и технологии разработки программного обеспечения; работать в коллективе, управлять командой исполнителей в процессе производства программных продуктов.
+                                                        </p>
+                                                        <p>
+                                                            К особенностям подготовки программистов относятся углубленное изучение наиболее востребованных на рынке систем и языков программирования таких как SQL, ORACLE, новейших информационных технологий: COM, DCOM, CORBA; технологий таких как ActiveX, ActiveX Data Objects (ADO), Inter Base Express (IBX); Active Server Pages (ASP). Студенты учатся проектировать и разрабатывать веб- и мобильные приложения и информационные системы для различных платформ с применением различных СУБД, методов искусственного интеллекта, виртуальной и дополненной реальности.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="container">
+                                                    <h2 class="programs--profile-header">Карьерная траектория</h2>
+                                                    <div class="programs--content">
+                                                        <p>
+                                                            Выпускник может работать в любой организации и структуре, на виртуальном предприятии или за домашним компьютером, занимаясь деятельностью, связанной с применением (необходимой разработкой, доработкой, модификацией, модернизацией и т. д.) программного обеспечения. Более того, современные Интернет-технологии позволяют программисту работать по свободному графику и выполнять заказы, приходящие из любой точки мира.
+                                                        </p>
+                                                        <span><b>Закончив данное направление, выпускник сможет работать: </b> </span>
+                                                        <ul>
+                                                            <li>инженером по тестированию ПО;</li>
+                                                            <li>прикладным программистом;</li>
+                                                            <li>системным программистом;</li>
+                                                            <li>аналитиком компьютерных систем;</li>
+                                                            <li>аналитиком компьютерного банка данных;</li>
+                                                            <li>конструктором компьютерных систем;</li>
+                                                            <li>разработчиком сетевого и коммуникационного ПО;</li>
+                                                            <li>научным работником (вычислительные системы, программирование);</li>
+                                                            <li>аналитиком компьютерных коммуникаций;</li>
+                                                            <li>WEB – программистом или WEB - дизайнером;</li>
+                                                            <li>разработчиком баз данных, экономического и бухгалтерского ПО;</li>
+                                                            <li>разработчиком интеллектуальных систем с применением искусственного интеллекта;</li>
+                                                            <li>системный аналитик;</li>
+                                                            <li>разработчиком мультимедийного ПО и компьютерных игр.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="container">
+                                                    <h2 class="programs--profile-header mb-4">Контакты</h2>
+                                                    <p>
+                                                        Руководитель программы – кандидат физико-математических наук, заведующий кафедрой информатики <a href="https://www.asu.ru/search/persons/1586/">Козлов Денис Юрьевич</a>.
+                                                    </p>
+                                                    <h3>Дополнительная информация:</h3>
+                                                    <ul>
+                                                        <li class="phone-number mb-2">Телефон: <a href="tel:+73852298152">+7 (3852) 298-152</a></li>
+                                                        <li class="mail-adress">E-mail: <a href="mailto:dyk.barnaul@gmail.com">dyk.barnaul@gmail.com</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <!-- End  --><!-- start -->
+                                            <div class="dropdown--container" id="dropdown-container-4" index="4" tabindex="-1">
+                                                <h3 class="program--title">02.03.02 ФУНДАМЕНТАЛЬНАЯ ИНФОРМАТИКА И ИНФОРМАЦИОННЫЕ ТЕХНОЛОГИИ, ПРОФИЛЬ «ПРОГРАММИРОВАНИЕ И ИНФОРМАЦИОННЫЕ ТЕХНОЛОГИИ»</h3>
+                                                <p>
+                                                    Программа ориентирована на подготовку специалистов, способных к производственно-технологической и научно-исследовательской деятельности в сфере проектирования, разработки, внедрения и эксплуатации информационных систем, управления их жизненным циклом, с учетом требований рынка труда (как на уровне региона, так и РФ), перспектив и трендов в развитии информационных технологий, а также в соответствии с профессиональными стандартами «Программист», «Системный аналитик».
+                                                </p>
+                                                <span><b>Программа включает:</b> </span>
+                                                <ul>
+                                                    <li>базовые дисциплины, направленные на развитие цифровой культуры, формирование умения работать в команде, проектной компетентности, коммуникативных навыков, в том числе навыков делового общения на иностранном языке, навыков саморазвития и самоорганизации;</li>
+                                                    <li>дисциплины, формирующие компетентность в области фундаментальных основ информатики и математики, языков программирования, алгоритмизации и баз данных, а также современных технологий проектирования информационных систем и вычислительных комплексов, в том числе систем искусственного интеллекта и технологий big data;</li>
+                                                    <li>профессиональные дисциплины, направленные на формирование практических навыков работы в концептуальном, функциональном и логическом проектировании информационных систем среднего и крупного масштаба, определения требований и проектирование программного обеспечения.</li>
+                                                </ul>
+                                                <p>
+                                                    Ценность программы заключается в практикоориентированности. К реализации образовательной программы привлечены сотрудники региональных IT-компаний. Среди индустриальных партнеров – ведущие IT-компании, такие как ЯНДЕКС, PostgressProfessional, IntegraSourses.
+                                                </p>
+                                                <div class="programs--uch-plan">
+                                                    <a href="https://www.asu.ru/files/sveden/education/plan/Ucheb_plan_02_03_02_fundamentalnaya%20informatika%20i%20informatsionnye%20tekhnologii_piit-1-2021_2021_27.04.2021.pdf">Очная форма обучения</a>
+                                                </div>
+                                                <p>
+                                                    <b>Срок обучения</b> — 4 года очно.
+                                                </p>
+                                                <div class="programs--numbers__banner">
+                                                    <div class="programs--numbers__item">
+                                                        <span>60</span> <small>Бюджетных мест</small>
+                                                    </div>
+                                                    <div class="programs--numbers__item">
+                                                        <span>-</span> <small>Целевых мест</small>
+                                                    </div>
+                                                    <div class="programs--numbers__item">
+                                                        <span>1</span> <small>Платных мест</small>
+                                                    </div>
+                                                    <div class="programs--numbers__divider">
+                                                    </div>
+                                                    <div class="programs--numbers__item">
+                                                        <span class="negative">52 500 ₽</span> <small>в семестр в 2022-2023 г.</small>
+                                                    </div>
+                                                    <div class="programs--numbers__divider">
+                                                    </div>
+                                                    <div class="programs--numbers__item">
+                                                        <ul>
+                                                            <li>Физика / Информатика и ИКТ</li>
+                                                            <li>Математика</li>
+                                                            <li>Русский язык</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="container">
+                                                    <p>
+                                                    </p>
+                                                    <h2 class="programs--profile-header">Чему научат</h2>
+                                                    <div class="programs--content">
+                                                        <p>
+                                                            Образовательная программа дает возможность знать несколько языков и технологий программирования, знакомит с методологией программной инженерии и системного анализа для построения сложных программных и информационных систем, учит проектировать, создавать, тестировать сложные виды программного обеспечения, знакомит с различными телекоммуникационными технологиями, что позволяет им быть востребованными на рынке труда ИТ-специалистов.
+                                                        </p>
+                                                        <p>
+                                                            Большое внимание в процессе обучения уделяется теоретической подготовке в области фундаментальной информатики, поскольку сложные информационные технологии связаны с разработкой новых эффективных алгоритмов и способов хранения, поиска и обработки информации, с обеспечением защиты информации в информационных системах, с цифровой обработкой изображений и звука, компьютерной графикой, с применением математических методов поддержки принятия решений, методов машинного обучения и интеллектуального анализа данных. Это предполагает глубокое знание и понимание базового математического аппарата: математического анализа, линейной алгебры, теории вероятностей и математической статистики, дискретной математики и математической логики.
+                                                        </p>
+                                                        <p>
+                                                            Студенты учатся работать с компьютерными сетями, сетевыми приложениями, разрабатывать программное и информационное обеспечение баз данных, вычислительных комплексов и автоматизированных систем для различных областей экономики и производства, решать задачи в области защиты информации.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="container">
+                                                    <h2 class="programs--profile-header">Карьерная траектория</h2>
+                                                    <div class="programs--content">
+                                                        <p>
+                                                            Выпускники программы получают комплексную сбалансированную подготовку и поэтому могут выбрать направление своей деятельности из широкого спектра – от разработки программных продуктов до научных исследований в области фундаментальной информатики и информационных технологий. С легкостью могут трудоустроиться на предприятия в отделы, связанные с автоматизацией и роботизацией управления и документооборота, сбором, обработкой и анализом данных, планированием и оптимизацией работы, проектированием и разработкой интеллектуальных информационных систем. Некоторые должности, которые могут занимать выпускники: IT-директор, менеджер IT-проектов, разработчик ПО, web-разработчик, разработчик мобильных приложений, архитектор баз данных, администратор баз данных, специалист по интеллектуальному анализу данных, по интеллектуальным системам, по машинному обучению, разработчик интерфейсов, специалист по информационной безопасности.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="container">
+                                                    <h2 class="programs--profile-header mb-4">Контакты</h2>
+                                                    <p>
+                                                        Руководитель программы – кандидат физико-математических наук, заведующий кафедрой информатики <a href="https://www.asu.ru/search/persons/1586/">Козлов Денис Юрьевич</a>.
+                                                    </p>
+                                                    <h3>Дополнительная информация:</h3>
+                                                    <ul>
+                                                        <li class="phone-number mb-2">Телефон: <a href="tel:+73852298152">+7 (3852) 298-152</a></li>
+                                                        <li class="mail-adress">E-mail: <a href="mailto:dyk.barnaul@gmail.com">dyk.barnaul@gmail.com</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <!-- End  -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="rutube-video">
+                                <iframe width="720" height="405" src="https://rutube.ru/play/embed/9140dbe930200004337e27195fcb25a2" frameborder="0" allow="clipboard-write; autoplay" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+                            </div>
+                            <section class="programs--students__section">
+                                <div class="programs--students container">
+                                    <div class="programs--students__logo">
+                                        <img alt="" src="../../files/images.215/programs/3d.png">
+                                    </div>
+                                    <div class="programs--students__content">
+                                        <h2>Меры поддержки для первокурсников</h2>
+                                        <a href="/bachelor/grants2021/">Подробнее</a>
+                                    </div>
+                                </div>
+                            </section>
+                            <style type="text/css">
+                                .program--contacts-wrapper{
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    margin-top: 2rem;
+                                }
+                                .program--contacts-button{
+                                    background-color: var(--asu-accent);
+                                    padding: 1.4rem 4rem;
+                                    font-size: 1.8rem;
+                                    letter-spacing: 0.04rem;
+                                    color: #fff;
+                                    font-weight: 600;
+                                    border-radius: 5px;
+                                    transition: 0.2s ease box-shadow;
+                                }
+                                .program--contacts-button:hover{
+                                    box-shadow: 2px 3px 15px 1px var(--asu-accent);
+                                }  </style>
+                            <section class="programs--contacts">
+                                <div class="program--contacts-wrapper">
+                                    <button class="program--contacts-button" id="showCallModalFromPrograms">Оставить заявку</button>
+                                </div>
+                            </section>
+                        </section></div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-wrapper">
+            <div class="footer-logo">
+                <img class="footer-logo_img x-img x-footer-logo" loading="lazy"
+                     src="img/main/footer/Logo_LightWhite.svg">
+            </div>
+            <div class="footer-resources">
+                <nav class="footer-nav">
+                    <ul class="footer-ul">
+                        <li>
+                            <a href="https://minobrnauki.gov.ru/" class="footer-resources_link">
+                                Министерство науки и высшего образования РФ
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://edu.ru/" class="footer-resources_link">
+                                Федеральный портал "Российское образование"
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.educaltai.ru/" class="footer-resources_link">
+                                Министерство образования и науки АК
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-contacts">
+                <span class="footer-contacts_address">г. Барнаул, пр. Ленина, 61</span>
+                <a href="mailto:prcom@asu.ru" class="footer-contacts_email">e-mail: prcom@asu.ru</a>
+                <a href="tel:+73852291222" class="footer-contacts_phone">+7 (3852) 291-222</a>
+                <a href="https://www.asu.ru" class="footer-contacts_website">Перейти на сайт АлтГУ</a>
+            </div>
+            <div class="footer-social-links">
+                <span class="footer-social-links_text">Социальные сети:</span>
+                <div class="footer-social-links_icons d-flex">
+                    <a href="https://www.youtube.com/channel/UCWhne-7vu55DDZx-A1ToYAw/">
+                        <img src="img/main/footer/youtube.svg"
+                             alt="YouTube" class="footer-social-links_icon x-img x-footer-social-icon-youtube">
+                    </a>
+                    <a href="https://vk.com/abiturientasu/">
+                        <img src="img/main/footer/vk.svg"
+                             alt="Вконтакте" class="footer-social-links_icon x-img x-footer-social-icon-vk">
+                    </a>
+                    <a href="https://t.me/abiturient22asu">
+                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                             style="width: 29px; background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNTAiIGhlaWdodD0iNTAiCnZpZXdCb3g9IjAgMCA1MCA1MCIKc3R5bGU9IiBmaWxsOiNmZmZmZmY7Ij48cGF0aCBkPSJNNDYuMTM3LDYuNTUyYy0wLjc1LTAuNjM2LTEuOTI4LTAuNzI3LTMuMTQ2LTAuMjM4bC0wLjAwMiwwQzQxLjcwOCw2LjgyOCw2LjcyOCwyMS44MzIsNS4zMDQsMjIuNDQ1CWMtMC4yNTksMC4wOS0yLjUyMSwwLjkzNC0yLjI4OCwyLjgxNGMwLjIwOCwxLjY5NSwyLjAyNiwyLjM5NywyLjI0OCwyLjQ3OGw4Ljg5MywzLjA0NWMwLjU5LDEuOTY0LDIuNzY1LDkuMjEsMy4yNDYsMTAuNzU4CWMwLjMsMC45NjUsMC43ODksMi4yMzMsMS42NDYsMi40OTRjMC43NTIsMC4yOSwxLjUsMC4wMjUsMS45ODQtMC4zNTVsNS40MzctNS4wNDNsOC43NzcsNi44NDVsMC4yMDksMC4xMjUJYzAuNTk2LDAuMjY0LDEuMTY3LDAuMzk2LDEuNzEyLDAuMzk2YzAuNDIxLDAsMC44MjUtMC4wNzksMS4yMTEtMC4yMzdjMS4zMTUtMC41NCwxLjg0MS0xLjc5MywxLjg5Ni0xLjkzNWw2LjU1Ni0zNC4wNzcJQzQ3LjIzMSw3LjkzMyw0Ni42NzUsNy4wMDcsNDYuMTM3LDYuNTUyeiBNMjIsMzJsLTMsOGwtMy0xMGwyMy0xN0wyMiwzMnoiPjwvcGF0aD48L3N2Zz4=')" alt="Telegram" class="footer-social-links_icon x-img x-footer-social-icon-telegram"></a>
+                    <a href="https://zen.yandex.ru/id/622f05aae171d9758b9e2612">
+                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                             style="width: 29px; background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNTAiIGhlaWdodD0iNTAiCnZpZXdCb3g9IjAgMCA1MCA1MCIKc3R5bGU9IiBmaWxsOiNmZmZmZmY7Ij48cGF0aCBkPSJNNDYuODk0IDIzLjk4NmMuMDA0IDAgLjAwNyAwIC4wMTEgMCAuMjc5IDAgLjU0NS0uMTE3LjczNC0uMzIyLjE5Mi0uMjA4LjI4Ny0uNDg3LjI2Mi0uNzY5QzQ2Ljg5NyAxMS44NTIgMzguMTU0IDMuMTA2IDI3LjExIDIuMWMtLjI4LS4wMjItLjU2Mi4wNjktLjc3LjI2Mi0uMjA4LjE5Mi0uMzI0LjQ2My0uMzIxLjc0NkMyNi4xOTMgMTcuNzg0IDI4LjEyOSAyMy43ODEgNDYuODk0IDIzLjk4NnpNNDYuODk0IDI2LjAxNGMtMTguNzY1LjIwNS0yMC43IDYuMjAyLTIwLjg3NCAyMC44NzgtLjAwMy4yODMuMTEzLjU1NC4zMjEuNzQ2LjE4Ni4xNzEuNDI5LjI2Ni42NzkuMjY2LjAzIDAgLjA2MS0uMDAxLjA5MS0uMDA0IDExLjA0NC0xLjAwNiAxOS43ODctOS43NTEgMjAuNzktMjAuNzk1LjAyNS0uMjgyLS4wNjktLjU2MS0uMjYyLS43NjlDNDcuNDQ2IDI2LjEyOCA0Ny4xNzcgMjYuMDI1IDQ2Ljg5NCAyNi4wMTR6TTIyLjgyMyAyLjEwNUMxMS44MTQgMy4xNCAzLjA5OSAxMS44ODQgMi4xIDIyLjg5N2MtLjAyNS4yODIuMDY5LjU2MS4yNjIuNzY5LjE4OS4yMDUuNDU2LjMyMS43MzQuMzIxLjAwNCAwIC4wMDggMCAuMDEyIDAgMTguNzAzLS4yMTUgMjAuNjM0LTYuMjA5IDIwLjgxLTIwLjg3NS4wMDMtLjI4My0uMTE0LS41NTUtLjMyMi0uNzQ3QzIzLjM4NiAyLjE3MyAyMy4xMDUgMi4wNzkgMjIuODIzIDIuMTA1ek0zLjEwNyAyNi4wMTNjLS4zMTEtLjAzNS0uNTU1LjExMy0uNzQ2LjMyMS0uMTkyLjIwOC0uMjg3LjQ4Ny0uMjYyLjc2OS45OTkgMTEuMDEzIDkuNzE1IDE5Ljc1NyAyMC43MjQgMjAuNzkyLjAzMS4wMDMuMDYzLjAwNC4wOTQuMDA0LjI1IDAgLjQ5Mi0uMDk0LjY3OC0uMjY1LjIwOC0uMTkyLjMyNS0uNDY0LjMyMi0uNzQ3QzIzLjc0MSAzMi4yMjIgMjEuODExIDI2LjIyOCAzLjEwNyAyNi4wMTN6Ij48L3BhdGg+PC9zdmc+') " alt="Zen Yandex" class="footer-social-links_icon x-img x-footer-social-icon-zen"></a>
+                </div>
+                <div class="footer-social-links_hashtag">
+                    <img class="x-img x-footer-hashtag"
+                         src="img/main/footer/hashtag.svg"
+                         alt="Хэштег">
+                    <div class="footer-social-links_hashtag_text d-flex flex-column">
+                        <span>Амбициозность</span>
+                        <span>Глобальность</span>
+                        <span>Успех</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-asu-name-text">
+                <span class="footer-asu text-center text-md-left mt-0">
+                    Алтайский государственный университет. 2023
+                </span>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="js/lottie-player.js"></script>
+<script src="owl/owl.carousel.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+
+</html>
