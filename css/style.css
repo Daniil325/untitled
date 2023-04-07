@@ -596,8 +596,18 @@ table.table-orange caption {
 
 }
 
+.calendar-section_content{
+    min-height: 240px;
+    padding: 60px 0px 45px 0px;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
 .calendars{
     display: flex;
+    max-width: max-content;
+    gap: 30px;
 }
 
 .calendar-section-header a{
@@ -608,12 +618,10 @@ table.table-orange caption {
 .calendar-container{
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .calendar-item{
-    flex: 0 0 33.333333%;
-    max-width: 33.333333333%;
+    width: 100%;
 }
 
 .calendar-item-container{
@@ -850,6 +858,82 @@ table.table-orange caption {
 
 .hide-class{
     display: none;
+}
+
+.advantages-section {
+    padding-bottom: 100px;
+}
+
+.advantages-header{
+    text-align: center;
+    font-weight: 600;
+    font-size: 34px;
+    color: var(--asu-dark-blue);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.advantages-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.advantages-section .advantages-container {
+    min-height: 60vh;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../img/main/advantages/bg.svg);
+}
+
+.advantages-container .advantages-item {
+    text-align: center;
+    padding: 15px 30px;
+}
+
+.advantages-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.advantages-item a{
+    text-decoration: none;
+}
+
+.advantages-container .advantages-item:hover a {
+    text-decoration: none;
+}
+
+.advantages-item .advantages-item_anim {
+    -webkit-box-shadow: 12px 13px 6px 0px rgba(0, 0, 0, 0);
+    box-shadow: 12px 13px 6px 0px rgba(0, 0, 0, 0);
+    -webkit-transition: -webkit-box-shadow 0.4s ease;
+    transition: -webkit-box-shadow 0.4s ease;
+    -o-transition: box-shadow 0.4s ease;
+    transition: box-shadow 0.4s ease;
+    transition: box-shadow 0.4s ease, -webkit-box-shadow 0.4s ease;
+    width: 100%;
+    height: 300px;
+    aspect-ratio: 1 / 1;
+}
+
+.advantages-item:hover .advantages-item_anim {
+    -webkit-box-shadow: 12px 13px 6px 0px rgba(0, 0, 0, 0.16);
+    box-shadow: 12px 13px 6px 0px rgba(0, 0, 0, 0.16);
+}
+
+.advantages-container .advantages-item .advantages-item_text {
+    color: var(--asu-adv-blue);
+    font-weight: 600;
+    font-size: 15px;
+    -webkit-transform: translateY(-60px);
+    -ms-transform: translateY(-60px);
+    transform: translateY(-60px);
 }
 
 /* плитки институтов */
@@ -2429,16 +2513,16 @@ div.youtube-play-btn {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .footer-resources{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .footer-nav{
@@ -2467,8 +2551,8 @@ div.youtube-play-btn {
     justify-content: center;
     align-items: center;
     color: #ffffff;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .footer-contacts .footer-contacts_address {
@@ -2507,12 +2591,12 @@ div.youtube-play-btn {
 .footer-social-links{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .footer-social-links_text{
+    text-align: left;
     font-size: 12px;
     color: #ffffff;
     margin-bottom: 10px;
@@ -2530,6 +2614,12 @@ div.youtube-play-btn {
     display: flex;
     flex-direction: column;
     color: #ffffff;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.footer-social-links_icon{
+    margin-right: 15px;
 }
 
 .footer-asu-name-text{
@@ -2539,10 +2629,12 @@ div.youtube-play-btn {
     white-space: nowrap;
     margin-top: 40px;
     color: #ffffff;
+    flex: 0;
 }
 
 .second-page__container{
     display: flex;
+    gap: 30px;
 }
 
 .news__container{
@@ -2609,6 +2701,45 @@ div.youtube-play-btn {
     border-radius: 5px 5px 0px 0px;
 }
 
+/* календарь для страницы второго уровня */
+.look-calendar {
+    width: 220px;
+    border: 1px solid #c0c0c0;
+    padding: 6px;
+    margin: 0 auto;
+}
+#calendar {
+    width: 100%;
+    line-height: 1.2em;
+    font-size: 15px;
+    text-align: center;
+}
+#calendar tr.dn td {
+    font-size: 15px;
+}
+#calendar thead tr:last-child {
+    font-size: small;
+    color: #555555;
+}
+#calendar thead tr:nth-child(1) td:nth-child(2) {
+    color: #323232;
+}
+#calendar thead tr:nth-child(1) td:nth-child(1):hover,
+#calendar thead tr:nth-child(1) td:nth-child(3):hover {
+    cursor: pointer;
+}
+#calendar tbody td {
+    color: #2c567a;
+}
+#calendar tbody td:nth-child(n+6),
+#calendar .holiday {
+    color: #e78c5c;
+}
+#calendar tbody td.today {
+    background: #dc0000;
+    color: #fff;
+}
+
 /* страница объявлений */
 .announces__container{
     display: grid;
@@ -2617,18 +2748,6 @@ div.youtube-play-btn {
     padding: 2rem 0;
     list-style-type: none;
     flex: 1;
-}
-
-.announces-news-item-link{
-    z-index: 1;
-}
-
-.announces-news-item-info{
-    z-index: 2;
-}
-
-.announces-news-item-signature{
-    z-index: 3;
 }
 
 .announces-news-item-link{

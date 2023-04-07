@@ -413,7 +413,6 @@
                 'Ноябрь',
                 'Декабрь',
             ];
-        console.log(calendar);
         let offset = 0;
         if (DNfirst != 0) {
             for (var i = 1; i < DNfirst; i++) {
@@ -480,9 +479,6 @@
             }
         }
         for (var i = DNlast; i < 7; i++) calendar += '<td>&nbsp;';
-
-        console.log(document.querySelector('#' + id + ' tbody'));
-
         document.querySelector('#' + id + ' tbody').innerHTML = calendar;
         document.querySelector('#' + id + ' thead td:nth-child(2)').innerHTML =
             month[D.getMonth()] + ' ' + D.getFullYear();
