@@ -13,9 +13,9 @@
         }
         for (var i = 1; i <= Dlast; i++) {
             if (i == new Date().getDate() && D.getFullYear() == new Date().getFullYear() && D.getMonth() == new Date().getMonth()) {
-                calendar += '<td class="today">' + i;
+                calendar += '<td class="today day">' + i;
             } else {
-                calendar += '<td>' + i;
+                calendar += '<td class="day">' + i;
             }
             if (new Date(D.getFullYear(), D.getMonth(), i).getDay() == 0) {
                 calendar += '<tr>';
@@ -34,10 +34,12 @@
     calendar("calendar", new Date().getFullYear(), new Date().getMonth());
     // переключатель минус месяц
     document.querySelector('#calendar thead tr:nth-child(1) td:nth-child(1)').onclick = function() {
-        calendar("calendar", document.querySelector('#calendar thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar thead td:nth-child(2)').dataset.month) - 1);
+        calendar("calendar", document.querySelector('#calendar thead td:nth-child(2)').dataset.year,
+            parseFloat(document.querySelector('#calendar thead td:nth-child(2)').dataset.month) - 1);
     }
     // переключатель плюс месяц
     document.querySelector('#calendar thead tr:nth-child(1) td:nth-child(3)').onclick = function() {
-        calendar("calendar", document.querySelector('#calendar thead td:nth-child(2)').dataset.year, parseFloat(document.querySelector('#calendar thead td:nth-child(2)').dataset.month) + 1);
+        calendar("calendar", document.querySelector('#calendar thead td:nth-child(2)').dataset.year,
+            parseFloat(document.querySelector('#calendar thead td:nth-child(2)').dataset.month) + 1);
     }
 }())
