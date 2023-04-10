@@ -304,29 +304,166 @@
                 </div>
             </div>
 
-            <div class="col template__main-content">
-                <h1 class="content-header content-header_r">Бакалавриат и специалитет</h1>
+            <div class="content">
+                <h1 class="page-title">Обратная связь</h1>
 
-                <div class="template__content-paragraph content">
                     <p>
-                        АГУ предлагает более 60 <a href="https://abiturient.asu.ru/obrprog/">
-                        образовательных программ бакалавриата и специалитета</a>
-                        гуманитарных и естественнонаучных направлений подготовки.
-                        Здесь можно получить образование мирового уровня, чтобы построить карьеру
-                        абсолютно в любой отрасли современного мира.
+                        Уважаемые абитуриенты!
                     </p>
                     <p>
-                        Интересно познакомиться со всеми направлениями подготовки АГУ? Переходите в разделы Институтов.
-                        Здесь собрана вся информация об образовательных программах, доступных бюджетных и внебюджетных
-                        местах, необходимых экзаменах для поступления.
+                        Вы можете задать любой интересующий вас <strong>вопрос о поступлении в наш вуз</strong>, мы постараемся дать на него информативный, исчерпывающий ответ. Но для этого постарайтесь четко сформулировать его, уточнить конкретные детали. <strong>Не забудьте указать ваши Ф.И.О.</strong>
                     </p>
                     <p>
-                        Помните, в 2023 году абитуриент вправе подать заявление одновременно не более чем в 5 вузов и
-                        не более чем на 5 направлений подготовки/специальностей.<br>
-                        Перед поступлением важно ознакомиться с правилами приема в Алтайский государственный университет.
+                        На данный момент на сайте доступны списки поступающих, которые выстроены по рейтингу. Вы можете найти себя по номеру личного дела или СНИЛС. Как узнать номер личного дела?
                     </p>
+                    <ul class="list--alt">
+                        <li>Если Вы подали документы лично, то номер личного дела указан в расписке о приеме документов.</li>
+                        <li>Если Вы подали документы через личный кабинет абитуриента и НЕ указывали номер СНИЛС, то номер личного дела доступен Вам в поле «уникальный идентификационный код».</li>
+                        <li>Если Вы подали документы через личный кабинет абитуриента и указывали СНИЛС, то номер личного дела необходимо посмотреть в разделе «Заявление», во вкладке «Направления подготовки», выбрать «Печать заявления» и скачать его (сверху будет указан номер личного дела).</li>
+                        <li>Если Вы подали документы через&nbsp; «Госуслуги» или по электронной почте, то номер личного дела Вы можете узнать в приемной комиссии, позвонив по номеру 8-3852-29-12-22.</li>
+                    </ul>
+                <h2 class="box section_title">Форма обратной связи</h2>
+
+                <div id="_f7b83a9a82f3a06f__msg_action_ok" class="alert alert__success g-hidden">
+                    Ваше сообщение успешно отправлено.</div>
+
+                <div id="_f7b83a9a82f3a06f__msg_action_errors" class="errors g-hidden">
+                    <h3 class="errors-title">Ошибка</h3>
+                    <ol class="errors-list">
+                        <li class="errors-list-item g-hidden" data-msg_key="querist_name_is_empty">Поле <strong>"Ваше имя"</strong> не может быть пустым</li>
+                        <li class="errors-list-item g-hidden" data-msg_key="querist_email_is_empty">Поле <strong>"Ваш e-mail"</strong> не может быть пустым</li>
+                        <li class="errors-list-item g-hidden" data-msg_key="querist_email_isnt_valid">Поле <strong>"Ваш e-mail"</strong> задано не верно</li>
+                        <li class="errors-list-item g-hidden" data-msg_key="query_text_is_empty">Поле <strong>"Текст сообщения"</strong> не может быть пустым</li>
+                        <li class="errors-list-item g-hidden" data-msg_key="captcha_code_isnt_valid">Вы ввели неверный код подтверждения</li>
+                    </ol>
                 </div>
 
+                <form id="_f7b83a9a82f3a06f__feeds_form" class="box form">
+                    <fieldset class="fieldset">
+                        <div class="fieldset-row">
+                            <label class="fieldset-label label--marked">Ваше имя</label>
+                            <div class="fieldset-input"><input class="input" data-name="querist_name" type="text" name="querist_name"></div>
+                        </div>
+                        <div class="fieldset-row">
+                            <label class="fieldset-label label--marked">Ваш e-mail</label>
+                            <div class="fieldset-input"><input class="input" data-name="querist_email" type="text" name="querist_email"></div>
+                        </div>
+                        <div class="fieldset-row">
+                            <label class="fieldset-label">Откуда вы</label>
+                            <div class="fieldset-input"><input class="input" data-name="querist_address" type="text" name="querist_address"></div>
+                        </div>
+                        <div class="fieldset-row">
+                            <label class="fieldset-label label--marked">Текст сообщения</label>
+                            <div class="fieldset-input"><textarea class="textarea" data-name="query_text" name="query_text" style="height: 200px;"></textarea></div>
+                        </div>
+                        <div class="fieldset-row">
+                            <label class="fieldset-label">Код подтверждения</label>
+                            <div class="fieldset-input captcha">
+
+                                <img class="captcha-img" data-url="/captcha/?cid=_f7b83a9a82f3a06f_" src="/captcha/?cid=_f7b83a9a82f3a06f_">
+                                <input class="captcha-input" data-name="captcha_code" type="text" name="captcha_code" value="">
+
+                                <button class="captcha-btn" id="_9570678af29edce4__reload_button" title="обновить код"></button>
+
+                                <script type="text/javascript">
+                                    // <![CDATA[
+
+                                    (function($) {
+                                        'use strict';
+
+                                        $(function() {
+                                            $('#_9570678af29edce4__reload_button').on('click', function() {
+                                                const $captchaImg = $('#_f7b83a9a82f3a06f__feeds_form .captcha > img');
+                                                const $captchaInput = $('#_f7b83a9a82f3a06f__feeds_form .captcha > input');
+
+                                                $captchaImg.attr('src', $captchaImg.attr('data-url') + '&' + Math.random());
+                                                $captchaInput.val('');
+
+                                                return false;
+                                            });
+                                        });
+                                    })(jQuery);
+
+                                    // ]]>
+                                </script>
+                                <span class="captcha-note">Введите код в точности так, как вы его видите.</span>
+                            </div>
+                        </div>
+                        <div class="fieldset-warning">
+                            Символом * отмечены обязательные для заполнения поля
+                        </div>
+                        <div class="fieldset-row">
+                            <label class="fieldset-label"></label>
+                            <div class="fieldset-input"><button class="btn" type="submit">отправить</button></div>
+                        </div>
+                    </fieldset>
+                </form>
+
+                <script type="text/javascript">
+                    // <![CDATA[
+
+                    $(function() {
+                        var $form = $('#_f7b83a9a82f3a06f__feeds_form');
+                        var $errors = $('#_f7b83a9a82f3a06f__msg_action_errors');
+
+                        function submit() {
+                            $.post('/ajax/', {
+                                    component: 'feeds',
+                                    controller: 'index_ajax',
+                                    action: 'add',
+                                    data: {
+                                        querist_name: $form.find('input[name="querist_name"]').val(),
+                                        querist_email: $form.find('input[name="querist_email"]').val(),
+                                        querist_address: $form.find('input[name="querist_address"]').val(),
+                                        query_text: $form.find('textarea[name="query_text"]').val(),
+                                        captcha_code: $form.find('input[name="captcha_code"]').val(),
+                                        captcha_id: '_f7b83a9a82f3a06f_',
+                                    }},
+                                function(data) {
+                                    if (data.isValid) {
+                                        $errors.addClass('g-hidden').find('li').addClass('g-hidden');
+
+                                        $('#_f7b83a9a82f3a06f__msg_action_ok').removeClass('g-hidden');
+                                        $('#_f7b83a9a82f3a06f__feeds_form').remove();
+                                    } else {
+                                        $('#_f7b83a9a82f3a06f__msg_action_ok').addClass('g-hidden');
+                                        $errors.find('li').addClass('g-hidden');
+
+                                        var $error = {},
+                                            validResults = data.validResults,
+                                            msgKey = '';
+
+                                        for (var fieldName in validResults) {
+                                            $error = $errors.find('li[data-msg_key="' + validResults[fieldName].msg_key + '"]');
+
+                                            if (!validResults[fieldName].is_valid) {
+                                                $error.removeClass('g-hidden');
+                                            }
+                                        }
+
+                                        $errors.removeClass('g-hidden');
+                                        $('#_f7b83a9a82f3a06f__feeds_form .captcha-btn').trigger('click'); // reload captcha
+                                        $errors[0].scrollIntoView();
+                                    }
+                                }, 'json'
+                            );
+                        }
+
+                        $('#_f7b83a9a82f3a06f__feeds_form').on('submit', function() {
+                            return false;
+                        });
+
+                        $('#_f7b83a9a82f3a06f__feeds_form button[type="submit"]').on('click', function() {
+                            if ($(this).attr('data-disabled')) {return false;}
+                            submit();
+                            return false;
+                        });
+
+                        $('#_f7b83a9a82f3a06f__msg_action_errors .msg_action_errors_list li').wrapInner('<span />')
+                    });
+
+                    // ]]>
+                </script>
             </div>
         </div>
     </div>
@@ -403,10 +540,10 @@
         </div>
     </div>
 </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script src="js/lottie-player.js"></script>
-    <script src="owl/owl.carousel.min.js"></script>
-    <script src="js/script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="js/lottie-player.js"></script>
+<script src="owl/owl.carousel.min.js"></script>
+<script src="js/script.js"></script>
 
 </body>
 </html>
