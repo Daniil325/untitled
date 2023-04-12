@@ -75,17 +75,45 @@
             <div class="header_navigation_social_links">
 
             </div>
-            <div class="header_navigation_search">
-                <form class="search" action="/search/">
-                    <img class="x-img x-search-icon"
-                         src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
-                    <input id="header-search" type="text" name="query" placeholder="Поиск по сайту">
-                </form>
+            <!-- поиск по сайту -->
+            <div class="header__search">
+                <button class="header-search_btn" id="open-search-form"></button>
+                <span class="header-search_span" id="open-search-form-2">поиск по сайту</span>
             </div>
+
         </div>
     </div>
 
     <div class="wrapper">
+        <div class="header-search_block" id="search-form">
+            <h2 class="header-search_title">Поиск</h2>
+            <form class="header-search_form" id="_9caf682e5d98dc3f__form" method="get" action="/search/">
+                <div class="header-search_input-label">
+                    <fieldset class="header-search-options">
+                        <div class="header-search-div">
+                            <input class="header-search-query-input" type="text" placeholder="поиск" name="query">
+                            <button class="header-search_btn" disabled=""></button>
+                        </div>
+
+                        <span class="header-search-options-title">искать по:</span>
+                        <label class="header-search-options-item header-search-options-item__current">
+                            <input class="header-search-options-item-radio" type="radio" name="search_in" value="site" checked="checked" data-form-action="/search/">
+                            <span class="header-search-options-item-title">сайту</span>
+                        </label>
+
+                        <label class="header-search-options-item ">
+                            <input class="header-search-options-item-radio" type="radio" name="search_in" value="news" data-form-action="/search/news/">
+                            <span class="header-search-options-item-title">новостям</span>
+                        </label>
+
+                        <label class="header-search-options-item ">
+                            <input class="header-search-options-item-radio" type="radio" name="search_in" value="documents" data-form-action="/search/documents/">
+                            <span class="header-search-options-item-title">документам</span>
+                        </label>
+                    </fieldset>
+                </div>
+            </form>
+        </div>
         <div class="header_container-links">
             <div class="header_container-logo">
                 <a class="header_container-logo-mainlink" href="">
@@ -138,10 +166,10 @@
 
         </div>
     </div>
-
 </header>
 
 <main>
+
     <div class="main-buttons-container">
         <div class="dropdown closed main-button">
             <h2 class="icon">

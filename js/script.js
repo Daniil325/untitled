@@ -130,10 +130,6 @@
             },
         });
     });
-
-    // YOUTUBE VIDEO PLACEHOLDER
-
-
     // tabs
 
     let $tabs = $("[data-tab-name]");
@@ -157,19 +153,22 @@
     });
 })();
 
+// видео на главной странице
 (function (){
     let play_img = document.getElementById("playBtn");
     let youtubeImg = document.getElementById("youtubeImg");
-    play_img.addEventListener("click", function(){
-       let youtubeFrame = document.getElementById("youtubeIframe");
-        youtubeFrame.src = "https://www.youtube.com/embed/w9ADQI2_sjw?autoplay=1&color" +
-            "=white&autohide=2&modestbranding=1&border=0&wmode=opaque&enablejsapi=1&showinfo=0&rel=0";
-        youtubeFrame.setAttribute("frameborder", "0");
-        youtubeFrame.setAttribute("class", "youtube-iframe");
-        youtubeFrame.setAttribute("loading", "lazy");
-        play_img.remove();
-        youtubeImg.remove();
-    })
+    if (play_img != null){
+        play_img.addEventListener("click", function(){
+            let youtubeFrame = document.getElementById("youtubeIframe");
+            youtubeFrame.src = "https://www.youtube.com/embed/w9ADQI2_sjw?autoplay=1&color" +
+                "=white&autohide=2&modestbranding=1&border=0&wmode=opaque&enablejsapi=1&showinfo=0&rel=0";
+            youtubeFrame.setAttribute("frameborder", "0");
+            youtubeFrame.setAttribute("class", "youtube-iframe");
+            youtubeFrame.setAttribute("loading", "lazy");
+            play_img.remove();
+            youtubeImg.remove();
+        })
+    }
 })();
 
 (function (){
@@ -184,6 +183,36 @@
         })
     })
 })();
+
+// countdown script
+document.addEventListener("DOMContentLoaded", function () {
+    let tillDate = document.getElementById("countdown");
+    if (tillDate && tillDate.dataset.countdownDate) {
+        tillDate = new Date(tillDate.dataset.countdownDate.replaceAll('-', '/')).getTime();
+        let daysWrapper = document.getElementById("countdown-days");
+        let hoursWrapper = document.getElementById("countdown-hours");
+        let minutesWrapper = document.getElementById("countdown-minutes");
+        let secsWrapper = document.getElementById("countdown-secs");
+
+        var timer = setInterval(function(){
+            var distance = tillDate - new Date().getTime();
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            daysWrapper.innerHTML = days + "<br />дн";
+            hoursWrapper.innerHTML = hours + "<br />ч";
+            minutesWrapper.innerHTML = minutes + "<br />мин";
+            secsWrapper.innerHTML = seconds + "<br />сек";
+            if (distance < 0) {
+                clearInterval(timer);
+                document.querySelector(".countdown-items").innerHTML =
+                    "Приемная комиссия ужа стартовала!";
+            }
+        }, 1000);
+    }
+});
+
 
 //Modal script
 /*(function () {
