@@ -1,4 +1,4 @@
-
+//burger
 (function(){
     const menu = document.querySelector('.menuBurger');
     const menuItems = document.querySelectorAll('.menuItem');
@@ -171,6 +171,7 @@
     }
 })();
 
+// открытие и закрытие блока поиска
 (function (){
     document.addEventListener('DOMContentLoaded', (e) =>{
         document.getElementById('open-search-form').addEventListener('click', (e) =>{

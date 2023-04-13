@@ -6,7 +6,7 @@
     font-family: "Montserrat", sans-serif;
 }
 
-html {
+html, body {
     overflow-x: hidden;
     color: #444444;
     height: 100%;
@@ -527,7 +527,17 @@ table.table-orange caption {
     }
 
     .header_navigation-ul{
-        justify-content: start;
+        margin: auto;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .header_navigation-ul-item:nth-child(3){
+        margin-right: 0;
+    }
+
+    .header-search_btn{
+        margin-top: 10px;
     }
 
     .phone-wrapper-link{
@@ -594,14 +604,20 @@ table.table-orange caption {
     text-decoration: none;
 }
 
-@media screen and (min-width: 992px){
+@media screen and (min-width: 991px){
     .header_navigation-ul li:last-child{
         display: none;
         margin-left: 30px;
         text-decoration: none;
     }
 
-
+    .header_navigation_social_links .navigation-links-socials{
+        display: none;
+    }
+    .header_navigation_social_links .header__search{
+        display: flex;
+        flex-direction: row;
+    }
 }
 
 .header_navigation-ul-item .links-phone .phone-wrapper .phone-wrapper-link{
@@ -610,6 +626,29 @@ table.table-orange caption {
 }
 
 @media screen and (max-width: 991px){
+    .header_wrapper{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .header_navigation{
+        margin-right: unset;
+        margin-bottom: 10px;
+    }
+
+    .header_navigation_social_links{
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .header__search{
+        display: block;
+        align-items: center;
+    }
+
     .links-phone{
         display: flex;
     }
@@ -620,6 +659,14 @@ table.table-orange caption {
 
     .call-link{
           margin-right: 30px;
+    }
+
+    .header-search_span{
+        display: none;
+    }
+
+    .header_navigation-ul-item:last-child{
+        margin-right: unset;
     }
 }
 
@@ -987,7 +1034,6 @@ table.table-orange caption {
         flex: 0 0 100%;
     }
     .calendar--buttons {
-        margin-top: 16px;
         width: 100%;
     }
 }
@@ -2038,7 +2084,7 @@ div.youtube-play-btn {
 
 .announces-section .announces-section_content {
     min-height: 240px;
-    padding: 60px 0px 45px 0px;
+    padding: 30px 0px 0px 0px;
 
     max-width: 1200px;
     justify-content: center;
@@ -2153,12 +2199,13 @@ div.youtube-play-btn {
     text-align: left !important;
 }
 
-.announces-container .announces-item .announces-item_content p {
+.announces-container .announces-item .announces-item_content a{
     font-size: 11px;
     font-weight: 400;
     line-height: 14px;
     color: #ffffff;
     margin-bottom: 0;
+    text-decoration: none;
 }
 
 .announces-container .announces-item .announces-item_date {
@@ -2327,6 +2374,12 @@ div.youtube-play-btn {
     text-transform: uppercase;
 }
 
+@media screen and (max-width: 400px){
+    .video-section-header{
+        font-size: 28px;
+    }
+}
+
 .video-section .video-container .video-player_wrapper::after {
     content: "";
     z-index: -1;
@@ -2431,7 +2484,6 @@ div.youtube-play-btn {
 }
 
 /* Red sidebar */
-
 .sidebar.sidebar_r .sidebar-menu .sidebar-menu_item {
     color: var(--asu-red);
     font-weight: 700;
@@ -2535,7 +2587,6 @@ div.youtube-play-btn {
     border: 2px solid;
     border-top: none;
 }
-
 /* Header colors */
 
 .content-header_r {
@@ -2685,6 +2736,11 @@ div.youtube-play-btn {
 .content .bar h3 {
     color: #fff;
     padding-bottom: 10px;
+}
+
+.signature{
+    color: var(--asu-green);
+    font-style: italic;
 }
 
 .content .bar > h3::after {
@@ -3012,9 +3068,9 @@ div.youtube-play-btn {
     justify-content: center;
     font-size: 10px;
     white-space: nowrap;
-    margin-top: 40px;
     color: #ffffff;
     flex: 0;
+    margin-top: 40px;
 }
 
 @media screen and (max-width: 1200px){
@@ -3122,6 +3178,7 @@ div.youtube-play-btn {
     border: 1px solid #c0c0c0;
     padding: 6px;
     margin: 0 auto;
+    background: rgba(255, 142, 0, 0.05);
 }
 
 #divCal {
@@ -3155,6 +3212,15 @@ div.youtube-play-btn {
 
 #divCal tbody td {
     color: #2c567a;
+}
+
+.second-calendar__td{
+    background: var(--asu-orange);
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .day{
@@ -3192,6 +3258,7 @@ div.youtube-play-btn {
 .btnPrev, .btnNext{
     font-size: 35px;
     font-weight: 100;
+    cursor: pointer;
 }
 
 .today {
@@ -4790,6 +4857,12 @@ input[type="submit"],
     display: flex;
 }
 
+@media screen and (max-width: 991px){
+    .header__search{
+        align-items: center;
+    }
+}
+
 .header-search_btn {
     display: block;
     border: none;
@@ -5357,4 +5430,183 @@ input[type="submit"],
 
 .programs--students__logo {
     padding-left: 50px;
+}
+
+/* calculator */
+#abit-calc {
+    --calc-color--red: #ff1552;
+    --calc-color--orange: #ff8e00;
+    --calc-color--green: #97bd00;
+    --calc-color--green-dark: #7e9500;
+    --calc-color--blue: #008ad5;
+    text-align: left;
+    line-height: 1.5rem;
+}
+#abit-calc ul {
+    padding: 0;
+    margin:24px 0;
+    columns: 2;
+    text-align: left;
+}
+#abit-calc ul li {
+    list-style: none;
+    break-inside: avoid;
+}
+
+#abit-calc label {
+    cursor: pointer;
+    padding-left: 42px;
+    font-size: 0.95rem;
+    line-height: 1.25rem;
+}
+#abit-calc li label::before {
+    content:"";
+    display:inline-block;
+    width: 8px;
+    height: 1rem;
+    vertical-align: middle;
+    background-color: var(--calc-color--red);
+    margin-right: 12px;
+    margin-left: -42px;
+}
+#abit-calc li[data-group="3"] label::before {background-color: var(--calc-color--orange);}
+#abit-calc li[data-group="2"] label::before {background-color: var(--calc-color--green);}
+#abit-calc li[data-group="1"] label::before {background-color: var(--calc-color--blue);}
+
+#abit-calc label:hover {
+    color: dodgerblue;
+}
+#abit-calc input[type="checkbox"] {
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-left: 0;
+}
+#abit-calc label input + span {
+    font-weight: 500;
+}
+#abit-calc label span:last-child {
+    display: block;
+    font-size: 0.75em;
+    color: #444;
+}
+
+#abit-calc input[type="button"] {
+    vertical-align: middle;
+    border: none;
+    border-radius: 4px;
+    padding: 0 24px;
+    height: 32px;
+    line-height: 32px;
+    background-color: var(--calc-color--green);
+    color: #fff;
+    cursor: pointer;
+    -webkit-transition: background-color .25s, color .25s;
+    transition: background-color .25s, color .25s;
+    margin-right: 24px;
+    font-size: 0.8rem;
+}
+#abit-calc input[type="button"]:not(:disabled):hover,
+#abit-calc input[type="button"]:not(:disabled):focus {
+    background-color: var(--calc-color--green-dark);
+}
+#abit-calc input[type="button"]:disabled {
+    opacity: 0.25;
+    cursor: default;
+    background-color: var(--calc-color--orange);
+}
+
+#abit-calc ul + div + div > div:first-child {
+    margin: 24px 0;
+}
+#abit-calc ul + div + div > div:first-child span {
+    font-weight: bold;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #eee;
+    min-width: 28px;
+    height: 28px;
+    text-align: center;
+    line-height: 28px;
+}
+
+#abit-calc ol {
+    padding-left: 24px;
+}
+
+#abit-calc ol li {
+    font-weight: bold;
+    color: var(--calc-color--red);
+    text-align: left;
+}
+#abit-calc ol dl {
+    font-weight: normal;
+    margin: 0 0 24px 0;
+    color: black;
+}
+#abit-calc ol dt {
+    font-weight: normal;
+    padding-left: 84px;
+}
+#abit-calc ol dt:first-child,
+#abit-calc ol dd + dt {
+    margin-top: 12px;
+    font-weight: bold;
+}
+#abit-calc ol dt span {
+    display: inline-block;
+    font-weight: bold;
+    margin-left: -84px;
+    width: 80px;
+    color: var(--calc-color--blue);
+}
+#abit-calc ol dd {
+    margin: 0;
+    font-size: 0.85rem;
+    padding-left: 100px;
+}
+#abit-calc ol dt + dd::before {
+    content: "Вступительные испытания:";
+    display: block;
+    margin-top: 4px;
+    margin-left: -16px;
+}
+#abit-calc ol dd span {
+    font-weight: 600;
+}
+#abit-calc ol dd strong {
+    font-size: 0.9em;
+}
+#abit-calc ol dd strong::before {
+    content: "(от ";
+    font-weight: normal;
+}
+#abit-calc ol dd strong::after {
+    content: " баллов)";
+    font-weight: normal;
+}
+
+@media (max-width: 767px) {
+    #abit-calc ul {
+        columns: 2;
+    }
+}
+@media (max-width: 575px) {
+    #abit-calc ul {
+        columns: 1;
+    }
+    #abit-calc label span:last-child {
+        display: inline;
+        white-space: nowrap;
+    }
+
+    #abit-calc ol dt {
+        padding-left: 0;
+    }
+    #abit-calc ol dt span {
+        margin-left: 0;
+        display:block;
+    }
+    #abit-calc ol dd {
+        padding-left: 16px;
+    }
 }
