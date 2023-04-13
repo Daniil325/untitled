@@ -1,48 +1,200 @@
 (function (){
-    function calendar(id, year, month) {
-        var Dlast = new Date(year, month + 1, 0).getDate(),
-            D = new Date(year, month, Dlast),
-            DNlast = new Date(D.getFullYear(), D.getMonth(), Dlast).getDay(),
-            DNfirst = new Date(D.getFullYear(), D.getMonth(), 1).getDay(),
-            calendar = '<tr>',
-            month = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
-        if (DNfirst != 0) {
-            for (var i = 1; i < DNfirst; i++) calendar += '<td>';
-        } else {
-            for (var i = 0; i < 6; i++) calendar += '<td>';
+
+    //получаем дату из url
+    let params = (new URL(document.location)).searchParams;
+    let urlParamDate = params.get('date');
+
+    if (urlParamDate) {
+        //если в url есть дата
+        if (urlParamDate.length === 6) {
+            //если в дате нет дня (ГГГГММ)
+            var d = new Date(urlParamDate.slice(0, 4) + '-' + urlParamDate.slice(4));
+        } else if (urlParamDate.length === 8) {
+            //если в дате есть день (ГГГГММДД)
+            var d = new Date(urlParamDate.slice(0, 4) + '-' + urlParamDate.slice(4, 6) + '-' + urlParamDate.slice(6));
         }
-        for (var i = 1; i <= Dlast; i++) {
-            if (i == new Date().getDate() && D.getFullYear() == new Date().getFullYear() && D.getMonth() == new Date().getMonth()) {
-                calendar += '<td class="today day">' + i;
+    } else {
+        var d = new Date();
+    }
+
+    var Calend = function(divId) {
+
+        //Сохраняем идентификатор div
+        this.divId = divId;
+
+        // Дни недели с понедельника
+        this.DaysOfWeek = [
+            'Пн',
+            'Вт',
+            'Ср',
+            'Чт',
+            'Пт',
+            'Сб',
+            'Вс'
+        ];
+
+        // Месяцы начиная с января
+        this.Months =['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'];
+
+        this.currMonth = d.getMonth();
+        this.currYear = d.getFullYear();
+        this.currDay = d.getDate();
+    };
+
+    // Переход к следующему месяцу
+    Calend.prototype.nextMonth = function() {
+        if ( this.currMonth == 11 ) {
+            this.currMonth = 0;
+            this.currYear = this.currYear + 1;
+        }
+        else {
+            this.currMonth = this.currMonth + 1;
+        }
+        //редирект к следующему месяцу
+        window.location.replace(window.location.pathname + '?date=' + this.currYear + (this.currMonth + 1).toString().padStart(2, '0'));
+    };
+
+    // Переход к предыдущему месяцу
+    Calend.prototype.previousMonth = function() {
+        if ( this.currMonth == 0 ) {
+            this.currMonth = 11;
+            this.currYear = this.currYear - 1;
+        }
+        else {
+            this.currMonth = this.currMonth - 1;
+        }
+        //редирект к предыдущему месяцу
+        window.location.replace(window.location.pathname + '?date=' + this.currYear + (this.currMonth + 1).toString().padStart(2, '0'));
+    };
+
+    // Показать текущий месяц
+    Calend.prototype.showcurr = function() {
+        this.showMonth(this.currYear, this.currMonth, d);
+    };
+
+    // Показать месяц (год, месяц)
+    Calend.prototype.showMonth = function(y, m , d) {
+
+        // Первый день недели в выбранном месяце
+        var firstDayOfMonth = new Date(y, m, 7).getDay()
+            // Последний день выбранного месяца
+            , lastDateOfMonth =  new Date(y, m+1, 0).getDate()
+            // Последний день предыдущего месяца
+            , lastDayOfLastMonth = m == 0 ? new Date(y-1, 11, 0).getDate() : new Date(y, m, 0).getDate();
+
+        var html = '<table class="second-calendar">';
+        // Запись выбранного месяца и года
+        html += '<thead class="second-calendar__thead"><tr class="second-calendar__tr">';
+        html += '<td class="second-calendar__td" colspan="7">' + this.Months[m] + ' ' + y + '</td>';
+        html += '</tr></thead>';
+        // заголовок дней недели
+        html += '<tr class="second-calendar__days">';
+        for(var i=0; i < this.DaysOfWeek.length;i++) {
+            html += '<td>' + this.DaysOfWeek[i] + '</td>';
+        }
+        html += '</tr>';
+        // Записываем дни
+        var i=1;
+        do {
+            var dow = new Date(y, m, i).getDay();
+            // Начать новую строку в понедельник
+            if ( dow == 1 ) {
+                html += '<tr>';
+            }
+            // Если первый день недели не понедельник показать последние дни предыдущего месяца
+            else if ( i == 1 ) {
+                html += '<tr>';
+                var k = lastDayOfLastMonth - firstDayOfMonth+1;
+                for(var j=0; j < firstDayOfMonth; j++) {
+                    html += '<td class="not-current">' + k + '</td>';
+                    k++;
+                }
+            }
+            // Записываем текущий день в цикл
+            var chkY = d.getFullYear();
+            var chkM = d.getMonth();
+
+            //формируем id для элементов
+            let dateId = this.currYear + (this.currMonth + 1).toString().padStart(2, '0') + i.toString().padStart(2, '0');
+
+            if (
+                (!urlParamDate || urlParamDate.length === 8) //если в url нет даты или она с днем
+                && chkY == this.currYear && chkM == this.currMonth && i == this.currDay
+            ) {
+                html += '<td class="today" id="date' + dateId + '"><a href="">' + i + '</a></td>';
             } else {
-                calendar += '<td class="day"><a href="">' + i + '</a></td>';
+                // ссылки на дни месяца
+                html += '<td class="normal" id="date' + dateId + '"><a href="">' + i + '</a></td>';
             }
-            if (new Date(D.getFullYear(), D.getMonth(), i).getDay() == 0) {
-                calendar += '<tr>';
+            // закрыть строку в воскресенье
+            if ( dow == 0 ) {
+                html += '</tr>';
             }
+            // Если последний день месяца не воскресенье, показать первые дни следующего месяца
+            else if ( i == lastDateOfMonth ) {
+                var k=1;
+                for(dow; dow < 7; dow++) {
+                    html += '<td class="not-current">' + k + '</td>';
+                    k++;
+                }
+            }
+
+            i++;
+        }while(i <= lastDateOfMonth);
+
+        // Конец таблицы
+        html += '</table>';
+
+        // Записываем HTML в div
+        document.getElementById(this.divId).innerHTML = html;
+    };
+
+    // При загрузке окна
+    window.onload = function() {
+        // Привязываем кнопки «Следующий» и «Предыдущий»
+        getId('btnNext').onclick = function() {
+            c.nextMonth();
+        };
+        getId('btnPrev').onclick = function() {
+            c.previousMonth();
+        };
+        // Начать календарь
+        var c = new Calend("divCal");
+        c.showcurr();
+
+        //ajax, получающий события
+        if (urlParamDate) {
+            $.ajax({
+                data: {
+                    component: 'news',
+                    controller: 'ajax',
+                    action: 'get_events_by_date',
+                    date: urlParamDate
+                },
+                success: (data) => {
+                    let events = Array.from(data);
+                    if (events) {
+                        events.forEach((e) => {
+                            let item = document.getElementById('date' + e.date);
+                            if (item) {
+                                //если есть день календаря с id формата dateГГГГММДД, к нему добавляется класс 'has_event' и меняется ссылка
+                                item.classList.add('has_event');
+                                item.firstElementChild.setAttribute('href', window.location.pathname + '?date=' + e.date);
+                            }
+                        });
+                    }
+                }
+            });
         }
-        for (var i = DNlast; i < 7; i++) calendar += '<td> ';
-        document.querySelector('#' + id + ' tbody').innerHTML = calendar;
-        document.querySelector('#' + id + ' thead td:nth-child(2)').innerHTML = month[D.getMonth()] + ' ' + D.getFullYear();
-        document.querySelector('#' + id + ' thead td:nth-child(2)').dataset.month = D.getMonth();
-        document.querySelector('#' + id + ' thead td:nth-child(2)').dataset.year = D.getFullYear();
-        if (document.querySelectorAll('#' + id + ' tbody tr').length < 6) {
-            // чтобы при перелистывании месяцев не "подпрыгивала" вся страница, добавляется ряд пустых клеток. Итог: всегда 6 строк для цифр
-            document.querySelector('#' + id + ' tbody').innerHTML += '<tr><td> <td> <td> <td> <td> <td> <td> ';
-        }
+
     }
-    calendar("calendar", new Date().getFullYear(), new Date().getMonth());
-    // переключатель минус месяц
-    document.querySelector('#calendar thead tr:nth-child(1) td:nth-child(1)').onclick = function() {
-        calendar("calendar", document.querySelector('#calendar thead td:nth-child(2)').dataset.year,
-            parseFloat(document.querySelector('#calendar thead td:nth-child(2)').dataset.month) - 1);
-    }
-    // переключатель плюс месяц
-    document.querySelector('#calendar thead tr:nth-child(1) td:nth-child(3)').onclick = function() {
-        calendar("calendar", document.querySelector('#calendar thead td:nth-child(2)').dataset.year,
-            parseFloat(document.querySelector('#calendar thead td:nth-child(2)').dataset.month) + 1);
+    // Получить элемент по id
+    function getId(id) {
+        return document.getElementById(id);
     }
 }())
+
+
 
 let Dropdown = function (root = "#dropdown") {
     const rootContainer = document.querySelector(root);

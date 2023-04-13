@@ -215,213 +215,24 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 //Modal script
-/*(function () {
-    (function () {
-        if (typeof window.CustomEvent === "function") return false;
-        function CustomEvent(event, params) {
-            params = params || { bubbles: false, cancelable: false, detail: null };
-            var evt = document.createEvent("CustomEvent");
-            evt.initCustomEvent(
-                event,
-                params.bubbles,
-                params.cancelable,
-                params.detail
-            );
-            return evt;
-        }
-        window.CustomEvent = CustomEvent;
-    })();
+(function (){
+    let callModal = document.getElementById("showCallModal");
+    let callModalFromMenu = document.getElementById("showCallModalFromMenu");
+    let close_modal = document.getElementById("modal__btn-close");
+    let modal_container = document.getElementById("modal_container");
 
-    (function () {
-        var $modal = function (options) {
-            var _elemModal,
-                _eventShowModal,
-                _eventHideModal,
-                _hiding = false,
-                _destroyed = false,
-                _animationSpeed = 200;
+    callModal.addEventListener("click", function (){
+        modal_container.classList.add("modal__show");
+    });
+    callModalFromMenu.addEventListener("click", function (){
+        modal_container.classList.add("modal__show");
+    });
+    close_modal.addEventListener("click", function (){
+        modal_container.classList.remove("modal__show");
+    })
+})();
 
-            function _createModal(options) {
-                var elemModal = document.createElement("div"),
-                    modalTemplate =
-                        '<div class="modal__backdrop" data-dismiss="modal"><div class="modal__content"><div class="modal__header"><div class="modal__title" data-modal="title">{{title}}</div><span class="modal__btn-close" data-dismiss="modal" title="Закрыть">×</span></div><div class="modal__body" data-modal="content">{{content}}</div>{{footer}}</div></div>',
-                    modalFooterTemplate = '<div class="modal__footer">{{buttons}}</div>',
-                    modalButtonTemplate =
-                        '<button type="button" class="{{button_class}}" data-handler={{button_handler}}>{{button_text}}</button>',
-                    modalHTML,
-                    modalFooterHTML = "";
-
-                elemModal.classList.add("modal");
-                modalHTML = modalTemplate.replace(
-                    "{{title}}",
-                    options.title || "Новое окно"
-                );
-                modalHTML = modalHTML.replace("{{content}}", options.content || "");
-                if (options.footerButtons) {
-                    for (
-                        var i = 0, length = options.footerButtons.length;
-                        i < length;
-                        i++
-                    ) {
-                        var modalFooterButton = modalButtonTemplate.replace(
-                            "{{button_class}}",
-                            options.footerButtons[i].class
-                        );
-                        modalFooterButton = modalFooterButton.replace(
-                            "{{button_handler}}",
-                            options.footerButtons[i].handler
-                        );
-                        modalFooterButton = modalFooterButton.replace(
-                            "{{button_text}}",
-                            options.footerButtons[i].text
-                        );
-                        modalFooterHTML += modalFooterButton;
-                    }
-                    modalFooterHTML = modalFooterTemplate.replace(
-                        "{{buttons}}",
-                        modalFooterHTML
-                    );
-                }
-                modalHTML = modalHTML.replace("{{footer}}", modalFooterHTML);
-                elemModal.innerHTML = modalHTML;
-                document.body.appendChild(elemModal);
-                return elemModal;
-            }
-
-            function _showModal() {
-                if (!_destroyed && !_hiding) {
-                    _elemModal.classList.add("modal__show");
-                    document.dispatchEvent(_eventShowModal);
-                }
-            }
-
-            function _hideModal() {
-                _hiding = true;
-                _elemModal.classList.remove("modal__show");
-                _elemModal.classList.add("modal__hiding");
-                setTimeout(function () {
-                    _elemModal.classList.remove("modal__hiding");
-                    _hiding = false;
-                }, _animationSpeed);
-                document.dispatchEvent(_eventHideModal);
-            }
-
-            function _handlerCloseModal(e) {
-                if (e.target.dataset.dismiss === "modal") {
-                    _hideModal();
-                }
-            }
-
-            _elemModal = _createModal(options || {});
-
-            _elemModal.addEventListener("click", _handlerCloseModal);
-            _eventShowModal = new CustomEvent("show.modal", { detail: _elemModal });
-            _eventHideModal = new CustomEvent("hide.modal", { detail: _elemModal });
-
-            return {
-                show: _showModal,
-                hide: _hideModal,
-                destroy: function () {
-                    _elemModal.parentElement.removeChild(_elemModal),
-                        _elemModal.removeEventListener("click", _handlerCloseModal),
-                        (destroyed = true);
-                },
-                setContent: function (html) {
-                    _elemModal.querySelector('[data-modal="content"]').innerHTML = html;
-                },
-                setTitle: function (text) {
-                    _elemModal.querySelector('[data-modal="title"]').innerHTML = text;
-                },
-            };
-        };
-
-        const content = document.getElementById("callModalContent");
-        let contentHTML = "";
-        if (content) {
-            contentHTML = content.innerHTML;
-        }
-        if (content) {
-            content.remove();
-        }
-        var modal = $modal({
-            title: "Заказать звонок",
-            content: contentHTML,
-        });
-
-        const showButton = document.querySelector("#showCallModal");
-        if (showButton) {
-            showButton.addEventListener("click", function (e) {
-                modal.show();
-            });
-        }
-
-        const showButtonFromMenu = document.querySelector("#showCallModalFromMenu");
-        if (showButtonFromMenu) {
-            showButtonFromMenu.addEventListener("click", function (e) {
-                modal.show();
-            });
-        }
-
-        const showButtonFromProg = document.querySelector("#showCallModalFromPrograms");
-        if (showButtonFromProg) {
-            showButtonFromProg.addEventListener("click", function (e) {
-                modal.show();
-            });
-        }
-
-        (function(modal){
-            let $form = $(".callModalFormWrapper form");
-            if ($form.length) {
-
-                let $inputs = $form.find(":input");
-                let $alertError = $('.callModalErrorAlert');
-                let $alertSuccess = $('.callModalSuccessAlert');
-
-                $form.on("submit", function () {
-                    let data = Object.fromEntries(new FormData($form[0]));
-                    data.component = "conferences";
-                    data.controller = "ajax";
-                    data.settings = "questions";
-                    data.action = "registration";
-
-                    $inputs.prop("disabled", true);
-
-                    $.post("/ajax/", data, function (response) {
-                        if (response) {
-                            if (response.result == "success") {
-                                $alertSuccess.addClass("show");
-                                setTimeout(function () {
-                                    $alertSuccess.removeClass("show");
-                                    $form[0].reset();
-                                    $inputs.prop("disabled", false);
-                                    modal.hide();
-                                }, 3000);
-
-                            } else { // error
-                                if (response.validate) {
-                                    $inputs.filter((i, input) => {
-                                        return response.validate[input.name] && !response.validate[input.name].is_valid;
-                                    }).addClass("invalid");
-                                }
-                                $alertError.addClass("show").children('<p>');
-                                if (response.message) $alertError.html(response.message);
-                                setTimeout(function () {
-                                    $alertError.removeClass("show");
-                                    $inputs.prop("disabled", false);
-                                }, 3000);
-                            }
-                        }
-                    });
-                    return false;
-                });
-            }
-        })(modal);
-
-    })();
-
-})();*/
-
-
+// Календарь на главной странице
 (function() {
     function Calendar2(id, year, month) {
         var Dlast = new Date(year, month + 1, 0).getDate(),
