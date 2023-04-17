@@ -6,33 +6,67 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Страница второго уровня</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="owl/owl.carousel.min.css">
     <link rel="stylesheet" href="owl/owl.theme.default.min.css">
 </head>
 <body>
-<header class="header">
+    <header class="header">
     <div class="header_container-bg">
         <div class="header_wrapper">
             <div class="header_navigation">
                 <nav class="header_navigation-nav">
                     <ul class="header_navigation-ul">
-                        <li class="header_navigation-ul-item"><a
-                                href="https://www.asu.ru/">Университет</a></li>
-                        <li class="header_navigation-ul-item"><a href="https://school.asu.ru/">Школьник
-                            АлтГУ</a></li>
-                        <li>
+                        <li class="header_navigation-ul-item">
+                            <a href="https://www.asu.ru/">Университет</a>
+                        </li>
+                        <li class="header_navigation-ul-item">
+                            <a href="https://school.asu.ru/">Школьник АлтГУ</a>
+                        </li>
+
+                        <li class="header_navigation-ul-item">
                             <div class="links-phone">
                                 <div class="phone-wrapper">
                                     <img class="x-header-navigation-icon-call"
-                                         src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                                         src="img/main/main-section/call.svg"
                                          alt="Номер для звонков">
-                                    <a href="tel:+73852291222">+7 (3852) 291-222</a>
+                                    <a class="phone-wrapper-link" href="tel:+73852291222">+7 (3852) 291-222</a>
                                 </div>
                                 <button class="call-link" id="showCallModalFromMenu">
                                     Заказать звонок
                                 </button>
+                            </div>
+                        </li>
+
+                        <li class="header_navigation-ul-item">
+                            <div class="navigation-links-socials">
+                                <a class="navigation-links-socials-link"
+                                   href="https://wa.me/79339333799?text=Здравствуйте!%20Напишите%20нам,%20если%20есть%20вопросы.">
+                                    <img class="x-img x-header-social-icon-whatsapp"
+                                         src="img/whatsapp.svg"
+                                         alt="WhatsApp">
+                                </a>
+                                <a class="navigation-links-socials-link"
+                                   href="https://vk.com/abiturientasu/">
+                                    <img class="mr-2 x-img x-header-social-icon-vk"
+                                         src="img/main/main-section/vk.svg"
+                                         alt="Вконтакте">
+                                </a>
+                                <a class="navigation-links-socials-link"
+                                   href="https://t.me/abiturient22asu">
+                                    <img class="mr-2 x-img x-header-social-icon-tg"
+                                         style="height: 25px; width: 25px; background-image: url('https://telegram.org/img/website_icon.svg?4')"
+                                         src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                                         alt="Telegram">
+                                </a>
+                                <a class="navigation-links-socials-link"
+                                   href="https://zen.yandex.ru/id/622f05aae171d9758b9e2612">
+                                    <img class="x-img x-header-social-icon-zen"
+                                         style="height: 25px; width: 25px; background-image: url('https://yastatic.net/s3/zen-lib/favicons4/safari-pinned-tab.svg')"
+                                         src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                                         alt="Zen Yandex">
+                                </a>
                             </div>
                         </li>
                     </ul>
@@ -41,47 +75,75 @@
             <div class="header_navigation_social_links">
 
             </div>
-            <div class="header_navigation_search">
-                <form class="search" action="/search/">
-                    <img class="x-img x-search-icon"
-                         src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
-                    <input id="header-search" type="text" name="query" placeholder="Поиск по сайту">
-                </form>
+            <!-- поиск по сайту -->
+            <div class="header__search">
+                <button class="header-search_btn" id="open-search-form"></button>
+                <span class="header-search_span" id="open-search-form-2">поиск по сайту</span>
             </div>
+
         </div>
     </div>
 
     <div class="wrapper">
+        <div class="header-search_block" id="search-form">
+            <h2 class="header-search_title">Поиск</h2>
+            <form class="header-search_form" id="_9caf682e5d98dc3f__form" method="get" action="/search/">
+                <div class="header-search_input-label">
+                    <fieldset class="header-search-options">
+                        <div class="header-search-div">
+                            <input class="header-search-query-input" type="text" placeholder="поиск" name="query">
+                            <button class="header-search_btn" disabled=""></button>
+                        </div>
+
+                        <span class="header-search-options-title">искать по:</span>
+                        <label class="header-search-options-item header-search-options-item__current">
+                            <input class="header-search-options-item-radio" type="radio" name="search_in" value="site" checked="checked" data-form-action="/search/">
+                            <span class="header-search-options-item-title">сайту</span>
+                        </label>
+
+                        <label class="header-search-options-item ">
+                            <input class="header-search-options-item-radio" type="radio" name="search_in" value="news" data-form-action="/search/news/">
+                            <span class="header-search-options-item-title">новостям</span>
+                        </label>
+
+                        <label class="header-search-options-item ">
+                            <input class="header-search-options-item-radio" type="radio" name="search_in" value="documents" data-form-action="/search/documents/">
+                            <span class="header-search-options-item-title">документам</span>
+                        </label>
+                    </fieldset>
+                </div>
+            </form>
+        </div>
         <div class="header_container-links">
             <div class="header_container-logo">
                 <a class="header_container-logo-mainlink" href="">
                     <img class="header_container-logo-img" src="img/main/main-section/Logo.svg" alt="">
-                    <span class="asu-text-small">Алтайский государственный
-                            университет <br> <span class="asu-text-large">Абитуриент</span></span>
+                    <span class="asu-text-small">
+                            Алтайский государственный университет
+                            <br>
+                            <span class="asu-text-large">Абитуриент</span>
+                        </span>
                 </a>
             </div>
 
             <div class="header_container_social-links">
-                <a class="phone-link" href="tel:+73852291222">+7 (3852) 291-222</a>
+                <div class="call-container">
+                    <img src="img/main/main-section/call.svg" alt="">
+                    <a class="phone-link" href="tel:+73852291222">+7 (3852) 291-222</a>
+                </div>
                 <button class="call-link">заказать звонок</button>
             </div>
 
             <div class="links-socials">
                 <a
                         href="https://wa.me/79339333799?text=Здравствуйте!%20Напишите%20нам,%20если%20есть%20вопросы.">
-                    <img class="mr-2 x-img x-header-social-icon-whatsapp"
-                         src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                    <img class="x-img x-header-social-icon-whatsapp"
+                         src="img/whatsapp.svg"
                          alt="WhatsApp">
                 </a>
-                <!--<a href="https://www.instagram.com/abiturient.asu/">
-                    <img class="mr-2 x-img x-header-social-icon-instagram" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Instagram" />
-                </a> -->
-                <!-- <a href="https://www.youtube.com/channel/UCWhne-7vu55DDZx-A1ToYAw/">
-                    <img class="mr-2 x-img x-header-social-icon-youtube" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="YouTube" />
-                </a> -->
                 <a href="https://vk.com/abiturientasu/">
                     <img class="mr-2 x-img x-header-social-icon-vk"
-                         src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                         src="img/main/main-section/vk.svg"
                          alt="Вконтакте">
                 </a>
                 <a href="https://t.me/abiturient22asu">
@@ -104,11 +166,9 @@
 
         </div>
     </div>
-
 </header>
 
-<main>
-    <div class="wrapper">
+    <main>
         <div class="main-buttons-container">
             <div class="dropdown closed main-button">
                 <h2 class="icon">
@@ -248,11 +308,8 @@
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="wrapper">
-        <div class="container">
-            <div class="wrapper">
+        <div class="wrapper">
+            <div class="container">
                 <div class="breadcrumbs">
                     <ul class="breadcrumbs-ul">
                         <li class="breadcrumbs-item active">
@@ -262,10 +319,9 @@
                     </ul>
                 </div>
             </div>
-        </div>
 
-        <div class="row">
-            <div class="sidebar sidebar_r">
+            <div class="row">
+                <div class="sidebar sidebar_r">
                 <div class="sidebar-header">
                     <h2>Бакалавриат и специалитет</h2>
                 </div>
@@ -304,7 +360,7 @@
                 </div>
             </div>
 
-            <div class="content">
+                <div class="content">
                 <h1 class="page-title">Бакалавриат и специалитет</h1>
                     <p>
                         АГУ предлагает более 60 <a href="https://abiturient.asu.ru/obrprog/">
@@ -324,11 +380,11 @@
                         Перед поступлением важно ознакомиться с правилами приема в Алтайский государственный университет.
                     </p>
             </div>
+            </div>
         </div>
-    </div>
+    </main>
 
-</main>
-<footer class="footer">
+    <footer class="footer">
     <div class="footer-container">
         <div class="footer-wrapper">
             <div class="footer-logo">
@@ -399,6 +455,80 @@
         </div>
     </div>
 </footer>
+
+    <div class="modal" id="modal_container">
+        <div class="modal__backdrop" data-dismiss="modal">
+            <div class="modal__content">
+                <div class="modal__header">
+                    <div class="modal__title" data-modal="title">Заказать звонок</div>
+                    <span class="modal__btn-close" data-dismiss="modal" title="Закрыть" id="modal__btn-close">×</span>
+                </div>
+                <div class="modal__body" data-modal="content">
+                    <div class="callModalHeader">
+                        <img class="x-img x-call-modal-icon"
+                             src="img/main/main-section/Logo.svg"
+                             width="90" height="90" alt="">
+                        <div class="callModalHeaderText">
+                            <h2>Остались вопросы?</h2>
+                            <p>
+                                Оставь заявку на сайте и мы перезвоним
+                                <br>
+                                в ближайшее время!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="callModalFormWrapper">
+                        <form>
+                            <div class="callModalFormRow">
+                                <div class="callModalFormColumn">
+                                    <label for="name">Имя</label>
+                                    <input type="text" id="name" name="name" required="">
+                                </div>
+                                <div class="callModalFormColumn">
+                                    <label for="secondName">Фамилия</label>
+                                    <input type="text" id="secondName" name="secondName" required="">
+                                </div>
+                            </div>
+                            <div class="callModalFormColumn">
+                                <label for="tel">Номер телефона</label>
+                                <input type="tel" value="+7" pattern="^[7|8]{0,1}\d{10}$|(^\+7{1}\d{10}$)"
+                                       maxlength="12" id="tel" name="phoneNumber" required="">
+                                <small>Пример: +71235641122</small>
+                            </div>
+                            <div class="callModalFormColumn">
+                                <label for="question">Опишите ваш вопрос</label>
+                                <textarea rows="10" cols="25" id="question" name="question"
+                                          placeholder="Напишите интересующий Вас вопрос..." required=""></textarea>
+                            </div>
+                            <div class="callModalFormColumn">
+                                <input class="callModalFormColumnInput" type="submit" value="отправить">
+                                <small class="text-center">Нажимая на кнопку, вы принимаете
+                                    <a href="#">Положение и Согласия</a> на обработку
+                                    персональных данных.
+                                </small>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="callModalSuccessAlert">
+                        <h3>Ваш запрос принят</h3>
+                        <p>Ожидайте ответ в ближайшее время</p>
+                    </div>
+                    <div class="callModalErrorAlert">
+                        <h3>Ошибка</h3>
+                        <p>Одно или несколько полей заполнено неправильно</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="whatsapp-button" style="bottom: 70px;">
+        <a href="https://wa.me/79339333799?text=Здравствуйте!%20Напишите%20нам,%20если%20есть%20вопросы.">
+            <img class="x-img x-whatsapp-button-icon"
+                 src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="WhatsApp">
+        </a>
+    </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="js/lottie-player.js"></script>
     <script src="owl/owl.carousel.min.js"></script>
