@@ -12,7 +12,8 @@
 </head>
 
 <body>
-<header class="header">
+<div class="main-wrapper">
+    <header class="header">
     <div class="header_container-bg">
         <div class="header_wrapper">
             <div class="header_navigation">
@@ -38,49 +39,42 @@
                                 </button>
                             </div>
                         </li>
-
-                        <li class="header_navigation-ul-item">
-                            <div class="navigation-links-socials">
-                                <a class="navigation-links-socials-link"
-                                   href="https://wa.me/79339333799?text=Здравствуйте!%20Напишите%20нам,%20если%20есть%20вопросы.">
-                                    <img class="x-img x-header-social-icon-whatsapp"
-                                         src="img/whatsapp.svg"
-                                         alt="WhatsApp">
-                                </a>
-                                <a class="navigation-links-socials-link"
-                                   href="https://vk.com/abiturientasu/">
-                                    <img class="mr-2 x-img x-header-social-icon-vk"
-                                         src="img/main/main-section/vk.svg"
-                                         alt="Вконтакте">
-                                </a>
-                                <a class="navigation-links-socials-link"
-                                   href="https://t.me/abiturient22asu">
-                                    <img class="mr-2 x-img x-header-social-icon-tg"
-                                         style="height: 25px; width: 25px; background-image: url('https://telegram.org/img/website_icon.svg?4')"
-                                         src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                                         alt="Telegram">
-                                </a>
-                                <a class="navigation-links-socials-link"
-                                   href="https://zen.yandex.ru/id/622f05aae171d9758b9e2612">
-                                    <img class="x-img x-header-social-icon-zen"
-                                         style="height: 25px; width: 25px; background-image: url('https://yastatic.net/s3/zen-lib/favicons4/safari-pinned-tab.svg')"
-                                         src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                                         alt="Zen Yandex">
-                                </a>
-                            </div>
-                        </li>
                     </ul>
                 </nav>
             </div>
             <div class="header_navigation_social_links">
-
+                <div class="navigation-links-socials">
+                    <a class="navigation-links-socials-link"
+                       href="https://wa.me/79339333799?text=Здравствуйте!%20Напишите%20нам,%20если%20есть%20вопросы.">
+                        <img class="x-img x-header-social-icon-whatsapp"
+                             src="img/whatsapp.svg"
+                             alt="WhatsApp">
+                    </a>
+                    <a class="navigation-links-socials-link"
+                       href="https://vk.com/abiturientasu/">
+                        <img class="x-img x-header-social-icon-vk"
+                             src="img/main/main-section/vk.svg"
+                             alt="Вконтакте">
+                    </a>
+                    <a class="navigation-links-socials-link"
+                       href="https://t.me/abiturient22asu">
+                        <img class="x-img x-header-social-icon-tg"
+                             src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                             alt="Telegram">
+                    </a>
+                    <a class="navigation-links-socials-link"
+                       href="https://zen.yandex.ru/id/622f05aae171d9758b9e2612">
+                        <img class="x-img x-header-social-icon-zen"
+                             src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                             alt="Zen Yandex">
+                    </a>
+                </div>
+                <!-- поиск по сайту -->
+                <div class="header__search">
+                    <button class="header-search_btn" id="open-search-form"></button>
+                    <span class="header-search_span" id="open-search-form-2">поиск по сайту</span>
+                </div>
             </div>
-            <!-- поиск по сайту -->
-            <div class="header__search">
-                <button class="header-search_btn" id="open-search-form"></button>
-                <span class="header-search_span" id="open-search-form-2">поиск по сайту</span>
-            </div>
-
         </div>
     </div>
 
@@ -168,8 +162,7 @@
     </div>
 </header>
 
-<main>
-
+    <main>
     <div class="main-buttons-container">
         <div class="dropdown closed main-button">
             <h2 class="icon">
@@ -353,158 +346,6 @@
             <div>
                 <div class="">
                     <div class="content">
-                        <!-- Styles -->
-                        <style type="text/css">
-                            .content {
-                                overflow: hidden !important;
-                            }
-
-                            .content ul,
-                            .content ol {
-                                text-align: unset !important;
-                            }
-
-                            .content img {
-                                margin-bottom: 0;
-                                max-width: 100% !important;
-                                max-height: 100% !important;
-                                height: auto !important;
-                            }
-
-                            .programs--banner__heading {
-                                margin-right: 1.5rem;
-                                margin-top: 0;
-                                margin-bottom: 0;
-                                margin-left: 0;
-                            }
-                            .programs--banner__emblem {
-                                margin: 0 0 0.8rem 0 !important;
-                            }
-
-                            .programs--banner__lottie {
-                                width: 100% !important;
-                            }
-                            .template__main-container {
-                                padding: 0 15px !important;
-                                margin: 0 !important;
-                                width: 100% !important;
-                                max-width: unset !important;
-                            }
-
-                            .main-buttons-container--d {
-                                display: none !important;
-                            }
-
-                            .sidebar {
-                                display: none !important;
-                            }
-
-                            .template__main-content .template__content-header {
-                                display: none !important;
-                            }
-                            .programs--numbers__item span.negative {
-                                margin: 0;
-                                margin-bottom: 0.45rem;
-                            }
-                            .col {
-                                padding: 0 !important;
-                            }
-                            .programs--numbers__banner {
-                                margin-top: 2rem;
-                            }
-                            .dropdown--header {
-                                justify-content: flex-start;
-                            }
-                            .dropdown--button {
-                                color: #000000;
-                                margin-right: 0.5rem;
-                            }
-                            .dropdown--button:last-child {
-                                margin-right: 0;
-                            }
-                            .programs--content {
-                                padding-bottom: 0;
-                            }
-
-                            .programs--content p {
-                                text-indent: 2rem;
-                            }
-                            @media screen and (max-width: 425.98px) {
-                                .programs--banner__heading {
-                                    margin-right: 0;
-                                    margin-top: 0;
-                                    margin-bottom: 1.5rem;
-                                    margin-left: 0;
-                                }
-                                .dropdown--button {
-                                    margin-right: 0;
-                                }
-                                .programs--students__logo img {
-                                    height: 200px !important;
-                                    margin-bottom: 2rem !important;
-                                }
-                                .programs--banner__emblem {
-                                    margin: 0 auto !important;
-                                    margin-bottom: 1rem !important;
-                                }
-                                .programs--numbers__item span.negative {
-                                    margin-bottom: 0 !important;
-                                    margin-right: 0.5rem !important;
-                                }
-                                .dropdown--header {
-                                    justify-content: space-evenly;
-                                }
-                            }
-                            .programs--banner__header {
-                                margin-bottom: 1rem;
-                                text-align: start;
-                            }
-                            .program--description {
-                                font-size: 0.6rem;
-                                margin: 0 !important;
-                                margin-bottom: 25px !important;
-                                line-height: 1.5;
-                                letter-spacing: 0.04rem;
-                                font-weight: 500;
-                            }
-                            .dropdown--content .dropdown--container .program--title {
-                                font-size: 1.6rem;
-                                text-align: center;
-                                width: 80%;
-                                margin: 0 auto;
-                                margin-bottom: 1.8rem;
-                            }
-                            .dropdown--content .dropdown--container h2,
-                            .dropdown--content .dropdown--container h3,
-                            .dropdown--content .dropdown--container h4,
-                            .dropdown--content .dropdown--container h5,
-                            .dropdown--content .dropdown--container h6 {
-                                font-weight: 700;
-                                color: var(--asu-dark);
-                            }
-                            .programs--uch-plan {
-                                display: flex;
-                                align-items: center;
-                                justify-content: space-evenly;
-                                flex-wrap: wrap;
-                                margin-top: 1.5rem;
-                                margin-bottom: 3rem;
-                            }
-                            .programs--uch-plan a {
-                                padding: 0.45rem 1.5rem;
-                                margin-bottom: 1rem;
-                                text-align: center;
-                                background-color: var(--asu-accent);
-                                color: #fff;
-                                font-weight: 500;
-                                box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.25);
-                                border-radius: 15px;
-                            }
-                            ul li {
-                                margin-bottom: 0.55rem;
-                            }
-
-                        </style>
                         <section class="section" style="padding: 0">
                             <div class="programs--banner">
                                 <div class="programs--banner__heading">
@@ -986,7 +827,7 @@
                                                     </ul>
                                                 </div>
                                             </div>
-                                            <!-- End  -->
+                                            <!-- End -->
                                         </div>
                                     </div>
                                 </div>
@@ -994,34 +835,36 @@
                             <div class="rutube-video">
                                 <iframe width="720" height="405" src="https://rutube.ru/play/embed/9140dbe930200004337e27195fcb25a2" frameborder="0" allow="clipboard-write; autoplay" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
                             </div>
-                            <section class="programs--students__section">
-                                <div class="programs--students container">
-                                    <div class="programs--students__logo">
-                                        <img alt="" src="img/main/3d.png">
-                                    </div>
-                                    <div class="programs--students__content">
-                                        <h2>Меры поддержки для первокурсников</h2>
-                                        <a href="/bachelor/grants2021/">Подробнее</a>
-                                    </div>
-                                </div>
-                            </section>
 
-                            <section class="programs--contacts">
-                                <div class="program--contacts-wrapper">
-                                    <button class="program--contacts-button programs-color-g"
-                                            id="showCallModalFromPrograms">Оставить заявку</button>
-                                </div>
-                            </section>
                         </section>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
+    <section class="programs--students__section">
+        <div class="wrapper">
+        <div class="programs--students container">
+            <div class="programs--students__logo">
+                <img alt="" src="img/main/3d.png">
+            </div>
+            <div class="programs--students__content">
+                <h2>Меры поддержки для первокурсников</h2>
+                <a href="/bachelor/grants2021/">Подробнее</a>
+            </div>
+        </div>
+        </div>
+    </section>
 
+    <section class="programs--contacts">
+        <div class="program--contacts-wrapper">
+            <button class="program--contacts-button programs-color-g"
+                    id="showCallModalFromPrograms">Оставить заявку</button>
+        </div>
     </section>
 </main>
 
-<footer class="footer">
+    <footer class="footer">
     <div class="footer-container">
         <div class="footer-wrapper">
             <div class="footer-logo">
@@ -1094,7 +937,7 @@
     </div>
 </footer>
 
-<div class="modal" id="modal_container">
+    <div class="modal" id="modal_container">
     <div class="modal__backdrop" data-dismiss="modal">
         <div class="modal__content">
             <div class="modal__header">
@@ -1160,6 +1003,13 @@
     </div>
 </div>
 
+    <div class="whatsapp-button">
+    <a href="https://wa.me/79339333799?text=Здравствуйте!%20Напишите%20нам,%20если%20есть%20вопросы.">
+        <img class="x-img x-whatsapp-button-icon"
+             src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="WhatsApp">
+    </a>
+</div>
+</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script src="js/lottie-player.js"></script>

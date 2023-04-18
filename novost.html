@@ -13,157 +13,155 @@
 </head>
 
 <body>
+<div class="main-wrapper">
     <header class="header">
-    <div class="header_container-bg">
-        <div class="header_wrapper">
-            <div class="header_navigation">
-                <nav class="header_navigation-nav">
-                    <ul class="header_navigation-ul">
-                        <li class="header_navigation-ul-item">
-                            <a href="https://www.asu.ru/">Университет</a>
-                        </li>
-                        <li class="header_navigation-ul-item">
-                            <a href="https://school.asu.ru/">Школьник АлтГУ</a>
-                        </li>
+        <div class="header_container-bg">
+            <div class="header_wrapper">
+                <div class="header_navigation">
+                    <nav class="header_navigation-nav">
+                        <ul class="header_navigation-ul">
+                            <li class="header_navigation-ul-item">
+                                <a href="https://www.asu.ru/">Университет</a>
+                            </li>
+                            <li class="header_navigation-ul-item">
+                                <a href="https://school.asu.ru/">Школьник АлтГУ</a>
+                            </li>
 
-                        <li class="header_navigation-ul-item">
-                            <div class="links-phone">
-                                <div class="phone-wrapper">
-                                    <img class="x-header-navigation-icon-call"
-                                         src="img/main/main-section/call.svg"
-                                         alt="Номер для звонков">
-                                    <a class="phone-wrapper-link" href="tel:+73852291222">+7 (3852) 291-222</a>
+                            <li class="header_navigation-ul-item">
+                                <div class="links-phone">
+                                    <div class="phone-wrapper">
+                                        <img class="x-header-navigation-icon-call"
+                                             src="img/main/main-section/call.svg"
+                                             alt="Номер для звонков">
+                                        <a class="phone-wrapper-link" href="tel:+73852291222">+7 (3852) 291-222</a>
+                                    </div>
+                                    <button class="call-link" id="showCallModalFromMenu">
+                                        Заказать звонок
+                                    </button>
                                 </div>
-                                <button class="call-link" id="showCallModalFromMenu">
-                                    Заказать звонок
-                                </button>
-                            </div>
-                        </li>
-                    </ul>
-                </nav>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header_navigation_social_links">
+                    <div class="navigation-links-socials">
+                        <a class="navigation-links-socials-link"
+                           href="https://wa.me/79339333799?text=Здравствуйте!%20Напишите%20нам,%20если%20есть%20вопросы.">
+                            <img class="x-img x-header-social-icon-whatsapp"
+                                 src="img/whatsapp.svg"
+                                 alt="WhatsApp">
+                        </a>
+                        <a class="navigation-links-socials-link"
+                           href="https://vk.com/abiturientasu/">
+                            <img class="x-img x-header-social-icon-vk"
+                                 src="img/main/main-section/vk.svg"
+                                 alt="Вконтакте">
+                        </a>
+                        <a class="navigation-links-socials-link"
+                           href="https://t.me/abiturient22asu">
+                            <img class="x-img x-header-social-icon-tg"
+                                 src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                                 alt="Telegram">
+                        </a>
+                        <a class="navigation-links-socials-link"
+                           href="https://zen.yandex.ru/id/622f05aae171d9758b9e2612">
+                            <img class="x-img x-header-social-icon-zen"
+                                 src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                                 alt="Zen Yandex">
+                        </a>
+                    </div>
+                    <!-- поиск по сайту -->
+                    <div class="header__search">
+                        <button class="header-search_btn" id="open-search-form"></button>
+                        <span class="header-search_span" id="open-search-form-2">поиск по сайту</span>
+                    </div>
+                </div>
             </div>
-            <div class="header_navigation_social_links">
-                <div class="navigation-links-socials">
-                    <a class="navigation-links-socials-link"
-                       href="https://wa.me/79339333799?text=Здравствуйте!%20Напишите%20нам,%20если%20есть%20вопросы.">
+        </div>
+
+        <div class="wrapper">
+            <div class="header-search_block" id="search-form">
+                <h2 class="header-search_title">Поиск</h2>
+                <form class="header-search_form" id="_9caf682e5d98dc3f__form" method="get" action="/search/">
+                    <div class="header-search_input-label">
+                        <fieldset class="header-search-options">
+                            <div class="header-search-div">
+                                <input class="header-search-query-input" type="text" placeholder="поиск" name="query">
+                                <button class="header-search_btn" disabled=""></button>
+                            </div>
+
+                            <span class="header-search-options-title">искать по:</span>
+                            <label class="header-search-options-item header-search-options-item__current">
+                                <input class="header-search-options-item-radio" type="radio" name="search_in" value="site" checked="checked" data-form-action="/search/">
+                                <span class="header-search-options-item-title">сайту</span>
+                            </label>
+
+                            <label class="header-search-options-item ">
+                                <input class="header-search-options-item-radio" type="radio" name="search_in" value="news" data-form-action="/search/news/">
+                                <span class="header-search-options-item-title">новостям</span>
+                            </label>
+
+                            <label class="header-search-options-item ">
+                                <input class="header-search-options-item-radio" type="radio" name="search_in" value="documents" data-form-action="/search/documents/">
+                                <span class="header-search-options-item-title">документам</span>
+                            </label>
+                        </fieldset>
+                    </div>
+                </form>
+            </div>
+            <div class="header_container-links">
+                <div class="header_container-logo">
+                    <a class="header_container-logo-mainlink" href="">
+                        <img class="header_container-logo-img" src="img/main/main-section/Logo.svg" alt="">
+                        <span class="asu-text-small">
+                            Алтайский государственный университет
+                            <br>
+                            <span class="asu-text-large">Абитуриент</span>
+                        </span>
+                    </a>
+                </div>
+
+                <div class="header_container_social-links">
+                    <div class="call-container">
+                        <img src="img/main/main-section/call.svg" alt="">
+                        <a class="phone-link" href="tel:+73852291222">+7 (3852) 291-222</a>
+                    </div>
+                    <button class="call-link" id="showCallModal">заказать звонок</button>
+                </div>
+
+                <div class="links-socials">
+                    <a
+                            href="https://wa.me/79339333799?text=Здравствуйте!%20Напишите%20нам,%20если%20есть%20вопросы.">
                         <img class="x-img x-header-social-icon-whatsapp"
                              src="img/whatsapp.svg"
                              alt="WhatsApp">
                     </a>
-                    <a class="navigation-links-socials-link"
-                       href="https://vk.com/abiturientasu/">
+                    <a href="https://vk.com/abiturientasu/">
                         <img class="mr-2 x-img x-header-social-icon-vk"
                              src="img/main/main-section/vk.svg"
                              alt="Вконтакте">
                     </a>
-                    <a class="navigation-links-socials-link"
-                       href="https://t.me/abiturient22asu">
+                    <a href="https://t.me/abiturient22asu">
                         <img class="mr-2 x-img x-header-social-icon-tg"
                              style="height: 25px; width: 25px; background-image: url('https://telegram.org/img/website_icon.svg?4')"
                              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
                              alt="Telegram">
                     </a>
-                    <a class="navigation-links-socials-link"
-                       href="https://zen.yandex.ru/id/622f05aae171d9758b9e2612">
+                    <a href="https://zen.yandex.ru/id/622f05aae171d9758b9e2612">
                         <img class="x-img x-header-social-icon-zen"
                              style="height: 25px; width: 25px; background-image: url('https://yastatic.net/s3/zen-lib/favicons4/safari-pinned-tab.svg')"
                              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
                              alt="Zen Yandex">
                     </a>
+                </div>
 
+                <div class="header_container-kabinet">
+                    <a class="header_container-kabinet-link" href="">кабинет абитуриента</a>
                 </div>
-                <!-- поиск по сайту -->
-                <div class="header__search">
-                    <button class="header-search_btn" id="open-search-form"></button>
-                    <span class="header-search_span" id="open-search-form-2">поиск по сайту</span>
-                </div>
+
             </div>
         </div>
-    </div>
-
-    <div class="wrapper">
-        <div class="header-search_block" id="search-form">
-            <h2 class="header-search_title">Поиск</h2>
-            <form class="header-search_form" id="_9caf682e5d98dc3f__form" method="get" action="/search/">
-                <div class="header-search_input-label">
-                    <fieldset class="header-search-options">
-                        <div class="header-search-div">
-                            <input class="header-search-query-input" type="text" placeholder="поиск" name="query">
-                            <button class="header-search_btn" disabled=""></button>
-                        </div>
-
-                        <span class="header-search-options-title">искать по:</span>
-                        <label class="header-search-options-item header-search-options-item__current">
-                            <input class="header-search-options-item-radio" type="radio" name="search_in" value="site" checked="checked" data-form-action="/search/">
-                            <span class="header-search-options-item-title">сайту</span>
-                        </label>
-
-                        <label class="header-search-options-item ">
-                            <input class="header-search-options-item-radio" type="radio" name="search_in" value="news" data-form-action="/search/news/">
-                            <span class="header-search-options-item-title">новостям</span>
-                        </label>
-
-                        <label class="header-search-options-item ">
-                            <input class="header-search-options-item-radio" type="radio" name="search_in" value="documents" data-form-action="/search/documents/">
-                            <span class="header-search-options-item-title">документам</span>
-                        </label>
-                    </fieldset>
-                </div>
-            </form>
-        </div>
-        <div class="header_container-links">
-            <div class="header_container-logo">
-                <a class="header_container-logo-mainlink" href="">
-                    <img class="header_container-logo-img" src="img/main/main-section/Logo.svg" alt="">
-                    <span class="asu-text-small">
-                            Алтайский государственный университет
-                            <br>
-                            <span class="asu-text-large">Абитуриент</span>
-                        </span>
-                </a>
-            </div>
-
-            <div class="header_container_social-links">
-                <div class="call-container">
-                    <img src="img/main/main-section/call.svg" alt="">
-                    <a class="phone-link" href="tel:+73852291222">+7 (3852) 291-222</a>
-                </div>
-                <button class="call-link" id="showCallModal">заказать звонок</button>
-            </div>
-
-            <div class="links-socials">
-                <a
-                        href="https://wa.me/79339333799?text=Здравствуйте!%20Напишите%20нам,%20если%20есть%20вопросы.">
-                    <img class="x-img x-header-social-icon-whatsapp"
-                         src="img/whatsapp.svg"
-                         alt="WhatsApp">
-                </a>
-                <a href="https://vk.com/abiturientasu/">
-                    <img class="mr-2 x-img x-header-social-icon-vk"
-                         src="img/main/main-section/vk.svg"
-                         alt="Вконтакте">
-                </a>
-                <a href="https://t.me/abiturient22asu">
-                    <img class="mr-2 x-img x-header-social-icon-tg"
-                         style="height: 25px; width: 25px; background-image: url('https://telegram.org/img/website_icon.svg?4')"
-                         src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                         alt="Telegram">
-                </a>
-                <a href="https://zen.yandex.ru/id/622f05aae171d9758b9e2612">
-                    <img class="x-img x-header-social-icon-zen"
-                         style="height: 25px; width: 25px; background-image: url('https://yastatic.net/s3/zen-lib/favicons4/safari-pinned-tab.svg')"
-                         src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                         alt="Zen Yandex">
-                </a>
-            </div>
-
-            <div class="header_container-kabinet">
-                <a class="header_container-kabinet-link" href="">кабинет абитуриента</a>
-            </div>
-
-        </div>
-    </div>
-</header>
+    </header>
 
     <main>
         <div class="main-buttons-container">
@@ -598,7 +596,8 @@
                     <span class="footer-contacts_address">г. Барнаул, пр. Ленина, 61</span>
                     <a href="mailto:prcom@asu.ru" class="footer-contacts_email">e-mail: prcom@asu.ru</a>
                     <a href="tel:+73852291222" class="footer-contacts_phone">+7 (3852) 291-222</a>
-                    <a href="https://www.asu.ru" class="footer-contacts_website">Перейти на сайт АлтГУ</a>
+                    <a href="https://www.asu.ru" class="footer-contacts_website">Перейти на сайт
+                        АлтГУ</a>
                 </div>
                 <div class="footer-social-links">
                     <span class="footer-social-links_text">Социальные сети:</span>
@@ -614,107 +613,103 @@
                         <a href="https://t.me/abiturient22asu">
                             <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
                                  style="width: 29px; background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNTAiIGhlaWdodD0iNTAiCnZpZXdCb3g9IjAgMCA1MCA1MCIKc3R5bGU9IiBmaWxsOiNmZmZmZmY7Ij48cGF0aCBkPSJNNDYuMTM3LDYuNTUyYy0wLjc1LTAuNjM2LTEuOTI4LTAuNzI3LTMuMTQ2LTAuMjM4bC0wLjAwMiwwQzQxLjcwOCw2LjgyOCw2LjcyOCwyMS44MzIsNS4zMDQsMjIuNDQ1CWMtMC4yNTksMC4wOS0yLjUyMSwwLjkzNC0yLjI4OCwyLjgxNGMwLjIwOCwxLjY5NSwyLjAyNiwyLjM5NywyLjI0OCwyLjQ3OGw4Ljg5MywzLjA0NWMwLjU5LDEuOTY0LDIuNzY1LDkuMjEsMy4yNDYsMTAuNzU4CWMwLjMsMC45NjUsMC43ODksMi4yMzMsMS42NDYsMi40OTRjMC43NTIsMC4yOSwxLjUsMC4wMjUsMS45ODQtMC4zNTVsNS40MzctNS4wNDNsOC43NzcsNi44NDVsMC4yMDksMC4xMjUJYzAuNTk2LDAuMjY0LDEuMTY3LDAuMzk2LDEuNzEyLDAuMzk2YzAuNDIxLDAsMC44MjUtMC4wNzksMS4yMTEtMC4yMzdjMS4zMTUtMC41NCwxLjg0MS0xLjc5MywxLjg5Ni0xLjkzNWw2LjU1Ni0zNC4wNzcJQzQ3LjIzMSw3LjkzMyw0Ni42NzUsNy4wMDcsNDYuMTM3LDYuNTUyeiBNMjIsMzJsLTMsOGwtMy0xMGwyMy0xN0wyMiwzMnoiPjwvcGF0aD48L3N2Zz4=')"
-                                 alt="Telegram"
-                                 class="footer-social-links_icon x-img x-footer-social-icon-telegram">
-                        </a>
+                                 alt="Telegram" class="footer-social-links_icon x-img x-footer-social-icon-telegram"></a>
                         <a href="https://zen.yandex.ru/id/622f05aae171d9758b9e2612">
                             <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
                                  style="width: 29px; background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNTAiIGhlaWdodD0iNTAiCnZpZXdCb3g9IjAgMCA1MCA1MCIKc3R5bGU9IiBmaWxsOiNmZmZmZmY7Ij48cGF0aCBkPSJNNDYuODk0IDIzLjk4NmMuMDA0IDAgLjAwNyAwIC4wMTEgMCAuMjc5IDAgLjU0NS0uMTE3LjczNC0uMzIyLjE5Mi0uMjA4LjI4Ny0uNDg3LjI2Mi0uNzY5QzQ2Ljg5NyAxMS44NTIgMzguMTU0IDMuMTA2IDI3LjExIDIuMWMtLjI4LS4wMjItLjU2Mi4wNjktLjc3LjI2Mi0uMjA4LjE5Mi0uMzI0LjQ2My0uMzIxLjc0NkMyNi4xOTMgMTcuNzg0IDI4LjEyOSAyMy43ODEgNDYuODk0IDIzLjk4NnpNNDYuODk0IDI2LjAxNGMtMTguNzY1LjIwNS0yMC43IDYuMjAyLTIwLjg3NCAyMC44NzgtLjAwMy4yODMuMTEzLjU1NC4zMjEuNzQ2LjE4Ni4xNzEuNDI5LjI2Ni42NzkuMjY2LjAzIDAgLjA2MS0uMDAxLjA5MS0uMDA0IDExLjA0NC0xLjAwNiAxOS43ODctOS43NTEgMjAuNzktMjAuNzk1LjAyNS0uMjgyLS4wNjktLjU2MS0uMjYyLS43NjlDNDcuNDQ2IDI2LjEyOCA0Ny4xNzcgMjYuMDI1IDQ2Ljg5NCAyNi4wMTR6TTIyLjgyMyAyLjEwNUMxMS44MTQgMy4xNCAzLjA5OSAxMS44ODQgMi4xIDIyLjg5N2MtLjAyNS4yODIuMDY5LjU2MS4yNjIuNzY5LjE4OS4yMDUuNDU2LjMyMS43MzQuMzIxLjAwNCAwIC4wMDggMCAuMDEyIDAgMTguNzAzLS4yMTUgMjAuNjM0LTYuMjA5IDIwLjgxLTIwLjg3NS4wMDMtLjI4My0uMTE0LS41NTUtLjMyMi0uNzQ3QzIzLjM4NiAyLjE3MyAyMy4xMDUgMi4wNzkgMjIuODIzIDIuMTA1ek0zLjEwNyAyNi4wMTNjLS4zMTEtLjAzNS0uNTU1LjExMy0uNzQ2LjMyMS0uMTkyLjIwOC0uMjg3LjQ4Ny0uMjYyLjc2OS45OTkgMTEuMDEzIDkuNzE1IDE5Ljc1NyAyMC43MjQgMjAuNzkyLjAzMS4wMDMuMDYzLjAwNC4wOTQuMDA0LjI1IDAgLjQ5Mi0uMDk0LjY3OC0uMjY1LjIwOC0uMTkyLjMyNS0uNDY0LjMyMi0uNzQ3QzIzLjc0MSAzMi4yMjIgMjEuODExIDI2LjIyOCAzLjEwNyAyNi4wMTN6Ij48L3BhdGg+PC9zdmc+') "
-                                 alt="Zen Yandex"
-                                 class="footer-social-links_icon x-img x-footer-social-icon-zen">
-                        </a>
+                                 alt="Zen Yandex" class="footer-social-links_icon x-img x-footer-social-icon-zen"></a>
                     </div>
                     <div class="footer-social-links_hashtag">
                         <img class="x-img x-footer-hashtag" src="img/main/footer/hashtag.svg" alt="Хэштег">
-                        <div class="footer-social-links_hashtag_text d-flex flex-column">
+                        <div class="footer-social-links_hashtag_text">
                             <span>Амбициозность</span>
                             <span>Глобальность</span>
                             <span>Успех</span>
                         </div>
                     </div>
                 </div>
-                <div class="footer-asu-name-text">
-                    <span class="footer-asu">
-                        Алтайский государственный университет. 2023
-                    </span>
-                </div>
+            </div>
+            <div class="footer-asu-name-text">
+                <span class="footer-asu text-center text-md-left mt-0">
+                    Алтайский государственный университет. 2023
+                </span>
             </div>
         </div>
     </footer>
 
     <div class="modal" id="modal_container">
-            <div class="modal__backdrop" data-dismiss="modal">
-                <div class="modal__content">
-                    <div class="modal__header">
-                        <div class="modal__title" data-modal="title">Заказать звонок</div>
-                        <span class="modal__btn-close" data-dismiss="modal" title="Закрыть" id="modal__btn-close">×</span>
+        <div class="modal__backdrop" data-dismiss="modal">
+            <div class="modal__content">
+                <div class="modal__header">
+                    <div class="modal__title" data-modal="title">Заказать звонок</div>
+                    <span class="modal__btn-close" data-dismiss="modal" title="Закрыть" id="modal__btn-close">×</span>
+                </div>
+                <div class="modal__body" data-modal="content">
+                    <div class="callModalHeader">
+                        <img class="x-img x-call-modal-icon"
+                             src="img/main/main-section/Logo.svg"
+                             width="90" height="90" alt="">
+                        <div class="callModalHeaderText">
+                            <h2>Остались вопросы?</h2>
+                            <p>
+                                Оставь заявку на сайте и мы перезвоним
+                                <br>
+                                в ближайшее время!
+                            </p>
+                        </div>
                     </div>
-                    <div class="modal__body" data-modal="content">
-                        <div class="callModalHeader">
-                            <img class="x-img x-call-modal-icon"
-                                 src="img/main/main-section/Logo.svg"
-                                 width="90" height="90" alt="">
-                            <div class="callModalHeaderText">
-                                <h2>Остались вопросы?</h2>
-                                <p>
-                                    Оставь заявку на сайте и мы перезвоним
-                                    <br>
-                                    в ближайшее время!
-                                </p>
+                    <div class="callModalFormWrapper">
+                        <form>
+                            <div class="callModalFormRow">
+                                <div class="callModalFormColumn">
+                                    <label for="name">Имя</label>
+                                    <input type="text" id="name" name="name" required="">
+                                </div>
+                                <div class="callModalFormColumn">
+                                    <label for="secondName">Фамилия</label>
+                                    <input type="text" id="secondName" name="secondName" required="">
+                                </div>
                             </div>
-                        </div>
-                        <div class="callModalFormWrapper">
-                            <form>
-                                <div class="callModalFormRow">
-                                    <div class="callModalFormColumn">
-                                        <label for="name">Имя</label>
-                                        <input type="text" id="name" name="name" required="">
-                                    </div>
-                                    <div class="callModalFormColumn">
-                                        <label for="secondName">Фамилия</label>
-                                        <input type="text" id="secondName" name="secondName" required="">
-                                    </div>
-                                </div>
-                                <div class="callModalFormColumn">
-                                    <label for="tel">Номер телефона</label>
-                                    <input type="tel" value="+7" pattern="^[7|8]{0,1}\d{10}$|(^\+7{1}\d{10}$)"
-                                           maxlength="12" id="tel" name="phoneNumber" required="">
-                                    <small>Пример: +71235641122</small>
-                                </div>
-                                <div class="callModalFormColumn">
-                                    <label for="question">Опишите ваш вопрос</label>
-                                    <textarea rows="10" cols="25" id="question" name="question"
-                                              placeholder="Напишите интересующий Вас вопрос..." required=""></textarea>
-                                </div>
-                                <div class="callModalFormColumn">
-                                    <input class="callModalFormColumnInput" type="submit" value="отправить">
-                                    <small class="text-center">Нажимая на кнопку, вы принимаете
-                                        <a href="#">Положение и Согласия</a> на обработку
-                                        персональных данных.
-                                    </small>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="callModalSuccessAlert">
-                            <h3>Ваш запрос принят</h3>
-                            <p>Ожидайте ответ в ближайшее время</p>
-                        </div>
-                        <div class="callModalErrorAlert">
-                            <h3>Ошибка</h3>
-                            <p>Одно или несколько полей заполнено неправильно</p>
-                        </div>
+                            <div class="callModalFormColumn">
+                                <label for="tel">Номер телефона</label>
+                                <input type="tel" value="+7" pattern="^[7|8]{0,1}\d{10}$|(^\+7{1}\d{10}$)"
+                                       maxlength="12" id="tel" name="phoneNumber" required="">
+                                <small>Пример: +71235641122</small>
+                            </div>
+                            <div class="callModalFormColumn">
+                                <label for="question">Опишите ваш вопрос</label>
+                                <textarea rows="10" cols="25" id="question" name="question"
+                                          placeholder="Напишите интересующий Вас вопрос..." required=""></textarea>
+                            </div>
+                            <div class="callModalFormColumn">
+                                <input class="callModalFormColumnInput" type="submit" value="отправить">
+                                <small class="text-center">Нажимая на кнопку, вы принимаете
+                                    <a href="#">Положение и Согласия</a> на обработку
+                                    персональных данных.
+                                </small>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="callModalSuccessAlert">
+                        <h3>Ваш запрос принят</h3>
+                        <p>Ожидайте ответ в ближайшее время</p>
+                    </div>
+                    <div class="callModalErrorAlert">
+                        <h3>Ошибка</h3>
+                        <p>Одно или несколько полей заполнено неправильно</p>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-    <div class="whatsapp-button" style="bottom: 70px;">
+    <div class="whatsapp-button">
         <a href="https://wa.me/79339333799?text=Здравствуйте!%20Напишите%20нам,%20если%20есть%20вопросы.">
             <img class="x-img x-whatsapp-button-icon"
                  src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="WhatsApp">
         </a>
     </div>
-
+</div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="js/lottie-player.js"></script>

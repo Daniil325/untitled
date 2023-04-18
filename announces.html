@@ -12,538 +12,600 @@
     <link rel="stylesheet" href="owl/owl.theme.default.min.css">
 </head>
 <body>
-<header class="header">
-    <div class="header_container-bg">
-        <div class="header_wrapper">
-            <div class="header_navigation">
-                <nav class="header_navigation-nav">
-                    <ul class="header_navigation-ul">
-                        <li class="header_navigation-ul-item">
-                            <a href="https://www.asu.ru/">Университет</a>
-                        </li>
-                        <li class="header_navigation-ul-item">
-                            <a href="https://school.asu.ru/">Школьник АлтГУ</a>
-                        </li>
-                        <li>
-                            <div class="links-phone">
-                                <div class="phone-wrapper">
-                                    <img class="x-header-navigation-icon-call"
-                                         src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                                         alt="Номер для звонков">
-                                    <a href="tel:+73852291222">+7 (3852) 291-222</a>
+    <div class="main-wrapper">
+        <header class="header">
+            <div class="header_container-bg">
+                <div class="header_wrapper">
+                    <div class="header_navigation">
+                        <nav class="header_navigation-nav">
+                            <ul class="header_navigation-ul">
+                                <li class="header_navigation-ul-item">
+                                    <a href="https://www.asu.ru/">Университет</a>
+                                </li>
+                                <li class="header_navigation-ul-item">
+                                    <a href="https://school.asu.ru/">Школьник АлтГУ</a>
+                                </li>
+
+                                <li class="header_navigation-ul-item">
+                                    <div class="links-phone">
+                                        <div class="phone-wrapper">
+                                            <img class="x-header-navigation-icon-call"
+                                                 src="img/main/main-section/call.svg"
+                                                 alt="Номер для звонков">
+                                            <a class="phone-wrapper-link" href="tel:+73852291222">+7 (3852) 291-222</a>
+                                        </div>
+                                        <button class="call-link" id="showCallModalFromMenu">
+                                            Заказать звонок
+                                        </button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="header_navigation_social_links">
+                        <div class="navigation-links-socials">
+                            <a class="navigation-links-socials-link"
+                               href="https://wa.me/79339333799?text=Здравствуйте!%20Напишите%20нам,%20если%20есть%20вопросы.">
+                                <img class="x-img x-header-social-icon-whatsapp"
+                                     src="img/whatsapp.svg"
+                                     alt="WhatsApp">
+                            </a>
+                            <a class="navigation-links-socials-link"
+                               href="https://vk.com/abiturientasu/">
+                                <img class="x-img x-header-social-icon-vk"
+                                     src="img/main/main-section/vk.svg"
+                                     alt="Вконтакте">
+                            </a>
+                            <a class="navigation-links-socials-link"
+                               href="https://t.me/abiturient22asu">
+                                <img class="x-img x-header-social-icon-tg"
+                                     src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                                     alt="Telegram">
+                            </a>
+                            <a class="navigation-links-socials-link"
+                               href="https://zen.yandex.ru/id/622f05aae171d9758b9e2612">
+                                <img class="x-img x-header-social-icon-zen"
+                                     src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                                     alt="Zen Yandex">
+                            </a>
+                        </div>
+                        <!-- поиск по сайту -->
+                        <div class="header__search">
+                            <button class="header-search_btn" id="open-search-form"></button>
+                            <span class="header-search_span" id="open-search-form-2">поиск по сайту</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrapper">
+                <div class="header-search_block" id="search-form">
+                    <h2 class="header-search_title">Поиск</h2>
+                    <form class="header-search_form" id="_9caf682e5d98dc3f__form" method="get" action="/search/">
+                        <div class="header-search_input-label">
+                            <fieldset class="header-search-options">
+                                <div class="header-search-div">
+                                    <input class="header-search-query-input" type="text" placeholder="поиск" name="query">
+                                    <button class="header-search_btn" disabled=""></button>
                                 </div>
-                                <button class="call-link" id="showCallModalFromMenu">
-                                    Заказать звонок
-                                </button>
-                            </div>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="header_navigation_social_links">
 
-            </div>
-            <div class="header_navigation_search">
-                <form class="search" action="/search/">
-                    <img class="x-img x-search-icon"
-                         src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==">
-                    <input id="header-search" type="text" name="query" placeholder="Поиск по сайту">
-                </form>
-            </div>
-        </div>
-    </div>
+                                <span class="header-search-options-title">искать по:</span>
+                                <label class="header-search-options-item header-search-options-item__current">
+                                    <input class="header-search-options-item-radio" type="radio" name="search_in" value="site" checked="checked" data-form-action="/search/">
+                                    <span class="header-search-options-item-title">сайту</span>
+                                </label>
 
-    <div class="wrapper">
-        <div class="header_container-links">
-            <div class="header_container-logo">
-                <a class="header_container-logo-mainlink" href="">
-                    <img class="header_container-logo-img" src="img/main/main-section/Logo.svg" alt="">
-                    <span class="asu-text-small">Алтайский государственный
-                            университет <br> <span class="asu-text-large">Абитуриент</span></span>
-                </a>
-            </div>
+                                <label class="header-search-options-item ">
+                                    <input class="header-search-options-item-radio" type="radio" name="search_in" value="news" data-form-action="/search/news/">
+                                    <span class="header-search-options-item-title">новостям</span>
+                                </label>
 
-            <div class="header_container_social-links">
-                <a class="phone-link" href="tel:+73852291222">+7 (3852) 291-222</a>
-                <button class="call-link">заказать звонок</button>
-            </div>
-
-            <div class="links-socials">
-                <a
-                        href="https://wa.me/79339333799?text=Здравствуйте!%20Напишите%20нам,%20если%20есть%20вопросы.">
-                    <img class="mr-2 x-img x-header-social-icon-whatsapp"
-                         src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                         alt="WhatsApp">
-                </a>
-                <a href="https://vk.com/abiturientasu/">
-                    <img class="x-img x-header-social-icon-vk"
-                         src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                         alt="Вконтакте">
-                </a>
-                <a href="https://t.me/abiturient22asu">
-                    <img class="x-img x-header-social-icon-tg"
-                         style="height: 25px; width: 25px; background-image: url('https://telegram.org/img/website_icon.svg?4')"
-                         src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                         alt="Telegram">
-                </a>
-                <a href="https://zen.yandex.ru/id/622f05aae171d9758b9e2612">
-                    <img class="x-img x-header-social-icon-zen"
-                         style="height: 25px; width: 25px; background-image: url('https://yastatic.net/s3/zen-lib/favicons4/safari-pinned-tab.svg')"
-                         src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                         alt="Zen Yandex">
-                </a>
-            </div>
-
-            <div class="header_container-kabinet">
-                <a class="header_container-kabinet-link" href="">кабинет абитуриента</a>
-            </div>
-
-        </div>
-    </div>
-
-</header>
-
-<main>
-    <div class="main-buttons-container">
-        <div class="dropdown closed main-button">
-            <h2 class="icon">
-                <a href="/bachelor/">Бакалавриат и специалитет</a>
-            </h2>
-            <ul class="menu list-unstyled">
-                <li><a href="/bachelor/roditelym/">#РОДИТЕЛЯМСЮДА</a></li>
-                <li><a href="/obrprog/">Образовательные программы бакалавриата</a></li>
-                <li><a href="/bachelor/documents2021/">Нормативные документы</a></li>
-                <li><a href="/bachelor/test/">Количество мест</a></li>
-                <li><a href="/bachelor/docs_go2021/">Как и когда подать документы</a></li>
-                <li><a href="/bachelor/calc/">Калькулятор абитуриента</a></li>
-                <li><a href="/bachelor/exam2021/">Вступительные испытания</a></li>
-                <li><a href="/bachelor/celev2021/">Целевое обучение</a></li>
-                <li><a href="/bachelor/paid_edu2021/">Платное образование</a></li>
-                <li><a href="http://abiturient.asu.ru/international/">Прием иностранных граждан</a></li>
-                <li><a href="/bachelor/grants2021/">Стипендии и материальная поддержка</a></li>
-                <li><a href="/bachelor/inf2021/">Обязательства по информированию</a></li>
-                <li><a href="https://abiturient.asu.ru/feedback2021/">Обратная связь</a></li>
-            </ul>
-        </div>
-        <div class="dropdown closed main-button">
-            <h2 class="icon d-flex justify-content-center align-items-center">
-                <a href="/postgraduate/">Магистратура и аспирантура</a>
-            </h2>
-            <ul class="menu">
-                <li><a href="/programmag/">Образовательные программы магистратуры</a></li>
-                <li><a href="/programaspir/">Научные специальности аспирантуры</a></li>
-                <li><a href="/postgraduate/documents2021/">Нормативные документы</a></li>
-                <li><a href="/postgraduate/magkvot/">Количество мест (магистратура)</a></li>
-                <li><a href="/postgraduate/aspkvot/">Количество мест (аспирантура)</a></li>
-                <li><a href="/postgraduate/docs_go2023/">Как и когда подать документы</a></li>
-                <li><a href="/postgraduate/programs2021/">Вступительные испытания</a></li>
-                <li><a href="/postgraduate/celev2021/">Целевое обучение</a></li>
-                <li><a href="/postgraduate/international2021/">Прием иностранных граждан</a></li>
-                <li><a href="/postgraduate/paid_edu2021/">Платное образование</a></li>
-                <li><a href="https://abiturient.asu.ru/feedback2021/">Обратная связь</a></li>
-            </ul>
-        </div>
-        <div class="dropdown main-button closed">
-            <h2 class="icon">
-                <a href="/college/">Колледж АГУ</a>
-            </h2>
-            <ul class="menu">
-                <li><a href="/college/rodspo/">#РОДИТЕЛЯМСЮДА</a></li>
-                <li><a href="/college/documents2021/">Нормативные документы</a></li>
-                <li><a href="/college/docs_go2021/">Как и когда подать документы</a></li>
-                <li><a href="/college/programs2021/">Вступительные испытания</a></li>
-                <li><a href="/college/paid_edu2021/">Платное образование</a></li>
-                <li><a href="https://abiturient.asu.ru/feedback2021/">Обратная связь</a></li>
-            </ul>
-        </div>
-        <div class="dropdown main-button closed">
-            <h2 class="icon">
-                <a href="/ratings/">Рейтинги</a>
-            </h2>
-            <ul class="menu">
-                <li><a href="/ratings/comp2022/">Проходные баллы 2022</a></li>
-                <li><a href="/ratings/admissions/">Прием 2022</a></li>
-                <li><a href="/ratings/order/">Приказы о зачислении</a></li>
-                <li><a href="https://abiturient.asu.ru/feedback2021/">Обратная связь</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="header-burger-menu">
-        <button class="header-burger-button">
-            <!-- Open menu   -->
-            <svg class="openBurgerMenu" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 0 24 24"
-                 width="30px" fill="#ffffff">
-                <path d="M0 0h24v24H0V0z" fill="none"></path>
-                <path d="M4 18h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zm0-5h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zM3 7c0 .55.45 1 1 1h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1z"></path>
-            </svg>
-            <!-- Close menu -->
-            <svg class="closeBurgerMenu" xmlns="http://www.w3.org/2000/svg" height="30px"
-                 viewBox="0 0 24 24" width="30px" fill="#ffffff">
-                <path d="M0 0h24v24H0V0z" fill="none"></path>
-                <path d="M18.3 5.71c-.39-.39-1.02-.39-1.41 0L12 10.59 7.11 5.7c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L10.59 12 5.7 16.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l4.89 4.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z"></path>
-            </svg>
-        </button>
-
-        <div class="menuBurger">
-            <div class="burgerGrid">
-                <div class="bg-red burgerCell">
-                    <a class="burgerHeader" href="/bachelor/">Бакалавриат и специалитет</a>
-                    <ul class="burgerList list-unstyled">
-                        <li><a href="/bachelor/roditelym/">#РОДИТЕЛЯМСЮДА</a></li>
-                        <li><a href="/obrprog/">Образовательные программы бакалавриата</a></li>
-                        <li><a href="/bachelor/documents2021/">Нормативные документы</a></li>
-                        <li><a href="/bachelor/test/">Количество мест</a></li>
-                        <li><a href="/bachelor/docs_go2021/">Как и когда подать документы</a></li>
-                        <li><a href="/bachelor/calc/">Калькулятор абитуриента</a></li>
-                        <li><a href="/bachelor/exam2021/">Вступительные испытания</a></li>
-                        <li><a href="/bachelor/celev2021/">Целевое обучение</a></li>
-                        <li><a href="/bachelor/paid_edu2021/">Платное образование</a></li>
-                        <li><a href="http://abiturient.asu.ru/international/">Прием иностранных граждан</a></li>
-                        <li><a href="/bachelor/grants2021/">Стипендии и материальная поддержка</a></li>
-                        <li><a href="/bachelor/inf2021/">Обязательства по информированию</a></li>
-                        <li><a href="https://abiturient.asu.ru/feedback2021/">Обратная связь</a></li>
-                    </ul>
-                </div>
-                <div class="bg-orange burgerCell">
-                    <a class="burgerHeader" href="/postgraduate/">Магистратура и аспирантура</a>
-                    <ul class="burgerList list-unstyled">
-                        <li><a href="/programmag/">Образовательные программы магистратуры</a></li>
-                        <li><a href="/programaspir/">Научные специальности аспирантуры</a></li>
-                        <li><a href="/postgraduate/documents2021/">Нормативные документы</a></li>
-                        <li><a href="/postgraduate/magkvot/">Количество мест (магистратура)</a></li>
-                        <li><a href="/postgraduate/aspkvot/">Количество мест (аспирантура)</a></li>
-                        <li><a href="/postgraduate/docs_go2023/">Как и когда подать документы</a></li>
-                        <li><a href="/postgraduate/programs2021/">Вступительные испытания</a></li>
-                        <li><a href="/postgraduate/celev2021/">Целевое обучение</a></li>
-                        <li><a href="/postgraduate/international2021/">Прием иностранных граждан</a></li>
-                        <li><a href="/postgraduate/paid_edu2021/">Платное образование</a></li>
-                        <li><a href="https://abiturient.asu.ru/feedback2021/">Обратная связь</a></li>
-                    </ul>
-                </div>
-                <div class="bg-green burgerCell">
-                    <a class="burgerHeader" href="/college/">Колледж АГУ</a>
-                    <ul class="burgerList list-unstyled">
-                        <li><a href="/college/rodspo/">#РОДИТЕЛЯМСЮДА</a></li>
-                        <li><a href="/college/documents2021/">Нормативные документы</a></li>
-                        <li><a href="/college/docs_go2021/">Как и когда подать документы</a></li>
-                        <li><a href="/college/programs2021/">Вступительные испытания</a></li>
-                        <li><a href="/college/paid_edu2021/">Платное образование</a></li>
-                        <li><a href="https://abiturient.asu.ru/feedback2021/">Обратная связь</a></li>
-                    </ul>
-                </div>
-                <div class="bg-blue burgerCell">
-                    <a class="burgerHeader" href="/ratings/">Рейтинги</a>
-                    <ul class="burgerList list-unstyled">
-                        <li><a href="/ratings/comp2022/">Проходные баллы 2022</a></li>
-                        <li><a href="/ratings/admissions/">Прием 2022</a></li>
-                        <li><a href="/ratings/order/">Приказы о зачислении</a></li>
-                        <li><a href="https://abiturient.asu.ru/feedback2021/">Обратная связь</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="wrapper">
-        <div class="container">
-            <div class="breadcrumbs">
-                <ul class="breadcrumbs-ul">
-                    <li class="breadcrumbs-item active">
-                        <a href="/">Главная</a>
-                    </li>
-                    <li class="breadcrumbs-item">Новости</li>
-                </ul>
-            </div>
-        </div>
-        <h1 class="page-title">Объявления</h1>
-        <div class="second-page__container">
-            <div class="news-wrapper">
-                <ul class="announces__container">
-                    <li class="announces-news-item">
-                        <a class="announces-news-item-link" href="47543/">Олимпиада для школьников по химии</a>
-                        <br>
-                        <span class="announces-news-item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias culpa eligendi, illum in molestiae nesciunt totam ullam? Cumque distinctio et, eum ipsam numquam obcaecati tempore velit. Architecto assumenda atque, beatae consequuntur cum eligendi expedita explicabo impedit molestiae nobis perferendis quasi quisquam sapiente, similique sit sunt suscipit tempora voluptatem voluptates voluptatibus! Blanditiis porro sapiente temporibus veniam voluptas! Delectus eaque facere inventore!</span>
-                        <br>
-                        <span class="announces-news-item-date">9 января – 23&nbsp;апреля</span>
-                        <br>
-                        <span class="announces-news-item-signature">автор новости</span>
-                    </li>
-                    <li class="announces-news-item">
-                        <a class="announces-news-item-link" href="47543/">Олимпиада для школьников по химии</a>
-                        <br>
-                        <span class="announces-news-item-date">9 января – 23&nbsp;апреля</span>
-                        <br>
-                        <span class="announces-news-item-signature">автор новости</span>
-                    </li>
-                    <li class="announces-news-item">
-                        <a class="announces-news-item-link" href="47543/">Олимпиада для школьников по химии</a>
-                        <br>
-                        <span class="announces-news-item-date">9 января – 23&nbsp;апреля</span>
-                        <br>
-                        <span class="announces-news-item-signature">автор новости</span>
-                    </li>
-                    <li class="announces-news-item">
-                        <a class="announces-news-item-link" href="47543/">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
-                        <br>
-                        <span class="announces-news-item-date">9 января – 23&nbsp;апреля</span>
-                        <br>
-                        <span class="announces-news-item-signature">автор новости</span>
-                    </li>
-                    <li class="announces-news-item">
-                        <a class="announces-news-item-link" href="47543/">Олимпиада для школьников по химии</a>
-                        <br>
-                        <span class="announces-news-item-date">9 января – 23&nbsp;апреля</span>
-                        <br>
-                        <span class="announces-news-item-signature">автор новости</span>
-                    </li>
-                    <li class="announces-news-item">
-                        <a class="announces-news-item-link" href="47543/">Олимпиада для школьников по химии</a>
-                        <br>
-                        <span class="announces-news-item-date">9 января – 23&nbsp;апреля</span>
-                        <br>
-                        <span class="announces-news-item-signature">автор новости</span>
-                    </li>
-                    <li class="announces-news-item">
-                        <a class="announces-news-item-link" href="47543/">Олимпиада для школьников по химии</a>
-                        <br>
-                        <span class="announces-news-item-date">9 января – 23&nbsp;апреля</span>
-                        <br>
-                        <span class="announces-news-item-signature">автор новости</span>
-                    </li>
-                    <li class="announces-news-item">
-                        <a class="announces-news-item-link" href="47543/">Олимпиада для школьников по химии</a>
-                        <br>
-                        <span class="announces-news-item-date">9 января – 23&nbsp;апреля</span>
-                        <br>
-                        <span class="announces-news-item-signature">автор новости</span>
-                    </li>
-                    <li class="announces-news-item">
-                        <a class="announces-news-item-link" href="47543/">Олимпиада для школьников по химии</a>
-                        <br>
-                        <span class="announces-news-item-date">9 января – 23&nbsp;апреля</span>
-                        <br>
-                        <span class="announces-news-item-signature">автор новости</span>
-                    </li>
-                    <li class="announces-news-item">
-                        <a class="announces-news-item-link" href="47543/">Олимпиада для школьников по химии</a>
-                        <br>
-                        <span class="announces-news-item-date">9 января – 23&nbsp;апреля</span>
-                        <br>
-                        <span class="announces-news-item-signature">автор новости</span>
-                    </li>
-                    <li class="announces-news-item">
-                        <a class="announces-news-item-link" href="47543/">Олимпиада для школьников по химии</a>
-                        <br>
-                        <span class="announces-news-item-date">9 января – 23&nbsp;апреля</span>
-                        <br>
-                        <span class="announces-news-item-signature">автор новости</span>
-                    </li>
-                    <li class="announces-news-item">
-                        <a class="announces-news-item-link" href="47543/">Олимпиада для школьников по химии</a>
-                        <br>
-                        <span class="announces-news-item-date">9 января – 23&nbsp;апреля</span>
-                        <br>
-                        <span class="announces-news-item-signature">автор новости</span>
-                    </li>
-                </ul>
-                <div class="pagination">
-                    <span class="pagination-label">
-                        Всего новостей:
-                        <span class="pagination-label-total">1918</span>,
-                    </span>
-                    <span class="pagination-label">страницы:</span>
-                    <ul class="pagination-pages">
-                        <li class="pagination-pages-item" data-selected="selected">1</li>
-                        <li class="pagination-pages-item">
-                            <a class="pagination-pages-item-link" href="?page=2">2</a>
-                        </li>
-                        <li class="pagination-pages-item">
-                            <a class="pagination-pages-item-link" href="?page=3">3</a>
-                        </li>
-                        <li class="pagination-pages-item">
-                            <a class="pagination-pages-item-link" href="?page=4">4</a>
-                        </li>
-                        <li class="pagination-pages-item">
-                            <a class="pagination-pages-item-link" href="?page=5">5</a>
-                        </li>
-                    </ul>
-
-                    <a class="pagination-next" href="?page=2" title="следующая страница"></a>
-                    <a class="pagination-last" href="?page=120" title="последняя страница"></a>
-                </div>
-            </div>
-
-            <div class="right-menu">
-                <div class="second-menu">
-                    <h3 class="second-menu-title">Новости</h3>
-                    <ul class="second-menu-ul">
-                        <li class="second-menu-ul-item selected"><a href="">события</a></li>
-                        <li class="second-menu-ul-item selected"><a href="">объявления</a></li>
-                        <li class="second-menu-ul-item selected"><a href="">новое на сайте</a></li>
-                        <li class="second-menu-ul-item selected"><a href="">пресса</a></li>
-                        <li class="second-menu-ul-item selected"><a href="">календарь событий</a></li>
-                        <li class="second-menu-ul-item selected"><a href="">специальные проекты</a></li>
-                    </ul>
-                </div>
-                <div class="calendar-wrapper">
-                    <div id="divCal">
-                        <!-- календарь генерируется в файле second.js -->
-                    </div>
-                    <div class="cal-btns">
-                        <p class="btnPrev"><b id="btnPrev">‹</b></p>
-                        <p class="btnNext"><b id="btnNext">›</b></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</main>
-
-<footer class="footer">
-    <div class="footer-container">
-        <div class="footer-wrapper">
-            <div class="footer-logo">
-                <img class="footer-logo_img x-img x-footer-logo" loading="lazy"
-                     src="img/main/footer/Logo_LightWhite.svg">
-            </div>
-            <div class="footer-resources">
-                <nav class="footer-nav">
-                    <ul class="footer-ul">
-                        <li>
-                            <a href="https://minobrnauki.gov.ru/" class="footer-resources_link">
-                                Министерство науки и высшего образования РФ
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://edu.ru/" class="footer-resources_link">
-                                Федеральный портал "Российское образование"
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://www.educaltai.ru/" class="footer-resources_link">
-                                Министерство образования и науки АК
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="footer-contacts">
-                <span class="footer-contacts_address">г. Барнаул, пр. Ленина, 61</span>
-                <a href="mailto:prcom@asu.ru" class="footer-contacts_email">e-mail: prcom@asu.ru</a>
-                <a href="tel:+73852291222" class="footer-contacts_phone">+7 (3852) 291-222</a>
-                <a href="https://www.asu.ru" class="footer-contacts_website">Перейти на сайт
-                    АлтГУ</a>
-            </div>
-            <div class="footer-social-links">
-                <span class="footer-social-links_text">Социальные сети:</span>
-                <div class="footer-social-links_icons d-flex">
-                    <a href="https://www.youtube.com/channel/UCWhne-7vu55DDZx-A1ToYAw/">
-                        <img src="img/main/footer/youtube.svg" alt="YouTube"
-                             class="footer-social-links_icon x-img x-footer-social-icon-youtube">
-                    </a>
-                    <a href="https://vk.com/abiturientasu/">
-                        <img src="img/main/footer/vk.svg" alt="Вконтакте"
-                             class="footer-social-links_icon x-img x-footer-social-icon-vk">
-                    </a>
-                    <a href="https://t.me/abiturient22asu">
-                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                             style="width: 29px; background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNTAiIGhlaWdodD0iNTAiCnZpZXdCb3g9IjAgMCA1MCA1MCIKc3R5bGU9IiBmaWxsOiNmZmZmZmY7Ij48cGF0aCBkPSJNNDYuMTM3LDYuNTUyYy0wLjc1LTAuNjM2LTEuOTI4LTAuNzI3LTMuMTQ2LTAuMjM4bC0wLjAwMiwwQzQxLjcwOCw2LjgyOCw2LjcyOCwyMS44MzIsNS4zMDQsMjIuNDQ1CWMtMC4yNTksMC4wOS0yLjUyMSwwLjkzNC0yLjI4OCwyLjgxNGMwLjIwOCwxLjY5NSwyLjAyNiwyLjM5NywyLjI0OCwyLjQ3OGw4Ljg5MywzLjA0NWMwLjU5LDEuOTY0LDIuNzY1LDkuMjEsMy4yNDYsMTAuNzU4CWMwLjMsMC45NjUsMC43ODksMi4yMzMsMS42NDYsMi40OTRjMC43NTIsMC4yOSwxLjUsMC4wMjUsMS45ODQtMC4zNTVsNS40MzctNS4wNDNsOC43NzcsNi44NDVsMC4yMDksMC4xMjUJYzAuNTk2LDAuMjY0LDEuMTY3LDAuMzk2LDEuNzEyLDAuMzk2YzAuNDIxLDAsMC44MjUtMC4wNzksMS4yMTEtMC4yMzdjMS4zMTUtMC41NCwxLjg0MS0xLjc5MywxLjg5Ni0xLjkzNWw2LjU1Ni0zNC4wNzcJQzQ3LjIzMSw3LjkzMyw0Ni42NzUsNy4wMDcsNDYuMTM3LDYuNTUyeiBNMjIsMzJsLTMsOGwtMy0xMGwyMy0xN0wyMiwzMnoiPjwvcGF0aD48L3N2Zz4=')"
-                             alt="Telegram" class="footer-social-links_icon x-img x-footer-social-icon-telegram"></a>
-                    <a href="https://zen.yandex.ru/id/622f05aae171d9758b9e2612">
-                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                             style="width: 29px; background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNTAiIGhlaWdodD0iNTAiCnZpZXdCb3g9IjAgMCA1MCA1MCIKc3R5bGU9IiBmaWxsOiNmZmZmZmY7Ij48cGF0aCBkPSJNNDYuODk0IDIzLjk4NmMuMDA0IDAgLjAwNyAwIC4wMTEgMCAuMjc5IDAgLjU0NS0uMTE3LjczNC0uMzIyLjE5Mi0uMjA4LjI4Ny0uNDg3LjI2Mi0uNzY5QzQ2Ljg5NyAxMS44NTIgMzguMTU0IDMuMTA2IDI3LjExIDIuMWMtLjI4LS4wMjItLjU2Mi4wNjktLjc3LjI2Mi0uMjA4LjE5Mi0uMzI0LjQ2My0uMzIxLjc0NkMyNi4xOTMgMTcuNzg0IDI4LjEyOSAyMy43ODEgNDYuODk0IDIzLjk4NnpNNDYuODk0IDI2LjAxNGMtMTguNzY1LjIwNS0yMC43IDYuMjAyLTIwLjg3NCAyMC44NzgtLjAwMy4yODMuMTEzLjU1NC4zMjEuNzQ2LjE4Ni4xNzEuNDI5LjI2Ni42NzkuMjY2LjAzIDAgLjA2MS0uMDAxLjA5MS0uMDA0IDExLjA0NC0xLjAwNiAxOS43ODctOS43NTEgMjAuNzktMjAuNzk1LjAyNS0uMjgyLS4wNjktLjU2MS0uMjYyLS43NjlDNDcuNDQ2IDI2LjEyOCA0Ny4xNzcgMjYuMDI1IDQ2Ljg5NCAyNi4wMTR6TTIyLjgyMyAyLjEwNUMxMS44MTQgMy4xNCAzLjA5OSAxMS44ODQgMi4xIDIyLjg5N2MtLjAyNS4yODIuMDY5LjU2MS4yNjIuNzY5LjE4OS4yMDUuNDU2LjMyMS43MzQuMzIxLjAwNCAwIC4wMDggMCAuMDEyIDAgMTguNzAzLS4yMTUgMjAuNjM0LTYuMjA5IDIwLjgxLTIwLjg3NS4wMDMtLjI4My0uMTE0LS41NTUtLjMyMi0uNzQ3QzIzLjM4NiAyLjE3MyAyMy4xMDUgMi4wNzkgMjIuODIzIDIuMTA1ek0zLjEwNyAyNi4wMTNjLS4zMTEtLjAzNS0uNTU1LjExMy0uNzQ2LjMyMS0uMTkyLjIwOC0uMjg3LjQ4Ny0uMjYyLjc2OS45OTkgMTEuMDEzIDkuNzE1IDE5Ljc1NyAyMC43MjQgMjAuNzkyLjAzMS4wMDMuMDYzLjAwNC4wOTQuMDA0LjI1IDAgLjQ5Mi0uMDk0LjY3OC0uMjY1LjIwOC0uMTkyLjMyNS0uNDY0LjMyMi0uNzQ3QzIzLjc0MSAzMi4yMjIgMjEuODExIDI2LjIyOCAzLjEwNyAyNi4wMTN6Ij48L3BhdGg+PC9zdmc+') "
-                             alt="Zen Yandex" class="footer-social-links_icon x-img x-footer-social-icon-zen"></a>
-                </div>
-                <div class="footer-social-links_hashtag">
-                    <img class="x-img x-footer-hashtag" src="img/main/footer/hashtag.svg" alt="Хэштег">
-                    <div class="footer-social-links_hashtag_text">
-                        <span>Амбициозность</span>
-                        <span>Глобальность</span>
-                        <span>Успех</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-asu-name-text">
-                <span class="footer-asu text-center text-md-left mt-0">
-                    Алтайский государственный университет. 2023
-                </span>
-        </div>
-    </div>
-</footer>
-
-<div class="modal" id="modal_container">
-    <div class="modal__backdrop" data-dismiss="modal">
-        <div class="modal__content">
-            <div class="modal__header">
-                <div class="modal__title" data-modal="title">Заказать звонок</div>
-                <span class="modal__btn-close" data-dismiss="modal" title="Закрыть" id="modal__btn-close">×</span>
-            </div>
-            <div class="modal__body" data-modal="content">
-                <div class="callModalHeader">
-                    <img class="x-img x-call-modal-icon"
-                         src="img/main/main-section/Logo.svg"
-                         width="90" height="90" alt="">
-                    <div class="callModalHeaderText">
-                        <h2>Остались вопросы?</h2>
-                        <p>
-                            Оставь заявку на сайте и мы перезвоним
-                            <br>
-                            в ближайшее время!
-                        </p>
-                    </div>
-                </div>
-                <div class="callModalFormWrapper">
-                    <form>
-                        <div class="callModalFormRow">
-                            <div class="callModalFormColumn">
-                                <label for="name">Имя</label>
-                                <input type="text" id="name" name="name" required="">
-                            </div>
-                            <div class="callModalFormColumn">
-                                <label for="secondName">Фамилия</label>
-                                <input type="text" id="secondName" name="secondName" required="">
-                            </div>
-                        </div>
-                        <div class="callModalFormColumn">
-                            <label for="tel">Номер телефона</label>
-                            <input type="tel" value="+7" pattern="^[7|8]{0,1}\d{10}$|(^\+7{1}\d{10}$)"
-                                   maxlength="12" id="tel" name="phoneNumber" required="">
-                            <small>Пример: +71235641122</small>
-                        </div>
-                        <div class="callModalFormColumn">
-                            <label for="question">Опишите ваш вопрос</label>
-                            <textarea rows="10" cols="25" id="question" name="question"
-                                      placeholder="Напишите интересующий Вас вопрос..." required=""></textarea>
-                        </div>
-                        <div class="callModalFormColumn">
-                            <input class="callModalFormColumnInput" type="submit" value="отправить">
-                            <small class="text-center">Нажимая на кнопку, вы принимаете
-                                <a href="#">Положение и Согласия</a> на обработку
-                                персональных данных.
-                            </small>
+                                <label class="header-search-options-item ">
+                                    <input class="header-search-options-item-radio" type="radio" name="search_in" value="documents" data-form-action="/search/documents/">
+                                    <span class="header-search-options-item-title">документам</span>
+                                </label>
+                            </fieldset>
                         </div>
                     </form>
                 </div>
-                <div class="callModalSuccessAlert">
-                    <h3>Ваш запрос принят</h3>
-                    <p>Ожидайте ответ в ближайшее время</p>
+                <div class="header_container-links">
+                    <div class="header_container-logo">
+                        <a class="header_container-logo-mainlink" href="">
+                            <img class="header_container-logo-img" src="img/main/main-section/Logo.svg" alt="">
+                            <span class="asu-text-small">
+                            Алтайский государственный университет
+                            <br>
+                            <span class="asu-text-large">Абитуриент</span>
+                        </span>
+                        </a>
+                    </div>
+
+                    <div class="header_container_social-links">
+                        <div class="call-container">
+                            <img src="img/main/main-section/call.svg" alt="">
+                            <a class="phone-link" href="tel:+73852291222">+7 (3852) 291-222</a>
+                        </div>
+                        <button class="call-link" id="showCallModal">заказать звонок</button>
+                    </div>
+
+                    <div class="links-socials">
+                        <a
+                                href="https://wa.me/79339333799?text=Здравствуйте!%20Напишите%20нам,%20если%20есть%20вопросы.">
+                            <img class="x-img x-header-social-icon-whatsapp"
+                                 src="img/whatsapp.svg"
+                                 alt="WhatsApp">
+                        </a>
+                        <a href="https://vk.com/abiturientasu/">
+                            <img class="mr-2 x-img x-header-social-icon-vk"
+                                 src="img/main/main-section/vk.svg"
+                                 alt="Вконтакте">
+                        </a>
+                        <a href="https://t.me/abiturient22asu">
+                            <img class="mr-2 x-img x-header-social-icon-tg"
+                                 style="height: 25px; width: 25px; background-image: url('https://telegram.org/img/website_icon.svg?4')"
+                                 src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                                 alt="Telegram">
+                        </a>
+                        <a href="https://zen.yandex.ru/id/622f05aae171d9758b9e2612">
+                            <img class="x-img x-header-social-icon-zen"
+                                 style="height: 25px; width: 25px; background-image: url('https://yastatic.net/s3/zen-lib/favicons4/safari-pinned-tab.svg')"
+                                 src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                                 alt="Zen Yandex">
+                        </a>
+                    </div>
+
+                    <div class="header_container-kabinet">
+                        <a class="header_container-kabinet-link" href="">кабинет абитуриента</a>
+                    </div>
+
                 </div>
-                <div class="callModalErrorAlert">
-                    <h3>Ошибка</h3>
-                    <p>Одно или несколько полей заполнено неправильно</p>
+            </div>
+        </header>
+
+        <main>
+        <div class="main-buttons-container">
+            <div class="dropdown closed main-button">
+                <h2 class="icon">
+                    <a href="/bachelor/">Бакалавриат и специалитет</a>
+                </h2>
+                <ul class="menu list-unstyled">
+                    <li><a href="/bachelor/roditelym/">#РОДИТЕЛЯМСЮДА</a></li>
+                    <li><a href="/obrprog/">Образовательные программы бакалавриата</a></li>
+                    <li><a href="/bachelor/documents2021/">Нормативные документы</a></li>
+                    <li><a href="/bachelor/test/">Количество мест</a></li>
+                    <li><a href="/bachelor/docs_go2021/">Как и когда подать документы</a></li>
+                    <li><a href="/bachelor/calc/">Калькулятор абитуриента</a></li>
+                    <li><a href="/bachelor/exam2021/">Вступительные испытания</a></li>
+                    <li><a href="/bachelor/celev2021/">Целевое обучение</a></li>
+                    <li><a href="/bachelor/paid_edu2021/">Платное образование</a></li>
+                    <li><a href="http://abiturient.asu.ru/international/">Прием иностранных граждан</a></li>
+                    <li><a href="/bachelor/grants2021/">Стипендии и материальная поддержка</a></li>
+                    <li><a href="/bachelor/inf2021/">Обязательства по информированию</a></li>
+                    <li><a href="https://abiturient.asu.ru/feedback2021/">Обратная связь</a></li>
+                </ul>
+            </div>
+            <div class="dropdown closed main-button">
+                <h2 class="icon d-flex justify-content-center align-items-center">
+                    <a href="/postgraduate/">Магистратура и аспирантура</a>
+                </h2>
+                <ul class="menu">
+                    <li><a href="/programmag/">Образовательные программы магистратуры</a></li>
+                    <li><a href="/programaspir/">Научные специальности аспирантуры</a></li>
+                    <li><a href="/postgraduate/documents2021/">Нормативные документы</a></li>
+                    <li><a href="/postgraduate/magkvot/">Количество мест (магистратура)</a></li>
+                    <li><a href="/postgraduate/aspkvot/">Количество мест (аспирантура)</a></li>
+                    <li><a href="/postgraduate/docs_go2023/">Как и когда подать документы</a></li>
+                    <li><a href="/postgraduate/programs2021/">Вступительные испытания</a></li>
+                    <li><a href="/postgraduate/celev2021/">Целевое обучение</a></li>
+                    <li><a href="/postgraduate/international2021/">Прием иностранных граждан</a></li>
+                    <li><a href="/postgraduate/paid_edu2021/">Платное образование</a></li>
+                    <li><a href="https://abiturient.asu.ru/feedback2021/">Обратная связь</a></li>
+                </ul>
+            </div>
+            <div class="dropdown main-button closed">
+                <h2 class="icon">
+                    <a href="/college/">Колледж АГУ</a>
+                </h2>
+                <ul class="menu">
+                    <li><a href="/college/rodspo/">#РОДИТЕЛЯМСЮДА</a></li>
+                    <li><a href="/college/documents2021/">Нормативные документы</a></li>
+                    <li><a href="/college/docs_go2021/">Как и когда подать документы</a></li>
+                    <li><a href="/college/programs2021/">Вступительные испытания</a></li>
+                    <li><a href="/college/paid_edu2021/">Платное образование</a></li>
+                    <li><a href="https://abiturient.asu.ru/feedback2021/">Обратная связь</a></li>
+                </ul>
+            </div>
+            <div class="dropdown main-button closed">
+                <h2 class="icon">
+                    <a href="/ratings/">Рейтинги</a>
+                </h2>
+                <ul class="menu">
+                    <li><a href="/ratings/comp2022/">Проходные баллы 2022</a></li>
+                    <li><a href="/ratings/admissions/">Прием 2022</a></li>
+                    <li><a href="/ratings/order/">Приказы о зачислении</a></li>
+                    <li><a href="https://abiturient.asu.ru/feedback2021/">Обратная связь</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-burger-menu">
+            <button class="header-burger-button">
+                <!-- Open menu   -->
+                <svg class="openBurgerMenu" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 0 24 24"
+                     width="30px" fill="#ffffff">
+                    <path d="M0 0h24v24H0V0z" fill="none"></path>
+                    <path d="M4 18h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zm0-5h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zM3 7c0 .55.45 1 1 1h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1z"></path>
+                </svg>
+                <!-- Close menu -->
+                <svg class="closeBurgerMenu" xmlns="http://www.w3.org/2000/svg" height="30px"
+                     viewBox="0 0 24 24" width="30px" fill="#ffffff">
+                    <path d="M0 0h24v24H0V0z" fill="none"></path>
+                    <path d="M18.3 5.71c-.39-.39-1.02-.39-1.41 0L12 10.59 7.11 5.7c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L10.59 12 5.7 16.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l4.89 4.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z"></path>
+                </svg>
+            </button>
+
+            <div class="menuBurger">
+                <div class="burgerGrid">
+                    <div class="bg-red burgerCell">
+                        <a class="burgerHeader" href="/bachelor/">Бакалавриат и специалитет</a>
+                        <ul class="burgerList list-unstyled">
+                            <li><a href="/bachelor/roditelym/">#РОДИТЕЛЯМСЮДА</a></li>
+                            <li><a href="/obrprog/">Образовательные программы бакалавриата</a></li>
+                            <li><a href="/bachelor/documents2021/">Нормативные документы</a></li>
+                            <li><a href="/bachelor/test/">Количество мест</a></li>
+                            <li><a href="/bachelor/docs_go2021/">Как и когда подать документы</a></li>
+                            <li><a href="/bachelor/calc/">Калькулятор абитуриента</a></li>
+                            <li><a href="/bachelor/exam2021/">Вступительные испытания</a></li>
+                            <li><a href="/bachelor/celev2021/">Целевое обучение</a></li>
+                            <li><a href="/bachelor/paid_edu2021/">Платное образование</a></li>
+                            <li><a href="http://abiturient.asu.ru/international/">Прием иностранных граждан</a></li>
+                            <li><a href="/bachelor/grants2021/">Стипендии и материальная поддержка</a></li>
+                            <li><a href="/bachelor/inf2021/">Обязательства по информированию</a></li>
+                            <li><a href="https://abiturient.asu.ru/feedback2021/">Обратная связь</a></li>
+                        </ul>
+                    </div>
+                    <div class="bg-orange burgerCell">
+                        <a class="burgerHeader" href="/postgraduate/">Магистратура и аспирантура</a>
+                        <ul class="burgerList list-unstyled">
+                            <li><a href="/programmag/">Образовательные программы магистратуры</a></li>
+                            <li><a href="/programaspir/">Научные специальности аспирантуры</a></li>
+                            <li><a href="/postgraduate/documents2021/">Нормативные документы</a></li>
+                            <li><a href="/postgraduate/magkvot/">Количество мест (магистратура)</a></li>
+                            <li><a href="/postgraduate/aspkvot/">Количество мест (аспирантура)</a></li>
+                            <li><a href="/postgraduate/docs_go2023/">Как и когда подать документы</a></li>
+                            <li><a href="/postgraduate/programs2021/">Вступительные испытания</a></li>
+                            <li><a href="/postgraduate/celev2021/">Целевое обучение</a></li>
+                            <li><a href="/postgraduate/international2021/">Прием иностранных граждан</a></li>
+                            <li><a href="/postgraduate/paid_edu2021/">Платное образование</a></li>
+                            <li><a href="https://abiturient.asu.ru/feedback2021/">Обратная связь</a></li>
+                        </ul>
+                    </div>
+                    <div class="bg-green burgerCell">
+                        <a class="burgerHeader" href="/college/">Колледж АГУ</a>
+                        <ul class="burgerList list-unstyled">
+                            <li><a href="/college/rodspo/">#РОДИТЕЛЯМСЮДА</a></li>
+                            <li><a href="/college/documents2021/">Нормативные документы</a></li>
+                            <li><a href="/college/docs_go2021/">Как и когда подать документы</a></li>
+                            <li><a href="/college/programs2021/">Вступительные испытания</a></li>
+                            <li><a href="/college/paid_edu2021/">Платное образование</a></li>
+                            <li><a href="https://abiturient.asu.ru/feedback2021/">Обратная связь</a></li>
+                        </ul>
+                    </div>
+                    <div class="bg-blue burgerCell">
+                        <a class="burgerHeader" href="/ratings/">Рейтинги</a>
+                        <ul class="burgerList list-unstyled">
+                            <li><a href="/ratings/comp2022/">Проходные баллы 2022</a></li>
+                            <li><a href="/ratings/admissions/">Прием 2022</a></li>
+                            <li><a href="/ratings/order/">Приказы о зачислении</a></li>
+                            <li><a href="https://abiturient.asu.ru/feedback2021/">Обратная связь</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="container">
+                <div class="breadcrumbs">
+                    <ul class="breadcrumbs-ul">
+                        <li class="breadcrumbs-item active">
+                            <a href="/">Главная</a>
+                        </li>
+                        <li class="breadcrumbs-item">Новости</li>
+                    </ul>
+                </div>
+            </div>
+            <h1 class="page-title">Объявления</h1>
+            <div class="second-page__container">
+                <div class="news-wrapper">
+                    <ul class="announces__container">
+                        <li class="announces-news-item">
+                            <a class="announces-news-item-link" href="47543/">Олимпиада для школьников по химии</a>
+                            <br>
+                            <span class="announces-news-item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias culpa eligendi, illum in molestiae nesciunt totam ullam? Cumque distinctio et, eum ipsam numquam obcaecati tempore velit. Architecto assumenda atque, beatae consequuntur cum eligendi expedita explicabo impedit molestiae nobis perferendis quasi quisquam sapiente, similique sit sunt suscipit tempora voluptatem voluptates voluptatibus! Blanditiis porro sapiente temporibus veniam voluptas! Delectus eaque facere inventore!</span>
+                            <br>
+                            <span class="announces-news-item-date">9 января – 23&nbsp;апреля</span>
+                            <br>
+                            <span class="announces-news-item-signature">автор новости</span>
+                        </li>
+                        <li class="announces-news-item">
+                            <a class="announces-news-item-link" href="47543/">Олимпиада для школьников по химии</a>
+                            <br>
+                            <span class="announces-news-item-date">9 января – 23&nbsp;апреля</span>
+                            <br>
+                            <span class="announces-news-item-signature">автор новости</span>
+                        </li>
+                        <li class="announces-news-item">
+                            <a class="announces-news-item-link" href="47543/">Олимпиада для школьников по химии</a>
+                            <br>
+                            <span class="announces-news-item-date">9 января – 23&nbsp;апреля</span>
+                            <br>
+                            <span class="announces-news-item-signature">автор новости</span>
+                        </li>
+                        <li class="announces-news-item">
+                            <a class="announces-news-item-link" href="47543/">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
+                            <br>
+                            <span class="announces-news-item-date">9 января – 23&nbsp;апреля</span>
+                            <br>
+                            <span class="announces-news-item-signature">автор новости</span>
+                        </li>
+                        <li class="announces-news-item">
+                            <a class="announces-news-item-link" href="47543/">Олимпиада для школьников по химии</a>
+                            <br>
+                            <span class="announces-news-item-date">9 января – 23&nbsp;апреля</span>
+                            <br>
+                            <span class="announces-news-item-signature">автор новости</span>
+                        </li>
+                        <li class="announces-news-item">
+                            <a class="announces-news-item-link" href="47543/">Олимпиада для школьников по химии</a>
+                            <br>
+                            <span class="announces-news-item-date">9 января – 23&nbsp;апреля</span>
+                            <br>
+                            <span class="announces-news-item-signature">автор новости</span>
+                        </li>
+                        <li class="announces-news-item">
+                            <a class="announces-news-item-link" href="47543/">Олимпиада для школьников по химии</a>
+                            <br>
+                            <span class="announces-news-item-date">9 января – 23&nbsp;апреля</span>
+                            <br>
+                            <span class="announces-news-item-signature">автор новости</span>
+                        </li>
+                        <li class="announces-news-item">
+                            <a class="announces-news-item-link" href="47543/">Олимпиада для школьников по химии</a>
+                            <br>
+                            <span class="announces-news-item-date">9 января – 23&nbsp;апреля</span>
+                            <br>
+                            <span class="announces-news-item-signature">автор новости</span>
+                        </li>
+                        <li class="announces-news-item">
+                            <a class="announces-news-item-link" href="47543/">Олимпиада для школьников по химии</a>
+                            <br>
+                            <span class="announces-news-item-date">9 января – 23&nbsp;апреля</span>
+                            <br>
+                            <span class="announces-news-item-signature">автор новости</span>
+                        </li>
+                        <li class="announces-news-item">
+                            <a class="announces-news-item-link" href="47543/">Олимпиада для школьников по химии</a>
+                            <br>
+                            <span class="announces-news-item-date">9 января – 23&nbsp;апреля</span>
+                            <br>
+                            <span class="announces-news-item-signature">автор новости</span>
+                        </li>
+                        <li class="announces-news-item">
+                            <a class="announces-news-item-link" href="47543/">Олимпиада для школьников по химии</a>
+                            <br>
+                            <span class="announces-news-item-date">9 января – 23&nbsp;апреля</span>
+                            <br>
+                            <span class="announces-news-item-signature">автор новости</span>
+                        </li>
+                        <li class="announces-news-item">
+                            <a class="announces-news-item-link" href="47543/">Олимпиада для школьников по химии</a>
+                            <br>
+                            <span class="announces-news-item-date">9 января – 23&nbsp;апреля</span>
+                            <br>
+                            <span class="announces-news-item-signature">автор новости</span>
+                        </li>
+                    </ul>
+                    <div class="pagination">
+                        <span class="pagination-label">
+                            Всего новостей:
+                            <span class="pagination-label-total">1918</span>,
+                        </span>
+                        <span class="pagination-label">страницы:</span>
+                        <ul class="pagination-pages">
+                            <li class="pagination-pages-item" data-selected="selected">1</li>
+                            <li class="pagination-pages-item">
+                                <a class="pagination-pages-item-link" href="?page=2">2</a>
+                            </li>
+                            <li class="pagination-pages-item">
+                                <a class="pagination-pages-item-link" href="?page=3">3</a>
+                            </li>
+                            <li class="pagination-pages-item">
+                                <a class="pagination-pages-item-link" href="?page=4">4</a>
+                            </li>
+                            <li class="pagination-pages-item">
+                                <a class="pagination-pages-item-link" href="?page=5">5</a>
+                            </li>
+                        </ul>
+
+                        <a class="pagination-next" href="?page=2" title="следующая страница"></a>
+                        <a class="pagination-last" href="?page=120" title="последняя страница"></a>
+                    </div>
+                </div>
+
+                <div class="right-menu">
+                    <div class="second-menu">
+                        <h3 class="second-menu-title">Новости</h3>
+                        <ul class="second-menu-ul">
+                            <li class="second-menu-ul-item"><a href="">события</a></li>
+                            <li class="second-menu-ul-item"><a href="">объявления</a></li>
+                            <li class="second-menu-ul-item"><a href="">новое на сайте</a></li>
+                            <li class="second-menu-ul-item"><a href="">пресса</a></li>
+                            <li class="second-menu-ul-item"><a href="">календарь
+                                событий</a></li>
+                            <li class="second-menu-ul-item"><a href="">специальные
+                                проекты</a></li>
+                        </ul>
+                    </div>
+                    <div class="calendar-wrapper">
+                        <div id="divCal">
+                            <!-- календарь генерируется в файле second.js -->
+                        </div>
+                        <div class="cal-btns">
+                            <p class="btnPrev"><b id="btnPrev">‹</b></p>
+                            <p class="btnNext"><b id="btnNext">›</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+        <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-wrapper">
+                <div class="footer-logo">
+                    <img class="footer-logo_img x-img x-footer-logo" loading="lazy"
+                         src="img/main/footer/Logo_LightWhite.svg">
+                </div>
+                <div class="footer-resources">
+                    <nav class="footer-nav">
+                        <ul class="footer-ul">
+                            <li>
+                                <a href="https://minobrnauki.gov.ru/" class="footer-resources_link">
+                                    Министерство науки и высшего образования РФ
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://edu.ru/" class="footer-resources_link">
+                                    Федеральный портал "Российское образование"
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.educaltai.ru/" class="footer-resources_link">
+                                    Министерство образования и науки АК
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer-contacts">
+                    <span class="footer-contacts_address">г. Барнаул, пр. Ленина, 61</span>
+                    <a href="mailto:prcom@asu.ru" class="footer-contacts_email">e-mail: prcom@asu.ru</a>
+                    <a href="tel:+73852291222" class="footer-contacts_phone">+7 (3852) 291-222</a>
+                    <a href="https://www.asu.ru" class="footer-contacts_website">Перейти на сайт
+                        АлтГУ</a>
+                </div>
+                <div class="footer-social-links">
+                    <span class="footer-social-links_text">Социальные сети:</span>
+                    <div class="footer-social-links_icons d-flex">
+                        <a href="https://www.youtube.com/channel/UCWhne-7vu55DDZx-A1ToYAw/">
+                            <img src="img/main/footer/youtube.svg" alt="YouTube"
+                                 class="footer-social-links_icon x-img x-footer-social-icon-youtube">
+                        </a>
+                        <a href="https://vk.com/abiturientasu/">
+                            <img src="img/main/footer/vk.svg" alt="Вконтакте"
+                                 class="footer-social-links_icon x-img x-footer-social-icon-vk">
+                        </a>
+                        <a href="https://t.me/abiturient22asu">
+                            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                                 style="width: 29px; background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNTAiIGhlaWdodD0iNTAiCnZpZXdCb3g9IjAgMCA1MCA1MCIKc3R5bGU9IiBmaWxsOiNmZmZmZmY7Ij48cGF0aCBkPSJNNDYuMTM3LDYuNTUyYy0wLjc1LTAuNjM2LTEuOTI4LTAuNzI3LTMuMTQ2LTAuMjM4bC0wLjAwMiwwQzQxLjcwOCw2LjgyOCw2LjcyOCwyMS44MzIsNS4zMDQsMjIuNDQ1CWMtMC4yNTksMC4wOS0yLjUyMSwwLjkzNC0yLjI4OCwyLjgxNGMwLjIwOCwxLjY5NSwyLjAyNiwyLjM5NywyLjI0OCwyLjQ3OGw4Ljg5MywzLjA0NWMwLjU5LDEuOTY0LDIuNzY1LDkuMjEsMy4yNDYsMTAuNzU4CWMwLjMsMC45NjUsMC43ODksMi4yMzMsMS42NDYsMi40OTRjMC43NTIsMC4yOSwxLjUsMC4wMjUsMS45ODQtMC4zNTVsNS40MzctNS4wNDNsOC43NzcsNi44NDVsMC4yMDksMC4xMjUJYzAuNTk2LDAuMjY0LDEuMTY3LDAuMzk2LDEuNzEyLDAuMzk2YzAuNDIxLDAsMC44MjUtMC4wNzksMS4yMTEtMC4yMzdjMS4zMTUtMC41NCwxLjg0MS0xLjc5MywxLjg5Ni0xLjkzNWw2LjU1Ni0zNC4wNzcJQzQ3LjIzMSw3LjkzMyw0Ni42NzUsNy4wMDcsNDYuMTM3LDYuNTUyeiBNMjIsMzJsLTMsOGwtMy0xMGwyMy0xN0wyMiwzMnoiPjwvcGF0aD48L3N2Zz4=')"
+                                 alt="Telegram" class="footer-social-links_icon x-img x-footer-social-icon-telegram"></a>
+                        <a href="https://zen.yandex.ru/id/622f05aae171d9758b9e2612">
+                            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                                 style="width: 29px; background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNTAiIGhlaWdodD0iNTAiCnZpZXdCb3g9IjAgMCA1MCA1MCIKc3R5bGU9IiBmaWxsOiNmZmZmZmY7Ij48cGF0aCBkPSJNNDYuODk0IDIzLjk4NmMuMDA0IDAgLjAwNyAwIC4wMTEgMCAuMjc5IDAgLjU0NS0uMTE3LjczNC0uMzIyLjE5Mi0uMjA4LjI4Ny0uNDg3LjI2Mi0uNzY5QzQ2Ljg5NyAxMS44NTIgMzguMTU0IDMuMTA2IDI3LjExIDIuMWMtLjI4LS4wMjItLjU2Mi4wNjktLjc3LjI2Mi0uMjA4LjE5Mi0uMzI0LjQ2My0uMzIxLjc0NkMyNi4xOTMgMTcuNzg0IDI4LjEyOSAyMy43ODEgNDYuODk0IDIzLjk4NnpNNDYuODk0IDI2LjAxNGMtMTguNzY1LjIwNS0yMC43IDYuMjAyLTIwLjg3NCAyMC44NzgtLjAwMy4yODMuMTEzLjU1NC4zMjEuNzQ2LjE4Ni4xNzEuNDI5LjI2Ni42NzkuMjY2LjAzIDAgLjA2MS0uMDAxLjA5MS0uMDA0IDExLjA0NC0xLjAwNiAxOS43ODctOS43NTEgMjAuNzktMjAuNzk1LjAyNS0uMjgyLS4wNjktLjU2MS0uMjYyLS43NjlDNDcuNDQ2IDI2LjEyOCA0Ny4xNzcgMjYuMDI1IDQ2Ljg5NCAyNi4wMTR6TTIyLjgyMyAyLjEwNUMxMS44MTQgMy4xNCAzLjA5OSAxMS44ODQgMi4xIDIyLjg5N2MtLjAyNS4yODIuMDY5LjU2MS4yNjIuNzY5LjE4OS4yMDUuNDU2LjMyMS43MzQuMzIxLjAwNCAwIC4wMDggMCAuMDEyIDAgMTguNzAzLS4yMTUgMjAuNjM0LTYuMjA5IDIwLjgxLTIwLjg3NS4wMDMtLjI4My0uMTE0LS41NTUtLjMyMi0uNzQ3QzIzLjM4NiAyLjE3MyAyMy4xMDUgMi4wNzkgMjIuODIzIDIuMTA1ek0zLjEwNyAyNi4wMTNjLS4zMTEtLjAzNS0uNTU1LjExMy0uNzQ2LjMyMS0uMTkyLjIwOC0uMjg3LjQ4Ny0uMjYyLjc2OS45OTkgMTEuMDEzIDkuNzE1IDE5Ljc1NyAyMC43MjQgMjAuNzkyLjAzMS4wMDMuMDYzLjAwNC4wOTQuMDA0LjI1IDAgLjQ5Mi0uMDk0LjY3OC0uMjY1LjIwOC0uMTkyLjMyNS0uNDY0LjMyMi0uNzQ3QzIzLjc0MSAzMi4yMjIgMjEuODExIDI2LjIyOCAzLjEwNyAyNi4wMTN6Ij48L3BhdGg+PC9zdmc+') "
+                                 alt="Zen Yandex" class="footer-social-links_icon x-img x-footer-social-icon-zen"></a>
+                    </div>
+                    <div class="footer-social-links_hashtag">
+                        <img class="x-img x-footer-hashtag" src="img/main/footer/hashtag.svg" alt="Хэштег">
+                        <div class="footer-social-links_hashtag_text">
+                            <span>Амбициозность</span>
+                            <span>Глобальность</span>
+                            <span>Успех</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-asu-name-text">
+                    <span class="footer-asu text-center text-md-left mt-0">
+                        Алтайский государственный университет. 2023
+                    </span>
+            </div>
+        </div>
+    </footer>
+
+        <div class="modal" id="modal_container">
+        <div class="modal__backdrop" data-dismiss="modal">
+            <div class="modal__content">
+                <div class="modal__header">
+                    <div class="modal__title" data-modal="title">Заказать звонок</div>
+                    <span class="modal__btn-close" data-dismiss="modal" title="Закрыть" id="modal__btn-close">×</span>
+                </div>
+                <div class="modal__body" data-modal="content">
+                    <div class="callModalHeader">
+                        <img class="x-img x-call-modal-icon"
+                             src="img/main/main-section/Logo.svg"
+                             width="90" height="90" alt="">
+                        <div class="callModalHeaderText">
+                            <h2>Остались вопросы?</h2>
+                            <p>
+                                Оставь заявку на сайте и мы перезвоним
+                                <br>
+                                в ближайшее время!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="callModalFormWrapper">
+                        <form>
+                            <div class="callModalFormRow">
+                                <div class="callModalFormColumn">
+                                    <label for="name">Имя</label>
+                                    <input type="text" id="name" name="name" required="">
+                                </div>
+                                <div class="callModalFormColumn">
+                                    <label for="secondName">Фамилия</label>
+                                    <input type="text" id="secondName" name="secondName" required="">
+                                </div>
+                            </div>
+                            <div class="callModalFormColumn">
+                                <label for="tel">Номер телефона</label>
+                                <input type="tel" value="+7" pattern="^[7|8]{0,1}\d{10}$|(^\+7{1}\d{10}$)"
+                                       maxlength="12" id="tel" name="phoneNumber" required="">
+                                <small>Пример: +71235641122</small>
+                            </div>
+                            <div class="callModalFormColumn">
+                                <label for="question">Опишите ваш вопрос</label>
+                                <textarea rows="10" cols="25" id="question" name="question"
+                                          placeholder="Напишите интересующий Вас вопрос..." required=""></textarea>
+                            </div>
+                            <div class="callModalFormColumn">
+                                <input class="callModalFormColumnInput" type="submit" value="отправить">
+                                <small class="text-center">Нажимая на кнопку, вы принимаете
+                                    <a href="#">Положение и Согласия</a> на обработку
+                                    персональных данных.
+                                </small>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="callModalSuccessAlert">
+                        <h3>Ваш запрос принят</h3>
+                        <p>Ожидайте ответ в ближайшее время</p>
+                    </div>
+                    <div class="callModalErrorAlert">
+                        <h3>Ошибка</h3>
+                        <p>Одно или несколько полей заполнено неправильно</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<div class="whatsapp-button" style="bottom: 70px;">
+        <div class="whatsapp-button">
     <a href="https://wa.me/79339333799?text=Здравствуйте!%20Напишите%20нам,%20если%20есть%20вопросы.">
         <img class="x-img x-whatsapp-button-icon"
              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="WhatsApp">
     </a>
 </div>
+    </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script src="js/lottie-player.js"></script>
