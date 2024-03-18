@@ -67,5 +67,5 @@ $("#dropdown").ready(function(){
     dropdownButtons.forEach((button) => {
         _addListener(button, "click", _handleButtonClick);
     });
-})
+});
 

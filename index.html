@@ -1,193 +1,269 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" href="owl/owl.carousel.min.css">
-    <link rel="stylesheet" href="owl/owl.theme.default.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <title>Абитуриент Алтайского государственного университета</title>
+    <link rel="stylesheet" href="libs/itc-slider.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header class="header">
-        <div class="header_container-bg">
-            <div class="header_wrapper">
-                <div class="header_navigation">
-                    <nav class="header_navigation-nav">
-                        <ul class="header_navigation-ul">
-                            <li class="header_navigation-ul-item">
-                                <a href="https://www.asu.ru/">Университет</a>
-                            </li>
-                            <li class="header_navigation-ul-item">
-                                <a href="https://school.asu.ru/">Школьник АлтГУ</a>
-                            </li>
 
-                            <li class="header_navigation-ul-item">
-                                <div class="links-phone">
-                                    <div class="phone-wrapper">
-                                        <img class="x-header-navigation-icon-call"
-                                            src="img/main/main-section/call.svg"
-                                            alt="Номер для звонков">
-                                        <a class="phone-wrapper-link" href="tel:+73852291222">+7 (3852) 291-222</a>
-                                    </div>
-                                    <button class="call-link" id="showCallModalFromMenu">
-                                        Заказать звонок
-                                    </button>
-                                </div>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="header_navigation_social_links">
-                    <div class="navigation-links-socials">
-                        <a class="navigation-links-socials-link"
-                           href="https://wa.me/79339333799?text=Здравствуйте!%20Напишите%20нам,%20если%20есть%20вопросы.">
-                            <img class="x-img x-header-social-icon-whatsapp"
-                                 src="img/whatsapp.svg"
-                                 alt="WhatsApp">
-                        </a>
-                        <a class="navigation-links-socials-link"
-                           href="https://vk.com/abiturientasu/">
-                            <img class="x-img x-header-social-icon-vk"
-                                 src="img/main/main-section/vk.svg"
-                                 alt="Вконтакте">
-                        </a>
-                        <a class="navigation-links-socials-link"
-                           href="https://t.me/abiturient22asu">
-                            <img class="x-img x-header-social-icon-tg"
-                                 src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                                 alt="Telegram">
-                        </a>
-                        <a class="navigation-links-socials-link"
-                           href="https://zen.yandex.ru/id/622f05aae171d9758b9e2612">
-                            <img class="x-img x-header-social-icon-zen"
-                                 src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                                 alt="Zen Yandex">
-                        </a>
-                    </div>
-                    <!-- поиск по сайту -->
-                    <div class="header__search">
-                        <button class="header-search_btn" id="open-search-form"></button>
-                        <span class="header-search_span" id="open-search-form-2">поиск по сайту</span>
-                    </div>
-                </div>
+<header class="header">
+    <!-- самый верхний блок -->
+    <div class="header-top">
+        <div class="header__wrapper">
+            <ul class="header-top__items">
+                <li class="header-top__item"><a class="header-top__item-link" href="">Университет</a></li>
+                <li class="header-top__item"><a class="header-top__item-link" href="">Школьник АлтГУ</a></li>
+                <li class="header-top__item"><a class="header-top__item-link" href="">Иностранным абитуриентам</a></li>
+            </ul>
+
+            <div class="header-search">
+                <button class="header-search_btn" id="open-search-form">
+                    <img class="header-search_btn-icon" src="assets/imgs/search.png" alt="">
+                </button>
             </div>
         </div>
+    </div>
 
-        <div class="wrapper">
-            <div class="header-search_block" id="search-form">
-                <h2 class="header-search_title">Поиск</h2>
-                <form class="header-search_form" id="_9caf682e5d98dc3f__form" method="get" action="/search/">
-                    <div class="header-search_input-label">
-                        <fieldset class="header-search-options">
-                            <div class="header-search-div">
-                                <input class="header-search-query-input" type="text" placeholder="поиск" name="query">
-                                <button class="header-search_btn" disabled=""></button>
-                            </div>
+    <div class="header-search_block" id="search-form">
+        <h2>Поиск</h2>
+        <form class="header-search_form" id="_9caf682e5d98dc3f__form" method="get" action="/search/">
+            <div class="header-search_input-label">
 
-                            <span class="header-search-options-title">искать по:</span>
-                            <label class="header-search-options-item header-search-options-item__current">
-                                <input class="header-search-options-item-radio" type="radio" name="search_in" value="site" checked="checked" data-form-action="/search/">
-                                <span class="header-search-options-item-title">сайту</span>
-                            </label>
-
-                            <label class="header-search-options-item ">
-                                <input class="header-search-options-item-radio" type="radio" name="search_in" value="news" data-form-action="/search/news/">
-                                <span class="header-search-options-item-title">новостям</span>
-                            </label>
-
-                            <label class="header-search-options-item ">
-                                <input class="header-search-options-item-radio" type="radio" name="search_in" value="documents" data-form-action="/search/documents/">
-                                <span class="header-search-options-item-title">документам</span>
-                            </label>
-                        </fieldset>
+                <fieldset class="header-search-options">
+                    <div class="header-search-div">
+                        <input class="header-search-query-input" type="text" placeholder="поиск" name="query">
+                        <button class="header-search_btn" disabled=""></button>
                     </div>
-                </form>
+
+                    <span class="header-search-options-title">искать по:</span>
+                    <label class="header-search-options-item header-search-options-item__current">
+                        <input class="header-search-options-item-radio" type="radio" name="search_in" value="site"
+                               checked="checked" data-form-action="/search/">
+                        <span class="header-search-options-item-title">сайту</span>
+                    </label>
+
+                    <label class="header-search-options-item ">
+                        <input class="header-search-options-item-radio" type="radio" name="search_in" value="news"
+                               data-form-action="/search/news/">
+                        <span class="header-search-options-item-title">новостям</span>
+                    </label>
+
+                    <label class="header-search-options-item ">
+                        <input class="header-search-options-item-radio" type="radio" name="search_in"
+                               value="documents" data-form-action="/search/documents/">
+                        <span class="header-search-options-item-title">документам</span>
+                    </label>
+                </fieldset>
             </div>
-            <div class="header_container-links">
-                <div class="header_container-logo">
-                    <a class="header_container-logo-mainlink" href="">
-                        <img class="header_container-logo-img" src="img/main/main-section/Logo.svg" alt="">
-                        <span class="asu-text-small">
-                            Алтайский государственный университет
-                            <br>
-                            <span class="asu-text-large">Абитуриент</span>
-                        </span>
-                    </a>
-                </div>
+        </form>
+    </div>
 
-                <div class="header_container_social-links">
-                    <div class="call-container">
-                        <img src="img/main/main-section/call.svg" alt="">
-                        <a class="phone-link" href="tel:+73852291222">+7 (3852) 291-222</a>
-                    </div>
-                    <button class="call-link" id="showCallModal">заказать звонок</button>
-                </div>
+    <!-- блок с переходом на главную страницу, ссылками на ЛК и соц сети -->
+    <div class="header-links">
+        <div class="header-links__logo">
+            <a href="">
+                <img class="header-links__logo-img" src="assets/imgs/logo.png" alt="logo"/>
+            </a>
+            <a href="" class="header-links-text">
+                    <span class="header-links_large">
+                        Абитуриент
+                    </span>
+                <br/>
+                <span class="header-links_small">
+                        Алтайский государственный университет
+                    </span>
+            </a>
+        </div>
 
-                <div class="links-socials">
-                    <a
-                        href="https://wa.me/79339333799?text=Здравствуйте!%20Напишите%20нам,%20если%20есть%20вопросы.">
-                        <img class="x-img x-header-social-icon-whatsapp"
-                            src="img/whatsapp.svg"
-                            alt="WhatsApp">
-                    </a>
-                    <a href="https://vk.com/abiturientasu/">
-                        <img class="mr-2 x-img x-header-social-icon-vk"
-                            src="img/main/main-section/vk.svg"
-                            alt="Вконтакте">
-                    </a>
-                    <a href="https://t.me/abiturient22asu">
-                        <img class="mr-2 x-img x-header-social-icon-tg"
-                            style="height: 25px; width: 25px; background-image: url('https://telegram.org/img/website_icon.svg?4')"
-                            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                            alt="Telegram">
-                    </a>
-                    <a href="https://zen.yandex.ru/id/622f05aae171d9758b9e2612">
-                        <img class="x-img x-header-social-icon-zen"
-                            style="height: 25px; width: 25px; background-image: url('https://yastatic.net/s3/zen-lib/favicons4/safari-pinned-tab.svg')"
-                            src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                            alt="Zen Yandex">
-                    </a>
-                </div>
-
-                <div class="header_container-kabinet">
-                    <a class="header_container-kabinet-link" href="">кабинет абитуриента</a>
-                </div>
+        <div class="header-links__social">
+            <div class="header-links__social-phone">
+                <a href="">
+                    <span>+7 (3852) 291-222</span>
+                    <br>
+                    <span>заказать звонок</span>
+                </a>
+            </div>
+            <div class="header-links__social-media">
+                <img src="assets/imgs/whatsapp.png" width="50" alt="">
+                <img src="assets/imgs/vk.png" width="50" alt="">
+                <img src="assets/imgs/telegram.png" width="50" alt="">
+                <img src="assets/imgs/rutube.png" width="55" alt="">
+                <img src="assets/imgs/ok.png" width="50" alt="">
+            </div>
+            <div class="header-links__social-lk">
+                <a href="">
+                    <span class="header-links__social-lk-text">Кабинет</span>
+                    <br>
+                    <span class="header-links__social-lk-text">абитуриента</span>
+                </a>
 
             </div>
         </div>
-    </header>
+    </div>
 
-    <main>
-        <section class="section main-section">
-            <div class="container-fluid slider-container">
-                <video src="http://universum.asu.ru/wp-content/uploads/2023/03/Приёмная-компания.mov"
-                    class="slider-video" loading="lazy" autoplay="" muted="" loop="" preload="">
-                </video>
-            </div>
+    <div class="header__slider">
 
-            <div id="countdown" data-countdown-date="2023-06-20 0:00" class="main_countdown">
-                <div class="countdown_container">
-                    <h3 class="text-center">До старта приемной кампании 2023</h3>
-                    <div class="countdown-items">
-                        <span class="countdown-days" id="countdown-days">68<br>дн</span>
-                        <span class="countdown-hours" id="countdown-hours">13<br>ч</span>
-                        <span class="countdown-minutes" id="countdown-minutes">40<br>мин</span>
-                        <span class="countdown-secs" id="countdown-secs">14<br>сек</span>
-                    </div>
+
+        <div class="imgs-wrapper">
+            <picture class="header-promo-slide-img">
+                <source media="(max-width: 552px)" srcset="assets/imgs/00000427.m.jpg">
+                <source media="(max-width: 1168px)" srcset="assets/imgs/00000427.t.jpg">
+                <img class="header-promo-slide-picture_img" src="assets/imgs/00000427.jpg">
+            </picture>
+        </div>
+
+
+    </div>
+
+</header>
+
+<main>
+    <div class="header-burger-menu">
+        <button class="header-burger-button">
+            <!-- Open menu -->
+            <svg class="openBurgerMenu" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 0 24 24"
+                 width="30px" fill="#1b4e9b">
+                <path d="M0 0h24v24H0V0z" fill="none"></path>
+                <path
+                        d="M4 18h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zm0-5h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zM3 7c0 .55.45 1 1 1h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1z">
+                </path>
+            </svg>
+            <!-- Close menu -->
+            <svg class="closeBurgerMenu" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 0 24 24"
+                 width="30px" fill="#1b4e9b">
+                <path d="M0 0h24v24H0V0z" fill="none"></path>
+                <path
+                        d="M18.3 5.71c-.39-.39-1.02-.39-1.41 0L12 10.59 7.11 5.7c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L10.59 12 5.7 16.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l4.89 4.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z">
+                </path>
+            </svg>
+        </button>
+        <div class="menuBurger">
+            <div class="burgerGrid">
+                <div class="bg-red burgerCell">
+                    <a class="burgerHeader" href="second.html">ШКОЛЬНИКАМ</a>
+                    <ul class="burgerList list-unstyled">
+                        <li>
+                            <a href="/bachelor/roditelym/">#РОДИТЕЛЯМСЮДА</a>
+                        </li>
+                        <li>
+                            <a href="/obrprog/">Образовательные программы
+                                бакалавриата</a>
+                        </li>
+                        <li>
+                            <a href="/bachelor/documents2021/">Нормативные
+                                документы</a>
+                        </li>
+                        <li>
+                            <a href="/bachelor/test/">Количество мест</a>
+                        </li>
+                        <li>
+                            <a href="/bachelor/docs_go2021/">Как и когда подать
+                                документы</a>
+                        </li>
+                        <li>
+                            <a href="/bachelor/calc/">Калькулятор
+                                абитуриента</a>
+                        </li>
+                        <li>
+                            <a href="/bachelor/exam2021/">Вступительные
+                                испытания</a>
+                        </li>
+                        <li>
+                            <a href="/bachelor/celev2021/">Целевое обучение</a>
+                        </li>
+                        <li>
+                            <a href="/bachelor/paid_edu2021/">Платное
+                                образование</a>
+                        </li>
+                        <li>
+                            <a href="http://abiturient.asu.ru/international/">Прием
+                                иностранных граждан</a>
+                        </li>
+                        <li>
+                            <a href="/bachelor/grants2021/">Стипендии и
+                                материальная поддержка</a>
+                        </li>
+                        <li>
+                            <a href="/bachelor/inf2021/">Обязательства по
+                                информированию</a>
+                        </li>
+                        <li>
+                            <a href="https://abiturient.asu.ru/feedback2021/">Обратная
+                                связь</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-blue burgerCell">
+                    <a class="burgerHeader" href="second.html">РОДИТЕЛЯМ</a>
+                    <ul class="burgerList list-unstyled">
+                        <li><a href="/programmag/">Образовательные программы
+                            магистратуры</a></li>
+                        <li><a href="/programaspir/">Научные специальности
+                            аспирантуры</a></li>
+                        <li><a href="/postgraduate/documents2021/">Нормативные
+                            документы</a></li>
+                        <li><a href="/postgraduate/magkvot/">Количество мест
+                            (магистратура)</a></li>
+                        <li><a href="/postgraduate/aspkvot/">Количество мест
+                            (аспирантура)</a></li>
+                        <li><a href="/postgraduate/docs_go2023/">Как и когда подать
+                            документы</a></li>
+                        <li><a href="/postgraduate/programs2021/">Вступительные
+                            испытания</a></li>
+                        <li><a href="/postgraduate/celev2021/">Целевое обучение</a>
+                        </li>
+                        <li><a href="/postgraduate/international2021/">Прием
+                            иностранных граждан</a></li>
+                        <li><a href="/postgraduate/paid_edu2021/">Платное
+                            образование</a></li>
+                        <li><a href="https://abiturient.asu.ru/feedback2021/">Обратная
+                            связь</a></li>
+                    </ul>
+                </div>
+                <div class="bg-green burgerCell">
+                    <a class="burgerHeader" href="second.html">УЧИТЕЛЯМ</a>
+                    <ul class="burgerList list-unstyled">
+                        <li><a href="/college/rodspo/">#РОДИТЕЛЯМСЮДА</a></li>
+                        <li><a href="/college/documents2021/">Нормативные
+                            документы</a></li>
+                        <li><a href="/college/docs_go2021/">Как и когда подать
+                            документы</a></li>
+                        <li><a href="/college/programs2021/">Вступительные
+                            испытания</a></li>
+                        <li><a href="/college/paid_edu2021/">Платное
+                            образование</a></li>
+                        <li><a href="/college/inf2021/">Обязательства по
+                            информированию</a></li>
+                        <li><a href="https://abiturient.asu.ru/feedback2021/">Обратная
+                            связь</a></li>
+                    </ul>
+                </div>
+                <div class="bg-orange burgerCell">
+                    <a class="burgerHeader" href="second.html">Рейтинги</a>
+                    <ul class="burgerList list-unstyled">
+                        <li><a href="/ratings/comp2022/">Проходные баллы 2022</a></li>
+                        <li><a href="/ratings/admissions/">Прием 2022</a></li>
+                        <li><a href="/ratings/order/">Приказы о зачислении</a>
+                        </li>
+                        <li><a href="https://abiturient.asu.ru/feedback2021/">Обратная связь</a></li>
+                    </ul>
                 </div>
             </div>
-        </section>
-        
-        <div class="main-buttons-container">
-            <div class="dropdown closed main-button">
-                <h2 class="icon">
-                    <a href="/bachelor/">Бакалавриат и специалитет</a>
+        </div>
+    </div>
+    <section class="main-buttons-container">
+        <div class="main-button-row">
+            <div class="dropdown main-button closed">
+                <h2>
+                    <a class="qwer" href="/scholar/">Бакалавриат и специалитет</a>
                 </h2>
-                <ul class="menu">
+                <ul class="menu list-unstyled">
                     <li><a href="/bachelor/roditelym/">#РОДИТЕЛЯМСЮДА</a></li>
                     <li><a href="/obrprog/">Образовательные программы бакалавриата</a></li>
                     <li><a href="/bachelor/documents2021/">Нормативные документы</a></li>
@@ -195,45 +271,38 @@
                     <li><a href="/bachelor/docs_go2021/">Как и когда подать документы</a></li>
                     <li><a href="/bachelor/calc/">Калькулятор абитуриента</a></li>
                     <li><a href="/bachelor/exam2021/">Вступительные испытания</a></li>
+                    <li><a href="/bachelor/demotest/">Онлайн-тренажер вступительных испытаний</a></li>
                     <li><a href="/bachelor/celev2021/">Целевое обучение</a></li>
                     <li><a href="/bachelor/paid_edu2021/">Платное образование</a></li>
-                    <li><a href="http://abiturient.asu.ru/international/">Прием иностранных
-                            граждан</a></li>
-                    <li><a href="/bachelor/grants2021/">Стипендии и материальная
-                            поддержка</a></li>
-                    <li><a href="/bachelor/inf2021/">Обязательства по информированию</a>
-                    </li>
+                    <li><a href="http://abiturient.asu.ru/international/">Прием иностранных граждан</a></li>
+                    <li><a href="/bachelor/grants2021/">Стипендии и материальная поддержка</a></li>
+                    <li><a href="/bachelor/inf2021/">Обязательства по информированию</a></li>
                     <li><a href="https://abiturient.asu.ru/feedback2021/">Обратная связь</a></li>
                 </ul>
             </div>
-            <div class="dropdown closed main-button">
-                <h2 class="icon">
-                    <a href="/postgraduate/">Магистратура и аспирантура</a>
+            <div class="dropdown main-button closed">
+                <h2>
+                    <a href="/parents/">Магистратура и аспирантура</a>
                 </h2>
-                <ul class="menu">
-                    <li><a href="/programmag/">Образовательные программы
-                            магистратуры</a></li>
-                    <li><a href="/programaspir/">Научные специальности аспирантуры</a>
-                    </li>
+                <ul class="menu list-unstyled">
+                    <li><a href="/programmag/">Образовательные программы магистратуры</a></li>
+                    <li><a href="/programaspir/">Научные специальности аспирантуры</a></li>
                     <li><a href="/postgraduate/documents2021/">Нормативные документы</a></li>
-                    <li><a href="/postgraduate/magkvot/">Количество мест (магистратура)</a>
-                    </li>
+                    <li><a href="/postgraduate/magkvot/">Количество мест (магистратура)</a></li>
                     <li><a href="/postgraduate/aspkvot/">Количество мест (аспирантура)</a></li>
-                    <li><a href="/postgraduate/docs_go2023/">Как и когда подать документы</a>
-                    </li>
+                    <li><a href="/postgraduate/docs_go2023/">Как и когда подать документы</a></li>
                     <li><a href="/postgraduate/programs2021/">Вступительные испытания</a></li>
                     <li><a href="/postgraduate/celev2021/">Целевое обучение</a></li>
-                    <li><a href="/postgraduate/international2021/">Прием иностранных граждан</a>
-                    </li>
+                    <li><a href="/postgraduate/international2021/">Прием иностранных граждан</a></li>
                     <li><a href="/postgraduate/paid_edu2021/">Платное образование</a></li>
                     <li><a href="https://abiturient.asu.ru/feedback2021/">Обратная связь</a></li>
                 </ul>
             </div>
             <div class="dropdown main-button closed">
-                <h2 class="icon">
-                    <a href="/college/">Колледж АГУ</a>
+                <h2>
+                    <a href="/teachers/">Колледж агу</a>
                 </h2>
-                <ul class="menu">
+                <ul class="menu list-unstyled">
                     <li><a href="/college/rodspo/">#РОДИТЕЛЯМСЮДА</a></li>
                     <li><a href="/college/documents2021/">Нормативные документы</a></li>
                     <li><a href="/college/docs_go2021/">Как и когда подать документы</a></li>
@@ -243,200 +312,257 @@
                 </ul>
             </div>
             <div class="dropdown main-button closed">
-                <h2 class="icon">
-                    <a href="/ratings/">Рейтинги</a>
+                <h2>
+                    <a href="/courses/">Рейтинги</a>
                 </h2>
-                <ul class="menu">
-                    <li><a href="/ratings/comp2022/">Проходные баллы 2022</a></li>
-                    <li><a href="/ratings/admissions/">Прием 2022</a></li>
+                <ul class="menu list-unstyled">
+                    <li><a href="/ratings/comp2023/">Проходные баллы 2023</a></li>
+                    <li><a href="/ratings/admissions/">Конкурсные списки 2023</a></li>
                     <li><a href="/ratings/order/">Приказы о зачислении</a></li>
                     <li><a href="https://abiturient.asu.ru/feedback2021/">Обратная связь</a></li>
                 </ul>
             </div>
         </div>
-        <div class="header-burger-menu">
-            <button class="header-burger-button">
-                <!-- Open menu   -->
-                <svg class="openBurgerMenu" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 0 24 24"
-                    width="30px" fill="#ffffff">
-                    <path d="M0 0h24v24H0V0z" fill="none"></path>
-                    <path
-                        d="M4 18h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zm0-5h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zM3 7c0 .55.45 1 1 1h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1z">
-                    </path>
-                </svg>
-                <!-- Close menu -->
-                <svg class="closeBurgerMenu" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 0 24 24"
-                    width="30px" fill="#ffffff">
-                    <path d="M0 0h24v24H0V0z" fill="none"></path>
-                    <path
-                        d="M18.3 5.71c-.39-.39-1.02-.39-1.41 0L12 10.59 7.11 5.7c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L10.59 12 5.7 16.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l4.89 4.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z">
-                    </path>
-                </svg>
-            </button>
+    </section>
 
-            <div class="menuBurger">
-                <div class="burgerGrid">
-                    <div class="burgerCell">
-                        <a class="burgerHeader" href="/bachelor/">Бакалавриат и специалитет</a>
-                        <ul class="burgerList">
-                            <li><a href="/bachelor/roditelym/">#РОДИТЕЛЯМСЮДА</a></li>
-                            <li><a href="/obrprog/">Образовательные программы
-                                    бакалавриата</a></li>
-                            <li><a href="/bachelor/documents2021/">Нормативные документы</a></li>
-                            <li><a href="/bachelor/test/">Количество мест</a></li>
-                            <li><a href="/bachelor/docs_go2021/">Как и когда подать
-                                    документы</a></li>
-                            <li><a href="/bachelor/calc/">Калькулятор абитуриента</a></li>
-                            <li><a href="/bachelor/exam2021/">Вступительные испытания</a></li>
-                            <li><a href="/bachelor/celev2021/">Целевое обучение</a></li>
-                            <li><a href="/bachelor/paid_edu2021/">Платное образование</a></li>
-                            <li><a href="http://abiturient.asu.ru/international/">Прием иностранных
-                                    граждан</a></li>
-                            <li><a href="/bachelor/grants2021/">Стипендии и материальная
-                                    поддержка</a></li>
-                            <li><a href="/bachelor/inf2021/">Обязательства по
-                                    информированию</a></li>
-                            <li><a href="https://abiturient.asu.ru/feedback2021/">Обратная связь</a></li>
-                        </ul>
-                    </div>
-                    <div class="burgerCell">
-                        <a class="burgerHeader" href="/postgraduate/">Магистратура и
-                            аспирантура</a>
-                        <ul class="burgerList">
-                            <li><a href="/programmag/">Образовательные программы
-                                    магистратуры</a></li>
-                            <li><a href="/programaspir/">Научные специальности
-                                    аспирантуры</a></li>
-                            <li><a href="/postgraduate/documents2021/">Нормативные документы</a>
-                            </li>
-                            <li><a href="/postgraduate/magkvot/">Количество мест
-                                    (магистратура)</a></li>
-                            <li><a href="/postgraduate/aspkvot/">Количество мест
-                                    (аспирантура)</a></li>
-                            <li><a href="/postgraduate/docs_go2023/">Как и когда подать
-                                    документы</a></li>
-                            <li><a href="/postgraduate/programs2021/">Вступительные испытания</a>
-                            </li>
-                            <li><a href="/postgraduate/celev2021/">Целевое обучение</a></li>
-                            <li><a href="/postgraduate/international2021/">Прием иностранных
-                                    граждан</a></li>
-                            <li><a href="/postgraduate/paid_edu2021/">Платное образование</a></li>
-                            <li><a href="https://abiturient.asu.ru/feedback2021/">Обратная связь</a></li>
-                        </ul>
-                    </div>
-                    <div class="burgerCell">
-                        <a class="burgerHeader" href="/college/">Колледж АГУ</a>
-                        <ul class="burgerList">
-                            <li><a href="/college/rodspo/">#РОДИТЕЛЯМСЮДА</a></li>
-                            <li><a href="/college/documents2021/">Нормативные документы</a></li>
-                            <li><a href="/college/docs_go2021/">Как и когда подать документы</a>
-                            </li>
-                            <li><a href="/college/programs2021/">Вступительные испытания</a></li>
-                            <li><a href="/college/paid_edu2021/">Платное образование</a></li>
-                            <li><a href="https://abiturient.asu.ru/feedback2021/">Обратная связь</a></li>
-                        </ul>
-                    </div>
-                    <div class="burgerCell">
-                        <a class="burgerHeader" href="/ratings/">Рейтинги</a>
-                        <ul class="burgerList list-unstyled">
-                            <li><a href="/ratings/comp2022/">Проходные баллы 2022</a></li>
-                            <li><a href="/ratings/admissions/">Прием 2022</a></li>
-                            <li><a href="/ratings/order/">Приказы о зачислении</a></li>
-                            <li><a href="https://abiturient.asu.ru/feedback2021/">Обратная связь</a></li>
-                        </ul>
-                    </div>
+    <section class="pk-container">
+        <div class="pk-container__wrapper">
+            <h2 class="section-title">Приемная кампания 2024</h2>
+            <div class="pk-info">
+                <div class="pk-info__item">
+                    <p class="pk-nums">280</p>
+                    <p class="pk-text">бюджетных <br> мест</p>
+                </div>
+                <div class="pk-info__item">
+                    <p class="pk-nums">123</p>
+                    <p class="pk-text">образовательных <br> программ</p>
+                </div>
+                <div class="pk-info__item">
+                    <p class="pk-nums">228</p>
+                    <p class="pk-text">целевое <br> место</p>
+                </div>
+                <div class="pk-info__item">
+                    <p class="pk-nums">1234</p>
+                    <p class="pk-text">комфортабельных <br> общежитий</p>
+                </div>
+                <div class="pk-info__item">
+                    <p class="pk-nums">228</p>
+                    <p class="pk-text">место в рейтинге <br> вузов</p>
                 </div>
             </div>
         </div>
+    </section>
 
-        <!-- Advantages section -->
-        <section class="advantages-section">
-            <div class="wrapper">
-                <h2 class="advantages-header">ПОЧЕМУ АГУ?</h2>
-                <div class="advantages-container x-advantages-container">
-                    <div class="advantages-wrapper">
-                        <div class="advantages-item">
-                            <a href="/international_level/">
-                                <lottie-player loading="lazy" class="advantages-item_anim"
-                                    x-src="[theme_dir]img/main/advantages/block1/anim1.json" background="#EFF4FA"
-                                    speed="1" loop="">
-                                </lottie-player>
-                                <h4 class="advantages-item_text">
-                                    Образование международного <br>
-                                    уровня
-                                </h4>
-                            </a>
+    <section class="about_university-container">
+        <div class="about_university__wrapper">
+            <h2 class="section-title">Об университете</h2>
+            <p class="about_university__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur
+                debitis eius error, ex fugiat ipsum iure iusto laborum quo quod reiciendis, repellat repudiandae sed
+                tenetur totam veritatis voluptatum! Aut, molestias.
+            </p>
+            <div class="video-wrapper">
+                <img class="aaa video-image" src="assets/imgs/preview.png" alt="">
+                <img class="play-button" src="assets/imgs/play.png" alt="">
+                <iframe class="video-frame none" src="https://www.youtube.com/embed/w9ADQI2_sjw?si=DURVOYzBrOERIXps"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="institutes-slider-container">
+        <div class="institutes-slider__wrapper">
+            <h2 class="section-title">
+                Куда поступать?
+            </h2>
+            <div class="wr">
+                <div class="slider">
+                    <div class="item bio">
+                        <div class="item-text">
+                            <h4>ИНСТИТУТ БИОЛОГИИ И БИОТЕХНОЛОГИИ</h4>
+                            <p>15 программ бакалавриата</p>
+                            <p>5 программ магистратуры</p>
+                            <p>2 программы аспирантуры</p>
                         </div>
 
-                        <div class="advantages-item">
-                            <a href="/internships/">
-                                <lottie-player loading="lazy" class="advantages-item_anim"
-                                    x-src="[theme_dir]img/main/advantages/block2/anim2.json" background="#EFF4FA"
-                                    speed="1" loop="">
-                                </lottie-player>
-                            </a>
-                            <h4 class="advantages-item_text">Стажировки в Европе и Азии</h4>
-                        </div>
-
-                        <div class="advantages-item">
-                            <a href="/job/">
-                                <lottie-player loading="lazy" class="advantages-item_anim"
-                                    x-src="[theme_dir]img/main/advantages/block3/anim3.json" background="#EFF4FA"
-                                    speed="1" loop=""></lottie-player>
-                            </a>
-                            <h4 class="advantages-item_text">Престижная работа</h4>
-                        </div>
-
-                        <div class="advantages-item">
-                            <a href="/dormitory/">
-                                <lottie-player loading="lazy" class="advantages-item_anim"
-                                    x-src="[theme_dir]img/main/advantages/block4/anim4.json" background="#EFF4FA"
-                                    speed="1" loop=""></lottie-player>
-                            </a>
-                            <h4 class="advantages-item_text">5 комфортабельных общежитий</h4>
-                        </div>
-
-                        <div class="advantages-item">
-                            <a href="/student_life/">
-                                <lottie-player loading="lazy" class="advantages-item_anim"
-                                    x-src="[theme_dir]img/main/advantages/block5/anim5.json" background="#EFF4FA"
-                                    speed="1" loop=""></lottie-player>
-                            </a>
-                            <h4 class="advantages-item_text">Яркая студенческая жизнь</h4>
+                    </div>
+                    <div class="item econ">
+                        <div class="item-text">
+                            <h4>МЕЖДУНАРОДНЫЙ ИНСТИТУТ ЭКОНОМИКИ, МЕНЕДЖМЕНТА И ИНФОРМАЦИОННЫХ СИСТЕМ</h4>
+                            <p>15 программ бакалавриата</p>
+                            <p>5 программ магистратуры</p>
+                            <p>2 программы аспирантуры</p>
                         </div>
                     </div>
+                    <div class="item gym">
+                        <div class="item-text">
+                            <h4>ИНСТИТУТ ГУМАНИТАРНЫХ НАУК</h4>
+                            <p>15 программ бакалавриата</p>
+                            <p>5 программ магистратуры</p>
+                            <p>2 программы аспирантуры</p>
+                        </div>
+                    </div>
+
+                    <div class="item him">
+                        <div class="item-text">
+                            <h4>ИНСТИТУТ ХИМИИ И ХИМИКО-ФАРМАЦЕВТИЧЕСКИХ ТЕХНОЛОГИЙ</h4>
+                            <p>15 программ бакалавриата</p>
+                            <p>5 программ магистратуры</p>
+                            <p>2 программы аспирантуры</p>
+                        </div>
+                    </div>
+                    <div class="item geo">
+                        <div class="item-text">
+                            <h4>ИНСТИТУТ ГЕОГРАФИИ</h4>
+                            <p>15 программ бакалавриата</p>
+                            <p>5 программ магистратуры</p>
+                            <p>2 программы аспирантуры</p>
+                        </div>
+                    </div>
+
+                    <div class="item mat">
+                        <div class="item-text">
+                            <h4>ИНСТИТУТ МАТЕМАТИКИ И ИНФОРМАЦИОННЫХ ТЕХНОЛОГИЙ</h4>
+                            <p>15 программ бакалавриата</p>
+                            <p>5 программ магистратуры</p>
+                            <p>2 программы аспирантуры</p>
+                        </div>
+                    </div>
+
+                    <div class="item fizt">
+                        <div class="item-text">
+                            <h4>ИНСТИТУТ ЦИФРОВЫХ ТЕХНОЛОГИЙ, ЭЛЕКТРОНИКИ И ФИЗИКИ</h4>
+                            <p>15 программ бакалавриата</p>
+                            <p>5 программ магистратуры</p>
+                            <p>2 программы аспирантуры</p>
+                        </div>
+                    </div>
+
+                    <div class="item yi">
+                        <div class="item-text">
+                            <h4>ЮРИДИЧЕСКИЙ ИНСТИТУТ</h4>
+                            <p>15 программ бакалавриата</p>
+                            <p>5 программ магистратуры</p>
+                            <p>2 программы аспирантуры</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-        </section>
 
-        <!-- Calendar section -->
-        <section class="calendar-section">
-            <div class="announces-triangles">
-                <img class="triangle1 x-img x-triangle1"
-                     src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="">
-                <img class="triangle2 x-img x-triangle2"
-                     src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="">
-                <img class="triangle3 x-img x-triangle3"
-                     src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="">
-            </div>
-            <div class="wrapper">
-                <div class="calendar-section_header">
-                    <h2 class="calendar-section-header">
-                        <a href="/news/calendar/">Календарь событий</a>
-                    </h2>
+        </div>
+    </section>
+
+    <!-- шаги абитуриента -->
+    <section class="steps-container">
+        <div class="steps__wrapper">
+            <h2 class="section-title">Шаги абитуриента</h2>
+            <div class="steps">
+
+                <div class="step-item">
+                    <span class="step-num">1</span>
+                    <p class="step-descr">Выберите навравление подготовки</p>
                 </div>
 
-                <div class="announces-section_content calendar-section_content">
-                    <div class="calendar-container announces-container">
+                <div class="step-item">
+                    <p class="step-num">2</p>
+                    <p class="step-descr">Зарегистрируйтесь в личном кабинете абитуриента</p>
+                </div>
+
+                <div class="step-item">
+                    <p class="step-num">3</p>
+                    <p class="step-descr">Укажите свои индивидуальные достижения</p>
+                </div>
+
+                <div class="step-item">
+                    <p class="step-num">4</p>
+                    <p class="step-descr">Пройдите вступительные испытания</p>
+                </div>
+
+                <div class="step-item">
+                    <p class="step-num">5</p>
+                    <p class="step-descr">Выберите направление подготовки</p>
+                </div>
+
+                <div class="step-item">
+                    <p class="step-num">6</p>
+                    <p class="step-descr">Выберите направление подготовки</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="abiturient-container">
+        <div class="abiturient__wrapper">
+            <div class="abiturient-lk">
+                <div class="abiturient-text abiturient-lk-text">
+                    <h3 class="abiturient-title">Личный кабинет <br/> абитуриента</h3>
+                    <p class="abiturient-descr">
+                        Сервис, который поможет подать документы на все
+                        уровни образования в АГУ онлайн.
+                    </p>
+                    <p class="abiturient-reg">
+                        <a class="abiturient-reg-link" href="">Зарегистрироваться</a>
+                    </p>
+                </div>
+
+                <img class="abiturient-lk-img" src="assets/imgs/lk_abit.png" alt="">
+            </div>
+
+            <div class="abiturient-olymp">
+                <div class="abiturient-text">
+                    <h3 class="abiturient-title">Олимпиадное движение</h3>
+                    <p class="abiturient-descr">
+                        Сервис, который поможет подать документы на все
+                        уровни образования в АГУ онлайн.
+                    </p>
+                </div>
+
+            </div>
+            <div class="abiturient-calc">
+                <div class="abiturient-text">
+                    <h3 class="abiturient-title">Калькулятор абитуриента</h3>
+                    <p class="abiturient-descr">
+                        Сервис, который поможет подать документы на все
+                        уровни образования в АГУ онлайн.
+                    </p>
+                </div>
+            </div>
+            <div class="abiturient-money">
+                <h3 class="abiturient-title">Стипендии и материальная поддержка</h3>
+            </div>
+            <div class="abiturient-celev">
+                <h3 class="abiturient-title">Стипендии и материальная поддержка</h3>
+            </div>
+            <div class="abiturient-plat">
+                <h3 class="abiturient-title">Стипендии и материальная поддержка</h3>
+            </div>
+            <div class="abiturient-docs">
+                <h3 class="abiturient-title">Стипендии и материальная поддержка</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="announces-section calendar-container">
+        <div class="calendar__wrapper">
+            <h2 class="section-title"><a href="calendar.html">Календарь событий</a></h2>
+            <div class="announces-section_content">
+                <div class="container announces-container">
                     <div class="calendars">
                         <div class="calendar-item">
-                            <div class="calendar-container">
+                            <div class="calendar">
                                 <table class="calendar-table" id="calendar2">
                                     <thead>
                                     <tr>
                                         <td></td>
-                                        <td class="calendar-month" colspan="5" data-month="3" data-year="2023">
-                                            Апрель 2023</td>
+                                        <td class="calendar-month" colspan="5" data-month="0" data-year="2023">
+                                            Январь 2023
+                                        </td>
                                         <td></td>
                                     </tr>
                                     <tr class="calendar-days-row">
@@ -456,104 +582,191 @@
                                         <td></td>
                                         <td></td>
                                         <td></td>
-                                        <td class="rightsided" id="date20230401">1</td>
-                                        <td class="rightsided event js_date" id="date20230402" date="20230402">2<div
-                                                id="popup20230402" class="events-popup"><span
-                                                class="popup-header">События дня</span>
-                                            <ul class="popup-list">
-                                                <li class="popup-event"><a
-                                                        href="/news/48597/">Заключительный тур
-                                                    олимпиады &amp;laquo;Гранит
-                                                    науки&amp;raquo; по химии</a></li>
-                                            </ul>
-                                        </div>
-                                        </td>
+                                        <td class="rightsided" id="date20230101">1</td>
+                                        <td class="rightsided" id="date20230102">2</td>
                                     </tr>
                                     <tr>
-                                        <td id="date20230403">3</td>
-                                        <td id="date20230404">4</td>
-                                        <td id="date20230405">5</td>
-                                        <td id="date20230406">6</td>
-                                        <td class="rightsided" id="date20230407">7</td>
-                                        <td class="rightsided" id="date20230408">8</td>
-                                        <td class="rightsided event js_date" id="date20230409" date="20230409">9<div
-                                                id="popup20230409" class="events-popup"><span
-                                                class="popup-header">События дня</span>
-                                            <ul class="popup-list">
-                                                <li class="popup-event"><a href="/news/48435/">Пробный
-                                                    ЕГЭ по физике</a></li>
-                                            </ul>
-                                        </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td id="date20230410">10</td>
-                                        <td id="date20230411" class="event js_date" date="20230411">11<div
-                                                id="popup20230411" class="events-popup" style="display: none;"><span
-                                                class="popup-header">События дня</span>
-                                            <ul class="popup-list">
-                                                <li class="popup-event"><a
-                                                        href="/news/48112/">Олимпиада ИГН АлтГУ
-                                                    по педагогике для обучающихся
-                                                    педагогических колледжей</a></li>
-                                            </ul>
-                                        </div>
-                                        </td>
-                                        <td id="date20230412" class="event js_date" date="20230412">12<div
-                                                id="popup20230412" class="events-popup" style="display: none;"><span
-                                                class="popup-header">События дня</span>
-                                            <ul class="popup-list">
-                                                <li class="popup-event"><a
-                                                        href="/news/48734/">Профориентационные
-                                                    встречи юридического
-                                                    института для студентов
-                                                    колледжа АлтГУ</a></li>
-                                            </ul>
-                                        </div>
-                                        </td>
-                                        <td id="date20230413">13</td>
-                                        <td class="rightsided" id="date20230414">14</td>
-                                        <td class="rightsided" id="date20230415">15</td>
-                                        <td class="rightsided" id="date20230416">16</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="today" id="date20230417">17</td>
-                                        <td id="date20230418">18</td>
-                                        <td id="date20230419">19</td>
-                                        <td id="date20230420">20</td>
-                                        <td class="rightsided" id="date20230421">21</td>
-                                        <td class="rightsided event js_date" id="date20230422" date="20230422">22
-                                            <div id="popup20230422" class="events-popup"><span
+                                        <td id="date20230103" class="event js_date" date="20230103">3
+                                            <div
+                                                    id="popup20230103" class="events-popup"><span
                                                     class="popup-header">События дня</span>
                                                 <ul class="popup-list">
-                                                    <li class="popup-event"><a href="/news/48581/">Финал
-                                                        конкурса исследовательских
-                                                        работ для школьников
-                                                        «ЭКОЛОГиЯ»</a></li>
+                                                    <li class="popup-event"><a href="/news/47327/">Профильная
+                                                        смена по
+                                                        биологии для школьников</a></li>
+                                                    <li class="popup-event"><a
+                                                            href="/news/47366/">Онлайн-викторина
+                                                        «ФИЗБОЙ»</a></li>
                                                 </ul>
                                             </div>
                                         </td>
-                                        <td class="rightsided" id="date20230423">23</td>
+                                        <td id="date20230104">4</td>
+                                        <td id="date20230105">5</td>
+                                        <td id="date20230106">6</td>
+                                        <td class="rightsided" id="date20230107">7</td>
+                                        <td class="rightsided" id="date20230108">8</td>
+                                        <td class="rightsided event js_date" id="date20230109" date="20230109">9
+                                            <div id="popup20230109" class="events-popup"><a
+                                                    href="news_by_date.html"><span class="popup-header">События
+                                                                дня</span></a>
+                                                <ul class="popup-list">
+                                                    <li class="popup-event"><a href="/news/47462/">Олимпиада для
+                                                        школьников «Биология&nbsp;—
+                                                        теория и&nbsp;практика»</a></li>
+                                                    <li class="popup-event"><a href="/news/47543/">Олимпиада для
+                                                        школьников по химии</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <td id="date20230424">24</td>
-                                        <td id="date20230425">25</td>
-                                        <td id="date20230426">26</td>
-                                        <td id="date20230427">27</td>
-                                        <td class="rightsided event js_date" id="date20230428" date="20230428">28
-                                            <div id="popup20230428" class="events-popup"><span
+                                        <td id="date20230110" class="event js_date" date="20230110">10
+                                            <div
+                                                    id="popup20230110" class="events-popup"><span
                                                     class="popup-header">События дня</span>
                                                 <ul class="popup-list">
-                                                    <li class="popup-event"><a
-                                                            href="/news/48145/">Заключительный тур
-                                                        олимпиады по английскому
-                                                        языку «Покори университет»</a>
+                                                    <li class="popup-event"><a href="/news/47551/">Олимпиада
+                                                        школьников «Рисунок и
+                                                        живопись»</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                        <td id="date20230111">11</td>
+                                        <td id="date20230112" class="event js_date" date="20230112">12
+                                            <div
+                                                    id="popup20230112" class="events-popup"><span
+                                                    class="popup-header">События дня</span>
+                                                <ul class="popup-list">
+                                                    <li class="popup-event"><a href="/news/47539/">Горячая
+                                                        линия по вопросам поступления
+                                                        в ИМИТ</a></li>
+                                                    <li class="popup-event"><a href="/news/47542/">Горячая
+                                                        линия по вопросам поступления
+                                                        в ИГН</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                        <td id="date20230113">13</td>
+                                        <td class="rightsided event js_date" id="date20230114" date="20230114">
+                                            14
+                                            <div id="popup20230114" class="events-popup"><span
+                                                    class="popup-header">События дня</span>
+                                                <ul class="popup-list">
+                                                    <li class="popup-event"><a href="novost.html">Пробный
+                                                        ЕГЭ по географии</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                        <td class="rightsided event js_date" id="date20230115" date="20230115">
+                                            15
+                                            <div id="popup20230115" class="events-popup"><span
+                                                    class="popup-header">События дня</span>
+                                                <ul class="popup-list">
+                                                    <li class="popup-event">
+                                                        <a href="novost.html">
+                                                            Олимпиада школьников по
+                                                            русскому языку
+                                                        </a>
                                                     </li>
                                                 </ul>
                                             </div>
                                         </td>
-                                        <td class="rightsided" id="date20230429">29</td>
-                                        <td class="rightsided" id="date20230430">30</td>
+                                        <td class="rightsided event js_date" id="date20230116" date="20230116">
+                                            16
+                                            <div id="popup20230116" class="events-popup"><span
+                                                    class="popup-header">События дня</span>
+                                                <ul class="popup-list">
+                                                    <li class="popup-event">
+                                                        <a href="novost.html">
+                                                            Олимпиада школьников по
+                                                            обществознанию
+                                                            «Общество – это мы»
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td id="date20230117">17</td>
+                                        <td id="date20230118">18</td>
+                                        <td id="date20230119" class="event js_date" date="20230119">19
+                                            <div
+                                                    id="popup20230119" class="events-popup"><span
+                                                    class="popup-header">События дня</span>
+                                                <ul class="popup-list">
+                                                    <li class="popup-event"><a href="novost.html">Горячая
+                                                        линия по вопросам поступления
+                                                        в ИИМО</a></li>
+                                                    <li class="popup-event"><a href="novost.html">Горячая
+                                                        линия по вопросам поступления
+                                                        в ЮИ</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                        <td id="date20230120" class="event js_date" date="20230120">20
+                                            <div
+                                                    id="popup20230120" class="events-popup"><span
+                                                    class="popup-header">События дня</span>
+                                                <ul class="popup-list">
+                                                    <li class="popup-event"><a
+                                                            href="novost.html">Онлайн-консультация
+                                                        по подготовке к ЕГЭ 2023 года
+                                                        (обществознание)</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                        <td class="rightsided" id="date20230121">21</td>
+                                        <td class="rightsided event js_date" id="date20230122" date="20230122">
+                                            22
+                                            <div id="popup20230122" class="events-popup"><span
+                                                    class="popup-header">События дня</span>
+                                                <ul class="popup-list">
+                                                    <li class="popup-event"><a href="/novost.html">Пробный
+                                                        ЕГЭ по биологии</a></li>
+                                                    <li class="popup-event"><a href="/news/47613/">Олимпиада
+                                                        школьников по географии
+                                                        «Вокруг света»</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                        <td class="rightsided" id="date20230123">23</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="today" id="date20230124">24</td>
+                                        <td id="date20230125">25</td>
+                                        <td id="date20230126">26</td>
+                                        <td id="date20230127">27</td>
+                                        <td class="rightsided" id="date20230128">28</td>
+                                        <td class="rightsided event js_date" id="date20230129" date="20230129">
+                                            29
+                                            <div id="popup20230129" class="events-popup"><span
+                                                    class="popup-header">События дня</span>
+                                                <ul class="popup-list">
+                                                    <li class="popup-event"><a
+                                                            href="/news/47463/">Профориентационная
+                                                        акция «Профнавигатор»&nbsp;—
+                                                        2023</a></li>
+                                                    <li class="popup-event"><a
+                                                            href="/news/47692/">Заключительный
+                                                        этап олимпиады школьников
+                                                        «Будущие исследователи –
+                                                        будущее науки» по русскому
+                                                        языку</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                        <td class="rightsided event js_date" id="date20230130" date="20230130">
+                                            30
+                                            <div id="popup20230130" class="events-popup"><span
+                                                    class="popup-header">События дня</span>
+                                                <ul class="popup-list">
+                                                    <li class="popup-event"><a href="/news/47552/">Олимпиада
+                                                        школьников по физике «Формула
+                                                        победы»</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>&nbsp;</td>
@@ -569,13 +782,14 @@
                             </div>
                         </div>
                         <div class="calendar-item">
-                            <div class="calendar-container">
+                            <div class="calendar">
                                 <table class="calendar-table" id="calendar3">
                                     <thead>
                                     <tr>
                                         <td></td>
-                                        <td class="calendar-month" colspan="5" data-month="4" data-year="2023">
-                                            Май 2023</td>
+                                        <td class="calendar-month" colspan="5" data-month="1" data-year="2023">
+                                            Февраль 2023
+                                        </td>
                                         <td></td>
                                     </tr>
                                     <tr class="calendar-days-row">
@@ -590,45 +804,98 @@
                                     </thead>
                                     <tbody>
                                     <tr>
-                                        <td id="date20230501">1</td>
-                                        <td id="date20230502">2</td>
-                                        <td id="date20230503">3</td>
-                                        <td id="date20230504">4</td>
-                                        <td class="rightsided" id="date20230505">5</td>
-                                        <td class="rightsided" id="date20230506">6</td>
-                                        <td class="rightsided" id="date20230507">7</td>
+                                        <td></td>
+                                        <td id="date20230201" class="event js_date" date="20230201">1
+                                            <div
+                                                    id="popup20230201" class="events-popup"><span
+                                                    class="popup-header">События дня</span>
+                                                <ul class="popup-list">
+                                                    <li class="popup-event"><a href="second.html">Олимпиада по
+                                                        математике «Формула успеха»</a>
+                                                    </li>
+                                                    <li class="popup-event"><a href="second.html">Олимпиада
+                                                        школьников по
+                                                        программированию
+                                                        «Информатика+»</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                        <td id="date20230202">2</td>
+                                        <td id="date20230203">3</td>
+                                        <td class="rightsided" id="date20230204">4</td>
+                                        <td class="rightsided" id="date20230205">5</td>
+                                        <td class="rightsided event js_date" id="date20230206" date="20230206">6
+                                            <div id="popup20230206" class="events-popup"><span
+                                                    class="popup-header">События дня</span>
+                                                <ul class="popup-list">
+                                                    <li class="popup-event">
+                                                        <a href="second.html">
+                                                            Олимпиада школьников по
+                                                            английскому языку
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <td id="date20230508">8</td>
-                                        <td id="date20230509">9</td>
-                                        <td id="date20230510">10</td>
-                                        <td id="date20230511">11</td>
-                                        <td class="rightsided" id="date20230512">12</td>
-                                        <td class="rightsided" id="date20230513">13</td>
-                                        <td class="rightsided" id="date20230514">14</td>
+                                        <td id="date20230207">7</td>
+                                        <td id="date20230208">8</td>
+                                        <td id="date20230209">9</td>
+                                        <td id="date20230210">10</td>
+                                        <td class="rightsided" id="date20230211">11</td>
+
+                                        <td class="rightsided event js_date" id="date20230212" date="20230212">
+                                            12
+                                            <div id="popup20230212" class="events-popup">
+                                                <span class="popup-header">События дня</span>
+                                                <ul class="popup-list">
+                                                    <li class="popup-event">
+                                                        <a href="second.html">
+                                                            Олимпиада школьников по
+                                                            английскому языку
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </td>
+
+                                        <td class="rightsided" id="date20230213">13</td>
                                     </tr>
                                     <tr>
-                                        <td id="date20230515">15</td>
-                                        <td id="date20230516">16</td>
-                                        <td id="date20230517">17</td>
-                                        <td id="date20230518">18</td>
-                                        <td class="rightsided" id="date20230519">19</td>
-                                        <td class="rightsided" id="date20230520">20</td>
-                                        <td class="rightsided" id="date20230521">21</td>
+                                        <td id="date20230214">14</td>
+                                        <td id="date20230215">15</td>
+                                        <td id="date20230216">16</td>
+                                        <td id="date20230217">17</td>
+                                        <td class="rightsided" id="date20230218">18</td>
+                                        <td class="rightsided" id="date20230219">19</td>
+                                        <td class="rightsided" id="date20230220">20</td>
                                     </tr>
                                     <tr>
-                                        <td id="date20230522">22</td>
-                                        <td id="date20230523">23</td>
-                                        <td id="date20230524">24</td>
-                                        <td id="date20230525">25</td>
-                                        <td class="rightsided" id="date20230526">26</td>
-                                        <td class="rightsided" id="date20230527">27</td>
-                                        <td class="rightsided" id="date20230528">28</td>
+                                        <td id="date20230221">21</td>
+                                        <td id="date20230222">22</td>
+                                        <td id="date20230223" class="event js_date" date="20230223">23
+                                            <div id="popup20230223" class="events-popup">
+                                                <span class="popup-header">События дня</span>
+                                                <ul class="popup-list">
+                                                    <li class="popup-event">
+                                                        <a href="/news/48117/">
+                                                            Заключительный тур Всесибирской олимпиады школьников
+                                                            по химии
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                        <td id="date20230224">24</td>
+                                        <td class="rightsided" id="date20230225">25</td>
+                                        <td class="rightsided" id="date20230226">26</td>
+                                        <td class="rightsided" id="date20230227">27</td>
                                     </tr>
                                     <tr>
-                                        <td id="date20230529">29</td>
-                                        <td id="date20230530">30</td>
-                                        <td id="date20230531">31</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
                                         <td>&nbsp;</td>
                                         <td>&nbsp;</td>
                                         <td>&nbsp;</td>
@@ -648,13 +915,14 @@
                             </div>
                         </div>
                         <div class="calendar-item">
-                            <div class="calendar-container">
+                            <div class="calendar">
                                 <table class="calendar-table" id="calendar4">
                                     <thead>
                                     <tr>
                                         <td></td>
-                                        <td class="calendar-month" colspan="5" data-month="5" data-year="2023">
-                                            Июнь 2023</td>
+                                        <td class="calendar-month" colspan="5" data-month="2" data-year="2023">
+                                            Март 2023
+                                        </td>
                                         <td></td>
                                     </tr>
                                     <tr class="calendar-days-row">
@@ -670,46 +938,46 @@
                                     <tbody>
                                     <tr>
                                         <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td id="date20230601">1</td>
-                                        <td class="rightsided" id="date20230602">2</td>
-                                        <td class="rightsided" id="date20230603">3</td>
-                                        <td class="rightsided" id="date20230604">4</td>
+                                        <td id="date20230301">1</td>
+                                        <td id="date20230302">2</td>
+                                        <td id="date20230303">3</td>
+                                        <td class="rightsided" id="date20230304">4</td>
+                                        <td class="rightsided" id="date20230305">5</td>
+                                        <td class="rightsided" id="date20230306">6</td>
                                     </tr>
                                     <tr>
-                                        <td id="date20230605">5</td>
-                                        <td id="date20230606">6</td>
-                                        <td id="date20230607">7</td>
-                                        <td id="date20230608">8</td>
-                                        <td class="rightsided" id="date20230609">9</td>
-                                        <td class="rightsided" id="date20230610">10</td>
-                                        <td class="rightsided" id="date20230611">11</td>
+                                        <td id="date20230307">7</td>
+                                        <td id="date20230308">8</td>
+                                        <td id="date20230309">9</td>
+                                        <td id="date20230310">10</td>
+                                        <td class="rightsided" id="date20230311">11</td>
+                                        <td class="rightsided" id="date20230312">12</td>
+                                        <td class="rightsided" id="date20230313">13</td>
                                     </tr>
                                     <tr>
-                                        <td id="date20230612">12</td>
-                                        <td id="date20230613">13</td>
-                                        <td id="date20230614">14</td>
-                                        <td id="date20230615">15</td>
-                                        <td class="rightsided" id="date20230616">16</td>
-                                        <td class="rightsided" id="date20230617">17</td>
-                                        <td class="rightsided" id="date20230618">18</td>
+                                        <td id="date20230314">14</td>
+                                        <td id="date20230315">15</td>
+                                        <td id="date20230316">16</td>
+                                        <td id="date20230317">17</td>
+                                        <td class="rightsided" id="date20230318">18</td>
+                                        <td class="rightsided" id="date20230319">19</td>
+                                        <td class="rightsided" id="date20230320">20</td>
                                     </tr>
                                     <tr>
-                                        <td id="date20230619">19</td>
-                                        <td id="date20230620">20</td>
-                                        <td id="date20230621">21</td>
-                                        <td id="date20230622">22</td>
-                                        <td class="rightsided" id="date20230623">23</td>
-                                        <td class="rightsided" id="date20230624">24</td>
-                                        <td class="rightsided" id="date20230625">25</td>
+                                        <td id="date20230321">21</td>
+                                        <td id="date20230322">22</td>
+                                        <td id="date20230323">23</td>
+                                        <td id="date20230324">24</td>
+                                        <td class="rightsided" id="date20230325">25</td>
+                                        <td class="rightsided" id="date20230326">26</td>
+                                        <td class="rightsided" id="date20230327">27</td>
                                     </tr>
                                     <tr>
-                                        <td id="date20230626">26</td>
-                                        <td id="date20230627">27</td>
-                                        <td id="date20230628">28</td>
-                                        <td id="date20230629">29</td>
-                                        <td class="rightsided" id="date20230630">30</td>
+                                        <td id="date20230328">28</td>
+                                        <td id="date20230329">29</td>
+                                        <td id="date20230330">30</td>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
                                         <td>&nbsp;</td>
                                         <td>&nbsp;</td>
                                     </tr>
@@ -728,10 +996,11 @@
                         </div>
                         <div class="col-12 calendar--buttons">
                             <button class="calendar--prev" id="calPrev">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px"
-                                     fill="#ffffff">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24"
+                                     width="24px" fill="#ffffff">
                                     <path d="M0 0h24v24H0V0z" fill="none" opacity=".87"></path>
-                                    <path d="M17.51 3.87L15.73 2.1 5.84 12l9.9 9.9 1.77-1.77L9.38 12l8.13-8.13z"></path>
+                                    <path d="M17.51 3.87L15.73 2.1 5.84 12l9.9 9.9 1.77-1.77L9.38 12l8.13-8.13z">
+                                    </path>
                                 </svg>
                             </button>
                             <div class="calendar--dots">
@@ -740,8 +1009,8 @@
                                 <div class="calendar--dot"></div>
                             </div>
                             <button class="calendar--next" id="calNext">
-                                <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px"
-                                     viewBox="0 0 24 24" width="24px" fill="#ffffff">
+                                <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24"
+                                     height="24px" viewBox="0 0 24 24" width="24px" fill="#ffffff">
                                     <g>
                                         <path d="M0,0h24v24H0V0z" fill="none"></path>
                                     </g>
@@ -753,704 +1022,143 @@
                         </div>
                     </div>
                 </div>
-                </div>
             </div>
-        </section>
-
-        <!-- States section -->
-        <section class="section states-section">
-            <div class="wrapper">
-                <h2 class="states-section-header">Сделай свой выбор</h2>
-
-                <div class="states-container">
-                    <div class="states-wrapper">
-                        <div class="states-item states-item_green">
-                            <h5 class="states-item_text">
-                                <a href="http://www.bio.asu.ru/" class="states-item_wrapper">
-                                    <span class="span_green">Институт биологии и
-                                        биотехнологий</span>
-                                    <img alt="Институт биологии и биотехнологий"
-                                        class="states-item_icon x-img x-state-icon-bio"
-                                        src="img/main/states/bio-icon.svg">
-
-                                </a>
-                            </h5>
-                        </div>
-
-                        <div class="states-item states-item_blue">
-                            <h5 class="states-item_text">
-                                <a href="https://geo.asu.ru/" class="states-item_wrapper">
-                                    <span class="span_green">Институт географии</span>
-                                    <img alt="Институт географии" class="states-item_icon x-img"
-                                        src="img/main/states/geography-icon.svg">
-                                </a>
-                            </h5>
-                        </div>
-
-                        <div class="states-item states-item_orange">
-                            <h5 class="states-item_text">
-                                <a href="http://hist.asu.ru/" class="states-item_wrapper">
-                                    <span class="span_green">Институт истории и
-                                        международных отношений</span>
-                                    <img alt="Институт истории и международных отношений"
-                                        class="states-item_icon x-img" src="img/main/states/history-icon.svg">
-                                </a>
-                            </h5>
-                        </div>
-
-                        <div class="states-item states-item_orange">
-                            <h5 class="states-item_text">
-                                <a href="http://www.bio.asu.ru/" class="states-item_wrapper">
-                                    <span>Институт математики и информационных
-                                        технологий</span>
-                                    <img alt="Институт математики и информационных технологий"
-                                        class="states-item_icon x-img" src="img/main/states/maths.svg">
-
-                                </a>
-                            </h5>
-                        </div>
-
-                        <div class="states-item states-item_red">
-                            <h5 class="states-item_text">
-                                <a href="https://ign.asu.ru/" class="states-item_wrapper">
-                                    <span>Институт гуманитарных наук</span>
-                                    <img alt="Институт гуманитарных наук"
-                                        class="states-item_icon x-img x-state-icon-bio"
-                                        src="img/main/states/gum-icon.svg">
-                                </a>
-                            </h5>
-                        </div>
-
-                        <div class="states-item states-item_blue">
-                            <h5 class="states-item_text">
-                                <a href="https://phys.asu.ru/" class="states-item_wrapper">
-                                    <span>Институт цифровых технологий, электроники
-                                        и физики</span>
-                                    <img alt="Институт цифровых технологий, электроники и физики"
-                                        class="states-item_icon x-img" src="img/main/states/coding.svg">
-
-                                </a>
-                            </h5>
-                        </div>
-
-                        <div class="states-item states-item_red">
-                            <h5 class="states-item_text">
-                                <a href="https://miemis.asu.ru/" class="states-item_wrapper">
-                                    <span>Международный институт экономики,
-                                        менеджмента и информационных систем</span>
-                                    <img alt="Международный институт экономики, менеджмента и информационных систем"
-                                        class="states-item_icon x-img" src="img/main/states/eco-icon.svg">
-
-                                </a>
-                            </h5>
-                        </div>
-
-                        <div class="states-item states-item_orange">
-                            <h5 class="states-item_text">
-                                <a href="http://www.bio.asu.ru/" class="states-item_wrapper">
-                                    <span>Юридический институт</span>
-                                    <img alt="Юридический институт" class="states-item_icon x-img"
-                                        src="img/main/states/law-icon.svg">
-
-                                </a>
-                            </h5>
-                        </div>
-
-                        <div class="states-item states-item_green">
-                            <h5 class="states-item_text">
-                                <a href="http://www.bio.asu.ru/" class="states-item_wrapper">
-                                    <span>Институт химии и химико-фармацевтических
-                                        технологий</span>
-                                    <img alt="Институт химии и химико-фармацевтических технологий"
-                                        class="states-item_icon x-img" src="img/main/states/chemistry-icon.svg">
-
-                                </a>
-                            </h5>
-                        </div>
-                        <!-- Филиалы -->
-                        <div class="states-item states-item_blue">
-                            <h5 class="states-item_text">
-                                <a href="https://rb.asu.ru/" class="states-item_wrapper">
-                                    <span>Рубцовский институт (филиал) АлтГУ</span>
-                                    <img alt="Рубцовский институт (филиал) АлтГУ"
-                                        class="states-item_icon x-img" src="img/main/states/university.svg">
-
-                                </a>
-                            </h5>
-                        </div>
-
-                        <div class="states-item states-item_green">
-                            <h5 class="states-item_text">
-                                <a href="https://www.asu.ru/structure/filials/belockuricha/"
-                                    class="states-item_wrapper">
-                                    <span>Филиал АлтГУ в г.Белокурихе</span>
-                                    <img alt="Институт биологии и биотехнологий"
-                                        class="states-item_icon x-img" src="img/main/states/university.svg">
-
-                                </a>
-                            </h5>
-                        </div>
-
-                        <div class="states-item states-item_red">
-                            <h5 class="states-item_text">
-                                <a href="https://www.asu.ru/structure/filials/biysk/" class="states-item_wrapper">
-                                    <span>Филиал АлтГУ в г.Бийске</span>
-                                    <img alt="Филиал АлтГУ в г.Бийске" class="states-item_icon x-img"
-                                        src="img/main/states/university.svg">
-
-                                </a>
-                            </h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Steps section -->
-        <section class="section steps-section">
-            <lottie-player loading="lazy" class="steps-anim d-none d-lg-block"
-                x-src="[theme_dir]img/main/steps/steps.json" background="transparent" speed="1" loop="">
-            </lottie-player>
-
-            <lottie-player loading="lazy" class="steps-anim d-block d-lg-none"
-                x-src="[theme_dir]img/main/steps/Steps_mobile_standart.json" background="transparent" speed="1" loop="">
-            </lottie-player>
-        </section>
-        <!-- Tools section -->
-        <section class="section tools-section">
-            <div class="wrapper">
-                <div class="tools-wrapper">
-                    <div data-tab-ref="lk" class="tabcontent tools-description_wrapper">
-                        <img alt="Личный кабинет абитуриента"
-                            class="calc x-img x-tool-icon-user" src="img/main/tools/user.svg">
-                        <h3 class="tools-description_header">
-                            Личный кабинет абитуриента
-                        </h3>
-                        <p class="tools-description_content">
-                            Сервис, который поможет подать документы на все
-                            уровни образования в АГУ онлайн.
-                            С помощью личного кабинета абитуриента каждый
-                            может подать документы в приемную
-                            комиссию вуза не выходя из дома.
-                            Сервис позволяет выбрать направления подготовки,
-                            отправить заявление о
-                            зачислении, приложить пакет необходимых
-                            документов, узнать график вступительных
-                            внутривузовских испытаний, отслеживать свой
-                            индивидуальный рейтинг и контролировать
-                            конкурсную ситуацию,
-                            изменять приоритет в заявлении на зачисление и
-                            получать уведомления о поступлении в АГУ.
-                            Зарегистрируйтесь в личном кабинете абитуриента
-                            и поступите в АГУ прямо из дома!
-                        </p>
-                        <a href="https://lk.abiturient.asu.ru/user/sign-in/login"
-                            class="tools-description_link">Перейти</a>
-                    </div>
-
-                    <div data-tab-ref="olimp" style="display: none" class="tabcontent tools-description_wrapper">
-                        <img alt="Олимпиадное движение" class="calc x-img x-tool-icon-medal"
-                            src="img/main/tools/medal.svg">
-                        <h3 class="tools-description_header text-center text-lg-left">
-                            Олимпиадное движение
-                        </h3>
-                        <p class="tools-description_content">
-                            Поступление по результатам олимпиад школьников.
-                            В разделе собрана информация о доступных льготах
-                            для победителей и призеров разных
-                            олимпиад школьников при поступлении в АГУ в 2021
-                            году:
-                            какие олимпиады дают возможность поступления без
-                            вступительных испытаний,
-                            какие устанавливают наивысший результат ЕГЭ (100
-                            баллов),
-                            а какие позволяют получить дополнительные баллы
-                            при поступлении на определённое
-                            направление подготовки в Алтайском
-                            государственном университете.
-                            Какие преимущества есть именно у вас?! Проверьте
-                            свои шансы поступить на бюджет!
-                        </p>
-                        <a href="https://school.asu.ru/scholar/olimp/" class="tools-description_link">Перейти</a>
-                    </div>
-
-                    <div data-tab-ref="money" style="display: none" class="tabcontent tools-description_wrapper">
-                        <img alt="Стипендии и материальная поддержка"
-                            class="calc x-img x-tool-icon-money" src="img/main/tools/money.svg">
-                        <h3 class="tools-description_header text-center text-lg-left">
-                            Стипендии и материальная поддержка
-                        </h3>
-                        <p class="tools-description_content">
-                            Алтайский государственный университет помогает
-                            студентам на старте.
-                            Вуз построил прочную систему гарантированных
-                            ежемесячных выплат для студентов, поступивших на
-                            бюджетный набор.
-                            В разделе собрана информация о доступных видах
-                            стипендий и материальной поддержки,
-                            размерах ежемесячных выплат и условиях ее
-                            получения.
-                            Загляните и узнайте, какую финансовую помощь
-                            можете получить именно вы!
-                        </p>
-                        <a href="/bachelor/grants2021/" class="tools-description_link">Перейти</a>
-                    </div>
-
-                    <div data-tab-ref="calc" style="display: none" class="tabcontent tools-description_wrapper">
-                        <img alt="Калькулятор абитуриента" class="calc x-img x-tool-icon-calc"
-                            src="img/main/tools/calc.svg">
-                        <h3 class="tools-description_header">
-                            Калькулятор абитуриента
-                        </h3>
-                        <p class="tools-description_content">
-                            Сервис, который помогает подобрать
-                            образовательные программы бакалавриата и
-                            специалитета
-                            и оценить шансы поступления в АГУ на основе
-                            результатов ЕГЭ/тестов без учета индивидуальных
-                            достижений.
-                            Просто укажите комбинацию предметов, которую вы
-                            сдавали в форме вступительного испытания,
-                            и сервис подберет все доступные направления
-                            подготовки для поступления в АГУ.
-                            Агрегация перечня возможных направлений занимает
-                            не более 15 секунд.
-                            Воспользуйтесь калькулятором и просчитайте свои
-                            возможности!
-                        </p>
-                        <a href="/bachelor/calc/" class="tools-description_link">Перейти</a>
-                    </div>
-
-                    <div data-tab-ref="cel" style="display: none" class="tabcontent tools-description_wrapper">
-                        <img alt="Целевое обучение" class="calc x-img x-tool-icon-paper"
-                            src="img/main/tools/paper.svg">
-                        <h3 class="tools-description_header text-center text-lg-left">
-                            Целевое обучение
-                        </h3>
-                        <p class="tools-description_content text-justify">
-                            Целевое обучение в АГУ – это возможность
-                            поступить на бюджет.
-                            В разделе собрана информация о целевом обучении,
-                            направлениях подготовки АГУ,
-                            осуществляющих целевой набор, квоты приема на
-                            целевое обучение в 2021 году, как
-                            подать документы на целевое обучение, и кто может
-                            выступить заказчиком целевого обучения.
-                            Воспользуйтесь шансом получить образование
-                            бесплатно!
-                            Участвуйте в отдельном конкурсе! Целевое - это
-                            вклад в ваше будущее.
-                        </p>
-                        <a href="/bachelor/celev2021/" class="tools-description_link">Перейти</a>
-                    </div>
-
-                    <div data-tab-ref="plat" style="display: none" class="tabcontent tools-description_wrapper">
-                        <img alt="Платное образование" class="calc x-img x-tool-icon-wallet"
-                            src="img/main/tools/wallet.svg">
-                        <h3 class="tools-description_header text-center text-lg-left">
-                            Платное образование
-                        </h3>
-                        <p class="tools-description_content text-justify">
-                            В разделе собрана информация о платных
-                            образовательных услугах на всех уровнях
-                            образования в АГУ:
-                            стоимость обучение, количество платных мест на
-                            направления подготовки, процедура заключения
-                            договора на обучение, возможные варианты оплаты
-                            услуг,
-                            что такое образовательный кредит с
-                            государственной поддержкой и как его получить.
-                            Не упустите возможность поступить в АГУ! С нами
-                            все просто!
-                        </p>
-                        <a href="/bachelor/paid_edu2021/" class="tools-description_link">Перейти</a>
-                    </div>
-
-                    <div class="tools-items">
-                        <h4 class="tools-items_header">Выберите пункт</h4>
-
-                        <div class="tab">
-                            <div data-tab-name="lk" class="tools-item tablinks active">
-                                <button class="tools-item_link">
-                                    <img src="img/main/tools/user.svg"
-                                        alt="Личный кабинет абитуриента"
-                                        class="tools-item_img x-img x-tool-icon-user">
-                                    <span class="tools-item_header">
-                                        Личный кабинет абитуриента
-                                    </span>
-                                </button>
-                            </div>
-                            <div data-tab-name="olimp" class="tools-item tablinks">
-                                <button class="tools-item_link">
-                                    <img src="img/main/tools/medal.svg" alt="Олимпиадное движение"
-                                        class="tools-item_img x-img x-tool-icon-medal">
-                                    <span class="tools-item_header">Олимпиадное движение</span>
-                                </button>
-                            </div>
-                            <div data-tab-name="money" class="tools-item tablinks">
-                                <button class="tools-item_link">
-                                    <img src="img/main/tools/money.svg"
-                                        alt="Стипендии и материальная поддержка"
-                                        class="tools-item_img x-img x-tool-icon-money">
-                                    <span class="tools-item_header">Стипендии и материальная
-                                        поддержка</span>
-                                </button>
-                            </div>
-                            <div data-tab-name="calc" class="tools-item tablinks">
-                                <button class="tools-item_link">
-                                    <img src="img/main/tools/calc.svg"
-                                        alt="Калькулятор абитуриента"
-                                        class="tools-item_img x-img x-tool-icon-calc">
-                                    <span class="tools-item_header">Калькулятор абитуриента</span>
-                                </button>
-                            </div>
-                            <div data-tab-name="cel" class="tools-item tablinks">
-                                <button class="tools-item_link">
-                                    <img src="img/main/tools/paper.svg" alt="Целевое обучение"
-                                        class="tools-item_img x-img x-tool-icon-paper">
-                                    <span class="tools-item_header">Целевое обучение</span>
-                                </button>
-                            </div>
-                            <div data-tab-name="plat" class="tools-item tablinks">
-                                <button class="tools-item_link">
-                                    <img src="img/main/tools/wallet.svg" alt="Платное образование"
-                                        class="tools-item_img x-img x-tool-icon-wallet">
-                                    <span class="tools-item_header">Платное образование</span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-        <section class="announces-section">
-            <div class="announces-section_header">
-                <h2 class="section-header"><a href="/news/">Анонсы и объявления</a></h2>
-            </div>
-
-            <div class="announces-triangles">
-                <img class="triangle1 x-img x-triangle1"
-                    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="">
-                <img class="triangle2 x-img x-triangle2"
-                    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="">
-                <img class="triangle3 x-img x-triangle3"
-                    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="">
-            </div>
-            <div class="announces-section_content-background">
-                <div class="announces-section_content">
-                    <div class="wrapper">
-                        <div class="announces-container">
-                            <div class="row owl-carousel announces-carousel owl-loaded owl-drag">
-                                <div class="owl-stage-outer">
-                                    <div class="owl-stage"
-                                         style="transform: translate3d(-9100px, 0px, 0px);
-                                          transition: all 0.25s ease 0s; width: 22400px;">
-                                        <!-- вот это попробуем -->
-                                        <div class="owl-item">
-                                            <div class="item announces-item_link">
-                                                <div class="announces-item">
-                                                    <div class="announces-item_wrapper">
-                                                        <div class="announces-item_header">
-                                                            <h3>
-                                                                <a href="">
-                                                                    В&nbsp;АлтГУ школьникам рассказали «Всю правду про IT»
-                                                                </a>
-                                                            </h3>
-                                                        </div>
-                                                        <div class="announces-item_content">
-                                                            <p>
-                                                                <a href="news/48662/">
-                                                                    В&nbsp;Алтайском государственном
-                                                                    университете состоялась
-                                                                    профориентационная встреча
-                                                                    «Вся правда про IT». Более 100
-                                                                    участников, интересующихся
-                                                                    информационными технологиями,
-                                                                    узнали о&nbsp;самых
-                                                                    востребованных в&nbsp;IT-отрасли
-                                                                    профессиях, а&nbsp;также о&nbsp;том,
-                                                                    как их&nbsp;можно получить
-                                                                    на&nbsp;базе АлтГУ.
-                                                                </a>
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="announces-item_date">
-                                                        <span class="announces-date_day">3</span>
-                                                        <span class="announces-date_month">апр</span>
-                                                        <span class="announces-date_year">2023</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="owl-item">
-                                            <div class="item announces-item_link">
-                                                <div class="announces-item">
-                                                    <div class="announces-item_wrapper">
-                                                        <div class="announces-item_header">
-                                                            <h3>
-                                                                <a href="">
-                                                                    В&nbsp;АлтГУ школьникам рассказали «Всю правду про IT»
-                                                                </a>
-                                                            </h3>
-                                                        </div>
-                                                        <div class="announces-item_content">
-                                                            <p>
-                                                                <a href="news/48662/">
-                                                                    В&nbsp;Алтайском государственном
-                                                                    университете состоялась
-                                                                    профориентационная встреча
-                                                                    «Вся правда про IT». Более 100
-                                                                    участников, интересующихся
-                                                                    информационными технологиями,
-                                                                    узнали о&nbsp;самых
-                                                                    востребованных в&nbsp;IT-отрасли
-                                                                    профессиях, а&nbsp;также о&nbsp;том,
-                                                                    как их&nbsp;можно получить
-                                                                    на&nbsp;базе АлтГУ.
-                                                                </a>
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="announces-item_date">
-                                                        <span class="announces-date_day">3</span>
-                                                        <span class="announces-date_month">апр</span>
-                                                        <span class="announces-date_year">2023</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="owl-item">
-                                            <div class="item announces-item_link">
-                                                <div class="announces-item">
-                                                    <div class="announces-item_wrapper">
-                                                        <div class="announces-item_header">
-                                                            <h3>
-                                                                <a href="">
-                                                                    В&nbsp;АлтГУ школьникам рассказали «Всю правду про IT»
-                                                                </a>
-                                                            </h3>
-                                                        </div>
-                                                        <div class="announces-item_content">
-                                                            <p>
-                                                                <a href="news/48662/">
-                                                                    В&nbsp;Алтайском государственном
-                                                                    университете состоялась
-                                                                    профориентационная встреча
-                                                                    «Вся правда про IT». Более 100
-                                                                    участников, интересующихся
-                                                                    информационными технологиями,
-                                                                    узнали о&nbsp;самых
-                                                                    востребованных в&nbsp;IT-отрасли
-                                                                    профессиях, а&nbsp;также о&nbsp;том,
-                                                                    как их&nbsp;можно получить
-                                                                    на&nbsp;базе АлтГУ.
-                                                                </a>
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="announces-item_date">
-                                                        <span class="announces-date_day">3</span>
-                                                        <span class="announces-date_month">апр</span>
-                                                        <span class="announces-date_year">2023</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="owl-nav">
-                                    <button type="button" role="presentation" class="owl-prev">
-                                        <span aria-label="Previous">‹</span></button>
-                                    <button type="button" role="presentation" class="owl-next">
-                                        <span aria-label="Next">›</span>
-                                    </button>
-                                </div>
-                                <div class="owl-dots disabled"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Video section -->
-        <section class="section video-section parallax-wrapper">
-            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                 class="d-none d-md-block video-triangle1 parallax-object x-video-triangle1" data-speed="0.07" style="transform: translateY(-53.34px);">
-            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" class="d-none d-md-block video-triangle2 parallax-object x-video-triangle2" data-speed="0.13" style="transform: translateY(-99.06px);">
-            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" class="d-none d-md-block video-triangle3 parallax-object x-video-triangle3" data-speed="0.06" style="transform: translateY(-45.72px);">
-            <div class="wrapper">
-                <div class="video-container">
-                    <h2 class="video-section-header">Твой выбор - Алтайский государственный университет!</h2>
-
-                    <div class="video-player_wrapper">
-                        <div class="youtube-player" data-id="w9ADQI2_sjw">
-                            <div>
-                                <img class="youtube-thumbnail" id="youtubeImg"
-                                     src="img/main/maxresdefault.webp" alt="Youtube Preview">
-                                <div class="youtube-play-btn" id="playBtn"></div>
-                                <iframe class="youtube-iframe" id="youtubeIframe" src="" frameborder="0"></iframe>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-wrapper">
-                <div class="footer-logo">
-                    <img class="footer-logo_img x-img x-footer-logo" loading="lazy"
-                        src="img/main/footer/Logo_LightWhite.svg">
-                </div>
-                <div class="footer-resources">
-                    <nav class="footer-nav">
-                        <ul class="footer-ul">
-                            <li>
-                                <a href="https://minobrnauki.gov.ru/" class="footer-resources_link">
-                                    Министерство науки и высшего образования РФ
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://edu.ru/" class="footer-resources_link">
-                                    Федеральный портал "Российское образование"
-                                </a>
-                            </li>
-                            <li>
-                                <a href="http://www.educaltai.ru/" class="footer-resources_link">
-                                    Министерство образования и науки АК
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="footer-contacts">
-                    <span class="footer-contacts_address">г. Барнаул, пр. Ленина, 61</span>
-                    <a href="mailto:prcom@asu.ru" class="footer-contacts_email">e-mail: prcom@asu.ru</a>
-                    <a href="tel:+73852291222" class="footer-contacts_phone">+7 (3852) 291-222</a>
-                    <a href="https://www.asu.ru" class="footer-contacts_website">Перейти на сайт
-                        АлтГУ</a>
-                </div>
-                <div class="footer-social-links">
-                    <span class="footer-social-links_text">Социальные сети:</span>
-                    <div class="footer-social-links_icons d-flex">
-                        <a href="https://www.youtube.com/channel/UCWhne-7vu55DDZx-A1ToYAw/">
-                            <img src="img/main/footer/youtube.svg" alt="YouTube"
-                                class="footer-social-links_icon x-img x-footer-social-icon-youtube">
-                        </a>
-                        <a href="https://vk.com/abiturientasu/">
-                            <img src="img/main/footer/vk.svg" alt="Вконтакте"
-                                class="footer-social-links_icon x-img x-footer-social-icon-vk">
-                        </a>
-                        <a href="https://t.me/abiturient22asu">
-                            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                                style="width: 29px; background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNTAiIGhlaWdodD0iNTAiCnZpZXdCb3g9IjAgMCA1MCA1MCIKc3R5bGU9IiBmaWxsOiNmZmZmZmY7Ij48cGF0aCBkPSJNNDYuMTM3LDYuNTUyYy0wLjc1LTAuNjM2LTEuOTI4LTAuNzI3LTMuMTQ2LTAuMjM4bC0wLjAwMiwwQzQxLjcwOCw2LjgyOCw2LjcyOCwyMS44MzIsNS4zMDQsMjIuNDQ1CWMtMC4yNTksMC4wOS0yLjUyMSwwLjkzNC0yLjI4OCwyLjgxNGMwLjIwOCwxLjY5NSwyLjAyNiwyLjM5NywyLjI0OCwyLjQ3OGw4Ljg5MywzLjA0NWMwLjU5LDEuOTY0LDIuNzY1LDkuMjEsMy4yNDYsMTAuNzU4CWMwLjMsMC45NjUsMC43ODksMi4yMzMsMS42NDYsMi40OTRjMC43NTIsMC4yOSwxLjUsMC4wMjUsMS45ODQtMC4zNTVsNS40MzctNS4wNDNsOC43NzcsNi44NDVsMC4yMDksMC4xMjUJYzAuNTk2LDAuMjY0LDEuMTY3LDAuMzk2LDEuNzEyLDAuMzk2YzAuNDIxLDAsMC44MjUtMC4wNzksMS4yMTEtMC4yMzdjMS4zMTUtMC41NCwxLjg0MS0xLjc5MywxLjg5Ni0xLjkzNWw2LjU1Ni0zNC4wNzcJQzQ3LjIzMSw3LjkzMyw0Ni42NzUsNy4wMDcsNDYuMTM3LDYuNTUyeiBNMjIsMzJsLTMsOGwtMy0xMGwyMy0xN0wyMiwzMnoiPjwvcGF0aD48L3N2Zz4=')"
-                                alt="Telegram" class="footer-social-links_icon x-img x-footer-social-icon-telegram"></a>
-                        <a href="https://zen.yandex.ru/id/622f05aae171d9758b9e2612">
-                            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                                style="width: 29px; background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNTAiIGhlaWdodD0iNTAiCnZpZXdCb3g9IjAgMCA1MCA1MCIKc3R5bGU9IiBmaWxsOiNmZmZmZmY7Ij48cGF0aCBkPSJNNDYuODk0IDIzLjk4NmMuMDA0IDAgLjAwNyAwIC4wMTEgMCAuMjc5IDAgLjU0NS0uMTE3LjczNC0uMzIyLjE5Mi0uMjA4LjI4Ny0uNDg3LjI2Mi0uNzY5QzQ2Ljg5NyAxMS44NTIgMzguMTU0IDMuMTA2IDI3LjExIDIuMWMtLjI4LS4wMjItLjU2Mi4wNjktLjc3LjI2Mi0uMjA4LjE5Mi0uMzI0LjQ2My0uMzIxLjc0NkMyNi4xOTMgMTcuNzg0IDI4LjEyOSAyMy43ODEgNDYuODk0IDIzLjk4NnpNNDYuODk0IDI2LjAxNGMtMTguNzY1LjIwNS0yMC43IDYuMjAyLTIwLjg3NCAyMC44NzgtLjAwMy4yODMuMTEzLjU1NC4zMjEuNzQ2LjE4Ni4xNzEuNDI5LjI2Ni42NzkuMjY2LjAzIDAgLjA2MS0uMDAxLjA5MS0uMDA0IDExLjA0NC0xLjAwNiAxOS43ODctOS43NTEgMjAuNzktMjAuNzk1LjAyNS0uMjgyLS4wNjktLjU2MS0uMjYyLS43NjlDNDcuNDQ2IDI2LjEyOCA0Ny4xNzcgMjYuMDI1IDQ2Ljg5NCAyNi4wMTR6TTIyLjgyMyAyLjEwNUMxMS44MTQgMy4xNCAzLjA5OSAxMS44ODQgMi4xIDIyLjg5N2MtLjAyNS4yODIuMDY5LjU2MS4yNjIuNzY5LjE4OS4yMDUuNDU2LjMyMS43MzQuMzIxLjAwNCAwIC4wMDggMCAuMDEyIDAgMTguNzAzLS4yMTUgMjAuNjM0LTYuMjA5IDIwLjgxLTIwLjg3NS4wMDMtLjI4My0uMTE0LS41NTUtLjMyMi0uNzQ3QzIzLjM4NiAyLjE3MyAyMy4xMDUgMi4wNzkgMjIuODIzIDIuMTA1ek0zLjEwNyAyNi4wMTNjLS4zMTEtLjAzNS0uNTU1LjExMy0uNzQ2LjMyMS0uMTkyLjIwOC0uMjg3LjQ4Ny0uMjYyLjc2OS45OTkgMTEuMDEzIDkuNzE1IDE5Ljc1NyAyMC43MjQgMjAuNzkyLjAzMS4wMDMuMDYzLjAwNC4wOTQuMDA0LjI1IDAgLjQ5Mi0uMDk0LjY3OC0uMjY1LjIwOC0uMTkyLjMyNS0uNDY0LjMyMi0uNzQ3QzIzLjc0MSAzMi4yMjIgMjEuODExIDI2LjIyOCAzLjEwNyAyNi4wMTN6Ij48L3BhdGg+PC9zdmc+') "
-                                alt="Zen Yandex" class="footer-social-links_icon x-img x-footer-social-icon-zen"></a>
-                    </div>
-                    <div class="footer-social-links_hashtag">
-                        <img class="x-img x-footer-hashtag" src="img/main/footer/hashtag.svg" alt="Хэштег">
-                        <div class="footer-social-links_hashtag_text">
-                            <span>Амбициозность</span>
-                            <span>Глобальность</span>
-                            <span>Успех</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-asu-name-text">
-                <span class="footer-asu text-center text-md-left mt-0">
-                    Алтайский государственный университет. 2023
-                </span>
+            <div class="calendar-notation">
+                <ul class="calendar-notation-list">
+                    <li>&mdash; бакалавриат, специалитет</li>
+                    <li>&mdash; магистратура</li>
+                    <li>&mdash; колледж</li>
+                    <li>&mdash; общие мероприятия</li>
+                </ul>
             </div>
         </div>
-    </footer>
+    </section>
 
-    <div class="modal" id="modal_container">
-        <div class="modal__backdrop" data-dismiss="modal">
-            <div class="modal__content">
-                <div class="modal__header">
-                    <div class="modal__title" data-modal="title">Заказать звонок</div>
-                    <span class="modal__btn-close" data-dismiss="modal" title="Закрыть" id="modal__btn-close">×</span>
+    <!-- абитуриент подписывайся -->
+    <section class="subscribe-container">
+        <div class="subscribe__wrapper">
+            <div class="subscribe-info">
+                <h2 class="section-title">Абитуриент подписывайся</h2>
+                <p class="subscribe-text">текстик о том, что соц сети у нас крутые и там самая
+                    актуальная информация</p>
+                <img class="subscribe-image" src="assets/imgs/vk.png" alt="">
+                <img class="subscribe-image" src="assets/imgs/telegram.png" alt="">
+                <img class="subscribe-image" src="assets/imgs/rutube.png" alt="">
+                <img class="subscribe-image" src="assets/imgs/ok.png" alt="">
+            </div>
+
+        </div>
+    </section>
+
+    <section class="news-container">
+        <div class="news__wrapper">
+            <h2 class="section-title">Новости</h2>
+            <div class="news__list">
+                <div class="news__element">
+                    <img class="news__image" src="assets/imgs/slider-image.png" alt="">
+                    <p class="news__title">
+                        В центре довузовского образования АлтГУ прошел
+                        день открытых дверей
+                    </p>
+                    <p class="news__date">01.01.2020</p>
                 </div>
-                <div class="modal__body" data-modal="content">
-                    <div class="callModalHeader">
-                        <img class="x-img x-call-modal-icon"
-                             src="img/main/main-section/Logo.svg"
-                             width="90" height="90" alt="">
-                        <div class="callModalHeaderText">
-                            <h2>Остались вопросы?</h2>
-                            <p>
-                                Оставь заявку на сайте и мы перезвоним
-                                <br>
-                                в ближайшее время!
-                            </p>
-                        </div>
-                    </div>
-                    <div class="callModalFormWrapper">
-                        <form>
-                            <div class="callModalFormRow">
-                                <div class="callModalFormColumn">
-                                    <label for="name">Имя</label>
-                                    <input type="text" id="name" name="name" required="">
-                                </div>
-                                <div class="callModalFormColumn">
-                                    <label for="secondName">Фамилия</label>
-                                    <input type="text" id="secondName" name="secondName" required="">
-                                </div>
-                            </div>
-                            <div class="callModalFormColumn">
-                                <label for="tel">Номер телефона</label>
-                                <input type="tel" value="+7" pattern="^[7|8]{0,1}\d{10}$|(^\+7{1}\d{10}$)"
-                                       maxlength="12" id="tel" name="phoneNumber" required="">
-                                <small>Пример: +71235641122</small>
-                            </div>
-                            <div class="callModalFormColumn">
-                                <label for="question">Опишите ваш вопрос</label>
-                                <textarea rows="10" cols="25" id="question" name="question"
-                                  placeholder="Напишите интересующий Вас вопрос..." required=""></textarea>
-                            </div>
-                            <div class="callModalFormColumn">
-                                <input class="callModalFormColumnInput" type="submit" value="отправить">
-                                <small class="text-center">Нажимая на кнопку, вы принимаете
-                                    <a href="#">Положение и Согласия</a> на обработку
-                                персональных данных.
-                                </small>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="callModalSuccessAlert">
-                        <h3>Ваш запрос принят</h3>
-                        <p>Ожидайте ответ в ближайшее время</p>
-                    </div>
-                    <div class="callModalErrorAlert">
-                        <h3>Ошибка</h3>
-                        <p>Одно или несколько полей заполнено неправильно</p>
-                    </div>
+                <div class="news__element">
+                    <img class="news__image" src="assets/imgs/slider-image.png" alt="">
+                    <p class="news__title">
+                        В центре довузовского образования АлтГУ прошел
+                        день открытых дверей
+                    </p>
+                    <p class="news__date">01.01.2020</p>
                 </div>
+                <div class="news__element">
+                    <img class="news__image" src="assets/imgs/slider-image.png" alt="">
+                    <p class="news__title">
+                        В центре довузовского образования АлтГУ прошел
+                        день открытых дверей
+                    </p>
+                    <p class="news__date">01.01.2020</p>
+                </div>
+                <div class="news__element">
+                    <img class="news__image" src="assets/imgs/slider-image.png" alt="">
+                    <p class="news__title">
+                        В центре довузовского образования АлтГУ прошел
+                        день открытых дверей
+                    </p>
+                    <p class="news__date">01.01.2020</p>
+                </div>
+                <div class="news__element">
+                    <img class="news__image" src="assets/imgs/slider-image.png" alt="">
+                    <p class="news__title">
+                        В центре довузовского образования АлтГУ прошел
+                        день открытых дверей
+                    </p>
+                    <p class="news__date">01.01.2020</p>
+                </div>
+                <div class="news__element">
+                    <img class="news__image" src="assets/imgs/slider-image.png" alt="">
+                    <p class="news__title">
+                        В центре довузовского образования АлтГУ прошел
+                        день открытых дверей
+                    </p>
+                    <p class="news__date">01.01.2020</p>
+                </div>
+
             </div>
         </div>
-    </div>
+    </section>
+</main>
 
-    <div class="whatsapp-button">
-        <a href="https://wa.me/79339333799?text=Здравствуйте!%20Напишите%20нам,%20если%20есть%20вопросы.">
-            <img class="x-img x-whatsapp-button-icon"
-                 src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="WhatsApp">
-        </a>
-    </div>
+<footer class="footer">
+    <div class="footer__wrapper">
+        <div class="footer-resources">
+            <img class="footer-logo_img" loading="lazy" src="assets/imgs/11.png"/>
+            <ul class="footer-resources-list">
+                <li>
+                    <a href="https://minobrnauki.gov.ru/" class="footer-resources_link">
+                        Министерство науки и высшего образования РФ
+                    </a>
+                </li>
+                <li>
+                    <a href="https://edu.ru/" class="footer-resources_link">
+                        Федеральный портал "Российское образование"
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.educaltai.ru/" class="footer-resources_link">
+                        Министерство образования и науки АК
+                    </a>
+                </li>
+            </ul>
+        </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script src="js/lottie-player.js"></script>
-    <script src="owl/owl.carousel.min.js"></script>
-    <script src="js/script.js"></script>
+        <div class="footer-social-links">
+            <p>
+                Приемная комиссия АлтГУ
+            </p>
+            <p>
+                <a class="footer-social-link" href="tel:+73852291222">тел. +7 (3852) 29-81-95</a>
+            </p>
+            <p>
+                <a class="footer-social-link" href="tel:+73852291222">e-maal: +7 (3852) 29-81-95</a>
+            </p>
+        </div>
+
+    </div>
+    <hr>
+    <div class="footer_asu_container">
+        <h2 class="footer_asu">АЛТАЙСКИЙ ГОСУДАРСТВЕННЫЙ УНИВЕРСИТЕТ</h2>
+        <p class="footer-asu__text">г. Барнаул пр.Ленина, 61, ауд. 106</p>
+        <p class="footer-asu__link"><a href="https://www.asu.ru/">Перейти на сайт АлтГУ</a></p>
+    </div>
+</footer>
+
+<div class="bot-img-container">
+    <img class="bot-img" src="assets/imgs/12.png" alt="">
+</div>
+
 </body>
+<script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script src="js/main.js"></script>
 
 </html>
