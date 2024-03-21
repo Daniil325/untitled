@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -101,7 +100,6 @@
     </header>
 
     <main>
-
         <div class="header-burger-menu">
             <button class="header-burger-button">
                 <!-- Open menu -->
@@ -235,7 +233,6 @@
                 </div>
             </div>
         </div>
-
         <section class="main-buttons-container">
             <div class="main-button-row">
                 <div class="dropdown main-button closed">
@@ -304,6 +301,7 @@
             </div>
         </section>
 
+
         <div class="wrapper">
 
             <div class="container">
@@ -312,152 +310,254 @@
                         <li class="breadcrumbs-item active">
                             <a href="/">Главная</a>
                         </li>
-                        <li class="breadcrumbs-item">Бакалавриат и специалитет</li>
+                        <li class="breadcrumbs-item">Новости</li>
                     </ul>
                 </div>
             </div>
 
-            <div class="wrapper">
-                <h1 class="page-title">Бакалавриат и специалитет</h1>
-                <div class="row">
+            <h1 class="page-title">Поиск</h1>
 
-                    <div class="content">
-                        <p>
-                            Сервис, который помогает подобрать образовательные программы бакалавриата и специалитета
-                            и
-                            оценить шансы поступления в АГУ на основе результатов ЕГЭ/тестов без учета
-                            индивидуальных
-                            достижений.
-                            Просто укажите комбинацию предметов, которую вы сдавали в форме вступительного
-                            испытания, и
-                            сервис подберет все доступные направления подготовки для поступления в АГУ.
-                            Воспользуйтесь калькулятором и просчитайте свои возможности!
-                        </p>
-                        <div id="abit-calc">
-                            <div>
-                                <ul>
-                                    <li data-group="4">
-                                        <label><input type="checkbox" value="1" readonly="" checked="">
-                                            <span>русский язык</span> <span>от <strong>40</strong> баллов</span>
-                                        </label>
-                                    </li>
-                                    <li data-group="4">
-                                        <label><input type="checkbox" value="2">
-                                            <span>обществознание</span> <span>от <strong>45</strong> баллов</span>
-                                        </label>
-                                    </li>
-                                    <li data-group="4">
-                                        <label><input type="checkbox" value="3">
-                                            <span>математика</span> <span>от <strong>39</strong> баллов</span>
-                                        </label>
-                                    </li>
-                                    <li data-group="4">
-                                        <label><input type="checkbox" value="4">
-                                            <span>история</span> <span>от <strong>35</strong> баллов</span>
-                                        </label>
-                                    </li>
-                                    <li data-group="3">
-                                        <label><input type="checkbox" value="5">
-                                            <span>информатика и ИКТ</span>
-                                            <span>от <strong>44</strong> баллов</span>
-                                        </label>
-                                    </li>
-                                    <li data-group="3">
-                                        <label><input type="checkbox" value="6">
-                                            <span>иностранный язык (английский, немецкий)</span>
-                                            <span>от <strong>30</strong>
-                                                баллов</span>
-                                        </label>
-                                    </li>
-                                    <li data-group="3">
-                                        <label><input type="checkbox" value="7">
-                                            <span>физика</span> <span>от <strong>39</strong> баллов</span>
-                                        </label>
-                                    </li>
-                                    <li data-group="2">
-                                        <label><input type="checkbox" value="8">
-                                            <span>биология</span> <span>от <strong>39</strong> баллов</span>
-                                        </label>
-                                    </li>
-                                    <li data-group="2">
-                                        <label><input type="checkbox" value="9">
-                                            <span>литература</span> <span>от <strong>40</strong> баллов</span>
-                                        </label>
-                                    </li>
-                                    <li data-group="2">
-                                        <label><input type="checkbox" value="10"><span>география</span>
-                                            <span>от <strong>40</strong> баллов</span>
-                                        </label>
-                                    </li>
-                                    <li data-group="2">
-                                        <label><input type="checkbox" value="11">
-                                            <span>химия</span> <span>от <strong>39</strong> баллов</span>
-                                        </label>
-                                    </li>
-                                    <li data-group="1">
-                                        <label><input type="checkbox" value="12">
-                                            <span>иностранный язык (английский)</span> <span>от <strong>30</strong> баллов</span>
-                                        </label>
-                                    </li>
-                                </ul>
-                                <div>
-                                    <input type="button" value="выбрать" disabled="">
-                                    <input type="button" value="сбросить" disabled="">
-                                </div>
-                                <div>
+            <div class="row">
+                <div class="template_content">
 
+
+                    <!-- форма поиска -->
+                    <form class="header-search_form" id="_3a013460d12c7b19__form" method="get" action="/search/">
+                        <div class="header-search_input-label">
+                            <fieldset class="header-search-options">
+                                <div class="header-search-div">
+                                    <input class="header-search-query-input" type="text" placeholder="поиск"
+                                           name="query">
+                                    <button class="header-search_btn" disabled=""></button>
                                 </div>
-                            </div>
+
+                                <span class="header-search-options-title">искать по:</span>
+
+                                <label class="header-search-options-item header-search-options-item__current">
+                                    <input class="header-search-options-item-radio" type="radio" name="search_in"
+                                           value="site" checked="checked" data-form-action="/search/">
+                                    <span class="header-search-options-item-title">сайту</span>
+                                </label>
+
+                                <label class="header-search-options-item ">
+                                    <input class="header-search-options-item-radio" type="radio" name="search_in"
+                                           value="news" data-form-action="/search/news/">
+                                    <span class="header-search-options-item-title">новостям</span>
+                                </label>
+
+                                <label class="header-search-options-item ">
+                                    <input class="header-search-options-item-radio" type="radio" name="search_in"
+                                           value="documents" data-form-action="/search/documents/">
+                                    <span class="header-search-options-item-title">документам</span>
+                                </label>
+                            </fieldset>
                         </div>
-                    </div>
-                    <div class="sidebar sidebar_r">
-                    <div class="sidebar-header">
-                        <h2>Бакалавриат и специалитет</h2>
-                    </div>
-                    <div class="sidebar-menu">
-                        <ul class="sidebar-menu-list">
-                            <li class="sidebar-menu_item">
-                                <a href="/bachelor/roditelym/">#РОДИТЕЛЯМСЮДА</a>
+                    </form>
+
+                    <script type="text/javascript">
+                        // <![CDATA[
+
+                        (function ($, tplPrefix) {
+                            'use strict';
+
+                            $(function () {
+                                var $form = $('#' + tplPrefix + '_form');
+                                var $input = $form.find('.search_form-query-input');
+                                var $btn = $form.find('.search_form-query-btn');
+
+                                function checkInput() {
+                                    $btn.prop('disabled', $.trim($input.val()) === '');
+                                }
+
+                                $input.on('keyup', function () {
+                                    checkInput();
+
+                                    return false;
+                                });
+
+                                $btn.on('click', function () {
+                                    $form.submit();
+
+                                    return false;
+                                });
+
+                                $form.on('submit', function () {
+                                    $input.val($.trim($input.val()));
+
+                                    if ($input.val() === '') {
+                                        return false;
+                                    }
+
+                                    var optionValue = $form.find('.search_form-options-item-radio:checked').val();
+                                    var formActionUrl = $form.attr('action') + (optionValue ? optionValue + '/' : '');
+
+                                    $form.attr('action', formActionUrl);
+                                    $form.find('.search_form-options-item-radio').prop('checked', false);
+
+                                    return true;
+                                });
+
+                                checkInput();
+                            });
+                        })(jQuery, '_3a013460d12c7b19_');
+
+                        // ]]>
+                    </script>
+
+                    <h2 class="statistics_title">Результаты поиска</h2>
+                    <div class="l-box search_statistics">
+                        <ul class="search_statistics-info">
+                            <li class="search_statistics-info-item">
+                                <span class="search_statistics-info-item-label">Вы искали</span>
+                                <span class="search_statistics-info-item-value">f</span>
                             </li>
-                            <li class="sidebar-menu_item">
-                                <a href="/obrprog/">Образовательные программы бакалавриата</a>
+                            <li class="search_statistics-info-item">
+                                <span class="search_statistics-info-item-label">Всего найдено</span>
+                                <span class="search_statistics-info-item-value">24409</span>
                             </li>
-                            <li class="sidebar-menu_item">
-                                <a href="/bachelor/documents2021/">Нормативные документы</a>
+                        </ul>
+
+                        <ul class="search_statistics-categories">
+                            <li class="search_statistics-categories-item search_statistics-categories-item__current">
+                                <span class="search_statistics-categories-item-title">страниц</span>
+                                <span class="search_statistics-categories-item-count">1638</span>
                             </li>
-                            <li class="sidebar-menu_item">
-                                <a href="/bachelor/test/">Количество мест</a>
+
+                            <li class="search_statistics-categories-item">
+                                <a class="search_statistics-categories-item-link"
+                                   href="/search/news/?query=f">новостей</a>
+                                <span class="search_statistics-categories-item-count">22671</span>
                             </li>
-                            <li class="sidebar-menu_item">
-                                <a href="/bachelor/docs_go2021/">Как и когда подать документы</a>
+
+                            <li class="search_statistics-categories-item">
+                                <a class="search_statistics-categories-item-link"
+                                   href="/search/documents/?query=f">документов</a>
+                                <span class="search_statistics-categories-item-count">57</span>
                             </li>
-                            <li class="sidebar-menu_item">
-                                <a href="/bachelor/calc/">Калькулятор абитуриента</a>
-                            </li>
-                            <li class="sidebar-menu_item">
-                                <a href="/bachelor/exam2021/">Вступительные испытания</a>
-                            </li>
-                            <li class="sidebar-menu_item">
-                                <a href="/bachelor/celev2021/">Целевое обучение</a>
-                            </li>
-                            <li class="sidebar-menu_item"><a href="/bachelor/paid_edu2021/">Платное образование</a>
-                            </li>
-                            <li class="sidebar-menu_item"><a href="http://abiturient.asu.ru/international/">Прием
-                                иностранных граждан</a></li>
-                            <li class="sidebar-menu_item"><a href="/bachelor/grants2021/">Стипендии и материальная
-                                поддержка</a></li>
-                            <li class="sidebar-menu_item"><a href="/bachelor/inf2021/">Обязательства по
-                                информированию</a></li>
-                            <li class="sidebar-menu_item"><a href="https://abiturient.asu.ru/feedback2021/">Обратная
-                                связь</a></li>
                         </ul>
                     </div>
-                </div>
+                    <!-- результат поиска -->
+
+                    <ul class="news__container">
+                        <li class="news-item">
+                            <img class="news-item-img" src="assets/imgs/no_img.png">
+                            <span class="news-item-info">
+                            <span class="news-item-info-date">9 января – 23&nbsp;апреля</span>
+                            </span>
+                            <a class="news-item-link" href="47543/">Олимпиада для школьников по химии</a>
+                        </li>
+                        <li class="news-item">
+                            <img class="news-item-img" src="img/00048435.jpg">
+                            <span class="news-item-info">
+                            <span class="news-item-info-date">9 января – 23&nbsp;апреля</span>
+                        </span>
+                            <a class="news-item-link" href="47543/">Олимпиада для школьников по химии</a>
+                        </li>
+                        <li class="news-item">
+                            <img class="news-item-img" src="img/00048435.jpg">
+                            <span class="news-item-info">
+                            <span class="news-item-info-date">9 января – 23&nbsp;апреля</span>
+                        </span>
+                            <a class="news-item-link" href="47543/">Олимпиада для школьников по химии</a>
+                        </li>
+                        <li class="news-item">
+                            <img class="news-item-img" src="img/00048435.jpg">
+                            <span class="news-item-info">
+                            <span class="news-item-info-date">9 января – 23&nbsp;апреля</span>
+                        </span>
+                            <a class="news-item-link" href="47543/">Олимпиада для школьников по химии</a>
+                        </li>
+                        <li class="news-item">
+                            <img class="news-item-img" src="img/00048435.jpg">
+                            <span class="news-item-info">
+                            <span class="news-item-info-date">9 января – 23&nbsp;апреля</span>
+                        </span>
+                            <a class="news-item-link" href="47543/">Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Dolore hic libero magnam nam nihil quam rem repudiandae ut
+                                voluptate voluptatum! Accusantium aliquam amet aut cum enim hic illum itaque magnam
+                                minus, officiis quia suscipit. Aliquid consectetur doloremque explicabo facilis nam
+                                nemo neque numquam reiciendis sint temporibus veritatis vitae, voluptas! At.</a>
+                        </li>
+                        <li class="news-item">
+                            <img class="news-item-img" src="img/00048435.jpg">
+                            <span class="news-item-info">
+                            <span class="news-item-info-date">9 января – 23&nbsp;апреля</span>
+                        </span>
+                            <a class="news-item-link" href="47543/">Олимпиада для школьников по химии</a>
+                        </li>
+                        <li class="news-item">
+                            <img class="news-item-img" src="img/00048435.jpg">
+                            <span class="news-item-info">
+                            <span class="news-item-info-date">9 января – 23&nbsp;апреля</span>
+                        </span>
+                            <a class="news-item-link" href="47543/">Олимпиада для школьников по химии</a>
+                        </li>
+                        <li class="news-item">
+                            <img class="news-item-img" src="img/00047528.md.jpg">
+                            <span class="news-item-info">
+                            <span class="news-item-info-date">9 января – 23&nbsp;апреля</span>
+                        </span>
+                            <a class="news-item-link" href="47543/">Олимпиада для школьников по химии</a>
+                        </li>
+                        <li class="news-item">
+                            <img class="news-item-img" src="img/00048435.jpg">
+                            <span class="news-item-info">
+                            <span class="news-item-info-date">9 января – 23&nbsp;апреля</span>
+                        </span>
+                            <a class="news-item-link" href="47543/">Олимпиада для школьников по химии</a>
+                        </li>
+                        <li class="news-item">
+                            <img class="news-item-img" src="img/00048435.jpg">
+                            <span class="news-item-info">
+                            <span class="news-item-info-date">9 января – 23&nbsp;апреля</span>
+                        </span>
+                            <a class="news-item-link" href="47543/">Олимпиада для школьников по химии</a>
+                        </li>
+                        <li class="news-item">
+                            <img class="news-item-img" src="img/00048435.jpg">
+                            <span class="news-item-info">
+                            <span class="news-item-info-date">9 января – 23&nbsp;апреля</span>
+                        </span>
+                            <a class="news-item-link" href="47543/">Олимпиада для школьников по химии</a>
+                        </li>
+                        <li class="news-item">
+                            <img class="news-item-img" src="img/00048435.jpg">
+                            <span class="news-item-info">
+                            <span class="news-item-info-date">9 января – 23&nbsp;апреля</span>
+                        </span>
+                            <a class="news-item-link" href="47543/">Олимпиада для школьников по химии</a>
+                        </li>
+                    </ul>
+
+                    <!-- пагинация -->
+                    <div class="pagination">
+                        <span class="pagination-label">
+                            Всего новостей:
+                            <span class="pagination-label-total">1918</span>,
+                        </span>
+                        <span class="pagination-label">страницы:</span>
+                        <ul class="pagination-pages">
+                            <li class="pagination-pages-item" data-selected="selected">1</li>
+                            <li class="pagination-pages-item">
+                                <a class="pagination-pages-item-link" href="?page=2">2</a>
+                            </li>
+                            <li class="pagination-pages-item">
+                                <a class="pagination-pages-item-link" href="?page=3">3</a>
+                            </li>
+                            <li class="pagination-pages-item">
+                                <a class="pagination-pages-item-link" href="?page=4">4</a>
+                            </li>
+                            <li class="pagination-pages-item">
+                                <a class="pagination-pages-item-link" href="?page=5">5</a>
+                            </li>
+                        </ul>
+
+                        <a class="pagination-next" href="?page=2" title="следующая страница"></a>
+                        <a class="pagination-last" href="?page=120" title="последняя страница"></a>
+                    </div>
                 </div>
             </div>
-
         </div>
-
     </main>
 
     <footer class="footer">
@@ -503,7 +603,6 @@
             <p class="footer-asu__link"><a href="https://www.asu.ru/">Перейти на сайт АлтГУ</a></p>
         </div>
     </footer>
-
     <div class="bot-img-container">
         <img class="bot-img" src="assets/imgs/12.png" alt="">
     </div>
@@ -586,7 +685,5 @@
 <script src="js/lottie-player.js"></script>
 <script src="owl/owl.carousel.min.js"></script>
 <script src="js/script.js"></script>
-<script src="js/calc.js"></script>
-
 </body>
 </html>

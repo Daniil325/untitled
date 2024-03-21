@@ -7346,7 +7346,8 @@ button {
     display: block;
     padding: 18px;
     background: rgba(0, 0, 0, 0.05);
-    color: #464644
+    color: #464644;
+    margin-bottom: 30px;
 }
 
 .search_statistics {
