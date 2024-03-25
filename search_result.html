@@ -29,37 +29,39 @@
         </div>
 
         <div class="header-search_block" id="search-form">
-            <h2>Поиск</h2>
-            <form class="header-search_form" id="_9caf682e5d98dc3f__form" method="get" action="/search/">
-                <div class="header-search_input-label">
 
+            <form class="header-search_form" id="_9caf682e5d98dc3f__form" method="get" action="/search/">
+                <h2>Поиск</h2>
+                <div class="header-search_input-label">
                     <fieldset class="header-search-options">
                         <div class="header-search-div">
                             <input class="header-search-query-input" type="text" placeholder="поиск" name="query">
                             <button class="header-search_btn" disabled=""></button>
                         </div>
-
-                        <span class="header-search-options-title">искать по:</span>
-                        <label class="header-search-options-item header-search-options-item__current">
-                            <input class="header-search-options-item-radio" type="radio" name="search_in" value="site"
-                                   checked="checked" data-form-action="/search/">
-                            <span class="header-search-options-item-title">сайту</span>
-                        </label>
-
-                        <label class="header-search-options-item ">
-                            <input class="header-search-options-item-radio" type="radio" name="search_in" value="news"
-                                   data-form-action="/search/news/">
-                            <span class="header-search-options-item-title">новостям</span>
-                        </label>
-
-                        <label class="header-search-options-item ">
-                            <input class="header-search-options-item-radio" type="radio" name="search_in"
-                                   value="documents" data-form-action="/search/documents/">
-                            <span class="header-search-options-item-title">документам</span>
-                        </label>
                     </fieldset>
                 </div>
             </form>
+            <div class="search_labels">
+                <span class="header-search-options-title">искать по:</span>
+                <label class="header-search-options-item header-search-options-item__current">
+                    <input class="header-search-options-item-radio" type="radio" name="search_in" value="site"
+                           checked="checked" data-form-action="/search/">
+                    <span class="header-search-options-item-title">сайту</span>
+                </label>
+
+                <label class="header-search-options-item ">
+                    <input class="header-search-options-item-radio" type="radio" name="search_in" value="news"
+                           data-form-action="/search/news/">
+                    <span class="header-search-options-item-title">новостям</span>
+                </label>
+
+                <label class="header-search-options-item ">
+                    <input class="header-search-options-item-radio" type="radio" name="search_in"
+                           value="documents" data-form-action="/search/documents/">
+                    <span class="header-search-options-item-title">документам</span>
+                </label>
+            </div>
+
         </div>
 
         <!-- блок с переходом на главную страницу, ссылками на ЛК и соц сети -->
@@ -303,7 +305,6 @@
 
 
         <div class="wrapper">
-
             <div class="container">
                 <div class="breadcrumbs">
                     <ul class="breadcrumbs-ul">
@@ -319,8 +320,6 @@
 
             <div class="row">
                 <div class="template_content">
-
-
                     <!-- форма поиска -->
                     <form class="header-search_form" id="_3a013460d12c7b19__form" method="get" action="/search/">
                         <div class="header-search_input-label">
@@ -330,29 +329,31 @@
                                            name="query">
                                     <button class="header-search_btn" disabled=""></button>
                                 </div>
-
-                                <span class="header-search-options-title">искать по:</span>
-
-                                <label class="header-search-options-item header-search-options-item__current">
-                                    <input class="header-search-options-item-radio" type="radio" name="search_in"
-                                           value="site" checked="checked" data-form-action="/search/">
-                                    <span class="header-search-options-item-title">сайту</span>
-                                </label>
-
-                                <label class="header-search-options-item ">
-                                    <input class="header-search-options-item-radio" type="radio" name="search_in"
-                                           value="news" data-form-action="/search/news/">
-                                    <span class="header-search-options-item-title">новостям</span>
-                                </label>
-
-                                <label class="header-search-options-item ">
-                                    <input class="header-search-options-item-radio" type="radio" name="search_in"
-                                           value="documents" data-form-action="/search/documents/">
-                                    <span class="header-search-options-item-title">документам</span>
-                                </label>
                             </fieldset>
                         </div>
                     </form>
+                    <div class="search_labels_2">
+                        <span class="header-search-options-title">искать по:</span>
+
+                        <label class="header-search-options-item header-search-options-item__current">
+                            <input class="header-search-options-item-radio" type="radio" name="search_in"
+                                   value="site" checked="checked" data-form-action="/search/">
+                            <span class="header-search-options-item-title">сайту</span>
+                        </label>
+
+                        <label class="header-search-options-item ">
+                            <input class="header-search-options-item-radio" type="radio" name="search_in"
+                                   value="news" data-form-action="/search/news/">
+                            <span class="header-search-options-item-title">новостям</span>
+                        </label>
+
+                        <label class="header-search-options-item ">
+                            <input class="header-search-options-item-radio" type="radio" name="search_in"
+                                   value="documents" data-form-action="/search/documents/">
+                            <span class="header-search-options-item-title">документам</span>
+                        </label>
+                    </div>
+
 
                     <script type="text/javascript">
                         // <![CDATA[
@@ -433,6 +434,20 @@
                                 <a class="search_statistics-categories-item-link"
                                    href="/search/documents/?query=f">документов</a>
                                 <span class="search_statistics-categories-item-count">57</span>
+                            </li>
+                        </ul>
+
+                        <ul class="search_sub-statistics-categories">
+                            <li class="search_sub-statistics-categories-item">
+                                <a class="search_sub-statistics-categories-item-link"
+                                   href="/search/news/?query=f">новостей</a>
+                                <span class="search_sub-statistics-categories-item-count">22671</span>
+                            </li>
+
+                            <li class="search_sub-statistics-categories-item">
+                                <a class="search_sub-statistics-categories-item-link"
+                                   href="/search/documents/?query=f">документов</a>
+                                <span class="search_sub-statistics-categories-item-count">57</span>
                             </li>
                         </ul>
                     </div>

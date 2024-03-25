@@ -120,6 +120,10 @@ a {
     padding: 0;
 }
 
+.header-top__item a {
+    color: var(--abiturint-blue-bright) solid 2px;
+}
+
 .header-top__item-link {
     font-size: 17px;
     font-family: MontserratMedium;
@@ -2459,10 +2463,10 @@ button {
 .header-search_block_open {
     font-family: MontserratMedium;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    width: 100%;
     align-items: center;
     max-width: 1700px;
-    gap: 20px;
     margin: auto;
     margin-top: 30px;
     padding-left: 10px;
@@ -2486,9 +2490,14 @@ button {
     color: #1b4e9b;
 }
 
+.search_labels_2 {
+    padding-left: 15px;
+}
+
 .header-search_form {
     flex: 1;
     max-width: 1200px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -5957,7 +5966,7 @@ button {
 
 .content blockquote {
     margin: 1.5rem 0;
-    padding-left: 40px;
+    padding-left: 60px;
     position: relative;
 }
 
@@ -7395,17 +7404,17 @@ button {
     font-size: 0
 }
 
-.search_statistics-categories-item {
+.search_statistics-categories-item, .search_sub-statistics-categories-item {
     display: inline-block;
     position: relative;
     margin-right: 12px
 }
 
-.search_statistics-categories-item:last-child {
+.search_statistics-categories-item:last-child, .search_sub-statistics-categories-item:last-child {
     margin-left: 0
 }
 
-.search_statistics-categories-item__current::after {
+.search_statistics-categories-item__current::after, .search_sub-statistics-categories-item__current {
     display: block;
     position: absolute;
     bottom: -19px;
@@ -7421,11 +7430,17 @@ button {
     font-size: 1.166666666666667rem
 }
 
-.search_statistics-categories-item-link {
+
+.search_sib-statistics-categories-item-title, .search_sub-statistics-categories-item-link {
+    display: inline-block;
+    font-size: 12px;
+}
+
+.search_statistics-categories-item-link, .search_sub-statistics-categories-item-link{
     text-decoration: none
 }
 
-.search_statistics-categories-item-count {
+.search_statistics-categories-item-count, .search_sub-statistics-categories-item-count {
     display: inline-block;
     margin-left: 6px;
     border-radius: 16px;
