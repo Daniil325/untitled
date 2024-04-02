@@ -80,7 +80,7 @@ a {
 }
 
 .header-top {
-    background: #BCE2F3;
+    background: #eeeeee;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     color: var(--abiturint-blue-bright);
@@ -91,13 +91,14 @@ a {
 }
 
 .header__wrapper {
-    max-width: 1700px;
+    max-width: 1500px;
     width: 100%;
     display: flex;
     align-items: center;
     margin: auto;
     justify-content: center;
     height: max-content;
+    color: #646464;
 }
 
 .header-top__items {
@@ -111,9 +112,8 @@ a {
 }
 
 .header-search {
-    border: var(--abiturint-blue-bright) solid 2px;
-    padding-left: 100px;
-    border-radius: 10px;
+    display: flex;
+    align-items: center;
 }
 
 .header-top__item {
@@ -121,13 +121,13 @@ a {
 }
 
 .header-top__item a {
-    color: var(--abiturint-blue-bright) solid 2px;
+    color: #646464;
 }
 
 .header-top__item-link {
     font-size: 17px;
     font-family: MontserratMedium;
-    color: var(--abiturint-blue-bright);
+    color: #646464;
 }
 
 .header-search-input {
@@ -140,17 +140,19 @@ fieldset {
 }
 
 .header-search_btn {
-    content: url("../assets/imgs/search.png");
+    content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABM0lEQVR42pzTQShEQRzH8fc2ilaSbV3VthdSihxR2vZA25bl4uyiODjsVeTqQJISN5Gw7ZbrXjiKOCvlqA3lQE58p36v/k3h8a9P82935jez782G+XwuMNWFOUygW5894AzbaAReNZl+BjtIenNc6BDKmMWR/TKhcRr7WnyKEXTKKCpowyEm/YA0dhFiEVO4wIuco6QTuDl7SNmABbRr5/Xg+1pDFR2YtwFF9RvB7xXNKdqAjPrrGAFXGrP+Q/xrJWxzr34gxsJBjXc2oKa+HCMgmlO1AZt4RQFLPyxewTiesGUDGrphn5p0gmG0oFWXqmLCn+0ziK7yMZp1lUvil9v5Eb2oY8xtbt/CgV7pMi7xhg/cYhU9OtkN+hSSDr1/Y5xKaXG/2+g/98D9lJxO+f4lwAAMgTtEMs2OdQAAAABJRU5ErkJggg==);
     padding: 0;
     border: none;
     font: inherit;
     color: inherit;
     background-color: transparent;
     outline: none;
-    width: 30px;
+    width: 20px;
     text-align: right;
     font-weight: 700;
-
+    height: 20px;
+    border-radius: 0 !important;
+    margin: 0 10px;
 }
 
 
@@ -161,7 +163,7 @@ fieldset {
 
 .header-links {
     display: flex;
-    max-width: 1700px;
+    max-width: 1500px;
     margin: auto;
 }
 
@@ -216,7 +218,6 @@ fieldset {
     border-radius: 15px;
     font-family: MontserratMedium;
     text-transform: uppercase;
-    height: 90%;
 }
 
 .header-links__social-phone {
@@ -258,14 +259,14 @@ fieldset {
 
 .imgs-wrapper {
     margin: auto;
-    max-width: 1700px;
+    max-width: 1500px;
 }
 
 .slider-image {
     width: 100%;
     max-height: 550px;
     border-radius: 20px;
-    max-width: 1700px;
+    max-width: 1500px;
     object-fit: cover;
 }
 
@@ -307,13 +308,13 @@ fieldset {
 .abiturient-container,
 .calendar-container,
 .news-container {
-    max-width: 1500px;
+    max-width: 1300px;
 }
 
 .main-buttons-container {
     justify-content: center;
     margin: auto;
-    max-width: 1700px;
+    max-width: 1500px;
 }
 
 .page__main-buttons-container {
@@ -406,6 +407,8 @@ fieldset {
     z-index: 999;
     padding: 25px 20px 35px 15px;
     margin-top: 0;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 .menu li {
@@ -565,10 +568,10 @@ fieldset {
 }
 
 .steps__wrapper {
-    max-width: 1500px;
+    max-width: 1300px;
     margin: auto;
     background: url('../assets/imgs/steps.png') no-repeat;
-    background-position: 120%;
+    background-position: 150%;
     background-size: contain;
 }
 
@@ -581,7 +584,6 @@ fieldset {
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(2, minmax(250px, 1fr));
-    padding-left: 40px;
 }
 
 .step-item {
@@ -608,7 +610,7 @@ fieldset {
     margin: 0;
     font-family: MontserratMedium;
     color: #67778D;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 /* ÑÑ‚Ð¸Ð»Ð¸ Ñ€Ð°Ð·Ð´ÐµÐ»Ð° "ÐžÐ± ÑƒÐ½Ð¸Ð²ÐµÑ€ÑÐ¸Ñ‚ÐµÑ‚Ðµ" */
@@ -645,7 +647,7 @@ fieldset {
 .abiturient-lk-text,
 .abiturient-text {
     position: absolute;
-    padding-left: 40px;
+    padding-left: 25px;
     padding-top: 20px;
 
 }
@@ -770,16 +772,12 @@ fieldset {
 }
 
 .subscribe__wrapper {
-    max-width: 1500px;
+    max-width: 1300px;
     margin: auto;
     padding: 40px;
     background: url("../assets/imgs/sub.png") no-repeat;
     background-size: contain;
     background-position: right;
-}
-
-.subscribe-info {
-    padding-left: 40px;
 }
 
 .subscribe-text {
@@ -879,7 +877,7 @@ fieldset {
 }
 
 .calendar__wrapper {
-    max-width: 1700px;
+    max-width: 1500px;
 }
 
 .calendar {
@@ -906,7 +904,7 @@ fieldset {
     font-size: 20px;
     text-align: center;
     border-collapse: separate;
-    min-height: 400px;
+    min-height: 300px;
     padding: 0.6rem 0.4rem 0 0.4rem;
 }
 
@@ -976,6 +974,12 @@ fieldset {
     }
 }
 
+@media screen and (max-width: 992.92px) {
+    .program--title {
+        font-size: 18px !important;
+    }
+}
+
 .calendar-table .calendar-days-row td {
     font-weight: 500;
     font-size: 0.8em;
@@ -1000,6 +1004,10 @@ fieldset {
     -ms-user-select: none;
     user-select: none;
     font-size: 15px;
+}
+
+.calendar-table td p {
+    margin: 0;
 }
 
 .calendar-table td.today {
@@ -1155,6 +1163,10 @@ fieldset {
 .announces-section {
     position: relative;
     background: white;
+}
+
+.calendar-notation {
+    margin-left: 50px;
 }
 
 .calendar-notation-list {
@@ -1496,6 +1508,10 @@ button {
     background-image: url("../assets/imgs/gym.png");
 }
 
+.item:hover h4 {
+    font-size: 18px
+}
+
 .item.gym:hover {
     background-image: url("../assets/imgs/gymc.png");
     background-color: #FFEBEF;
@@ -1617,7 +1633,7 @@ button {
     color: #9FAFC4;
     margin: 0;
     margin-bottom: 15px;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .footer {
@@ -1705,11 +1721,12 @@ button {
     padding: 10px 15px;
     border: white 1px solid;
     border-radius: 15px;
+    font-size: 15px;
 }
 
 .footer_asu,
 .footer-asu__text {
-    font-style: 15px;
+    font-size: 15px;
 
 }
 
@@ -1953,19 +1970,6 @@ button {
 
 @media screen and (max-width: 1700px) {
 
-    .main-buttons-container,
-    .pk-container,
-    .about_university-container,
-    .news-container,
-    .subscribe-container,
-    .institutes-slider-container,
-    .abiturient-container,
-    .calendar-container,
-    .footer__wrapper {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
     .steps-container {
         background-position: 200%;
     }
@@ -1988,6 +1992,19 @@ button {
 
 
 @media screen and (max-width: 1500px) {
+    .main-buttons-container,
+    .pk-container,
+    .about_university-container,
+    .news-container,
+    .subscribe-container,
+    .institutes-slider-container,
+    .abiturient-container,
+    .calendar-container,
+    .footer__wrapper {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
     .steps {
         max-width: 100%;
         padding-left: 20px;
@@ -2123,6 +2140,10 @@ button {
     .abiturient-money,
     .abiturient-celev {
         grid-row-start: 3;
+    }
+
+    .calendar-notation {
+        margin-left: 0;
     }
 
     .calendar-notation-list {
@@ -2488,7 +2509,7 @@ button {
     flex-direction: column;
     width: 100%;
     align-items: center;
-    max-width: 1700px;
+    max-width: 1500px;
     margin: auto;
     margin-top: 30px;
     padding-left: 10px;
@@ -2628,7 +2649,7 @@ button {
 
 .wrapper {
     margin: auto;
-    max-width: 1700px;
+    max-width: 1500px;
     justify-content: center;
     align-items: center;
     padding-left: 20px;
@@ -3147,7 +3168,6 @@ button {
 }
 
 .second-page__container {
-    display: flex;
     gap: 100px;
     margin-bottom: 30px;
 }
@@ -6729,7 +6749,7 @@ button {
 }
 
 .program--description {
-    font-size: 0.6rem;
+    font-size: 12px;
     margin: 0 !important;
     margin-bottom: 25px !important;
     line-height: 1.5;

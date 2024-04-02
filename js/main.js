@@ -302,6 +302,9 @@ hamburger.addEventListener('click', toggleMenu);
         document.getElementById('open-search-form').addEventListener('click', (e) => {
             document.getElementById('search-form').classList.toggle('header-search_block_open')
         })
+        document.getElementById('open-search-form-2').addEventListener('click', (e) => {
+            document.getElementById('search-form').classList.toggle('header-search_block_open')
+        })
     })
 })();
 
