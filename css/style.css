@@ -506,7 +506,7 @@ fieldset {
 .pk-info__item {
     padding: 10px;
     border-radius: 15px;
-
+    cursor: pointer;
     min-height: 200px;
     color: var(--abiturint-blue);
     display: flex;
@@ -2586,6 +2586,8 @@ button {
 
 .video-wrapper {
     position: relative;
+    max-width: 800px;
+    margin: auto;
 }
 
 .play-button {
