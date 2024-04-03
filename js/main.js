@@ -371,3 +371,104 @@ hamburger.addEventListener('click', toggleMenu);
     })
 })();
 
+window.addEventListener('DOMContentLoaded', () => {
+    let form = document.getElementById('modal_container');
+    if (!form) {
+        return;
+    }
+    form = new (class {
+        wrapper = null;
+        form = null;
+        alerts = {};
+
+        constructor (wrapper) {
+            this.wrapper = wrapper;
+            this.form = wrapper.querySelector('form');
+            this.form.addEventListener('submit', (event) => {
+                event.preventDefault();
+                this.send();
+            });
+
+            this.wrapper.querySelectorAll('#modal__btn-close, .modal__backdrop').forEach((elem) => {
+                elem.addEventListener('click', () => {
+                    this.close();
+                });
+            });
+        }
+
+        open() {
+            this.form.reset();
+            this.wrapper.classList.add('modal__show');
+        }
+
+        close () {
+            this.wrapper.classList.remove('modal__show');
+        }
+
+        showAlert(alert) {
+            if (this.alerts[alert] === null) {
+                return false;
+            } else if (this.alerts[alert] === undefined) {
+                this.alerts[alert] = this.wrapper.querySelector(`.callModal${alert}Alert`)
+            }
+
+            this.alerts[alert].classList.add("show");
+        }
+
+        hideAlert(alert) {
+            if (this.alerts[alert]) {
+                this.alerts[alert].classList.add("show");
+            }
+        }
+
+        send() {
+            this.form.elements.submit.disabled = true;
+
+            $.ajax({
+                data: {
+                    component: 'forms',
+                    action: 'get_token',
+                    sid: this.form.dataset.ajaxSessionId,
+                },
+                success: (data) => {
+                    $.ajax({
+                        data: {
+                            component: 'forms',
+                            controller: 'ajax',
+                            to: {
+                                data: Object.fromEntries(new FormData(this.form)),
+                                action: 'save',
+                                sid: this.form.dataset.ajaxSessionId,
+                                token: data.token,
+                            },
+                        },
+                        success: (response) => {
+                            this.form.elements.submit.disabled = false;
+
+                            const alert = response.validResult ? 'Success' : 'Error';
+                            this.showAlert(alert);
+                            setTimeout((t) => {
+                                this.hideAlert(alert);
+                            }, 3000, this);
+
+                            if (response.validResult) {
+                                setTimeout((t) => {
+                                    t.close();
+                                }, 3000, this);
+                            }
+                        },
+                    });
+                },
+            });
+        }
+    })(form);
+
+    const openButtons = document.querySelectorAll('.program--contacts-button, #show_modal_call');
+    if (openButtons && openButtons.length) {
+        openButtons.forEach(btn => btn.addEventListener('click', () => {
+            form.open()
+        }));
+    }
+});
+
+

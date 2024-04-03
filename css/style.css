@@ -118,15 +118,13 @@ a {
 
 .header-top__item {
     padding: 0;
+    font-size: 17px;
+    font-family: MontserratMedium;
+    color: #646464;
+    cursor: pointer;
 }
 
 .header-top__item a {
-    color: #646464;
-}
-
-.header-top__item-link {
-    font-size: 17px;
-    font-family: MontserratMedium;
     color: #646464;
 }
 
