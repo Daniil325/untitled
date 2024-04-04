@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- Chatra {literal} -->
     <script>
-        (function(d, w, c) {
+        (function (d, w, c) {
             w.ChatraID = 'JAnnDcEWXTzQBK6es';
             var s = d.createElement('script');
-            w[c] = w[c] || function() {
+            w[c] = w[c] || function () {
                 (w[c].q = w[c].q || []).push(arguments);
             };
             s.async = true;
@@ -47,9 +47,19 @@
     <div class="header-top">
         <div class="header__wrapper">
             <ul class="header-top__items">
-                <li class="header-top__item"><a class="header-top__item-link" href="">Университет</a></li>
-                <li class="header-top__item"><a class="header-top__item-link" href="">Школьник АлтГУ</a></li>
-                <li class="header-top__item"><a class="header-top__item-link" href="">Иностранным абитуриентам</a></li>
+                <li class="header-top__item">
+                    <a href="https://www.asu.ru/">Университет</a>
+                </li>
+                <li class="header-top__item" id="show_modal_call">
+                    <a href="">
+                        Заказать звонок
+                    </a>
+                </li>
+                <li class="header-top__item">
+                    <a href="https://lk.abiturient.asu.ru/user/sign-in/login?_referrer=%2Fsite%2Findex">
+                        Кабинет абитуриента
+                    </a>
+                </li>
             </ul>
 
             <div class="header-search">
@@ -327,7 +337,8 @@
                     <p class="pk-nums">135</p>
                     <p class="pk-text">образовательных <br> программ</p>
                 </div>
-                <div class="pk-info__item" onclick="document.location.href='https://abiturient.asu.ru/bachelor/celev2021/'">
+                <div class="pk-info__item"
+                     onclick="document.location.href='https://abiturient.asu.ru/bachelor/celev2021/'">
                     <p class="pk-nums">271</p>
                     <p class="pk-text">целевое <br> место</p>
                 </div>
@@ -335,7 +346,8 @@
                     <p class="pk-nums">5</p>
                     <p class="pk-text">комфортабельных <br> общежитий</p>
                 </div>
-                <div class="pk-info__item" onclick="document.location.href='https://www.asu.ru/univer_about/oporny/asu_rankings/'">
+                <div class="pk-info__item"
+                     onclick="document.location.href='https://www.asu.ru/univer_about/oporny/asu_rankings/'">
                     <p class="pk-nums">15</p>
                     <p class="pk-text">место в рейтинге <br> вузов</p>
                 </div>
@@ -349,7 +361,7 @@
             <p class="about_university__text">
             </p>
             <div class="video-wrapper">
-                <img class="aaa video-image" src="assets/imgs/maxresdefault.jpg" alt="">
+                <img class="aaa video-image" src="assets/imgs/afa.png" alt="">
                 <img class="play-button" src="assets/imgs/play.png" alt="">
                 <iframe class="video-frame none" src="https://rutube.ru/play/embed/22e6d9d08a5c2706313b6c56c075fada"
                         title="YouTube video player" frameborder="0"
@@ -505,7 +517,8 @@
                 <div class="abiturient-text">
                     <h3 class="abiturient-title"><a href="">Олимпиадное движение</a></h3>
                     <p class="abiturient-descr">
-                        В разделе собрана информация о доступных льготах для победителей и призеров разных олимпиад школьников при поступлении в АГУ
+                        В разделе собрана информация о доступных льготах для победителей и призеров разных олимпиад
+                        школьников при поступлении в АГУ
                     </p>
                 </div>
 
@@ -514,7 +527,8 @@
                 <div class="abiturient-text">
                     <h3 class="abiturient-title"><a href="">Калькулятор абитуриента</a></h3>
                     <p class="abiturient-descr">
-                        Сервис, который помогает подобрать образовательные программы бакалавриата и специалитета и оценить шансы поступления в АГУ на основе результатов ЕГЭ/тестов
+                        Сервис, который помогает подобрать образовательные программы бакалавриата и специалитета и
+                        оценить шансы поступления в АГУ на основе результатов ЕГЭ/тестов
                     </p>
                 </div>
             </div>
@@ -1063,31 +1077,6 @@
                     </p>
                     <p class="news__date">01.01.2020</p>
                 </div>
-                <div class="news__element">
-                    <a href=""><img class="news__image" src="assets/imgs/slider-image.png" alt=""></a>
-                    <p class="news__title">
-                        В центре довузовского образования АлтГУ прошел
-                        день открытых дверей
-                    </p>
-                    <p class="news__date">01.01.2020</p>
-                </div>
-                <div class="news__element">
-                    <a href=""><img class="news__image" src="assets/imgs/slider-image.png" alt=""></a>
-                    <p class="news__title">
-                        В центре довузовского образования АлтГУ прошел
-                        день открытых дверей
-                    </p>
-                    <p class="news__date">01.01.2020</p>
-                </div>
-                <div class="news__element">
-                    <a href=""><img class="news__image" src="assets/imgs/slider-image.png" alt=""></a>
-                    <p class="news__title">
-                        В центре довузовского образования АлтГУ прошел
-                        день открытых дверей
-                    </p>
-                    <p class="news__date">01.01.2020</p>
-                </div>
-
             </div>
         </div>
     </section>
@@ -1140,7 +1129,71 @@
 <div class="bot-img-container">
     <img class="bot-img" src="assets/imgs/12.png" alt="">
 </div>
-
+<div class="modal" id="modal_container">
+    <div class="modal__backdrop" data-dismiss="modal">
+        <div class="modal__content">
+            <div class="modal__header">
+                <div class="modal__title" data-modal="title">Заказать звонок</div>
+                <span class="modal__btn-close" data-dismiss="modal" title="Закрыть" id="modal__btn-close">×</span>
+            </div>
+            <div class="modal__body" data-modal="content">
+                <div class="callModalHeader">
+                    <img class="x-img x-call-modal-icon"
+                         src="img/main/main-section/Logo.svg"
+                         width="90" height="90" alt="">
+                    <div class="callModalHeaderText">
+                        <h2>Остались вопросы?</h2>
+                        <p>
+                            Оставь заявку на сайте и мы перезвоним
+                            <br>
+                            в ближайшее время!
+                        </p>
+                    </div>
+                </div>
+                <div class="callModalFormWrapper">
+                    <form>
+                        <div class="callModalFormRow">
+                            <div class="callModalFormColumn">
+                                <label for="name">Имя</label>
+                                <input type="text" id="name" name="name" required="">
+                            </div>
+                            <div class="callModalFormColumn">
+                                <label for="secondName">Фамилия</label>
+                                <input type="text" id="secondName" name="secondName" required="">
+                            </div>
+                        </div>
+                        <div class="callModalFormColumn">
+                            <label for="tel">Номер телефона</label>
+                            <input type="tel" value="+7" pattern="^[7|8]{0,1}\d{10}$|(^\+7{1}\d{10}$)"
+                                   maxlength="12" id="tel" name="phoneNumber" required="">
+                            <small>Пример: +71235641122</small>
+                        </div>
+                        <div class="callModalFormColumn">
+                            <label for="question">Опишите ваш вопрос</label>
+                            <textarea rows="10" cols="25" id="question" name="question"
+                                      placeholder="Напишите интересующий Вас вопрос..." required=""></textarea>
+                        </div>
+                        <div class="callModalFormColumn">
+                            <input class="callModalFormColumnInput" type="submit" value="отправить">
+                            <small class="text-center">Нажимая на кнопку, вы принимаете
+                                <a href="#">Положение и Согласия</a> на обработку
+                                персональных данных.
+                            </small>
+                        </div>
+                    </form>
+                </div>
+                <div class="callModalSuccessAlert">
+                    <h3>Ваш запрос принят</h3>
+                    <p>Ожидайте ответ в ближайшее время</p>
+                </div>
+                <div class="callModalErrorAlert">
+                    <h3>Ошибка</h3>
+                    <p>Одно или несколько полей заполнено неправильно</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 
 <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
