@@ -500,7 +500,7 @@ fieldset {
     gap: 40px;
 }
 
-.pk-info__item {
+.pk-info__item, a .pk-info__item {
     padding: 10px;
     border-radius: 15px;
     cursor: pointer;
@@ -513,35 +513,35 @@ fieldset {
     text-align: center;
 }
 
-.pk-info__item:nth-child(5n-4) {
+.pk-info__item:nth-child(5n-4), a:nth-child(5n-4) .pk-info__item {
     background: url("../assets/imgs/35.png") no-repeat;
     background-color: #F0F8FC;
     background-size: contain;
     background-position: 123%;
 }
 
-.pk-info__item:nth-child(5n-3) {
+.pk-info__item:nth-child(5n-3), a:nth-child(5n-3) .pk-info__item {
     background: url("../assets/imgs/36.png") no-repeat;
     background-color: #F0F8FC;
     background-size: contain;
     background-position: 130px;
 }
 
-.pk-info__item:nth-child(5n-2) {
+.pk-info__item:nth-child(5n-2), a:nth-child(5n-2) .pk-info__item {
     background: url("../assets/imgs/1.png") no-repeat;
     background-color: #F0F8FC;
     background-size: contain;
     background-position: 150%;
 }
 
-.pk-info__item:nth-child(5n-1) {
+.pk-info__item:nth-child(5n-1), a:nth-child(5n-1) .pk-info__item {
     background: url("../assets/imgs/38.png") no-repeat;
     background-color: #F0F8FC;
     background-size: contain;
     background-position: 120%;
 }
 
-.pk-info__item:nth-child(5n) {
+.pk-info__item:nth-child(5n), a:nth-child(5n) .pk-info__item {
     background: url("../assets/imgs/2.png") no-repeat;
     background-color: #F0F8FC;
     background-size: contain;
@@ -1981,15 +1981,7 @@ button {
 
 
 @media screen and (max-width: 1500px) {
-    .main-buttons-container,
-    .pk-container,
-    .about_university-container,
-    .news-container,
-    .subscribe-container,
-    .institutes-slider-container,
-    .abiturient-container,
-    .calendar-container,
-    .footer__wrapper {
+    .main-buttons-container {
         margin-left: 20px;
         margin-right: 20px;
     }
@@ -2019,6 +2011,21 @@ button {
     }
 }
 
+@media screen and (max-width: 1300px) {
+    .main-buttons-container,
+    .pk-container,
+    .about_university-container,
+    .news-container,
+    .subscribe-container,
+    .institutes-slider-container,
+    .abiturient-container,
+    .calendar-container,
+    .footer__wrapper {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
 @media screen and (max-width: 1250px) {
     .news__list {
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -2031,27 +2038,27 @@ button {
         flex-wrap: wrap;
     }
 
-    .pk-info__item:nth-child(5n-4) {
+    .pk-info__item:nth-child(5n-4), a:nth-child(5n-4) .pk-info__item {
         background-size: contain;
         background-position: 100%;
     }
 
-    .pk-info__item:nth-child(5n-3) {
+    .pk-info__item:nth-child(5n-3), a:nth-child(5n-3) .pk-info__item {
         background-size: contain;
         background-position: 100%;
     }
 
-    .pk-info__item:nth-child(5n-2) {
+    .pk-info__item:nth-child(5n-2), a:nth-child(5n-2) .pk-info__item {
         background-size: contain;
         background-position: 100%;
     }
 
-    .pk-info__item:nth-child(5n-1) {
+    .pk-info__item:nth-child(5n-1), a:nth-child(5n-1) .pk-info__item {
         background-size: contain;
         background-position: 100%;
     }
 
-    .pk-info__item:nth-child(5n) {
+    .pk-info__item:nth-child(5n), a:nth-child(5n) .pk-info__item {
         background-size: contain;
         background-position: 100%;
     }
@@ -2234,11 +2241,11 @@ button {
         max-width: 100%;
     }
 
-    .pk-info__item:nth-child(5n-4),
-    .pk-info__item:nth-child(5n-3),
-    .pk-info__item:nth-child(5n-2),
-    .pk-info__item:nth-child(5n-1),
-    .pk-info__item:nth-child(5n) {
+    .pk-info__item:nth-child(5n-4), a:nth-child(5n-4) .pk-info__item,
+    .pk-info__item:nth-child(5n-3), a:nth-child(5n-3) .pk-info__item,
+    .pk-info__item:nth-child(5n-2), a:nth-child(5n-2) .pk-info__item,
+    .pk-info__item:nth-child(5n-1), a:nth-child(5n-1) .pk-info__item,
+    .pk-info__item:nth-child(5n), a:nth-child(5n) .pk-info__item {
         height: max-content;
         background: #F0F8FC;
     }
@@ -2347,7 +2354,7 @@ button {
         font-size: 12px;
     }
 
-    .pk-info__item {
+    .pk-info__item, a .pk-info__item {
         min-height: 0;
     }
 }
@@ -7793,4 +7800,8 @@ input[type="submit"],
 
 .pk-nums img {
     max-width: 100px;
+}
+
+a {
+    display: contents;
 }
