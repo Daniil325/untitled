@@ -7802,6 +7802,6 @@ input[type="submit"],
     max-width: 100px;
 }
 
-a {
+.pk-info a {
     display: contents;
 }
