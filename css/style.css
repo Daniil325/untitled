@@ -2633,6 +2633,7 @@ button {
     position: relative;
     max-width: 800px;
     margin: auto;
+    width: 100%;
 }
 
 .play-button {
