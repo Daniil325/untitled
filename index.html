@@ -92,39 +92,7 @@
         </div>
     </div>
 
-    <div class="header-search_block" id="search-form">
-        <h2>Поиск</h2>
-        <form class="header-search_form" id="_9caf682e5d98dc3f__form" method="get" action="/search/">
-            <div class="header-search_input-label">
 
-                <fieldset class="header-search-options">
-                    <div class="header-search-div">
-                        <input class="header-search-query-input" type="text" placeholder="поиск" name="query">
-                        <button class="header-search_btn" disabled=""></button>
-                    </div>
-
-                    <span class="header-search-options-title">искать по:</span>
-                    <label class="header-search-options-item header-search-options-item__current">
-                        <input class="header-search-options-item-radio" type="radio" name="search_in" value="site"
-                               checked="checked" data-form-action="/search/">
-                        <span class="header-search-options-item-title">сайту</span>
-                    </label>
-
-                    <label class="header-search-options-item ">
-                        <input class="header-search-options-item-radio" type="radio" name="search_in" value="news"
-                               data-form-action="/search/news/">
-                        <span class="header-search-options-item-title">новостям</span>
-                    </label>
-
-                    <label class="header-search-options-item ">
-                        <input class="header-search-options-item-radio" type="radio" name="search_in"
-                               value="documents" data-form-action="/search/documents/">
-                        <span class="header-search-options-item-title">документам</span>
-                    </label>
-                </fieldset>
-            </div>
-        </form>
-    </div>
 
     <div class="header__slider">
         <div class="imgs-wrapper">
@@ -133,12 +101,45 @@
                     <source media="(max-width: 552px)" srcset="assets/imgs/00000427.m.jpg">
                     <source media="(max-width: 1168px)" srcset="assets/imgs/00000427.t.jpg">
                     <img class="header-promo-slide-picture_img"
-                         src="https://universum.asu.ru/wp-content/uploads/2024/04/баннер-1344-на-480.jpg">
+                         src="http://universum.asu.ru/wp-content/uploads/2024/04/абитуриент-обложка-6.png">
                 </picture>
             </a>
 
         </div>
     </div>
+    <div class="header-search_block" id="search-form">
+    <h2>Поиск</h2>
+    <form class="header-search_form" id="_9caf682e5d98dc3f__form" method="get" action="/search/">
+        <div class="header-search_input-label">
+
+            <fieldset class="header-search-options">
+                <div class="header-search-div">
+                    <input class="header-search-query-input" type="text" placeholder="поиск" name="query">
+                    <button class="header-search_btn" disabled=""></button>
+                </div>
+
+                <span class="header-search-options-title">искать по:</span>
+                <label class="header-search-options-item header-search-options-item__current">
+                    <input class="header-search-options-item-radio" type="radio" name="search_in" value="site"
+                           checked="checked" data-form-action="/search/">
+                    <span class="header-search-options-item-title">сайту</span>
+                </label>
+
+                <label class="header-search-options-item ">
+                    <input class="header-search-options-item-radio" type="radio" name="search_in" value="news"
+                           data-form-action="/search/news/">
+                    <span class="header-search-options-item-title">новостям</span>
+                </label>
+
+                <label class="header-search-options-item ">
+                    <input class="header-search-options-item-radio" type="radio" name="search_in"
+                           value="documents" data-form-action="/search/documents/">
+                    <span class="header-search-options-item-title">документам</span>
+                </label>
+            </fieldset>
+        </div>
+    </form>
+</div>
 </header>
 
 <main>
@@ -390,17 +391,22 @@
     <section class="about_university-container">
         <div class="about_university__wrapper">
             <h2 class="section-title">Об университете</h2>
-            <p class="about_university__text">
-            </p>
-            <div class="video-wrapper">
-                <img class="aaa video-image" src="assets/imgs/afa.png" alt="">
-                <img class="play-button" src="assets/imgs/play.png" alt="">
-                <iframe class="video-frame none" src="https://rutube.ru/play/embed/22e6d9d08a5c2706313b6c56c075fada"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
+            <div class="about_university-content">
+                <div class="about_university__text-container">
+                    <p class="about_university__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aspernatur praesentium voluptate? Cumque facilis magnam numquam perspiciatis voluptatum. Aperiam asperiores ea eveniet fugiat, fugit iure laborum nesciunt nobis non reiciendis! Commodi dicta esse explicabo facere ipsum iure iusto laborum, mollitia numquam optio sunt tenetur? Accusamus asperiores dolor quisquam vero voluptatibus.</p>
+                    <p class="about_university__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad architecto atque dicta dolor dolores dolorum ducimus et harum hic laudantium maxime molestiae neque, nisi omnis placeat quae quas quos saepe tenetur? A accusantium ad adipisci amet animi beatae eius eos, fugiat labore laboriosam libero necessitatibus non possimus rem temporibus.</p>
+                </div>
+                <div class="video-wrapper">
+                    <img class="aaa video-image" src="assets/imgs/afa.png" alt="">
+                    <img class="play-button" src="assets/imgs/play.png" alt="">
+                    <iframe class="video-frame none" src="https://rutube.ru/play/embed/22e6d9d08a5c2706313b6c56c075fada"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
 
+                </div>
             </div>
+
 
         </div>
     </section>
@@ -489,42 +495,20 @@
     </section>
 
     <!-- шаги абитуриента -->
-    <section class="steps-container">
-        <div class="steps__wrapper">
-            <h2 class="section-title">Шаги абитуриента</h2>
-            <div class="steps">
-
-                <div class="step-item">
-                    <span class="step-num">1</span>
-                    <p class="step-descr">Выберите направление подготовки</p>
+    <section class="inostran-container">
+        <div class="inostran__wrapper">
+            <div class="inostran">
+                <div class="inostran-info">
+                    <h2 class="section-title">Иностранным абитуриентам</h2>
+                    <p class="inostran-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis dolore inventore labore molestias neque provident. Alias aliquid architecto, dolor fugiat impedit ipsam neque nostrum quaerat sed similique ullam vitae voluptatum.
+                    </p>
+                    <p class="inostran-button">
+                        <a href="">Поступить</a>
+                    </p>
                 </div>
-
-                <div class="step-item">
-                    <p class="step-num">2</p>
-                    <p class="step-descr">Зарегистрируйтесь в личном кабинете абитуриента</p>
-                </div>
-
-                <div class="step-item">
-                    <p class="step-num">3</p>
-                    <p class="step-descr">Укажите свои индивидуальные достижения</p>
-                </div>
-
-                <div class="step-item">
-                    <p class="step-num">4</p>
-                    <p class="step-descr">Пройдите вступительные испытания, если необходимо</p>
-                </div>
-
-                <div class="step-item">
-                    <p class="step-num">5</p>
-                    <p class="step-descr">Подайте оригиналы документов</p>
-                </div>
-
-                <div class="step-item">
-                    <p class="step-num">6</p>
-                    <p class="step-descr">Вливайтесь в студенческую жизнь</p>
-                </div>
-
             </div>
+
         </div>
     </section>
 
@@ -1088,8 +1072,8 @@
                 <div class="news__element">
                     <a href=""><img class="news__image" src="assets/imgs/slider-image.png" alt=""></a>
                     <p class="news__title">
-                        В центре довузовского образования АлтГУ прошел
-                        день открытых дверей
+                        <a href="">В центре довузовского образования АлтГУ прошел
+                            день открытых дверей</a>
                     </p>
                     <p class="news__date">01.01.2020</p>
                 </div>
