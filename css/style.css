@@ -116,6 +116,7 @@ a {
     display: flex;
     gap: 40px;
     margin-right: auto;
+    align-items: center;
 }
 
 .header-search {
@@ -219,6 +220,10 @@ fieldset {
     gap: 20px;
 }
 
+.header-logo img {
+    max-width: 200px;
+}
+
 .header-links__social-phone,
 .header-links__social-media,
 .header-links__social-lk {
@@ -228,6 +233,16 @@ fieldset {
     font-family: MontserratMedium;
     text-transform: uppercase;
     margin-right: auto;
+}
+
+.header-links__social-media img:nth-child(4n-3) {
+    height: 40px;
+    width: 40px;
+}
+
+.header-links__social-media img:nth-child(4n-1) {
+    height: 40px;
+    width: 40px;
 }
 
 .header-links__social-phone {
@@ -518,7 +533,7 @@ fieldset {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
+    text-align: justify;
 }
 
 .pk-info {
@@ -796,15 +811,16 @@ fieldset {
 
 .subscribe-container {
     border-radius: 0;
-
+    background: url("../assets/imgs/subfon.png") no-repeat;
     background-color: #bbe1f2;
+    background-size: cover;
 }
 
 .subscribe__wrapper {
     max-width: 1300px;
     margin: auto;
     padding: 40px;
-    background: url("../assets/imgs/sub.png") no-repeat;
+    background: url("../assets/imgs/телефон.png") no-repeat;
     background-size: contain;
     background-position: right;
 }
@@ -813,7 +829,7 @@ fieldset {
     font-family: MontserratMedium;
     max-width: 45%;
     font-size: 17px;
-    color: #67778D;
+    color: white;
 }
 
 .subscribe-image {
@@ -1011,6 +1027,10 @@ fieldset {
 @media screen and (max-width: 992.92px) {
     .program--title {
         font-size: 18px !important;
+    }
+
+    .header-logo img {
+        max-width: 150px;
     }
 }
 
@@ -2055,7 +2075,6 @@ button {
     .pk-container,
     .about_university-container,
     .news-container,
-    .subscribe-container,
     .institutes-slider-container,
     .abiturient-container,
     .calendar-container,
@@ -2229,6 +2248,11 @@ button {
 @media screen and (max-width: 900px) {
     .about_university-content {
         flex-direction: column;
+    }
+
+    .header-links__social-media {
+        margin: 0;
+        margin-right: 0;
     }
 }
 
@@ -2405,6 +2429,10 @@ button {
 }
 
 @media screen and (max-width: 425px) {
+    .header-logo img {
+        max-width: 300px;
+    }
+
     .wrapper {
         max-width: 100vw;
     }
@@ -7860,7 +7888,7 @@ input[type="submit"],
     padding: 0;
 }
 
-.inostran__wrapper .section-title {
+.inostran__wrapper .section-title, .subscribe__wrapper .section-title {
     padding-top: 0;
     color: white;
 }
@@ -7910,6 +7938,10 @@ input[type="submit"],
 }
 
 @media screen and (max-width: 1300px) {
+    .inostran {
+        background-position: 200%;
+    }
+
     .inostran-info {
         padding-left: 20px;
     }
@@ -7922,7 +7954,8 @@ input[type="submit"],
 
 @media screen and (max-width: 1050px) {
     .inostran {
-        background-position: 200%;
+        background-position: 180px;
+        background-size: cover
     }
 
     .inostran-text {
@@ -7977,6 +8010,8 @@ input[type="submit"],
         display: flex;
         gap: 40px;
         margin-right: auto;
+        justify-content: center;
+        align-items: center;
     }
 
     .header-search {
@@ -7994,6 +8029,7 @@ input[type="submit"],
 
     .header-top__item a {
         color: #646464;
+        font-size: 12px;
     }
 
     .header-search-input {
@@ -8084,7 +8120,6 @@ input[type="submit"],
         border-radius: 15px;
         font-family: MontserratMedium;
         text-transform: uppercase;
-        margin-right: auto;
     }
 
     .header-links__social-phone {
