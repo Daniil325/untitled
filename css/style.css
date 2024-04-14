@@ -528,6 +528,7 @@ fieldset {
     font-family: MontserratMedium;
 }
 
+
 .about_university__text-container {
     flex: 0 0 30%;
     display: flex;
@@ -7914,6 +7915,7 @@ input[type="submit"],
 .inostran-text {
     color: white;
     max-width: 500px;
+    text-align: justify;
 }
 
 .inostran-button {
