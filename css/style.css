@@ -604,7 +604,7 @@ fieldset {
 }
 
 .inostran-container {
-    background: url('../assets/imgs/inostran_fon.png') no-repeat;
+    background: url('../assets/imgs/inostran_fon.jpg') no-repeat;
     background-size: cover;
 }
 
@@ -812,7 +812,7 @@ fieldset {
 
 .subscribe-container {
     border-radius: 0;
-    background: url("../assets/imgs/subfon.png") no-repeat;
+    background: url("../assets/imgs/subfon.jpg") no-repeat;
     background-color: #bbe1f2;
     background-size: cover;
 }
@@ -1694,8 +1694,8 @@ button {
 .footer {
     border-top-left-radius: 20px;
     border-top-right-radius: 10px;
-    background: url("../assets/imgs/footer_fon.png") no-repeat;
-    background-size: cover;
+    background: url("../assets/imgs/footer_fon.jpg") no-repeat;
+    background-size: 100% 100%;
     padding-bottom: 10px;
     font-family: MontserratSemiBold;
 }
