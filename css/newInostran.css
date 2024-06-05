@@ -171,3 +171,52 @@
     color: #FD1B51;
 }
 
+.inostran_section-title {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60.95px;
+}
+
+.inostran_ac {
+    padding: 60px 40px;
+    border-radius: 30px;
+    box-shadow: 15px 10px 50px 0px #0000001A;
+    margin-bottom: 20px;
+}
+
+.ac-header .ac-trigger {
+    font-weight: 600 !important;
+    font-size: 32px !important;
+    line-height: 40px !important;
+}
+
+.inostran_contact-section {
+    display: flex;
+}
+
+.inostran_contact-info {
+    margin-right: auto;
+}
+
+.inostran_contact-info h3 {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 54.86px;
+}
+
+.inostran_contacts {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.inostran_contact a {
+    font-weight: 500;
+    font-size: 32px;
+    color: #222222;
+}
+
+.inostran_qrs img {
+    margin-top: 60px;
+    margin-right: 50px;
+}

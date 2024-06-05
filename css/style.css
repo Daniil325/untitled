@@ -220,7 +220,7 @@ fieldset {
     gap: 20px;
 }
 
-.header-logo img {
+.header-top__item img {
     max-width: 200px;
 }
 
