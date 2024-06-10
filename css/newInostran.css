@@ -220,3 +220,57 @@
     margin-top: 60px;
     margin-right: 50px;
 }
+
+.why_asy-section {
+
+}
+
+.inostran-cards {
+    /* Frame 40 */
+    position: relative;
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0px;
+}
+
+.inostran-card {
+    /* Партнерская сеть */
+    position: static;
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 60px;
+
+
+    /* Inside Auto Layout */
+    flex: none;
+
+    align-self: stretch;
+    flex-grow: 0;
+    border-radius: 30px;
+    margin-bottom: -60px;
+}
+
+.inostran-card:nth-child(3n-2) {
+    background: rgb(162, 188, 26);
+    order: 0;
+}
+
+.inostran-card:nth-child(3n-1) {
+    background: rgb(57, 137, 210);
+    order: 1;
+}
+
+.inostran-card:nth-child(3n) {
+    background: rgb(250, 141, 21);
+    order: 2;
+}
+
+.inostran-card p {
+    max-width: 500px;
+}
