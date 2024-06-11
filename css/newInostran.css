@@ -413,6 +413,13 @@
     margin-left: 5%;
 }
 
+.inostran-take-doc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .inostran-take-doc p {
     font-weight: 600;
     font-size: 20px;
