@@ -13,7 +13,7 @@
 <body>
 <header class="header">
     <!-- самый верхний блок -->
-    <div class="header-top header-main">
+    <div class="header-top header-main inostran_header-top">
         <div class="header__wrapper">
             <ul class="header-top__items">
                 <li class="header-top__item">
@@ -55,18 +55,27 @@
 
 
     <div class="header__slider">
-        <div class="imgs-wrapper">
-            <a href="">
-                <picture class="header-promo-slide-img">
-                    <source media="(max-width: 552px)"
-                            srcset="http://universum.asu.ru/wp-content/uploads/2024/04/абитуриент-обложка-8.png">
-                    <source media="(max-width: 1168px)"
-                            srcset="http://universum.asu.ru/wp-content/uploads/2024/04/абитуриент-обложка-8.png">
-                    <img class="header-promo-slide-picture_img"
-                         src="assets/imgs/первый%20экран.png">
-                </picture>
-            </a>
-
+        <div class="inostran_header-promo-slide-picture_img">
+            <img src="assets/imgs/inostran_fon.png" alt="">
+            <div class="inostran_header-promo-text">
+                <h1 class="inostran_header-promo-title">Иностранным абитуриентам</h1>
+                <p class="inostran_header-promo-subtitle">приемная кампания 2024</p>
+                <div class="inostran_header-promo-countries">
+                    <div class="inostran_header-promo-item">
+                        <img src="assets/imgs/world_kaz.png" alt="">
+                        <p>Я из Казахстана</p>
+                    </div> <div class="inostran_header-promo-item">
+                        <img src="assets/imgs/world_kyr.png" alt="">
+                        <p>Я из Кыргызстана</p>
+                    </div> <div class="inostran_header-promo-item">
+                        <img src="assets/imgs/world_yrb.png" alt="">
+                        <p>Я из Узбекистана</p>
+                    </div> <div class="inostran_header-promo-item">
+                        <img src="assets/imgs/world_tj.png" alt="">
+                        <p>Я из Таджикистана</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="header-search_block" id="search-form">
@@ -87,7 +96,7 @@
                         <span class="header-search-options-item-title">сайту</span>
                     </label>
 
-                    <label class="header-search-options-item ">
+                    <label class="header-search-options-item">
                         <input class="header-search-options-item-radio" type="radio" name="search_in" value="news"
                                data-form-action="/search/news/">
                         <span class="header-search-options-item-title">новостям</span>
@@ -105,267 +114,457 @@
 </header>
 
 <main class="main">
-    <div class="main__container">
-        <section class="inostran__advantages-section">
-            <div class="inostran__advantages-item">
-                <img src="img/elearning_5851661%201.png" alt="">
-                <p>Образование международного уровня</p>
-            </div>
-            <div class="inostran__advantages-item">
-                <img src="img/elearning_5851661%201.png" alt="">
-                <p>Образование международного уровня</p>
-            </div>
-            <div class="inostran__advantages-item">
-                <img src="img/elearning_5851661%201.png" alt="">
-                <p>Образование международного уровня</p>
-            </div>
-        </section>
 
-        <section class="checklist-section">
-            <h2 class="checklist-section-title">Чек-лист иностранного абитуриента</h2>
+    <section class="inostran__advantages-section">
+        <div class="inostran__advantages-item">
+            <img src="assets/imgs/elearning_5851661%201.png" alt="">
+            <p>Образование международного уровня</p>
+        </div>
+        <div class="inostran__advantages-item">
+            <img src="assets/imgs/building_3673970%201.png" alt="">
+            <p>Пять комфортабельных общежитий</p>
+        </div>
+        <div class="inostran__advantages-item">
+            <img src="assets/imgs/extracurricular_8887635%201.png" alt="">
+            <p>Яркая студенческая жизнь</p>
+        </div>
+    </section>
 
-            <div class="inostran_programs">
-                <h3 class="checklist-num">01</h3>
-                <p class="checklist-subtitle">Выбери образовательную программу</p>
-                <div class="programs__list">
-                    <div class="programs__list-item">
-                        <img src="assets/imgs/bioc.png" alt="">
-                        <p>Институт истории и международных отношений</p>
-                    </div>
-                    <div class="programs__list-item">
-                        <img src="assets/imgs/bioc.png" alt="">
-                        <p>Институт истории и международных отношений</p>
-                    </div>
-                    <div class="programs__list-item">
-                        <img src="assets/imgs/bioc.png" alt="">
-                        <p>Институт истории и международных отношений</p>
-                    </div>
+    <section class="checklist-section">
+        <h2 class="checklist-section-title">Чек-лист иностранного абитуриента</h2>
 
-                    <div class="programs__list-item">
-                        <img src="assets/imgs/bioc.png" alt="">
-                        <p>Институт истории и международных отношений</p>
-                    </div>
-                    <div class="programs__list-item">
-                        <img src="assets/imgs/bioc.png" alt="">
-                        <p>Институт истории и международных отношений</p>
-                    </div>
-                    <div class="programs__list-item">
-                        <img src="assets/imgs/bioc.png" alt="">
-                        <p>Институт истории и международных отношений</p>
-                    </div>
+        <div class="inostran_programs">
+            <h3 class="checklist-num">01</h3>
+            <p class="checklist-subtitle">Выбери образовательную программу</p>
+            <div class="programs__list">
+                <div class="programs__list-item">
+                    <img src="assets/imgs/bioc.png" alt="">
+                    <p class="programs__list-item-link">
+                        <a href="">Институт истории и международных отношений</a>
+                    </p>
+                </div>
+                <div class="programs__list-item">
+                    <img src="assets/imgs/bioc.png" alt="">
+                    <p class="programs__list-item-link">
+                        <a href="">Институт истории и международных отношений</a>
+                    </p>
+                </div>
+                <div class="programs__list-item">
+                    <img src="assets/imgs/bioc.png" alt="">
+                    <p class="programs__list-item-link">
+                        <a href="">Институт истории и международных отношений</a>
+                    </p>
+                </div>
 
-                    <div class="programs__list-item">
-                        <img src="assets/imgs/bioc.png" alt="">
-                        <p>Институт истории и международных отношений</p>
-                    </div>
-                    <div class="programs__list-item">
-                        <img src="assets/imgs/bioc.png" alt="">
-                        <p>Институт истории и международных отношений</p>
-                    </div>
-                    <div class="programs__list-item">
-                        <img src="assets/imgs/bioc.png" alt="">
-                        <p>Институт истории и международных отношений</p>
-                    </div>
+                <div class="programs__list-item">
+                    <img src="assets/imgs/bioc.png" alt="">
+                    <p class="programs__list-item-link">
+                        <a href="">Институт истории и международных отношений</a>
+                    </p>
+                </div>
+                <div class="programs__list-item">
+                    <img src="assets/imgs/bioc.png" alt="">
+                    <p class="programs__list-item-link">
+                        <a href="">Институт истории и международных отношений</a>
+                    </p>
+                </div>
+                <div class="programs__list-item">
+                    <img src="assets/imgs/bioc.png" alt="">
+                    <p class="programs__list-item-link">
+                        <a href="">Институт истории и международных отношений</a>
+                    </p>
+                </div>
 
-                    <div class="programs__list-item">
-                        <img src="assets/imgs/bioc.png" alt="">
-                        <p>Институт истории и международных отношений</p>
-                    </div>
+                <div class="programs__list-item">
+                    <img src="assets/imgs/bioc.png" alt="">
+                    <p class="programs__list-item-link">
+                        <a href="">Институт истории и международных отношений</a>
+                    </p>
+                </div>
+                <div class="programs__list-item">
+                    <img src="assets/imgs/bioc.png" alt="">
+                    <p class="programs__list-item-link">
+                        <a href="">Институт истории и международных отношений</a>
+                    </p>
+                </div>
+                <div class="programs__list-item">
+                    <img src="assets/imgs/bioc.png" alt="">
+                    <p class="programs__list-item-link">
+                        <a href="">Институт истории и международных отношений</a>
+                    </p>
+                </div>
+
+                <div class="programs__list-item">
+                    <img src="assets/imgs/bioc.png" alt="">
+                    <p class="programs__list-item-link">
+                        <a href="">Институт истории и международных отношений</a>
+                    </p>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section class="checklist-section">
-            <div class="inostran_video">
-                <h3 class="checklist-num">02</h3>
-                <p class="checklist-subtitle">Зарегистрируйся в личном кабинете и заполни анкету</p>
-                <div class="video-wrapper">
-                    <img class="aaa video-image" src="assets/imgs/video_fon.png" alt="">
-                    <img class="play-button inostran-play-button" src="assets/imgs/PLAY%20(1).png" alt="">
-                    <iframe class="video-frame none" src="https://rutube.ru/play/embed/22e6d9d08a5c2706313b6c56c075fada"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe>
-                </div>
+        <div class="inostran_video">
+            <h3 class="checklist-num">02</h3>
+            <p class="checklist-subtitle">Зарегистрируйся в личном кабинете и заполни анкету</p>
+            <div class="video-wrapper">
+                <img class="aaa video-image" src="assets/imgs/video_fon.png" alt="">
+                <img class="play-button inostran-play-button" src="assets/imgs/PLAY%20(1).png" alt="">
+                <iframe class="video-frame none" src="https://rutube.ru/play/embed/22e6d9d08a5c2706313b6c56c075fada"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
             </div>
-        </section>
-
-        <section class="checklist-section">
-            <div class="inostran_greeting">
-                <h3 class="checklist-num">03</h3>
-                <p class="checklist-subtitle">Ознакомься со сроками приёмной кампании</p>
-                <div class="inostran_greeting__container">
-                    <div class="inostran_greeting__container-text">
-                        <h4 class="inostran_greeting__container-title">Университет начинает принимать документы 20 июня
-                            2024 года</h4>
-                        <p>Подробнее о сроках подачи документов на программы бакалавриата можно узнать в разделах:</p>
-                        <div class="inostran_greeting__container-buttons">
-                            <div class="inostran_greeting__container-button">
-                                Багалавриат и специалитет
-                            </div>
-                            <div class="inostran_greeting__container-button">
-                                Магистратура и аспирантура
-                            </div>
+        </div>
+        <div class="inostran_greeting">
+            <h3 class="checklist-num">03</h3>
+            <p class="checklist-subtitle">Ознакомься со сроками приёмной кампании</p>
+            <div class="inostran_greeting__container">
+                <div class="inostran_greeting__container-text">
+                    <h4 class="inostran_greeting__container-title">Университет начинает принимать документы 20 июня
+                        2024 года</h4>
+                    <p>Подробнее о сроках подачи документов на программы бакалавриата можно узнать в разделах:</p>
+                    <div class="inostran_greeting__container-buttons">
+                        <div class="inostran_greeting__container-button">
+                            <a href="">Багалавриат и специалитет</a>
+                        </div>
+                        <div class="inostran_greeting__container-button">
+                            <a href="">Магистратура и аспирантура</a>
                         </div>
                     </div>
-                    <div>
-                        <img src="assets/imgs/s00071960%201.png" alt="">
+                </div>
+                <div class="inostran_greeting__img">
+                    <img src="assets/imgs/s00071960%201.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="inostran_rools">
+            <h3 class="checklist-num">04</h3>
+            <p class="checklist-subtitle">Подай документы и ознакомься с правилами приёма</p>
+            <div class="inostran_rools__container">
+                <div class="inostran_rools__item">
+                    <img src="assets/imgs/monitor_1375149%201.png" alt="">
+                    <p>Анкета (заполняется в личном кабинете)</p>
+                </div>
+                <div class="inostran_rools__item">
+                    <img src="assets/imgs/id-card_7503808%201.png" alt="">
+                    <p>Документ, подтверждающий личность, гражданство</p>
+                </div>
+                <div class="inostran_rools__item">
+                    <img src="assets/imgs/diploma_2065094%201.png" alt="">
+                    <p>Документ об образовании</p>
+                </div>
+                <div class="inostran_rools__item">
+                    <img src="assets/imgs/diploma_3074147%201.png" alt="">
+                    <p>Документы, подтверждающие индивидуальные достижения</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="inostran_res">
+            <h3 class="checklist-num">05</h3>
+            <p class="checklist-subtitle">Сдай вступительные испытания и дождись результатов</p>
+            <p class="inostran_res__text">Перечень предварительных вступительных испытаний на 2024 год размещен в
+                разделах для <a href="">бакалавриата</a> и <a href="">магистратуры.</a></p>
+        </div>
+
+        <div class="inostran_greeting">
+            <h3 class="checklist-num">06</h3>
+
+            <p class="checklist-subtitle">Оформи своё пребывание на территории Российской Федерации</p>
+            <div class="inostran-instr">
+                <div class="inostran-instr-text">
+                    <p class="inostran-instr-p">После приезда обязательно нужно в течение семи дней встать на
+                        миграционный учёт</p>
+                    <p class="inostran-instr-subtext">Для этого в день прибытия или на следующий рабочий день до
+                        12:00 необходимо подойти в Отдел
+                        международных связей университета по адресу:</p>
+                    <div class="inostran_contacts">
+                        <img src="assets/imgs/system-uicons_location.png" alt="">
+                        <a href="" class="inostran_contact">пр. Ленина, 61, 4 этаж, кабинет 400</a>
+                    </div>
+                </div>
+                <div>
+                    <img src="assets/imgs/2150455566%201.png" alt="">
+                </div>
+            </div>
+
+            <div class="inostran-take">
+                <h3 class="inostran-take-title">С собой взять:</h3>
+                <div class="inostran-take-docs">
+                    <div class="inostran-take-doc">
+                        <img src="assets/imgs/book2.png" alt="">
+                        <p>Паспорт</p>
+                    </div>
+                    <div class="inostran-take-doc">
+                        <img src="assets/imgs/book2.png" alt="">
+                        <p>Паспорт</p>
+                    </div>
+                    <div class="inostran-take-doc">
+                        <img src="assets/imgs/book2.png" alt="">
+                        <p>Паспорт</p>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="checklist-section">
-            <div class="inostran_rools">
-                <h3 class="checklist-num">04</h3>
-                <p class="checklist-subtitle">Подай документы и ознакомься с правилами приёма</p>
-                <div class="inostran_rools__container">
-                    <div class="inostran_rools__item">
-                        <img src="assets/imgs/monitor_1375149%201.png" alt="">
-                        <p>Анкета (заполняется в личном кабинете)</p>
-                    </div>
-                    <div class="inostran_rools__item">
-                        <img src="assets/imgs/monitor_1375149%201.png" alt="">
-                        <p>Анкета (заполняется в личном кабинете)</p>
-                    </div>
-                    <div class="inostran_rools__item">
-                        <img src="assets/imgs/monitor_1375149%201.png" alt="">
-                        <p>Анкета (заполняется в личном кабинете)</p>
-                    </div>
-                    <div class="inostran_rools__item">
-                        <img src="assets/imgs/monitor_1375149%201.png" alt="">
-                        <p>Анкета (заполняется в личном кабинете)</p>
+    <section class="inostran_warning-section">
+        <div class="inostran_warning">
+            <h3 class="inostran_warning-title">Важно!</h3>
+            <p class="inostran_warning-text">
+                Обращаем внимание, что после поступления в Алтайский государственный университет при заселении
+                в общежитие студентам необходимо оформить полис добровольного медицинского страхования.
+                Полис ДМС оформляется сотрудниками университета, консультацию по получению полиса можно получить
+                в Отделе международных связей:
+            </p>
+        </div>
+
+        <div class="inostran_warning-location">
+            <img src="assets/imgs/Basemap%20image.png" alt="">
+            <div class="inostran_warning-location-info">
+                <div>
+                    <h3 class="inostran_warning-title">Адрес:</h3>
+                    <div class="inostran_contacts">
+                        <img src="assets/imgs/system-uicons_location.png" alt="">
+                        <a href="" class="inostran_contact">г. Барнаул, пр. Ленина, 61, 4 этаж, кабинет 400</a>
                     </div>
 
                 </div>
-            </div>
-        </section>
 
-        <section class="checklist-section">
-            <div class="inostran_res">
-                <h3 class="checklist-num">05</h3>
-                <p class="checklist-subtitle">Сдай вступительные испытания и дождись результатов</p>
-                <p class="inostran_res__text">Перечень предварительных вступительных испытаний на 2024 год размещен в
-                    разделах для <a href="">бакалавриата</a> и <a href="">магистратуры.</a></p>
-            </div>
-        </section>
-
-        <section class="checklist-section">
-            <div class="inostran_greeting">
-                <h3 class="checklist-num">06</h3>
-                <p class="checklist-subtitle">Оформи своё пребывание на территории Российской Федерации</p>
-                <p>После приезда обязательно нужно в течение семи дней встать на миграционный учёт</p>
-                <p>Для этого в день прибытия или на следующий рабочий день до 12:00 необходимо подойти в Отдел международных связей университета по адресу:</p>
-                <div class="inostran_greeting__container">
-                    <div class="inostran_greeting__container-text">
-                        <h4 class="inostran_greeting__container-title">Университет начинает принимать документы 20 июня
-                            2024 года</h4>
-                        <p>Подробнее о сроках подачи документов на программы бакалавриата можно узнать в разделах:</p>
-                        <div class="inostran_greeting__container-buttons">
-                            <div class="inostran_greeting__container-button">
-                                Багалавриат и специалитет
-                            </div>
-                            <div class="inostran_greeting__container-button">
-                                Магистратура и аспирантура
-                            </div>
+                <div>
+                    <h3 class="inostran_warning-title">Контакты:</h3>
+                    <div class="inostran_contacts_flex">
+                        <div class="inostran_contacts">
+                            <img src="assets/imgs/ph_phone-call-light.png" alt="">
+                            <a href="" class="inostran_contact">+7 (3852) 29-12-53</a>
+                        </div>
+                        <div class="inostran_contacts">
+                            <img src="assets/imgs/ph_phone-call-light.png" alt="">
+                            <a href="" class="inostran_contact">+7 (923) 796-52-08 <span>(Наталья Владимировна)</span></a>
+                        </div>
+                        <div class="inostran_contacts">
+                            <img src="assets/imgs/formkit_email.png" alt="">
+                            <a href="" class="inostran_contact">sidorovan@mc.asu.ru</a>
                         </div>
                     </div>
-                    <div>
-                        <img src="assets/imgs/s00071960%201.png" alt="">
-                    </div>
                 </div>
+
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="why_asy-section">
-            <h1 class="inostran_section-title">Почему Алтайский государственный университет?</h1>
+    <section class="why_asy-section">
+        <h1 class="inostran_section-title">Почему Алтайский государственный университет?</h1>
 
-            <div class="inostran-cards">
-                <div class="inostran-card">
-                    <h2>Образование международного уровня</h2>
-                    <p>АлтГУ — международный научно-образовательный центр, развивающий передовые западные, российские и
+        <div class="inostran-cards">
+            <div class="inostran-card">
+                <div>
+                    <h2 class="inostran-card-title">Образование международного уровня</h2>
+                    <p class="inostran-card-description">АлтГУ — международный научно-образовательный центр, развивающий
+                        передовые западные, российские и
                         азиатские знания в области образования, науки и культуры. Образовательные программы в
                         университете соответствуют всем мировым квалификационным требованиям, а дипломы АлтГУ котируются
                         в странах Европы и Азии. Это позволяет студентам и выпускникам построить успешную карьеру не
                         только в России, но и любой другой точке мира.</p>
                 </div>
-                <div class="inostran-card">
-                    <h2>qwerty</h2>
-                </div>
-                <div class="inostran-card">
-                    <h2>qwerty</h2>
+                <div class="inostran-more">
+                    <a href="">Подробнее</a>
+                    <img src="assets/imgs/Group%20214.png" alt="">
                 </div>
             </div>
-        </section>
+            <div class="inostran-card">
+                <div>
+                    <h2 class="inostran-card-title">Яркая студенческая жизнь</h2>
+                    <p class="inostran-card-description">В АлтГУ более 20 творческих, спортивных и волонтерских
+                        объединений. Студенты могут записаться в спортивные секции и войти в сборные университета по
+                        самым разным видам спорта. Творческие личности могут выбрать клуб КВН, танцевальные секции или
+                        театральное сообщество.</p>
+                </div>
+                <div class="inostran-more">
+                    <a href="">Подробнее</a>
+                    <img src="assets/imgs/arrow_blue.png" alt="">
+                </div>
+            </div>
+            <div class="inostran-card">
+                <div>
+                    <h2 class="inostran-card-title">Пять комфортабельных общежитий</h2>
+                    <p class="inostran-card-description">Иностранные студенты заселяются в общежития первоочередно.
+                        Общежития обеспечены мебелью и бытовой химией. Кухни, прачечные, комнаты для сушки одежды
+                        оборудованы всем необходимым. В общежитии есть учебные пространства, спортивные залы и
+                        общественные зоны отдыха. Все общежития утеплены, исправно работает система отопления и
+                        водоснабжения.</p>
+                </div>
+                <div class="inostran-more">
+                    <a href="">Подробнее</a>
+                    <img src="assets/imgs/arrow_orange.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section class="inostran_questions-section">
-            <h2 class="inostran_section-title">Остались вопросы? Мы подскажем!</h2>
-
-            <div class="accordion-container">
-                <div class="ac inostran_ac">
-                    <h2 class="ac-header">
-                        <button type="button" class="ac-trigger">Какие правила получения иностранными студентами
-                            разрешения на работу на территории Российской Федерации?
-                        </button>
-                    </h2>
-                    <div class="ac-panel">
-                        <p class="ac-text">Иностранные студенты, обучающиеся очно, имеют право работать на территории
-                            РФ, для чего им требуется специальное разрешение. Исключение составляют граждане Казахстана,
-                            Беларуси и Армении, которым такое разрешение не нужно. Кроме того, разрешение не требуется
-                            студентам, работающим в свободное время в том же образовательном учреждении,
-                            где они обучаются, либо во время каникул.
-                            Разрешение на работу выдаётся Управлением по вопросам миграции Главного Управления
-                            Министерства внутренних дел России по Санкт-Петербургу и Ленинградской области (далее
-                            ГУ МВД) в упрощённом порядке на весь срок действия трудового договора, но не более
-                            чем на 1 год и может неоднократно продлеваться, но каждый раз не более чем на 1 год.</p>
+    <section class="inostran_about-section">
+        <h2 class="inostran_section-title">О нас говорят</h2>
+        <div class="inostran_about-cards">
+            <div class="inostran_about-card">
+                <img src="assets/imgs/gravity-ui_quote-close.png" alt="">
+                <p class="inostran_about-quote">В АлтГУ созданы все условия для получения знаний и реализации себя: есть
+                    библиотеки, где вы
+                    можете дополнительно заниматься и расширять свой кругозор, есть много студенческих организаций,
+                    клубов и спортивных команд, где можно встретить единомышленников и развить новые навыки.</p>
+                <div class="inostran_about-author">
+                    <img src="assets/imgs/Ellipse%20105.png" alt="">
+                    <div>
+                        <p class="inostran_about-author-fio">Иминов Жафарбек Шох-Жамшид Угли</p>
+                        <p class="inostran_about-author-state">Студент Института цифровых технологий и электронной
+                            физики</p>
                     </div>
                 </div>
+            </div>
 
-                <div class="ac inostran_ac">
-                    <h2 class="ac-header">
-                        <button type="button" class="ac-trigger">Lorem ipsum dolor sit amet.</button>
-                    </h2>
-                    <div class="ac-panel">
-                        <p class="ac-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="inostran_about-card">
+                <img src="assets/imgs/Group.png" alt="">
+                <p class="inostran_about-quote">В АлтГУ созданы все условия для получения знаний и реализации себя: есть
+                    библиотеки, где вы
+                    можете дополнительно заниматься и расширять свой кругозор, есть много студенческих организаций,
+                    клубов и спортивных команд, где можно встретить единомышленников и развить новые навыки.</p>
+                <div class="inostran_about-author">
+                    <img src="assets/imgs/Ellipse%20105.png" alt="">
+                    <div>
+                        <p class="inostran_about-author-fio">Иминов Жафарбек Шох-Жамшид Угли</p>
+                        <p class="inostran_about-author-state">Студент Института цифровых технологий и электронной
+                            физики</p>
                     </div>
                 </div>
+            </div>
 
-                <div class="ac inostran_ac">
-                    <h2 class="ac-header">
-                        <button type="button" class="ac-trigger">Lorem ipsum dolor sit amet.</button>
-                    </h2>
-                    <div class="ac-panel">
-                        <p class="ac-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="inostran_about-card">
+                <img src="assets/imgs/gravity-ui_quote-close.png" alt="">
+                <p class="inostran_about-quote">В АлтГУ созданы все условия для получения знаний и реализации себя: есть
+                    библиотеки, где вы
+                    можете дополнительно заниматься и расширять свой кругозор, есть много студенческих организаций,
+                    клубов и спортивных команд, где можно встретить единомышленников и развить новые навыки.</p>
+                <div class="inostran_about-author">
+                    <img src="assets/imgs/Ellipse%20105.png" alt="">
+                    <div>
+                        <p class="inostran_about-author-fio">Иминов Жафарбек Шох-Жамшид Угли</p>
+                        <p class="inostran_about-author-state">Студент Института цифровых технологий и электронной
+                            физики</p>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="inostran_contact-section">
-            <div class="inostran_contact-info">
-                <h3>Контакты</h3>
-
-                <div class="inostran_contacts"><img src="img/Frame%20259.png" alt="">
-                    <p class="inostran_contact"><a href="">+7 (3852) 29-81-44; </a><a href="">+7
-                        (923) 790-84-21</a></p></div>
-                <div class="inostran_contacts"><img src="img/Frame%20259.png" alt="">
-                    <p class="inostran_contact"><a href="">+7 (3852) 29-81-44; </a><a href="">+7
-                        (923) 790-84-21</a></p></div>
-
-                <div class="inostran_qrs">
-                    <img src="img/qr-code%201.png" alt="">
-                    <img src="img/qr-code%201.png" alt="">
+    <section class="inostran_info-section">
+        <div class="inostran-cards">
+            <div class="inostran-card">
+                <div>
+                    <h2 class="inostran-card-title">Партнерская сеть АлтГУ</h2>
+                    <p class="inostran-card-description">Алтайский государственный университет и организации-партнеры
+                        осуществляют комплекс организационно-методических мероприятий, направленных на развитие и
+                        совершенствование системы довузовской подготовки, создание условий для качественной
+                        предпрофильной и профильной подготовки обучающихся, проведение работы по профессиональной
+                        ориентации обучающихся, совершенствование методики отбора абитуриентов и формирования
+                        контингента студентов университета.</p>
                 </div>
-
+                <div class="inostran-more">
+                    <a href="">Подробнее</a>
+                    <img src="assets/imgs/arrow_blue.png" alt="">
+                </div>
             </div>
-            <div>
-                <img src="img/iPhone%2013%20Pro.png" alt="">
+            <div class="inostran-card">
+                <div>
+                    <h2 class="inostran-card-title">Образование международного уровня</h2>
+                    <p class="inostran-card-description">АлтГУ — международный научно-образовательный центр, развивающий
+                        передовые западные, российские и
+                        азиатские знания в области образования, науки и культуры. Образовательные программы в
+                        университете соответствуют всем мировым квалификационным требованиям, а дипломы АлтГУ котируются
+                        в странах Европы и Азии. Это позволяет студентам и выпускникам построить успешную карьеру не
+                        только в России, но и любой другой точке мира.</p>
+                </div>
+                <div class="inostran-more">
+                    <a href="">Подробнее</a>
+                    <img src="assets/imgs/Group%20214.png" alt="">
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-    </div>
+    <section class="inostran_questions-section">
+        <h2 class="inostran_section-title">Остались вопросы? Мы подскажем!</h2>
+
+        <div class="accordion-container">
+            <div class="ac inostran_ac">
+                <h2 class="ac-header">
+                    <button type="button" class="ac-trigger">Какие правила получения иностранными студентами
+                        разрешения на работу на территории Российской Федерации?
+                    </button>
+                </h2>
+                <div class="ac-panel">
+                    <p class="ac-text">Иностранные студенты, обучающиеся очно, имеют право работать на территории
+                        РФ, для чего им требуется специальное разрешение. Исключение составляют граждане Казахстана,
+                        Беларуси и Армении, которым такое разрешение не нужно. Кроме того, разрешение не требуется
+                        студентам, работающим в свободное время в том же образовательном учреждении,
+                        где они обучаются, либо во время каникул.
+                        Разрешение на работу выдаётся Управлением по вопросам миграции Главного Управления
+                        Министерства внутренних дел России по Санкт-Петербургу и Ленинградской области (далее
+                        ГУ МВД) в упрощённом порядке на весь срок действия трудового договора, но не более
+                        чем на 1 год и может неоднократно продлеваться, но каждый раз не более чем на 1 год.</p>
+                </div>
+            </div>
+
+            <div class="ac inostran_ac">
+                <h2 class="ac-header">
+                    <button type="button" class="ac-trigger">Какие документы следует носить с собой иностранцу на случай
+                        проверки полицией?
+                    </button>
+                </h2>
+                <div class="ac-panel">
+                    <p class="ac-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+
+            <div class="ac inostran_ac">
+                <h2 class="ac-header">
+                    <button type="button" class="ac-trigger">Куда обращаться, если мошенник снял деньги с моей
+                        банковской карты?
+                    </button>
+                </h2>
+                <div class="ac-panel">
+                    <p class="ac-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="inostran_contact-section">
+        <div class="inostran_contact-info">
+            <h3>Контакты</h3>
+
+            <div class="inostran_contacts"><img src="img/Frame%20259.png" alt="">
+                <a href="" class="inostran_contact">+7 (3852) 29-81-44; </a>
+                <a href="" class="inostran_contact"> +7 (923) 790-84-21</a></div>
+            <div class="inostran_contacts">
+                <img src="img/Frame%20259.png" alt="">
+                <a href="" class="inostran_contact">+7 (3852) 29-81-44; </a>
+                <a href="" class="inostran_contact"> +7 (923) 790-84-21</a>
+            </div>
+
+            <div class="inostran_qrs">
+                <a href=""><img src="assets/imgs/qr-code%201.png" alt=""></a>
+                <a href=""><img src="assets/imgs/qr_telegram.png" alt=""></a>
+            </div>
+
+        </div>
+        <div>
+            <img src="assets/imgs/iPhone%2013%20Pro.png" alt="">
+        </div>
+    </section>
+
 </main>
-<footer class="footer">
+<footer class="footer inostran_footer">
     <div class="footer__wrapper">
         <div class="footer-resources">
             <img class="footer-logo_img" loading="lazy" src="assets/imgs/11.png"/>
