@@ -8165,3 +8165,12 @@ input[type="submit"],
         color: #646464;
     }
 }
+
+.header-logo {
+    filter: invert(28%) sepia(28%) saturate(5788%) hue-rotate(188deg) brightness(85%) contrast(101%);
+}
+
+.header-links__social-media {
+    filter: invert(28%) sepia(28%) saturate(5788%) hue-rotate(188deg) brightness(85%) contrast(101%);
+}
+
