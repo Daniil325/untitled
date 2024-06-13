@@ -8166,7 +8166,7 @@ input[type="submit"],
     }
 }
 
-.header-logo {
+.header-top__item:first-child img{
     filter: invert(28%) sepia(28%) saturate(5788%) hue-rotate(188deg) brightness(85%) contrast(101%);
 }
 
