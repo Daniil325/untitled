@@ -1,8 +1,8 @@
 .inostran__advantages-section, .checklist-section, .inostran_warning-section,
 .why_asy-section, .inostran_about-section, .inostran_questions-section, .inostran_contact-section {
-    max-width: 1320px;
-    padding-left: 10px;
-    padding-right: 10px;
+    max-width: 1340px;
+    padding-left: 20px;
+    padding-right: 20px;
     margin: auto;
     margin-bottom: 90px;
 }
@@ -231,14 +231,16 @@
 
 .inostran_contacts {
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: center;
+    gap: 5px;
 }
 
 .inostran_contact {
     font-weight: 500;
     font-size: 32px;
     color: #222222;
+
 }
 
 .inostran_qrs img {
@@ -603,7 +605,10 @@
 .inostran_header-promo-text {
     margin: auto;
     position: absolute;
-    top: 150px; left: 0; bottom: 0; right: 0;
+    top: 150px;
+    left: 0;
+    bottom: 0;
+    right: 0;
 }
 
 .inostran_header-promo-title {
@@ -622,11 +627,16 @@
 }
 
 .inostran_header-promo-countries {
+    position: absolute;
+    left: 0;
+
+    right: 0;
     display: flex;
     flex-direction: row;
     gap: 20px;
     justify-content: center;
     margin-top: 100px;
+    top: 350px;
 }
 
 .inostran_header-promo-item {
@@ -648,4 +658,292 @@
 .inostran_header-promo-item img {
     width: 50px;
     height: 50px;
+}
+
+.inostran_warning-location img {
+    width: 100%;
+}
+
+@media screen and (max-width: 1720px) {
+    .inostran_header-promo-text {
+        top: 100px;
+    }
+
+    .inostran_header-promo-countries {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 1520px) {
+    .inostran_header-promo-title {
+        font-size: 70px;
+
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .inostran_header-promo-countries {
+        flex-wrap: wrap;
+        position: relative;
+        top: 0;
+
+    }
+
+    .inostran_header-promo-item {
+        border: 1px solid #eee;
+        background-color: #fff;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .inostran_header-promo-title {
+        font-size: 50px;
+    }
+
+    .inostran__advantages-section {
+        display: grid;
+        grid-template-columns: repeat( auto-fit, minmax(340px, 1fr) );
+
+    }
+
+    .inostran__advantages-item:last-child {
+        grid-column: span 2;
+        margin: auto;
+    }
+
+    .phone_img__container {
+        display: none;
+    }
+
+    .inostran_contact-info {
+        margin: auto;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .inostran_qrs {
+        margin: auto;
+    }
+
+    .inostran_qrs img {
+        margin-right: 0;
+    }
+
+    .inostran_header-promo-text {
+        top: 50px;
+    }
+
+    .inostran_header-promo-title {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .inostran_header-promo-title {
+        font-size: 28px;
+        margin: 0;
+    }
+
+    .inostran_header-promo-subtitle {
+        position: relative;
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .inostran-card-title {
+        font-size: 40px;
+    }
+
+    .inostran-card-description {
+        font-size: 18px;
+    }
+
+    .inostran-instr img {
+        max-width: 350px;
+    }
+
+    .inostran_greeting__img img {
+        max-width: 350px !important;
+    }
+
+    .checklist-num {
+        font-size: 90px;
+    }
+
+    .checklist-subtitle {
+        font-size: 35px;
+    }
+
+    .inostran_about-cards {
+        flex-wrap: wrap;
+    }
+
+    .programs__list {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .programs__list-item:last-child {
+        grid-column: 1 span;
+        max-width: 100%;
+    }
+
+    .inostran_info-section .inostran-cards .inostran-card {
+        padding: 80px 120px;
+    }
+}
+
+@media screen and (max-width: 745px) {
+    .inostran__advantages-section {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .inostran__advantages-item {
+        width: 50%;
+        margin: auto;
+    }
+
+    .inostran__advantages-item:last-child {
+        grid-column: span 1;
+    }
+
+    .inostran-card {
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: -50px;
+    }
+
+    .inostran-instr {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .inostran_greeting__img {
+        display: none;
+    }
+
+    .inostran_rools__container {
+        grid-template-columns: 1fr;
+    }
+
+    .inostran_contacts {
+        gap: 10px;
+    }
+
+    .inostran_contact {
+        font-weight: 500;
+        font-size: 16px;
+        color: #222222;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .inostran_header-promo-text {
+        top: 25px;
+    }
+
+    .inostran_header-promo-title {
+        font-size: 20px;
+    }
+
+    .inostran_header-promo-subtitle {
+        display: none;
+    }
+
+    .programs__list {
+        grid-template-columns: 1fr;
+    }
+
+    .checklist-section-title {
+        font-size: 40px;
+    }
+
+    .inostran-take-docs {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .inostran_warning-location img {
+        display: none;
+    }
+
+    .inostran_warning-location-info {
+        position: relative;
+    }
+
+    .inostran_section-title {
+        font-size: 35px;
+    }
+
+    .inostran-card-title {
+        font-size: 25px;
+    }
+
+    .inostran-card-description {
+        font-size: 15px;
+    }
+
+    .inostran__advantages-item img {
+        max-width: 30px;
+        max-height: 30px;
+    }
+
+    .inostran__advantages-item p {
+        font-size: 15px;
+    }
+
+    .checklist-subtitle {
+        font-size: 25px;
+    }
+
+    .inostran-instr-p {
+        font-size: 20px;
+    }
+
+    .inostran_info-section .inostran-cards .inostran-card {
+        padding: 80px 40px;
+    }
+
+    .ac-header .ac-trigger {
+        font-size: 20px !important;
+    }
+
+    .inostran_greeting__container-buttons {
+        flex-direction: column;
+    }
+
+    .inostran_greeting__container-title {
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (max-width: 330px) {
+    .inostran_header-promo-text {
+            top: 0;
+    }
+
+    .ac-header .ac-trigger {
+        font-size: 15px !important;
+    }
+
+    .inostran_section-title {
+        font-size: 25px;
+    }
+
+    .inostran_rools__item p {
+        font-size: 18px;
+    }
+
+    .inostran_rools__item img {
+        width: 70px;
+        height: 70px;
+    }
 }
