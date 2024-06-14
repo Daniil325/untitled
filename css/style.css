@@ -54,6 +54,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: MontserratRegular;
+    height: 100%;
 }
 
 .main-wrapper {
@@ -63,11 +64,13 @@ body {
 }
 
 main {
-    flex: 1 1 auto;
+    flex: 1 0 auto;
 }
 
 body {
     background: var(--abiturint-white);
+    display: flex;
+    flex-direction: column;
 }
 
 a {
@@ -1692,6 +1695,7 @@ button {
 }
 
 .footer {
+    flex: 0 0 auto;
     border-top-left-radius: 20px;
     border-top-right-radius: 10px;
     background: url("../assets/imgs/footer_fon.jpg") no-repeat;
