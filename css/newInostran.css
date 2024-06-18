@@ -879,6 +879,12 @@
     }
 }
 
+@media screen and (max-width: 660px) {
+    .programs__list {
+        grid-template-columns: 1fr;
+    }
+}
+
 @media screen and (max-width: 560px) {
     .inostran_header-promo-text {
         top: 25px;
