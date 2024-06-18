@@ -11,6 +11,12 @@
     margin-top: 90px;
 }
 
+section h3 {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60.95px;
+}
+
 .checklist-section {
     display: flex;
     flex-direction: column;
@@ -198,12 +204,6 @@
 .inostran_res__text a {
     text-decoration: none;
     color: #FD1B51;
-}
-
-.inostran_section-title {
-    font-weight: 700;
-    font-size: 50px;
-    line-height: 60.95px;
 }
 
 .inostran_ac {
@@ -886,6 +886,11 @@
 }
 
 @media screen and (max-width: 560px) {
+
+    section h3 {
+        font-size: 35px;
+    }
+
     .inostran_header-promo-text {
         top: 25px;
     }
@@ -921,9 +926,6 @@
         position: relative;
     }
 
-    .inostran_section-title {
-        font-size: 35px;
-    }
 
     .inostran-card-title {
         font-size: 25px;
@@ -1011,16 +1013,15 @@
 }
 
 @media screen and (max-width: 330px) {
+    section h3 {
+        font-size: 25px;
+    }
     .inostran_header-promo-text {
         top: 0;
     }
 
     .ac-header .ac-trigger {
         font-size: 15px !important;
-    }
-
-    .inostran_section-title {
-        font-size: 25px;
     }
 
     .inostran_rools__item p {
