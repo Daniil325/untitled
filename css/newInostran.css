@@ -1,3 +1,11 @@
+.header-top {
+    position: relative;
+}
+
+body {
+    overflow-x: hidden;
+}
+
 .inostran__advantages-section, .checklist-section, .inostran_warning-section,
 .why_asy-section, .inostran_about-section, .inostran_questions-section, .inostran_contact-section {
     max-width: 1340px;
@@ -11,10 +19,12 @@
     margin-top: 90px;
 }
 
-section h3 {
+.content h2 {
+    color: black;
     font-weight: 700;
     font-size: 50px;
     line-height: 60.95px;
+    margin-top: 90px;
 }
 
 .checklist-section {
@@ -39,6 +49,7 @@ section h3 {
 .inostran__advantages-item img {
     max-width: 60px;
     max-height: 60px;
+    margin: 0;
 }
 
 .inostran__advantages-item a {
@@ -77,7 +88,7 @@ section h3 {
 .checklist-subtitle {
     font-weight: 600;
     font-size: 42px;
-    color: #212529;
+    color: #212529 !important;
     margin: 0;
     margin-bottom: 50px;
 }
@@ -114,19 +125,28 @@ section h3 {
     color: #222222;
     line-height: 24.38px;
     font-weight: 400;
+    text-align: left;
 }
 
 .programs__list-item img {
     max-width: 79px;
+    margin: 0;
 }
 
 .inostran-play-button {
-    max-width: 80px;
+    max-width: 80px !important;
+    margin: auto !important;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
 }
 
 .inostran_greeting__container {
     display: flex;
     gap: 32px;
+    align-items: center;
+    justify-content: center;
 }
 
 .inostran_greeting__container-title {
@@ -157,14 +177,19 @@ section h3 {
     font-size: 16px;
     line-height: 19.5px;
     text-align: center;
+    background: #FD1B51;
+    color: white;
 }
 
 .inostran_greeting__container-button:first-child {
     background: #FD1B51;
+    color: white;
 }
 
 .inostran_greeting__container-button:last-child {
     border: 2px solid #FD1B51;
+    color: #FD1B51;
+    background: white;
 }
 
 .inostran_greeting__container-button:first-child a {
@@ -199,11 +224,23 @@ section h3 {
     font-size: 32px;
     line-height: 39.01px;
     max-width: 1211px;
+    margin: 0;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36.57px;
+    color: #222222;
+    margin: 0;
 }
 
 .inostran_res__text a {
     text-decoration: none;
     color: #FD1B51;
+}
+
+.inostran_section-title {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60.95px;
 }
 
 .inostran_ac {
@@ -238,6 +275,19 @@ section h3 {
     align-items: center;
     justify-content: flex-start;
     gap: 5px;
+}
+
+.inostran_contacts img {
+    margin: 0;
+}
+
+.inostran_contacts p a {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29.26px;
+    text-align: left;
+    margin-left: 20px;
+    color: #222222;
 }
 
 .inostran_contact {
@@ -301,6 +351,7 @@ section h3 {
 .inostran-card:nth-child(3n) {
     background: rgb(250, 141, 21);
     order: 2;
+
 }
 
 .inostran_info-section .inostran-cards .inostran-card {
@@ -312,6 +363,7 @@ section h3 {
 .inostran_info-section .inostran-cards .inostran-card:nth-child(2n-1) {
     background: rgb(57, 137, 210);
     order: 0;
+    margin-bottom: 0px;
 }
 
 .inostran_info-section .inostran-cards .inostran-card:nth-child(2n) {
@@ -335,12 +387,16 @@ section h3 {
     font-size: 56px;
     line-height: 68.26px;
     margin: 0;
+    color: white !important;
+    text-align: left;
+    margin-top: 0 !important;
 }
 
 .inostran-card-description {
     font-weight: 500;
     font-size: 20px;
     line-height: 24.38px;
+    color: white !important;
 }
 
 .inostran-more {
@@ -363,6 +419,7 @@ section h3 {
 .inostran-more img {
     width: 14px;
     height: 14px;
+    margin: 0;
 }
 
 .inostran-card:nth-child(3n-2) .inostran-more a {
@@ -505,6 +562,7 @@ section h3 {
 
 .inostran_contacts_flex {
     display: flex;
+    text-align: left;
     flex-direction: column;
 }
 
@@ -519,16 +577,26 @@ section h3 {
 }
 
 .inostran_about-card {
+    display: flex;
     background: #FFFFFF;
     border-radius: 30px;
     font-size: 20px;
     line-height: 25px;
     color: #212529;
     padding: 60px 40px 10px;
+    flex-direction: column;
+}
+
+.inostran_about-card img {
+    margin: 0;
+    max-width: 100px;
 }
 
 .inostran_about-card:nth-child(3n-1) {
     background: #FD1B51;
+}
+
+.inostran_about-card:nth-child(3n-1) p {
     color: #FFFFFF;
 }
 
@@ -551,6 +619,7 @@ section h3 {
     display: flex;
     gap: 30px;
     align-items: center;
+    justify-content: center;
 }
 
 .inostran_about-author-fio {
@@ -574,6 +643,7 @@ section h3 {
 
 .inostran_greeting__img img {
     max-width: 500px !important;
+    margin: 0;
 }
 
 .inostran-instr-text .inostran_contacts {
@@ -597,7 +667,7 @@ section h3 {
 }
 
 .inostran_warning-location-info .inostran_contacts {
-    margin-top: 15px;
+    /* margin-top: 15px; */
     gap: 10px;
 }
 
@@ -645,7 +715,7 @@ section h3 {
 
 .inostran_header-promo-title {
     font-weight: 700;
-    font-size: 80px;
+    font-size: 65px;
     line-height: 97.52px;
     color: #FFFFFF;
 }
@@ -653,9 +723,10 @@ section h3 {
 .inostran_header-promo-subtitle {
     font-weight: 600;
     font-size: 30px;
-    line-height: 36.57px;
-    color: #FFFFFF;
+    line-height: 36.57px !important;
+    color: #FFFFFF !important;
     text-transform: uppercase;
+    text-align: center !important;
 }
 
 .inostran_header-promo-countries {
@@ -691,113 +762,121 @@ section h3 {
 .inostran_header-promo-item img {
     width: 50px;
     height: 50px;
+    margin: 0;
 }
 
 .inostran_warning-location img {
     width: 100%;
+    margin: 0;
+    max-width: 100%;
 }
 
 @media screen and (max-width: 1720px) {
     .inostran_header-promo-text {
-        top: 100px;
+        top: 100px !important;
     }
 
     .inostran_header-promo-countries {
-        margin-top: 50px;
+        margin-top: 50px !important;
     }
 }
 
 @media screen and (max-width: 1520px) {
     .inostran_header-promo-title {
-        font-size: 70px;
+        font-size: 60px !important;
 
     }
 }
 
 @media screen and (max-width: 1440px) {
     .inostran_header-promo-countries {
-        flex-wrap: wrap;
-        position: relative;
-        top: 0;
+        flex-wrap: wrap !important;
+        position: relative !important;
+        top: 0 !important;
 
     }
 
     .inostran_header-promo-item {
-        border: 1px solid #eee;
-        background-color: #fff;
+        border: 1px solid #eee !important;
+        background-color: #fff !important;
+        /* width: 100%; */
+        text-align: center;
     }
 }
 
 
 @media screen and (max-width: 1200px) {
     .inostran_header-promo-title {
-        font-size: 50px;
+        font-size: 50px !important;
     }
 
     .inostran__advantages-section {
-        display: grid;
-        grid-template-columns: repeat( auto-fit, minmax(340px, 1fr) );
+        display: grid !important;
+        grid-template-columns: repeat( auto-fit, minmax(340px, 1fr) ) !important;
 
     }
 
     .inostran__advantages-item:last-child {
-        grid-column: span 2;
-        margin: auto;
+        grid-column: span 2 !important;
+        margin: auto !important;
     }
 
     .phone_img__container {
-        display: none;
+        display: none !important;
     }
 
     .inostran_contact-info {
-        margin: auto;
-        text-align: center;
-        margin-bottom: 30px;
+        margin: auto !important;
+        text-align: center !important;
+        margin-bottom: 30px !important;
     }
 
     .inostran_qrs {
-        margin: auto;
+        margin: auto !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 50px !important;
     }
 
     .inostran_qrs img {
-        margin-right: 0;
+        margin-right: 0 !important;
     }
 
     .inostran_header-promo-text {
-        top: 50px;
+        top: 50px !important;
     }
 
     .inostran_header-promo-title {
-        font-size: 28px;
+        font-size: 28px !important;
     }
 }
 
 @media screen and (max-width: 1025px) {
     .inostran_header-promo-title {
-        font-size: 28px;
-        margin: 0;
+        font-size: 28px !important;
+        margin: 0 !important;
     }
 
     .checklist-section-title {
-        font-size: 40px;
+        font-size: 40px !important;
     }
 
     .inostran_header-promo-subtitle {
-        position: relative;
-        font-size: 20px;
-        margin: 0;
+        position: relative !important;
+        font-size: 20px !important;
+        margin: 0 !important;
     }
 
     .inostran-card-title {
-        font-size: 40px;
+        font-size: 40px !important;
     }
 
     .inostran-card-description {
-        font-size: 18px;
+        font-size: 18px !important;
     }
 
     .inostran-instr img {
-        max-width: 350px;
+        max-width: 350px !important;
     }
 
     .inostran_greeting__img img {
@@ -805,24 +884,25 @@ section h3 {
     }
 
     .checklist-num {
-        font-size: 90px;
+        font-size: 90px !important;
     }
 
     .checklist-subtitle {
-        font-size: 35px;
+        font-size: 35px !important;
     }
 
     .inostran_about-cards {
-        flex-wrap: wrap;
+        flex-wrap: wrap !important;
     }
 
     .programs__list {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr !important;
     }
 
     .programs__list-item:last-child {
-        grid-column: 1 span;
-        max-width: 100%;
+        grid-column: 1 span !important;
+        max-width: 100% !important;
+        text-align: left !important;
     }
 
     .inostran_info-section .inostran-cards .inostran-card {
@@ -831,130 +911,139 @@ section h3 {
 }
 
 @media screen and (max-width: 745px) {
+    .inostran_warning-location img {
+        display: none !important;
+    }
+
+    .inostran_warning-location-info {
+        position: relative !important;
+    }
+
     .inostran__advantages-section {
-        display: grid;
-        grid-template-columns: 1fr;
+        display: grid !important;
+        grid-template-columns: 1fr !important;
     }
 
     .inostran__advantages-item {
-        width: 50%;
-        margin: auto;
+        width: 50% !important;
+        margin: auto !important;
     }
 
     .inostran__advantages-item:last-child {
-        grid-column: span 1;
+        grid-column: span 1 !important;
     }
 
     .inostran-card {
-        flex-direction: column;
-        gap: 30px;
-        margin-bottom: -50px;
+        flex-direction: column !important;
+        gap: 30px !important;
+        margin-bottom: -50px !important;
     }
 
     .inostran-instr {
-        flex-direction: column;
-        gap: 30px;
-        align-items: center;
-        justify-content: center;
+        flex-direction: column !important;
+        gap: 30px !important;
+        align-items: center !important;
+        justify-content: center !important;
     }
 }
 
 @media screen and (max-width: 720px) {
     .inostran_greeting__img {
-        display: none;
+        display: none !important;
     }
 
     .inostran_rools__container {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
     }
 
     .inostran_contacts {
-        gap: 10px;
+        gap: 10px !important;
     }
 
     .inostran_contact {
-        font-weight: 500;
-        font-size: 16px;
-        color: #222222;
+        font-weight: 500 !important;
+        font-size: 16px !important;
+        color: #222222 !important;
     }
 }
 
 @media screen and (max-width: 660px) {
     .programs__list {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
+    }
+
+    .content h2 {
+        font-size: 30px;
+    }
+
+    .inostran_qrs {
+        flex-direction: column !important;
     }
 }
 
 @media screen and (max-width: 560px) {
 
-    section h3 {
-        font-size: 35px;
+    .inostran_section__title {
+        font-size: 35px !important;
     }
 
     .inostran_header-promo-text {
-        top: 25px;
+        top: 10px !important;
     }
 
     .inostran_header-promo-title {
-        font-size: 20px;
+        font-size: 19px !important;
+        margin: 0 !important;
     }
 
     .inostran_header-promo-subtitle {
-        display: none;
+        display: none !important;
     }
 
     .programs__list {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
     }
 
     .checklist-section-title {
-        font-size: 40px;
+        font-size: 40px !important;
     }
 
     .inostran-take-docs {
-        flex-wrap: nowrap;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        flex-wrap: nowrap !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
     }
-
-    .inostran_warning-location img {
-        display: none;
-    }
-
-    .inostran_warning-location-info {
-        position: relative;
-    }
-
 
     .inostran-card-title {
-        font-size: 25px;
+        font-size: 25px !important;
+        text-align: left !important;
     }
 
     .inostran-card-description {
-        font-size: 15px;
+        font-size: 15px !important;
     }
 
     .inostran__advantages-item img {
-        max-width: 30px;
-        max-height: 30px;
+        max-width: 30px !important;
+        max-height: 30px !important;
     }
 
     .inostran__advantages-item a {
-        text-decoration: none;
-        font-size: 15px;
+        text-decoration: none !important;
+        font-size: 15px !important;
     }
 
     .checklist-subtitle {
-        font-size: 25px;
+        font-size: 25px !important;
     }
 
     .inostran-instr-p {
-        font-size: 20px;
+        font-size: 20px !important;
     }
 
     .inostran_info-section .inostran-cards .inostran-card {
-        padding: 80px 40px;
+        padding: 80px 40px !important;
     }
 
     .ac-header .ac-trigger {
@@ -962,11 +1051,11 @@ section h3 {
     }
 
     .inostran_greeting__container-buttons {
-        flex-direction: column;
+        flex-direction: column !important;
     }
 
     .inostran_greeting__container-title {
-        font-size: 18px;
+        font-size: 18px !important;
     }
 
 
@@ -974,50 +1063,50 @@ section h3 {
 
 @media screen and (max-width: 380px) {
     .inostran_rools__item img {
-        width: 50px;
-        height: 50px;
+        width: 50px !important;
+        height: 50px !important;
     }
 
     .inostran_rools__item p {
-        font-size: 18px;
+        font-size: 18px !important;
     }
 
     .inostran_contacts {
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 30px;
+        /* flex-wrap: wrap !important; */
+        align-items: center !important;
+        /* margin-bottom: 30px !important; */
     }
 
     .inostran__advantages-item {
-        text-align: center;
+        text-align: center !important;
     }
 
     .inostran_about-card {
-        width: 100%;
-        padding: 20px;
+        width: 100% !important;
+        padding: 20px !important;
     }
 
     .inostran__advantages-item img {
-        display: none;
+        display: none !important;
     }
 
     .inostran_about-quote, .inostran_about-author-state {
-        font-size: 15px;
+        font-size: 15px !important;
     }
 
     .inostran_about-author-fio {
-        font-size: 16px;
+        font-size: 16px !important;
     }
 
 }
 
 @media screen and (max-width: 330px) {
-    section h3 {
-        font-size: 25px;
+    .inostran_section__title {
+        font-size: 25px !important;
     }
+
     .inostran_header-promo-text {
-        top: 0;
+        top: 0 !important;
     }
 
     .ac-header .ac-trigger {
@@ -1025,17 +1114,103 @@ section h3 {
     }
 
     .inostran_rools__item p {
-        font-size: 18px;
+        font-size: 18px !important;
     }
 
     .inostran_rools__item img {
-        width: 70px;
-        height: 70px;
+        width: 70px !important;
+        height: 70px !important;
     }
 
     .inostran-instr img {
+        display: none !important;
+    }
+}
+
+.video-frame.none {
+    display: none !important;
+}
+
+.inostran_header-promo-countries {
+    position: relative;
+    top: 0;
+}
+
+.header-top__item a {
+    color: #008ad5;
+}
+
+.header-top__item a img {
+    filter: invert(28%) sepia(28%) saturate(5788%) hue-rotate(188deg) brightness(85%) contrast(101%);
+}
+
+.header-links__social-media img {
+    filter: invert(28%) sepia(28%) saturate(5788%) hue-rotate(188deg) brightness(85%) contrast(101%);
+}
+
+@media screen and (min-width: 1700px) {
+    .inostran_header-promo-title {
+        margin: 0 !important;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .inostran_header-promo-countries {
+        display: grid;
+        grid-template-columns: 0.7fr;
+    }
+
+    .inostran_header-promo-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .inostran_header-promo-subtitle {
         display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .inostran__advantages-item a{
+        font-size: 15px;
+    }
+
+    .inostran_res__text {
+        font-size: 20px;
+    }
+
+    .inostran-take-docs {
+        gap: 10px;
+    }
+
+    .inostran_contacts p a {
+        font-size: 12px;
+    }
+
+    .inostran-card-title {
+        line-height: 30px !important;
+    }
+
+    .inostran_contacts img  {
+        width: 50px;
+    }
+
+    .inostran_contacts {
+        flex-wrap: nowrap !important;
     }
 
 
+}
+
+@media screen and (max-width: 400px) {
+    .inostran__advantages-item img {
+        display: none !important;
+    }
+
+    .inostran_header-promo-item a {
+        font-size: 15px;
+    }
 }
