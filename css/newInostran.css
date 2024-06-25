@@ -1,3 +1,7 @@
+.header-top {
+    position: relative;
+}
+
 .inostran__advantages-section, .checklist-section, .inostran_warning-section,
 .why_asy-section, .inostran_about-section, .inostran_questions-section, .inostran_contact-section {
     max-width: 1340px;
@@ -554,6 +558,7 @@
 
 .inostran_contacts_flex {
     display: flex;
+    text-align: left;
     flex-direction: column;
 }
 
@@ -658,7 +663,7 @@
 }
 
 .inostran_warning-location-info .inostran_contacts {
-    margin-top: 15px;
+    /* margin-top: 15px; */
     gap: 10px;
 }
 
@@ -706,7 +711,7 @@
 
 .inostran_header-promo-title {
     font-weight: 700;
-    font-size: 80px;
+    font-size: 65px;
     line-height: 97.52px;
     color: #FFFFFF;
 }
@@ -774,7 +779,7 @@
 
 @media screen and (max-width: 1520px) {
     .inostran_header-promo-title {
-        font-size: 70px !important;
+        font-size: 60px !important;
 
     }
 }
@@ -790,6 +795,8 @@
     .inostran_header-promo-item {
         border: 1px solid #eee !important;
         background-color: #fff !important;
+        /* width: 100%; */
+        text-align: center;
     }
 }
 
@@ -977,11 +984,12 @@
     }
 
     .inostran_header-promo-text {
-        top: 25px !important;
+        top: 10px !important;
     }
 
     .inostran_header-promo-title {
-        font-size: 20px !important;
+        font-size: 19px !important;
+        margin: 0 !important;
     }
 
     .inostran_header-promo-subtitle {
@@ -1060,10 +1068,9 @@
     }
 
     .inostran_contacts {
-        flex-wrap: wrap !important;
+        /* flex-wrap: wrap !important; */
         align-items: center !important;
-        justify-content: center !important;
-        margin-bottom: 30px !important;
+        /* margin-bottom: 30px !important; */
     }
 
     .inostran__advantages-item {
@@ -1118,4 +1125,88 @@
 
 .video-frame.none {
     display: none !important;
+}
+
+.inostran_header-promo-countries {
+    position: relative;
+    top: 0;
+}
+
+.header-top__item a {
+    color: #008ad5;
+}
+
+.header-top__item a img {
+    filter: invert(28%) sepia(28%) saturate(5788%) hue-rotate(188deg) brightness(85%) contrast(101%);
+}
+
+.header-links__social-media img {
+    filter: invert(28%) sepia(28%) saturate(5788%) hue-rotate(188deg) brightness(85%) contrast(101%);
+}
+
+@media screen and (min-width: 1700px) {
+    .inostran_header-promo-title {
+        margin: 0 !important;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .inostran_header-promo-countries {
+        display: grid;
+        grid-template-columns: 0.7fr;
+    }
+
+    .inostran_header-promo-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .inostran_header-promo-subtitle {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .inostran__advantages-item a{
+        font-size: 15px;
+    }
+
+    .inostran_res__text {
+        font-size: 20px;
+    }
+
+    .inostran-take-docs {
+        gap: 10px;
+    }
+
+    .inostran_contacts p a {
+        font-size: 12px;
+    }
+
+    .inostran-card-title {
+        line-height: 30px !important;
+    }
+
+    .inostran_contacts img  {
+        width: 50px;
+    }
+
+    .inostran_contacts {
+        flex-wrap: nowrap !important;
+    }
+
+
+}
+
+@media screen and (max-width: 400px) {
+    .inostran__advantages-item img {
+        display: none !important;
+    }
+
+    .inostran_header-promo-item a {
+        font-size: 15px;
+    }
 }
