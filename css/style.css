@@ -8173,24 +8173,39 @@ input[type="submit"],
     }
 }
 
-.header-top__item:first-child img {
-    filter: invert(28%) sepia(28%) saturate(5788%) hue-rotate(188deg) brightness(85%) contrast(101%);
+.masked {
+    width: 50px;
+    height: 50px;
+    background-color: var(--asu-blue);
+    mask-size: contain;
 }
 
-.header-links__social-media {
-    filter: invert(28%) sepia(28%) saturate(5788%) hue-rotate(188deg) brightness(85%) contrast(101%);
+.masked:nth-child(4n-3) {
+    -webkit-mask-image: url("../assets/imgs/whatsapp.svg");
+    mask-image: url("../assets/imgs/whatsapp.svg");
 }
 
-.header-links__social-media img {
-    filter: invert(28%) sepia(28%) saturate(5788%) hue-rotate(188deg) brightness(85%) contrast(101%);
-}
-.header-top__item a img {
-filter: invert(28%) sepia(28%) saturate(5788%) hue-rotate(188deg) brightness(85%) contrast(101%);
+.masked:nth-child(4n-2) {
+    -webkit-mask-image: url("../assets/imgs/vk.svg");
+    mask-image: url("../assets/imgs/vk.svg");
 }
 
-.header-links__social-media img:hover,
-.header-top__item:first-child img:hover {
-    filter: brightness(0) saturate(100%) invert(55%) sepia(91%) saturate(1732%) hue-rotate(358deg) brightness(103%) contrast(108%);
+.masked:nth-child(4n-1) {
+    width: 45px;
+    height: 45px;
+    -webkit-mask-image: url("../assets/imgs/telegram.svg");
+    mask-image: url("../assets/imgs/telegram.svg");
+}
+
+.masked:nth-child(4n) {
+    width: 40px;
+    height: 40px;
+    -webkit-mask-image: url("../assets/imgs/rutube.svg");
+    mask-image: url("../assets/imgs/rutube.svg");
+}
+
+.masked:hover {
+    background-color: var(--abiturint-orange);
 }
 
 
