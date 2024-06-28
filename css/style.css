@@ -8173,11 +8173,24 @@ input[type="submit"],
     }
 }
 
-.header-top__item:first-child img{
+.header-top__item:first-child img {
     filter: invert(28%) sepia(28%) saturate(5788%) hue-rotate(188deg) brightness(85%) contrast(101%);
 }
 
 .header-links__social-media {
     filter: invert(28%) sepia(28%) saturate(5788%) hue-rotate(188deg) brightness(85%) contrast(101%);
 }
+
+.header-links__social-media img {
+    filter: invert(28%) sepia(28%) saturate(5788%) hue-rotate(188deg) brightness(85%) contrast(101%);
+}
+.header-top__item a img {
+filter: invert(28%) sepia(28%) saturate(5788%) hue-rotate(188deg) brightness(85%) contrast(101%);
+}
+
+.header-links__social-media img:hover,
+.header-top__item:first-child img:hover {
+    filter: brightness(0) saturate(100%) invert(55%) sepia(91%) saturate(1732%) hue-rotate(358deg) brightness(103%) contrast(108%);
+}
+
 
