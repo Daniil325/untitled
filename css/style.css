@@ -8208,4 +8208,12 @@ input[type="submit"],
     background-color: var(--abiturint-orange);
 }
 
+.header-top__item a {
+    color: var(--abiturint-blue);
+}
+
+.header-top__item a:hover {
+    color: var(--abiturint-orange);
+}
+
 
