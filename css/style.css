@@ -8206,4 +8206,64 @@ input[type="submit"],
     color: var(--abiturint-orange);
 }
 
+.university_today-container {
+    max-width: 1620px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
 
+.university_today-title {
+    background: -webkit-linear-gradient(0deg, #FD1B51 0%, #F46B26 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: MontserratBold;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 78.02px;
+    text-align: left;
+}
+
+.university_today-element-top {
+    display: flex;
+}
+
+.university_today-element-top-title {
+    color: #E51A4B;
+    font-family: MontserratBold;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: left;
+}
+
+.university_today-element-top-description {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24.38px;
+    text-align: left;
+    color: #67778D;
+}
+
+.university_today-element-top-image-container {
+    display: flex;
+    flex-direction: column;
+    background: #FFECF1;
+    border-radius: 29px;
+}
+
+.university_today-element-top-image-container img {
+    border-radius: 29px;
+}
+
+.university_today-element-top-image-container a {
+    font-family: MontserratBold;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24.38px;
+    text-align: left;
+    color: #67778D;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <title>Абитуриент Алтайского государственного университета</title>
+    <link rel="stylesheet" href="libs/itc-slider.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header">
+    <!-- самый верхний блок -->
+    <div class="header-top header-main">
+        <div class="header__wrapper">
+            <ul class="header-top__items">
+                <li class="header-top__item">
+                    <a class="header-logo" href=""><img src="assets/imgs/title.svg" alt=""></a>
+                </li>
+                <li class="header-top__item">
+                    <a href="https://www.asu.ru/">Университет</a>
+                </li>
+                <li class="header-top__item" id="show_modal_call">
+                    <a href="">
+                        Заказать звонок
+                    </a>
+                </li>
+                <li class="header-top__item">
+                    <a href="https://lk.abiturient.asu.ru/user/sign-in/login?_referrer=%2Fsite%2Findex">
+                        Кабинет абитуриента
+                    </a>
+                </li>
+            </ul>
+
+            <div class="header-links__social-media">
+                <a href="" class="masked"></a>
+                <a class="masked"></a>
+                <a class="masked"></a>
+                <a class="masked"></a>
+            </div>
+
+            <div class="header-search">
+                <button class="header-search_btn" id="open-search-form">
+                    <img class="header-search_btn-icon" src="assets/imgs/search.svg" alt="">
+                </button>
+                <p class="" id="open-search-form-2">
+                    поиск по сайту
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="header__slider">
+        <div class="imgs-wrapper">
+            <a href="">
+                <picture class="header-promo-slide-img">
+                    <source media="(max-width: 552px)"
+                            srcset="http://universum.asu.ru/wp-content/uploads/2024/04/абитуриент-обложка-8.png">
+                    <source media="(max-width: 1168px)"
+                            srcset="http://universum.asu.ru/wp-content/uploads/2024/04/абитуриент-обложка-8.png">
+                    <img class="header-promo-slide-picture_img"
+                         src="http://universum.asu.ru/wp-content/uploads/2024/04/fff.png" alt=""/>
+                </picture>
+            </a>
+
+        </div>
+    </div>
+    <div class="header-search_block" id="search-form">
+        <h2>Поиск</h2>
+        <form class="header-search_form" id="_9caf682e5d98dc3f__form" method="get" action="/search/">
+            <div class="header-search_input-label">
+
+                <fieldset class="header-search-options">
+                    <div class="header-search-div">
+                        <input class="header-search-query-input" type="text" placeholder="поиск" name="query">
+                        <button class="header-search_btn" disabled=""></button>
+                    </div>
+
+                    <span class="header-search-options-title">искать по:</span>
+                    <label class="header-search-options-item header-search-options-item__current">
+                        <input class="header-search-options-item-radio" type="radio" name="search_in" value="site"
+                               checked="checked" data-form-action="/search/">
+                        <span class="header-search-options-item-title">сайту</span>
+                    </label>
+
+                    <label class="header-search-options-item ">
+                        <input class="header-search-options-item-radio" type="radio" name="search_in" value="news"
+                               data-form-action="/search/news/">
+                        <span class="header-search-options-item-title">новостям</span>
+                    </label>
+
+                    <label class="header-search-options-item ">
+                        <input class="header-search-options-item-radio" type="radio" name="search_in"
+                               value="documents" data-form-action="/search/documents/">
+                        <span class="header-search-options-item-title">документам</span>
+                    </label>
+                </fieldset>
+            </div>
+        </form>
+    </div>
+</header>
+
+<main>
+
+    <section class="university_today-section">
+        <div class="university_today-container">
+            <h2 class="university_today-title">#УНИВЕРСИТЕТ_СЕГОДНЯ</h2>
+            <div class="university_today-element">
+                
+                <div class="university_today-element-top">
+                    <div class="university_today-element-top-text">
+                        <h3 class="university_today-element-top-title">VR-лаборатории</h3>
+                        <h5 class="university_today-element-top-description">
+                            лаборатория оснащена шлемами Рісо 4, манипуляторами, мощными компьютерами и камерой, позволяющей
+                            снимать панорамы на 360 градусов, установлен программный пакет трехмерного моделирования с
+                            открытым исходным кодом Blender и 3D Max Studio
+                        </h5>
+                    </div>
+                    
+                    <div class="university_today-element-top-image-container">
+                        <img src="img/видео.jpg" alt="">
+
+                        <a href="">Открытие VR-лаборатории ИМИТ</a>
+                    </div>
+                </div>
+
+                <div class="university_today-element-bottom">
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- абитуриент подписывайся -->
+    <section class="subscribe-container">
+        <div class="subscribe__wrapper">
+            <div class="subscribe-info">
+                <h2 class="section-title">Абитуриент подписывайся</h2>
+                <p class="subscribe-text">текстик о том, что соц сети у нас крутые и там самая
+                    актуальная информация</p>
+                <a href=""><img class="subscribe-image" src="assets/imgs/sub_wa.svg" alt=""></a>
+                <a href=""><img class="subscribe-image" src="assets/imgs/sub_vk.svg" alt=""></a>
+                <a href=""><img class="subscribe-image" src="assets/imgs/sub_tg.svg" alt=""></a>
+                <a href=""><img class="subscribe-image" src="assets/imgs/sub_ru.svg" alt=""></a>
+            </div>
+
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer__wrapper">
+        <div class="footer-resources">
+            <img class="footer-logo_img" loading="lazy" src="assets/imgs/whitelogo.svg"/>
+            <ul class="footer-resources-list">
+                <li>
+                    <a href="https://minobrnauki.gov.ru/" class="footer-resources_link">
+                        Министерство науки и высшего образования РФ
+                    </a>
+                </li>
+                <li>
+                    <a href="https://edu.ru/" class="footer-resources_link">
+                        Федеральный портал "Российское образование"
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.educaltai.ru/" class="footer-resources_link">
+                        Министерство образования и науки АК
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer-social-links">
+            <p>
+                Приемная комиссия АлтГУ
+            </p>
+            <p>
+                <a class="footer-social-link" href="tel:+73852291222">тел. +7 (3852) 29-81-95</a>
+            </p>
+            <p>
+                <a class="footer-social-link" href="tel:+73852291222">e-maal: +7 (3852) 29-81-95</a>
+            </p>
+        </div>
+
+    </div>
+    <hr>
+    <div class="footer_asu_container">
+        <h2 class="footer_asu">АЛТАЙСКИЙ ГОСУДАРСТВЕННЫЙ УНИВЕРСИТЕТ</h2>
+        <p class="footer-asu__text">г. Барнаул пр.Ленина, 61, ауд. 106</p>
+        <p class="footer-asu__link"><a href="https://www.asu.ru/">Перейти на сайт АлтГУ</a></p>
+    </div>
+</footer>
+</body>
+</html>
