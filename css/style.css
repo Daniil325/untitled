@@ -8267,3 +8267,30 @@ input[type="submit"],
     margin-bottom: 10px;
     padding-left: 20px;
 }
+
+.new_why_asy-section {
+    max-width: 1320px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+    border-radius: 53px;
+    background: white;
+}
+
+.new_why_asy-wrapper {
+    padding: 20px;
+}
+
+.new_why_asy-title {
+    color: #008AD5;
+    font-family: Montserrat;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 78.02px;
+    text-align: left;
+
+}
+
+.new_why_asy-advantages {
+    display: flex;
+}

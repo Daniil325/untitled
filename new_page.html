@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="width=device-width, initial-scale=1" name="viewport"/>
     <title>Абитуриент Алтайского государственного университета</title>
-    <link rel="stylesheet" href="libs/itc-slider.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 </head>
 <body>
 <header class="header">
@@ -52,19 +53,7 @@
     </div>
 
     <div class="header__slider">
-        <div class="imgs-wrapper">
-            <a href="">
-                <picture class="header-promo-slide-img">
-                    <source media="(max-width: 552px)"
-                            srcset="http://universum.asu.ru/wp-content/uploads/2024/04/абитуриент-обложка-8.png">
-                    <source media="(max-width: 1168px)"
-                            srcset="http://universum.asu.ru/wp-content/uploads/2024/04/абитуриент-обложка-8.png">
-                    <img class="header-promo-slide-picture_img"
-                         src="http://universum.asu.ru/wp-content/uploads/2024/04/fff.png" alt=""/>
-                </picture>
-            </a>
 
-        </div>
     </div>
     <div class="header-search_block" id="search-form">
         <h2>Поиск</h2>
@@ -102,33 +91,76 @@
 </header>
 
 <main>
+    <section class="new_why_asy-section">
+        <div class="new_why_asy-wrapper">
+            <h2 class="new_why_asy-title">ПОЧЕМУ АЛТАЙСКИЙ ГОСУДАРСТВЕННЫЙ УНИВЕРСИТЕТ</h2>
+            <div class="new_why_asy-advantages">
+                <div class="new_why_asy-element">
 
+                </div>
+            </div>
+        </div>
+
+    </section>
     <section class="university_today-section">
         <div class="university_today-container">
             <h2 class="university_today-title">#УНИВЕРСИТЕТ_СЕГОДНЯ</h2>
-            <div class="university_today-element">
-                
-                <div class="university_today-element-top">
-                    <div class="university_today-element-top-text">
-                        <h3 class="university_today-element-top-title">VR-лаборатории</h3>
-                        <h5 class="university_today-element-top-description">
-                            лаборатория оснащена шлемами Рісо 4, манипуляторами, мощными компьютерами и камерой, позволяющей
-                            снимать панорамы на 360 градусов, установлен программный пакет трехмерного моделирования с
-                            открытым исходным кодом Blender и 3D Max Studio
-                        </h5>
-                    </div>
-                    
-                    <div class="university_today-element-top-image-container">
-                        <img src="img/видео.jpg" alt="">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide university_today-element">
 
-                        <a href="">Открытие VR-лаборатории ИМИТ</a>
+                        <div class="university_today-element-top">
+                            <div class="university_today-element-top-text">
+                                <h3 class="university_today-element-top-title">VR-лаборатории</h3>
+                                <h5 class="university_today-element-top-description">
+                                    лаборатория оснащена шлемами Рісо 4, манипуляторами, мощными компьютерами и камерой,
+                                    позволяющей
+                                    снимать панорамы на 360 градусов, установлен программный пакет трехмерного
+                                    моделирования с
+                                    открытым исходным кодом Blender и 3D Max Studio
+                                </h5>
+                            </div>
+
+                            <div class="university_today-element-top-image-container">
+                                <img src="img/видео.jpg" alt="">
+
+                                <a href="">Открытие VR-лаборатории ИМИТ</a>
+                            </div>
+                        </div>
+
+                        <div class="university_today-element-bottom">
+
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide university_today-element">
+
+                        <div class="university_today-element-top">
+                            <div class="university_today-element-top-text">
+                                <h3 class="university_today-element-top-title">VR-лаборатории</h3>
+                                <h5 class="university_today-element-top-description">
+                                    лаборатория оснащена шлемами Рісо 4, манипуляторами, мощными компьютерами и камерой,
+                                    позволяющей
+                                    снимать панорамы на 360 градусов, установлен программный пакет трехмерного
+                                    моделирования с
+                                    открытым исходным кодом Blender и 3D Max Studio
+                                </h5>
+                            </div>
+
+                            <div class="university_today-element-top-image-container">
+                                <img src="img/видео.jpg" alt="">
+
+                                <a href="">Открытие VR-лаборатории ИМИТ</a>
+                            </div>
+                        </div>
+
+                        <div class="university_today-element-bottom">
+
+                        </div>
+
                     </div>
                 </div>
-
-                <div class="university_today-element-bottom">
-
-                </div>
-
+                 <div class="swiper-pagination"></div>
             </div>
         </div>
     </section>
@@ -193,5 +225,7 @@
         <p class="footer-asu__link"><a href="https://www.asu.ru/">Перейти на сайт АлтГУ</a></p>
     </div>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/newPage.js"></script>
 </body>
 </html>
